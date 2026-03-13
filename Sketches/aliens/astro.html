@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Astro | Ron English Catalogue Raisonné</title>
+
+  <link rel="stylesheet" href="../../css/styles.css" />
+
+  <style>
+    :root{
+      --border:#e5e7eb;
+      --muted:#4b5563;
+      --shadow:0 10px 30px rgba(0,0,0,.08);
+      --radius:18px;
+      --bg:#ffffff;
+      --panel:#f3f4f6;
+    }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:#111;
+      background:var(--bg);
+      padding-left:0;
+      padding-right:0;
+    }
+
+    .wrap{
+      max-width:1200px;
+      margin:0 auto;
+      padding:28px 18px 60px;
+    }
+
+    .nav-pills{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:22px;
+      margin-bottom:22px;
+    }
+
+    .nav-pill{
+      padding:8px 14px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background:#fff;
+      color:#111;
+      text-decoration:none;
+      font-size:14px;
+    }
+
+    .nav-pill:hover{
+      background:#f9fafb;
+    }
+
+    .page-header{
+      max-width:1100px;
+      margin:0 0 28px;
+      padding:0;
+      text-align:left;
+    }
+
+    .page-title{
+      margin:0 0 10px;
+      font-size:clamp(2rem,4vw,3rem);
+      letter-spacing:-.02em;
+      line-height:1.05;
+    }
+
+    .intro-text{
+      margin:0;
+      max-width:78ch;
+      color:var(--muted);
+      font-size:18px;
+      line-height:1.6;
+    }
+
+    .section-card{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:22px;
+      margin-bottom:24px;
+    }
+
+    .section-card h2{
+      margin:0 0 8px;
+      font-size:1.35rem;
+    }
+
+    .section-intro{
+      margin:0 0 18px;
+      color:var(--muted);
+      line-height:1.6;
+      max-width:78ch;
+    }
+
+    .gallery-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+    }
+
+    .sketch-hero-grid{
+      display:grid;
+      grid-template-columns:minmax(280px,560px);
+      justify-content:center;
+      gap:20px;
+    }
+
+    .gallery-item{
+      display:block;
+      text-decoration:none;
+      color:inherit;
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:16px;
+      overflow:hidden;
+      transition:transform .18s ease, box-shadow .18s ease;
+      box-shadow:0 4px 18px rgba(0,0,0,.04);
+    }
+
+    .gallery-item:hover{
+      transform:translateY(-3px);
+      box-shadow:0 10px 24px rgba(0,0,0,.08);
+    }
+
+    .gallery-item img{
+      display:block;
+      width:100%;
+      height:290px;
+      object-fit:contain;
+      background:var(--panel);
+      padding:8px;
+      border-bottom:1px solid var(--border);
+    }
+
+    .sketch-hero-grid .gallery-item{
+      max-width:560px;
+      width:100%;
+      margin:0 auto;
+    }
+
+    .sketch-hero-grid .gallery-item img{
+      height:620px;
+    }
+
+    .entry-body{
+      padding:10px 12px 12px;
+      text-align:center;
+    }
+
+    .work-title{
+      margin:0 0 4px;
+      font-size:1rem;
+      font-weight:600;
+      line-height:1.3;
+    }
+
+    .work-note{
+      margin:0;
+      color:var(--muted);
+      font-size:.92rem;
+      line-height:1.35;
+    }
+
+    .back-link{
+      margin-top:28px;
+    }
+
+    .back-link a{
+      display:inline-block;
+      text-decoration:none;
+      color:#111;
+      border:1px solid var(--border);
+      border-radius:999px;
+      padding:10px 16px;
+      background:#fff;
+    }
+
+    .back-link a:hover{
+      background:#f9fafb;
+    }
+
+    @media (max-width:640px){
+      .wrap{
+        padding:22px 14px 50px;
+      }
+
+      .gallery-item img{
+        height:240px;
+      }
+
+      .sketch-hero-grid{
+        grid-template-columns:1fr;
+      }
+
+      .sketch-hero-grid .gallery-item img{
+        height:520px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <nav class="nav-pills" aria-label="Site navigation">
+      <a class="nav-pill" href="../../index.html">Catalogue home</a>
+      <a class="nav-pill" href="../index.html">Sketches</a>
+      <a class="nav-pill" href="index.html">Aliens</a>
+    </nav>
+
+    <header class="page-header">
+      <h1 class="page-title">Astro</h1>
+      <p class="intro-text">
+        This page gathers documented Astro variants and related digital renderings. At present, only the back view is represented by a scanned original drawing. Additional originals can be added here as they are located.
+      </p>
+    </header>
+
+    <section class="section-card" aria-labelledby="documented-original">
+      <h2 id="documented-original">Documented Original</h2>
+
+      <div class="sketch-hero-grid">
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro back ORIGINAL.jpg">
+          <img src="../../images/Sketches/aliens/Astro back ORIGINAL.jpg" alt="Astro back original sketch by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Astro Back Original</p>
+            <p class="work-note">Scan of the original drawing.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section-card" aria-labelledby="astro-back">
+      <h2 id="astro-back">Astro Back</h2>
+      <div class="gallery-grid">
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro back B&W.jpg">
+          <img src="../../images/Sketches/aliens/Astro back B&W.jpg" alt="Astro back black-and-white digital rendering by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">B&amp;W Version</p>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro back COLOR.jpg">
+          <img src="../../images/Sketches/aliens/Astro back COLOR.jpg" alt="Astro back color digital rendering by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Color Version</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section-card" aria-labelledby="astro-brain">
+      <h2 id="astro-brain">Astro Brain</h2>
+      <div class="gallery-grid">
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Brain B&W.jpg">
+          <img src="../../images/Sketches/aliens/Astro Brain B&W.jpg" alt="Astro Brain black-and-white digital rendering by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">B&amp;W Version</p>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Brain COLOR.jpg">
+          <img src="../../images/Sketches/aliens/Astro Brain COLOR.jpg" alt="Astro Brain color digital rendering by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Color Version</p>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Brain colorway 2.jpg">
+          <img src="../../images/Sketches/aliens/Astro Brain colorway 2.jpg" alt="Astro Brain colorway 2 by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Colorway 2</p>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Brain colorway 3.jpg">
+          <img src="../../images/Sketches/aliens/Astro Brain colorway 3.jpg" alt="Astro Brain colorway 3 by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Colorway 3</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section-card" aria-labelledby="astro-brain-helmet">
+      <h2 id="astro-brain-helmet">Astro Brain with Helmet</h2>
+      <div class="gallery-grid">
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Brain with helmet COLOR.jpg">
+          <img src="../../images/Sketches/aliens/Astro Brain with helmet COLOR.jpg" alt="Astro Brain with helmet color digital rendering by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Color Version</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section-card" aria-labelledby="astro-china">
+      <h2 id="astro-china">Astro China</h2>
+      <div class="gallery-grid">
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro china B&W.jpg">
+          <img src="../../images/Sketches/aliens/Astro china B&W.jpg" alt="Astro China black-and-white digital rendering by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">B&amp;W Version</p>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro china COLOR.jpg">
+          <img src="../../images/Sketches/aliens/Astro china COLOR.jpg" alt="Astro China color digital rendering by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Color Version</p>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro China colorway 2.jpg">
+          <img src="../../images/Sketches/aliens/Astro China colorway 2.jpg" alt="Astro China colorway 2 by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Colorway 2</p>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro China colorway 3.jpg">
+          <img src="../../images/Sketches/aliens/Astro China colorway 3.jpg" alt="Astro China colorway 3 by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Colorway 3</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section-card" aria-labelledby="astro-earth">
+      <h2 id="astro-earth">Astro Earth</h2>
+      <div class="gallery-grid">
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Earth B&W.jpg">
+          <img src="../../images/Sketches/aliens/Astro Earth B&W.jpg" alt="Astro Earth black-and-white digital rendering by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">B&amp;W Version</p>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Earth COLOR.jpg">
+          <img src="../../images/Sketches/aliens/Astro Earth COLOR.jpg" alt="Astro Earth color digital rendering by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Color Version</p>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Earth colorway 2.jpg">
+          <img src="../../images/Sketches/aliens/Astro Earth colorway 2.jpg" alt="Astro Earth colorway 2 by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Colorway 2</p>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Earth colorway 3.jpg">
+          <img src="../../images/Sketches/aliens/Astro Earth colorway 3.jpg" alt="Astro Earth colorway 3 by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Colorway 3</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section-card" aria-labelledby="astro-fish">
+      <h2 id="astro-fish">Astro Fish</h2>
+      <div class="gallery-grid">
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Fish B&W.jpg">
+          <img src="../../images/Sketches/aliens/Astro Fish B&W.jpg" alt="Astro Fish black-and-white digital rendering by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">B&amp;W Version</p>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Fish COLOR.jpg">
+          <img src="../../images/Sketches/aliens/Astro Fish COLOR.jpg" alt="Astro Fish color digital rendering by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Color Version</p>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Fish colorway 2.jpg">
+          <img src="../../images/Sketches/aliens/Astro Fish colorway 2.jpg" alt="Astro Fish colorway 2 by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Colorway 2</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section-card" aria-labelledby="astro-flag">
+      <h2 id="astro-flag">Astro Flag</h2>
+      <div class="gallery-grid">
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Flag - B&W.jpg">
+          <img src="../../images/Sketches/aliens/Astro Flag - B&W.jpg" alt="Astro Flag black-and-white digital rendering by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">B&amp;W Version</p>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Flag COLOR.jpg">
+          <img src="../../images/Sketches/aliens/Astro Flag COLOR.jpg" alt="Astro Flag color digital rendering by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Color Version</p>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Flag colorway 2.jpg">
+          <img src="../../images/Sketches/aliens/Astro Flag colorway 2.jpg" alt="Astro Flag colorway 2 by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Colorway 2</p>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Flag colorway 3.jpg">
+          <img src="../../images/Sketches/aliens/Astro Flag colorway 3.jpg" alt="Astro Flag colorway 3 by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Colorway 3</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section-card" aria-labelledby="astro-jetpack">
+      <h2 id="astro-jetpack">Astro Jetpack</h2>
+      <div class="gallery-grid">
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Jetpack B&W.jpg">
+          <img src="../../images/Sketches/aliens/Astro Jetpack B&W.jpg" alt="Astro Jetpack black-and-white digital rendering by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">B&amp;W Version</p>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Jetpack COLOR.jpg">
+          <img src="../../images/Sketches/aliens/Astro Jetpack COLOR.jpg" alt="Astro Jetpack color digital rendering by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Color Version</p>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Jetpack colorway 2.jpg">
+          <img src="../../images/Sketches/aliens/Astro Jetpack colorway 2.jpg" alt="Astro Jetpack colorway 2 by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Colorway 2</p>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Jetpack colorway 3.jpg">
+          <img src="../../images/Sketches/aliens/Astro Jetpack colorway 3.jpg" alt="Astro Jetpack colorway 3 by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Colorway 3</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section-card" aria-labelledby="astro-lungs">
+      <h2 id="astro-lungs">Astro Lungs</h2>
+      <div class="gallery-grid">
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Lungs B&W.jpg">
+          <img src="../../images/Sketches/aliens/Astro Lungs B&W.jpg" alt="Astro Lungs black-and-white digital rendering by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">B&amp;W Version</p>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Lungs COLOR.jpg">
+          <img src="../../images/Sketches/aliens/Astro Lungs COLOR.jpg" alt="Astro Lungs color digital rendering by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Color Version</p>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Lungs colorway 2.jpg">
+          <img src="../../images/Sketches/aliens/Astro Lungs colorway 2.jpg" alt="Astro Lungs colorway 2 by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Colorway 2</p>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Lungs colorway 3.jpg">
+          <img src="../../images/Sketches/aliens/Astro Lungs colorway 3.jpg" alt="Astro Lungs colorway 3 by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Colorway 3</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section-card" aria-labelledby="astro-microphone">
+      <h2 id="astro-microphone">Astro Microphone</h2>
+      <div class="gallery-grid">
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Microphone B&W.jpg">
+          <img src="../../images/Sketches/aliens/Astro Microphone B&W.jpg" alt="Astro Microphone black-and-white digital rendering by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">B&amp;W Version</p>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Microphone COLOR.jpg">
+          <img src="../../images/Sketches/aliens/Astro Microphone COLOR.jpg" alt="Astro Microphone color digital rendering by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Color Version</p>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Microphone colorway 2.jpg">
+          <img src="../../images/Sketches/aliens/Astro Microphone colorway 2.jpg" alt="Astro Microphone colorway 2 by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Colorway 2</p>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Microphone colorway 3.jpg">
+          <img src="../../images/Sketches/aliens/Astro Microphone colorway 3.jpg" alt="Astro Microphone colorway 3 by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Colorway 3</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section-card" aria-labelledby="astro-microphone-jetpack">
+      <h2 id="astro-microphone-jetpack">Astro Microphone Jetpack</h2>
+      <div class="gallery-grid">
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Microphone Jetpack B&W.jpg">
+          <img src="../../images/Sketches/aliens/Astro Microphone Jetpack B&W.jpg" alt="Astro Microphone Jetpack black-and-white digital rendering by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">B&amp;W Version</p>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Microphone Jetpack COLOR.jpg">
+          <img src="../../images/Sketches/aliens/Astro Microphone Jetpack COLOR.jpg" alt="Astro Microphone Jetpack color digital rendering by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Color Version</p>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Microphone Jetpack colorway 2.jpg">
+          <img src="../../images/Sketches/aliens/Astro Microphone Jetpack colorway 2.jpg" alt="Astro Microphone Jetpack colorway 2 by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Colorway 2</p>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Microphone Jetpack colorway 3.jpg">
+          <img src="../../images/Sketches/aliens/Astro Microphone Jetpack colorway 3.jpg" alt="Astro Microphone Jetpack colorway 3 by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Colorway 3</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section-card" aria-labelledby="astro-yin-yang">
+      <h2 id="astro-yin-yang">Astro Yin Yang</h2>
+      <div class="gallery-grid">
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Yin Yang B&W.jpg">
+          <img src="../../images/Sketches/aliens/Astro Yin Yang B&W.jpg" alt="Astro Yin Yang black-and-white digital rendering by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">B&amp;W Version</p>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Yin Yang COLOR.jpg">
+          <img src="../../images/Sketches/aliens/Astro Yin Yang COLOR.jpg" alt="Astro Yin Yang color digital rendering by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Color Version</p>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Yin Yang colorway 2.jpg">
+          <img src="../../images/Sketches/aliens/Astro Yin Yang colorway 2.jpg" alt="Astro Yin Yang colorway 2 by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Colorway 2</p>
+          </div>
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens/Astro Yin Yang colorway 3.jpg">
+          <img src="../../images/Sketches/aliens/Astro Yin Yang colorway 3.jpg" alt="Astro Yin Yang colorway 3 by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Colorway 3</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <div class="back-link">
+      <a href="index.html">← Back to Aliens</a>
+    </div>
+  </main>
+</body>
+</html>
