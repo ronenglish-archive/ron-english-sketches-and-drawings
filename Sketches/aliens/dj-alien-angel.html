@@ -94,7 +94,14 @@
       margin:0 0 18px;
       color:var(--muted);
       line-height:1.6;
-      max-width:72ch;
+      max-width:none;
+      width:100%;
+    }
+
+    .gallery-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
     }
 
     .sketch-hero-grid{
@@ -206,7 +213,7 @@
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
- <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
       <a class="nav-pill" href="../index.html">Sketches</a>
       <a class="nav-pill" href="index.html">Aliens</a>
     </nav>
@@ -236,6 +243,23 @@
           <img src="../../images/Sketches/aliens/DJ Alien Angel - color.jpg" alt="DJ Alien Angel digitized color version by Ron English" loading="lazy" />
           <div class="entry-body">
             <p class="work-title">Color Version</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section-card" aria-labelledby="collector-cards">
+      <h2 id="collector-cards">Collector Cards</h2>
+      <p class="section-intro">
+        Trading card variants associated with DJ Alien Angel.
+      </p>
+
+      <div class="gallery-grid">
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/DJ Alien Angel - Area 54 VIP - 2-24.jpg">
+          <img src="../../images/Sketches/aliens 2/DJ Alien Angel - Area 54 VIP - 2-24.jpg" alt="DJ Alien Angel Area 54 VIP collector card 2/24" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Area 54 VIP</p>
+            <p class="work-note">2/24</p>
           </div>
         </a>
       </div>
