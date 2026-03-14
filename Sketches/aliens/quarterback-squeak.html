@@ -97,6 +97,12 @@
       max-width:72ch;
     }
 
+    .gallery-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+    }
+
     .sketch-hero-grid{
       display:grid;
       grid-template-columns:minmax(280px,560px);
@@ -213,7 +219,7 @@
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
-<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
       <a class="nav-pill" href="../index.html">Sketches</a>
       <a class="nav-pill" href="index.html">Aliens</a>
     </nav>
@@ -253,6 +259,23 @@
           <img src="../../images/Sketches/aliens/Quarterback Squeak - color.jpg" alt="Quarterback Squeak digitized color version by Ron English" loading="lazy" />
           <div class="entry-body">
             <p class="work-title">Color Version</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section-card" aria-labelledby="collector-cards">
+      <h2 id="collector-cards">Collector Cards</h2>
+      <p class="section-intro">
+        Trading card variants associated with Quarterback Squeak.
+      </p>
+
+      <div class="gallery-grid">
+        <a class="gallery-item" href="../../images/Sketches/aliens/Quarterback Squeak - Area 54 VIP - 4-24.jpg">
+          <img src="../../images/Sketches/aliens/Quarterback Squeak - Area 54 VIP - 4-24.jpg" alt="Quarterback Squeak Area 54 VIP collector card 4/24" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Area 54 VIP</p>
+            <p class="work-note">4/24</p>
           </div>
         </a>
       </div>
