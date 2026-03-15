@@ -94,7 +94,8 @@
       margin:0 0 18px;
       color:var(--muted);
       line-height:1.6;
-      max-width:72ch;
+      max-width:none;
+      width:100%;
     }
 
     .gallery-grid{
@@ -103,9 +104,9 @@
       gap:20px;
     }
 
-    .sketch-hero-grid{
+    .sketch-grid{
       display:grid;
-      grid-template-columns:minmax(280px,560px);
+      grid-template-columns:minmax(280px,540px);
       gap:20px;
       justify-content:center;
     }
@@ -137,13 +138,13 @@
       border-bottom:1px solid var(--border);
     }
 
-    .sketch-hero-grid .gallery-item{
-      max-width:560px;
+    .sketch-grid .gallery-item{
+      max-width:540px;
       width:100%;
       margin:0 auto;
     }
 
-    .sketch-hero-grid .gallery-item img{
+    .sketch-grid .gallery-item img{
       height:620px;
       background:var(--panel);
       padding:8px;
@@ -196,14 +197,14 @@
       }
 
       .gallery-item img{
-        height:240px;
+        height:280px;
       }
 
-      .sketch-hero-grid{
+      .sketch-grid{
         grid-template-columns:1fr;
       }
 
-      .sketch-hero-grid .gallery-item img{
+      .sketch-grid .gallery-item img{
         height:520px;
       }
     }
@@ -221,18 +222,17 @@
       <h1 class="page-title">Patchy Podium</h1>
     </header>
 
-    <section class="section-card" aria-labelledby="original-double">
-      <h2 id="original-double">Original Double Drawing</h2>
+    <section class="section-card" aria-labelledby="original-sketch">
+      <h2 id="original-sketch">Fused Original Drawing</h2>
       <p class="section-intro">
-        Patchy Podium is represented here by the original split source drawing, which also served as the basis for the separate character records Cosmo Titian and Internal Planted.
+        Presented here as a distinct character image, this fused original also documents Ron English’s practice of composing opposed half-faces on a single sheet, later separated and mirror-reversed to generate related character images, in this case Cosmo Titian and Internal Planted.
       </p>
 
-      <div class="sketch-hero-grid">
-        <a class="gallery-item" href="../../images/Sketches/aliens/Patchy Podium.jpg">
-          <img src="../../images/Sketches/aliens/Patchy Podium.jpg" alt="Original double drawing for Patchy Podium, Cosmo Titian, and Internal Planted by Ron English" loading="lazy" />
+      <div class="sketch-grid">
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Patchy Podium.jpg">
+          <img src="../../images/Sketches/aliens 2/Patchy Podium.jpg" alt="Patchy Podium original drawing by Ron English" loading="lazy" />
           <div class="entry-body">
-            <p class="work-title">Shared Source Sheet</p>
-            <p class="work-note">Original split drawing shared with Cosmo Titian and Internal Planted.</p>
+            <p class="work-title">Original Drawing</p>
           </div>
         </a>
       </div>
