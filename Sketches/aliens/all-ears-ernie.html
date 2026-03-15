@@ -94,7 +94,22 @@
       margin:0 0 18px;
       color:var(--muted);
       line-height:1.6;
-      max-width:72ch;
+      max-width:none;
+      width:100%;
+    }
+
+    .missing-note{
+      margin:0;
+      color:var(--muted);
+      line-height:1.6;
+      max-width:none;
+      width:100%;
+    }
+
+    .gallery-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
     }
 
     .sketch-hero-grid{
@@ -166,13 +181,6 @@
       text-align:center;
     }
 
-    .missing-note{
-      margin:0;
-      color:var(--muted);
-      line-height:1.6;
-      max-width:72ch;
-    }
-
     .back-link{
       margin-top:28px;
     }
@@ -213,7 +221,7 @@
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
-   <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
       <a class="nav-pill" href="../index.html">Sketches</a>
       <a class="nav-pill" href="index.html">Aliens</a>
     </nav>
@@ -222,38 +230,23 @@
       <h1 class="page-title">All Ears Ernie</h1>
     </header>
 
-    <section class="section-card" aria-labelledby="original-sketch">
-      <h2 id="original-sketch">Original Sketch</h2>
+    <section class="section-card" aria-labelledby="original-drawing">
+      <h2 id="original-drawing">Original Drawing</h2>
       <p class="missing-note">
         No original drawing is currently documented on this page. If one is located, it will be added here.
       </p>
     </section>
 
-    <section class="section-card" aria-labelledby="digitized-bw">
-      <h2 id="digitized-bw">Digitized B&amp;W</h2>
-      <p class="section-intro">
-        Black-and-white digital rendering associated with the design.
-      </p>
+    <section class="section-card" aria-labelledby="digitized-versions">
+      <h2 id="digitized-versions">Digitized Versions</h2>
 
-      <div class="sketch-hero-grid">
-        <a class="gallery-item" href="../../images/Sketches/aliens/All Ears Ernie - B&W.jpg">
-          <img src="../../images/Sketches/aliens/All Ears Ernie - B&W.jpg" alt="All Ears Ernie digitized black-and-white version by Ron English" loading="lazy" />
-          <div class="entry-body">
-            <p class="work-title">B&amp;W Version</p>
-          </div>
+      <div class="gallery-grid">
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/All Ears Ernie - B&W.jpg">
+          <img src="../../images/Sketches/aliens 2/All Ears Ernie - B&W.jpg" alt="All Ears Ernie digitized black-and-white version by Ron English" loading="lazy" />
         </a>
-      </div>
-    </section>
 
-    <section class="section-card" aria-labelledby="digitized-color">
-      <h2 id="digitized-color">Digitized Color</h2>
-
-      <div class="sketch-hero-grid">
-        <a class="gallery-item" href="../../images/Sketches/aliens/All Ears Ernie - color.jpg">
-          <img src="../../images/Sketches/aliens/All Ears Ernie - color.jpg" alt="All Ears Ernie digitized color version by Ron English" loading="lazy" />
-          <div class="entry-body">
-            <p class="work-title">Color Version</p>
-          </div>
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/All Ears Ernie - color.jpg">
+          <img src="../../images/Sketches/aliens 2/All Ears Ernie - color.jpg" alt="All Ears Ernie digitized color version by Ron English" loading="lazy" />
         </a>
       </div>
     </section>
@@ -264,4 +257,3 @@
   </main>
 </body>
 </html>
-
