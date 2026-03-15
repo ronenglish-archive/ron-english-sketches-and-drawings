@@ -94,7 +94,8 @@
       margin:0 0 18px;
       color:var(--muted);
       line-height:1.6;
-      max-width:72ch;
+      max-width:none;
+      width:100%;
     }
 
     .gallery-grid{
@@ -103,9 +104,9 @@
       gap:20px;
     }
 
-    .sketch-grid{
+    .sketch-hero-grid{
       display:grid;
-      grid-template-columns:minmax(280px,540px);
+      grid-template-columns:minmax(280px,560px);
       gap:20px;
       justify-content:center;
     }
@@ -137,13 +138,13 @@
       border-bottom:1px solid var(--border);
     }
 
-    .sketch-grid .gallery-item{
-      max-width:540px;
+    .sketch-hero-grid .gallery-item{
+      max-width:560px;
       width:100%;
       margin:0 auto;
     }
 
-    .sketch-grid .gallery-item img{
+    .sketch-hero-grid .gallery-item img{
       height:620px;
       background:var(--panel);
       padding:8px;
@@ -199,11 +200,11 @@
         height:240px;
       }
 
-      .sketch-grid{
+      .sketch-hero-grid{
         grid-template-columns:1fr;
       }
 
-      .sketch-grid .gallery-item img{
+      .sketch-hero-grid .gallery-item img{
         height:520px;
       }
     }
@@ -212,7 +213,7 @@
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
-<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
       <a class="nav-pill" href="../index.html">Sketches</a>
       <a class="nav-pill" href="index.html">Aliens</a>
     </nav>
@@ -221,17 +222,17 @@
       <h1 class="page-title">Amblyopiate</h1>
     </header>
 
-    <section class="section-card" aria-labelledby="original-sketch">
-      <h2 id="original-sketch">Original Drawing</h2>
+    <section class="section-card" aria-labelledby="fused-original-drawing">
+      <h2 id="fused-original-drawing">Fused Original Drawing</h2>
       <p class="section-intro">
-        This character is based on the complete original drawing, which also served as the source sheet for the split derivative characters Lavishless Fauness and Tantalus Zathuman 45.
+        Presented here as a distinct character image, this fused original also documents Ron English’s practice of composing opposed half-faces on a single sheet, later separated and mirror-reversed to generate related character images, in this case Lavishless Fauness and Tantalus Zathuman 45.
       </p>
 
-      <div class="sketch-grid">
-        <a class="gallery-item" href="../../images/Sketches/aliens/Amblyopiate - original.jpg">
-          <img src="../../images/Sketches/aliens/Amblyopiate - original.jpg" alt="Amblyopiate original drawing by Ron English" loading="lazy" />
+      <div class="sketch-hero-grid">
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Amblyopiate - original.jpg">
+          <img src="../../images/Sketches/aliens 2/Amblyopiate - original.jpg" alt="Fused original drawing of Amblyopiate by Ron English" loading="lazy" />
           <div class="entry-body">
-            <p class="work-note">Scan of the complete original drawing.</p>
+            <p class="work-title">Fused Original Drawing</p>
           </div>
         </a>
       </div>
@@ -239,10 +240,13 @@
 
     <section class="section-card" aria-labelledby="digitized-versions">
       <h2 id="digitized-versions">Digitized Versions</h2>
+      <p class="section-intro">
+        Black-and-white rendering associated with the completed Amblyopiate design.
+      </p>
 
       <div class="gallery-grid">
-        <a class="gallery-item" href="../../images/Sketches/aliens/Amblyopiate - B&W.jpg">
-          <img src="../../images/Sketches/aliens/Amblyopiate - B&W.jpg" alt="Amblyopiate black-and-white digitized version by Ron English" loading="lazy" />
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Amblyopiate - B&W.jpg">
+          <img src="../../images/Sketches/aliens 2/Amblyopiate - B&W.jpg" alt="Amblyopiate digitized black-and-white version by Ron English" loading="lazy" />
           <div class="entry-body">
             <p class="work-title">B&amp;W Version</p>
           </div>
