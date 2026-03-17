@@ -90,16 +90,16 @@
       font-size:1.4rem;
     }
 
-    .section-intro{
-      margin:0 0 18px;
-      color:var(--muted);
-      line-height:1.6;
-      max-width:72ch;
-    }
-
     .sketch-hero-grid{
       display:grid;
       grid-template-columns:minmax(280px,560px);
+      gap:20px;
+      justify-content:center;
+    }
+
+    .digitized-grid{
+      display:grid;
+      grid-template-columns:minmax(220px,380px);
       gap:20px;
       justify-content:center;
     }
@@ -143,27 +143,16 @@
       padding:8px;
     }
 
-    .entry-body{
-      padding:10px 12px 12px;
-      text-align:center;
+    .digitized-grid .gallery-item{
+      max-width:380px;
+      width:100%;
+      margin:0 auto;
     }
 
-    .gallery-item .entry-body .work-title{
-      margin:0 0 4px;
-      padding:0;
-      font-size:1rem;
-      font-weight:600;
-      line-height:1.3;
-      text-align:center;
-    }
-
-    .gallery-item .entry-body .work-note{
-      margin:0;
-      padding:0;
-      color:var(--muted);
-      font-size:.92rem;
-      line-height:1.35;
-      text-align:center;
+    .digitized-grid .gallery-item img{
+      height:420px;
+      background:var(--panel);
+      padding:8px;
     }
 
     .back-link{
@@ -193,12 +182,17 @@
         height:240px;
       }
 
-      .sketch-hero-grid{
+      .sketch-hero-grid,
+      .digitized-grid{
         grid-template-columns:1fr;
       }
 
       .sketch-hero-grid .gallery-item img{
         height:520px;
+      }
+
+      .digitized-grid .gallery-item img{
+        height:340px;
       }
     }
   </style>
@@ -206,7 +200,7 @@
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
-  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
       <a class="nav-pill" href="../index.html">Sketches</a>
       <a class="nav-pill" href="index.html">Aliens</a>
     </nav>
@@ -219,9 +213,12 @@
       <h2 id="original-sketch">Original Sketch</h2>
 
       <div class="sketch-hero-grid">
-        <a class="gallery-item" href="../../images/Sketches/aliens/Egg Spaceship - original.jpg">
-          <img src="../../images/Sketches/aliens/Egg Spaceship - original.jpg" alt="Egg Spaceship original sketch by Ron English" loading="lazy" />
-     
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Egg Spaceship - original.jpg">
+          <img
+            src="../../images/Sketches/aliens 2/Egg Spaceship - original.jpg"
+            alt="Egg Spaceship original sketch by Ron English"
+            loading="lazy"
+          />
         </a>
       </div>
     </section>
@@ -229,10 +226,13 @@
     <section class="section-card" aria-labelledby="digitized-color">
       <h2 id="digitized-color">Digitized Color</h2>
 
-      <div class="sketch-hero-grid">
-        <a class="gallery-item" href="../../images/Sketches/aliens/Egg Spaceship - color.jpg">
-          <img src="../../images/Sketches/aliens/Egg Spaceship - color.jpg" alt="Egg Spaceship digitized color version by Ron English" loading="lazy" />
-       
+      <div class="digitized-grid">
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Egg Spaceship - color.jpg">
+          <img
+            src="../../images/Sketches/aliens 2/Egg Spaceship - color.jpg"
+            alt="Egg Spaceship digitized color version by Ron English"
+            loading="lazy"
+          />
         </a>
       </div>
     </section>
