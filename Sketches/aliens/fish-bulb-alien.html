@@ -90,19 +90,6 @@
       font-size:1.4rem;
     }
 
-    .section-intro{
-      margin:0 0 18px;
-      color:var(--muted);
-      line-height:1.6;
-      max-width:72ch;
-    }
-
-    .gallery-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-      gap:20px;
-    }
-
     .sketch-hero-grid{
       display:grid;
       grid-template-columns:minmax(280px,560px);
@@ -115,6 +102,13 @@
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
       gap:20px;
+    }
+
+    .digitized-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,240px));
+      gap:20px;
+      justify-content:center;
     }
 
     .gallery-item{
@@ -162,27 +156,16 @@
       padding:8px;
     }
 
-    .entry-body{
-      padding:10px 12px 12px;
-      text-align:center;
+    .digitized-grid .gallery-item{
+      max-width:240px;
+      width:100%;
+      margin:0 auto;
     }
 
-    .gallery-item .entry-body .work-title{
-      margin:0 0 4px;
-      padding:0;
-      font-size:1rem;
-      font-weight:600;
-      line-height:1.3;
-      text-align:center;
-    }
-
-    .gallery-item .entry-body .work-note{
-      margin:0;
-      padding:0;
-      color:var(--muted);
-      font-size:.92rem;
-      line-height:1.35;
-      text-align:center;
+    .digitized-grid .gallery-item img{
+      height:250px;
+      background:var(--panel);
+      padding:8px;
     }
 
     .back-link{
@@ -223,13 +206,21 @@
       .sketch-secondary-grid .gallery-item img{
         height:300px;
       }
+
+      .digitized-grid{
+        grid-template-columns:repeat(2,minmax(140px,1fr));
+      }
+
+      .digitized-grid .gallery-item img{
+        height:200px;
+      }
     }
   </style>
 </head>
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
-<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
       <a class="nav-pill" href="../index.html">Sketches</a>
       <a class="nav-pill" href="index.html">Aliens</a>
     </nav>
@@ -242,43 +233,60 @@
       <h2 id="original-sketches">Original Sketches</h2>
 
       <div class="sketch-hero-grid">
-        <a class="gallery-item" href="../../images/Sketches/aliens/Fish Bulb Alien - original.jpg">
-          <img src="../../images/Sketches/aliens/Fish Bulb Alien - original.jpg" alt="Fish Bulb Alien front original sketch by Ron English" loading="lazy" />
-        
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Fish Bulb Alien - original.jpg">
+          <img
+            src="../../images/Sketches/aliens 2/Fish Bulb Alien - original.jpg"
+            alt="Fish Bulb Alien front original sketch by Ron English"
+            loading="lazy"
+          />
         </a>
       </div>
 
       <div class="sketch-secondary-grid">
-        <a class="gallery-item" href="../../images/Sketches/aliens/Fish Bulb Alien - side original.jpg">
-          <img src="../../images/Sketches/aliens/Fish Bulb Alien - side original.jpg" alt="Fish Bulb Alien side original sketch by Ron English" loading="lazy" />
-        
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Fish Bulb Alien - side original.jpg">
+          <img
+            src="../../images/Sketches/aliens 2/Fish Bulb Alien - side original.jpg"
+            alt="Fish Bulb Alien side original sketch by Ron English"
+            loading="lazy"
+          />
         </a>
       </div>
     </section>
 
     <section class="section-card" aria-labelledby="digitized-versions">
       <h2 id="digitized-versions">Digitized Versions</h2>
-     
 
-      <div class="gallery-grid">
-        <a class="gallery-item" href="../../images/Sketches/aliens/Fish Bulb Alien - B&W.jpg">
-          <img src="../../images/Sketches/aliens/Fish Bulb Alien - B&W.jpg" alt="Fish Bulb Alien front digitized black-and-white version by Ron English" loading="lazy" />
-         
+      <div class="digitized-grid">
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Fish Bulb Alien - B&W.jpg">
+          <img
+            src="../../images/Sketches/aliens 2/Fish Bulb Alien - B&W.jpg"
+            alt="Fish Bulb Alien front digitized black-and-white version by Ron English"
+            loading="lazy"
+          />
         </a>
 
-        <a class="gallery-item" href="../../images/Sketches/aliens/Fish Bulb Alien - side B&W.jpg">
-          <img src="../../images/Sketches/aliens/Fish Bulb Alien - side B&W.jpg" alt="Fish Bulb Alien side digitized black-and-white version by Ron English" loading="lazy" />
-      
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Fish Bulb Alien - side B&W.jpg">
+          <img
+            src="../../images/Sketches/aliens 2/Fish Bulb Alien - side B&W.jpg"
+            alt="Fish Bulb Alien side digitized black-and-white version by Ron English"
+            loading="lazy"
+          />
         </a>
 
-        <a class="gallery-item" href="../../images/Sketches/aliens/Fish Bulb Alien - color.jpg">
-          <img src="../../images/Sketches/aliens/Fish Bulb Alien - color.jpg" alt="Fish Bulb Alien front digitized color version by Ron English" loading="lazy" />
-        
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Fish Bulb Alien - color.jpg">
+          <img
+            src="../../images/Sketches/aliens 2/Fish Bulb Alien - color.jpg"
+            alt="Fish Bulb Alien front digitized color version by Ron English"
+            loading="lazy"
+          />
         </a>
 
-        <a class="gallery-item" href="../../images/Sketches/aliens/Fish Bulb Alien - side color.jpg">
-          <img src="../../images/Sketches/aliens/Fish Bulb Alien - side color.jpg" alt="Fish Bulb Alien side digitized color version by Ron English" loading="lazy" />
-        
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Fish Bulb Alien - side color.jpg">
+          <img
+            src="../../images/Sketches/aliens 2/Fish Bulb Alien - side color.jpg"
+            alt="Fish Bulb Alien side digitized color version by Ron English"
+            loading="lazy"
+          />
         </a>
       </div>
     </section>
