@@ -106,9 +106,9 @@
 
     .sketch-hero-grid{
       display:grid;
-      grid-template-columns:minmax(280px,560px);
+      grid-template-columns:repeat(2,minmax(280px,1fr));
       gap:20px;
-      justify-content:center;
+      align-items:start;
     }
 
     .gallery-item{
@@ -139,15 +139,15 @@
     }
 
     .sketch-hero-grid .gallery-item{
-      max-width:560px;
       width:100%;
-      margin:0 auto;
+      margin:0;
     }
 
     .sketch-hero-grid .gallery-item img{
       height:620px;
       background:var(--panel);
       padding:8px;
+      border-bottom:none;
     }
 
     .entry-body{
@@ -222,15 +222,16 @@
       <h1 class="page-title">Bee Sting Alien</h1>
     </header>
 
-    <section class="section-card" aria-labelledby="original-sketch">
-      <h2 id="original-sketch">Original Sketch</h2>
+    <section class="section-card" aria-labelledby="original-sketches">
+      <h2 id="original-sketches">Original Drawings</h2>
 
       <div class="sketch-hero-grid">
-        <a class="gallery-item" href="../../images/Sketches/aliens/Bee Sting Alien - original.jpg">
-          <img src="../../images/Sketches/aliens/Bee Sting Alien - original.jpg" alt="Bee Sting Alien original sketch by Ron English" loading="lazy" />
-          <div class="entry-body">
-            <p class="work-note">Scan of the original drawing.</p>
-          </div>
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Bee Sting Alien - original.jpg">
+          <img src="../../images/Sketches/aliens 2/Bee Sting Alien - original.jpg" alt="Bee Sting Alien original sketch by Ron English" loading="lazy" />
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Bee Sting Alien's Spaceship - original.jpg">
+          <img src="../../images/Sketches/aliens 2/Bee Sting Alien's Spaceship - original.jpg" alt="Bee Sting Alien's Spaceship original sketch by Ron English" loading="lazy" />
         </a>
       </div>
     </section>
@@ -242,15 +243,15 @@
       </p>
 
       <div class="gallery-grid">
-        <a class="gallery-item" href="../../images/Sketches/aliens/Bee Sting Alien - B&W.jpg">
-          <img src="../../images/Sketches/aliens/Bee Sting Alien - B&W.jpg" alt="Bee Sting Alien digitized black-and-white version by Ron English" loading="lazy" />
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Bee Sting Alien - B&W.jpg">
+          <img src="../../images/Sketches/aliens 2/Bee Sting Alien - B&W.jpg" alt="Bee Sting Alien digitized black-and-white version by Ron English" loading="lazy" />
           <div class="entry-body">
             <p class="work-title">B&amp;W Version</p>
           </div>
         </a>
 
-        <a class="gallery-item" href="../../images/Sketches/aliens/Bee Sting Alien - color.jpg">
-          <img src="../../images/Sketches/aliens/Bee Sting Alien - color.jpg" alt="Bee Sting Alien digitized color version by Ron English" loading="lazy" />
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Bee Sting Alien - color.jpg">
+          <img src="../../images/Sketches/aliens 2/Bee Sting Alien - color.jpg" alt="Bee Sting Alien digitized color version by Ron English" loading="lazy" />
           <div class="entry-body">
             <p class="work-title">Color Version</p>
           </div>
@@ -261,27 +262,19 @@
     <section class="section-card" aria-labelledby="related-spacecraft">
       <h2 id="related-spacecraft">Related Spacecraft</h2>
       <p class="section-intro">
-        Associated spaceship design and a related digital image showing Bee Sting Alien in the spacecraft.
+        Associated digital images showing the spacecraft design and Bee Sting Alien in the spacecraft.
       </p>
 
       <div class="gallery-grid">
-        <a class="gallery-item" href="../../images/Sketches/aliens/Bee Sting Alien's Spaceship - original.jpg">
-          <img src="../../images/Sketches/aliens/Bee Sting Alien's Spaceship - original.jpg" alt="Bee Sting Alien's Spaceship original sketch by Ron English" loading="lazy" />
-          <div class="entry-body">
-            <p class="work-title">Spaceship Original</p>
-            <p class="work-note">Scan of the original drawing.</p>
-          </div>
-        </a>
-
-        <a class="gallery-item" href="../../images/Sketches/aliens/Bee Sting Alien's Spaceship - color.jpg">
-          <img src="../../images/Sketches/aliens/Bee Sting Alien's Spaceship - color.jpg" alt="Bee Sting Alien's Spaceship digitized color version by Ron English" loading="lazy" />
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Bee Sting Alien's Spaceship - color.jpg">
+          <img src="../../images/Sketches/aliens 2/Bee Sting Alien's Spaceship - color.jpg" alt="Bee Sting Alien's Spaceship digitized color version by Ron English" loading="lazy" />
           <div class="entry-body">
             <p class="work-title">Spaceship Color</p>
           </div>
         </a>
 
-        <a class="gallery-item" href="../../images/Sketches/aliens/Bee Sting Alien in Spaceship - color.jpg">
-          <img src="../../images/Sketches/aliens/Bee Sting Alien in Spaceship - color.jpg" alt="Bee Sting Alien in spaceship digital color image by Ron English" loading="lazy" />
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Bee Sting Alien in Spaceship - color.jpg">
+          <img src="../../images/Sketches/aliens 2/Bee Sting Alien in Spaceship - color.jpg" alt="Bee Sting Alien in spaceship digital color image by Ron English" loading="lazy" />
           <div class="entry-body">
             <p class="work-title">Bee Sting Alien in Spaceship</p>
           </div>
@@ -291,9 +284,6 @@
 
     <section class="section-card" aria-labelledby="collector-cards">
       <h2 id="collector-cards">Collector Cards</h2>
-      <p class="section-intro">
-        Trading card variants associated with Bee Sting Alien.
-      </p>
 
       <div class="gallery-grid">
         <a class="gallery-item" href="../../images/Sketches/aliens 2/Bee Sting Alien - Area 54 VIP - 8-24.jpg">
