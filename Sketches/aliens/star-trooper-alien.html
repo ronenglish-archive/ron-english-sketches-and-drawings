@@ -103,18 +103,11 @@
       gap:20px;
     }
 
-    .sketch-hero-grid{
+    .originals-grid{
       display:grid;
-      grid-template-columns:minmax(280px,560px);
+      grid-template-columns:repeat(2,minmax(280px,1fr));
       gap:20px;
-      justify-content:center;
-      margin-bottom:20px;
-    }
-
-    .sketch-secondary-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-      gap:20px;
+      align-items:start;
     }
 
     .gallery-item{
@@ -144,20 +137,8 @@
       border-bottom:1px solid var(--border);
     }
 
-    .sketch-hero-grid .gallery-item{
-      max-width:560px;
-      width:100%;
-      margin:0 auto;
-    }
-
-    .sketch-hero-grid .gallery-item img{
+    .originals-grid .gallery-item img{
       height:620px;
-      background:var(--panel);
-      padding:8px;
-    }
-
-    .sketch-secondary-grid .gallery-item img{
-      height:340px;
       background:var(--panel);
       padding:8px;
     }
@@ -212,16 +193,12 @@
         height:240px;
       }
 
-      .sketch-hero-grid{
+      .originals-grid{
         grid-template-columns:1fr;
       }
 
-      .sketch-hero-grid .gallery-item img{
+      .originals-grid .gallery-item img{
         height:520px;
-      }
-
-      .sketch-secondary-grid .gallery-item img{
-        height:300px;
       }
     }
   </style>
@@ -229,7 +206,7 @@
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
-<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
       <a class="nav-pill" href="../index.html">Sketches</a>
       <a class="nav-pill" href="index.html">Aliens</a>
     </nav>
@@ -241,44 +218,35 @@
     <section class="section-card" aria-labelledby="original-sketches">
       <h2 id="original-sketches">Original Drawings</h2>
 
-      <div class="sketch-hero-grid">
-        <a class="gallery-item" href="../../images/Sketches/aliens/Star Trooper Alien - original.jpg">
-          <img src="../../images/Sketches/aliens/Star Trooper Alien - original.jpg" alt="Star Trooper Alien front original sketch by Ron English" loading="lazy" />
-         
+      <div class="originals-grid">
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Star Trooper Alien - original.jpg">
+          <img src="../../images/Sketches/aliens 2/Star Trooper Alien - original.jpg" alt="Star Trooper Alien front original sketch by Ron English" loading="lazy" />
         </a>
-      </div>
 
-      <div class="sketch-secondary-grid">
-        <a class="gallery-item" href="../../images/Sketches/aliens/Star Trooper Alien - side original.jpg">
-          <img src="../../images/Sketches/aliens/Star Trooper Alien - side original.jpg" alt="Star Trooper Alien side original sketch by Ron English" loading="lazy" />
-        
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Star Trooper Alien - side original.jpg">
+          <img src="../../images/Sketches/aliens 2/Star Trooper Alien - side original.jpg" alt="Star Trooper Alien side original sketch by Ron English" loading="lazy" />
         </a>
       </div>
     </section>
 
     <section class="section-card" aria-labelledby="digitized-versions">
       <h2 id="digitized-versions">Digitized Versions</h2>
-     
 
       <div class="gallery-grid">
-        <a class="gallery-item" href="../../images/Sketches/aliens/Star Trooper Alien - B&W.jpg">
-          <img src="../../images/Sketches/aliens/Star Trooper Alien - B&W.jpg" alt="Star Trooper Alien front digitized black-and-white version by Ron English" loading="lazy" />
-        
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Star Trooper Alien - B&W.jpg">
+          <img src="../../images/Sketches/aliens 2/Star Trooper Alien - B&W.jpg" alt="Star Trooper Alien front digitized black-and-white version by Ron English" loading="lazy" />
         </a>
 
-        <a class="gallery-item" href="../../images/Sketches/aliens/Star Trooper Alien - side B&W.jpg">
-          <img src="../../images/Sketches/aliens/Star Trooper Alien - side B&W.jpg" alt="Star Trooper Alien side digitized black-and-white version by Ron English" loading="lazy" />
-        
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Star Trooper Alien - side B&W.jpg">
+          <img src="../../images/Sketches/aliens 2/Star Trooper Alien - side B&W.jpg" alt="Star Trooper Alien side digitized black-and-white version by Ron English" loading="lazy" />
         </a>
 
-        <a class="gallery-item" href="../../images/Sketches/aliens/Star Trooper Alien - color.jpg">
-          <img src="../../images/Sketches/aliens/Star Trooper Alien - color.jpg" alt="Star Trooper Alien front digitized color version by Ron English" loading="lazy" />
-        
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Star Trooper Alien - color.jpg">
+          <img src="../../images/Sketches/aliens 2/Star Trooper Alien - color.jpg" alt="Star Trooper Alien front digitized color version by Ron English" loading="lazy" />
         </a>
 
-        <a class="gallery-item" href="../../images/Sketches/aliens/Star Trooper Alien - side color.jpg">
-          <img src="../../images/Sketches/aliens/Star Trooper Alien - side color.jpg" alt="Star Trooper Alien side digitized color version by Ron English" loading="lazy" />
-       
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Star Trooper Alien - side color.jpg">
+          <img src="../../images/Sketches/aliens 2/Star Trooper Alien - side color.jpg" alt="Star Trooper Alien side digitized color version by Ron English" loading="lazy" />
         </a>
       </div>
     </section>
