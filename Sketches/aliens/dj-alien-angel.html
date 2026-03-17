@@ -111,6 +111,13 @@
       justify-content:center;
     }
 
+    .digitized-grid{
+      display:grid;
+      grid-template-columns:minmax(220px,380px);
+      gap:20px;
+      justify-content:center;
+    }
+
     .gallery-item{
       display:block;
       text-decoration:none;
@@ -146,6 +153,18 @@
 
     .sketch-hero-grid .gallery-item img{
       height:620px;
+      background:var(--panel);
+      padding:8px;
+    }
+
+    .digitized-grid .gallery-item{
+      max-width:380px;
+      width:100%;
+      margin:0 auto;
+    }
+
+    .digitized-grid .gallery-item img{
+      height:420px;
       background:var(--panel);
       padding:8px;
     }
@@ -200,12 +219,17 @@
         height:240px;
       }
 
-      .sketch-hero-grid{
+      .sketch-hero-grid,
+      .digitized-grid{
         grid-template-columns:1fr;
       }
 
       .sketch-hero-grid .gallery-item img{
         height:520px;
+      }
+
+      .digitized-grid .gallery-item img{
+        height:340px;
       }
     }
   </style>
@@ -226,9 +250,12 @@
       <h2 id="original-sketch">Original Sketch</h2>
 
       <div class="sketch-hero-grid">
-        <a class="gallery-item" href="../../images/Sketches/aliens/DJ Alien Angel - original.jpg">
-          <img src="../../images/Sketches/aliens/DJ Alien Angel - original.jpg" alt="DJ Alien Angel original sketch by Ron English" loading="lazy" />
-       
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/DJ Alien Angel - original.jpg">
+          <img
+            src="../../images/Sketches/aliens 2/DJ Alien Angel - original.jpg"
+            alt="DJ Alien Angel original sketch by Ron English"
+            loading="lazy"
+          />
         </a>
       </div>
     </section>
@@ -236,21 +263,27 @@
     <section class="section-card" aria-labelledby="digitized-color">
       <h2 id="digitized-color">Digitized Color</h2>
 
-      <div class="sketch-hero-grid">
-        <a class="gallery-item" href="../../images/Sketches/aliens/DJ Alien Angel - color.jpg">
-          <img src="../../images/Sketches/aliens/DJ Alien Angel - color.jpg" alt="DJ Alien Angel digitized color version by Ron English" loading="lazy" />
-     
+      <div class="digitized-grid">
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/DJ Alien Angel - color.jpg">
+          <img
+            src="../../images/Sketches/aliens 2/DJ Alien Angel - color.jpg"
+            alt="DJ Alien Angel digitized color version by Ron English"
+            loading="lazy"
+          />
         </a>
       </div>
     </section>
 
     <section class="section-card" aria-labelledby="collector-cards">
       <h2 id="collector-cards">Collector Cards</h2>
-  
 
       <div class="gallery-grid">
         <a class="gallery-item" href="../../images/Sketches/aliens 2/DJ Alien Angel - Area 54 VIP - 2-24.jpg">
-          <img src="../../images/Sketches/aliens 2/DJ Alien Angel - Area 54 VIP - 2-24.jpg" alt="DJ Alien Angel Area 54 VIP collector card 2/24" loading="lazy" />
+          <img
+            src="../../images/Sketches/aliens 2/DJ Alien Angel - Area 54 VIP - 2-24.jpg"
+            alt="DJ Alien Angel Area 54 VIP collector card 2/24"
+            loading="lazy"
+          />
           <div class="entry-body">
             <p class="work-title">Area 54 VIP</p>
             <p class="work-note">2/24</p>
