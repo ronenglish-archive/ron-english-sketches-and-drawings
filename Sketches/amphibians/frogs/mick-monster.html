@@ -96,9 +96,11 @@
       gap:20px;
     }
 
-    .originals-grid .gallery-item img{
-      height:520px;
-      padding:8px;
+    .sketch-hero-grid{
+      display:grid;
+      grid-template-columns:minmax(280px,560px);
+      gap:20px;
+      justify-content:center;
     }
 
     .gallery-item{
@@ -128,6 +130,18 @@
       border-bottom:1px solid var(--border);
     }
 
+    .sketch-hero-grid .gallery-item{
+      max-width:560px;
+      width:100%;
+      margin:0 auto;
+    }
+
+    .sketch-hero-grid .gallery-item img{
+      height:620px;
+      background:var(--panel);
+      padding:8px;
+    }
+
     .back-link{
       margin-top:28px;
     }
@@ -155,8 +169,12 @@
         height:240px;
       }
 
-      .originals-grid .gallery-item img{
-        height:420px;
+      .sketch-hero-grid{
+        grid-template-columns:1fr;
+      }
+
+      .sketch-hero-grid .gallery-item img{
+        height:520px;
       }
     }
   </style>
@@ -174,20 +192,12 @@
       <h1 class="page-title">Mick Monster</h1>
     </header>
 
-    <section class="section-card" aria-labelledby="original-sketches">
-      <h2 id="original-sketches">Original Drawings</h2>
+    <section class="section-card" aria-labelledby="original-sketch">
+      <h2 id="original-sketch">Original Drawing</h2>
 
-      <div class="gallery-grid originals-grid">
+      <div class="sketch-hero-grid">
         <a class="gallery-item" href="../../../images/Sketches/amphibians/frogs/Mick%20Monster%20ORIGINAL.jpg">
           <img src="../../../images/Sketches/amphibians/frogs/Mick%20Monster%20ORIGINAL.jpg" alt="Mick Monster original drawing by Ron English" loading="lazy" />
-        </a>
-
-        <a class="gallery-item" href="../../../images/Sketches/amphibians/frogs/Mick%20Monster%20ORIGINAL%202.jpg">
-          <img src="../../../images/Sketches/amphibians/frogs/Mick%20Monster%20ORIGINAL%202.jpg" alt="Mick Monster second original drawing by Ron English" loading="lazy" />
-        </a>
-
-        <a class="gallery-item" href="../../../images/Sketches/amphibians/frogs/Mick%20Monster%20ORIGINAL%20COLOR%202.jpg">
-          <img src="../../../images/Sketches/amphibians/frogs/Mick%20Monster%20ORIGINAL%20COLOR%202.jpg" alt="Mick Monster original color drawing by Ron English" loading="lazy" />
         </a>
       </div>
     </section>
