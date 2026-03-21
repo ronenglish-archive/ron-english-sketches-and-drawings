@@ -118,6 +118,13 @@
       justify-content:center;
     }
 
+    .card-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:20px;
+      margin-top:8px;
+    }
+
     .gallery-item{
       display:block;
       text-decoration:none;
@@ -157,6 +164,12 @@
       padding:8px;
     }
 
+    .card-grid .gallery-item img{
+      height:520px;
+      background:var(--panel);
+      padding:10px;
+    }
+
     .entry-body{
       padding:10px 12px 12px;
       text-align:center;
@@ -180,6 +193,48 @@
       text-align:center;
     }
 
+    .card-text-block{
+      margin-top:20px;
+      padding:18px;
+      border:1px solid var(--border);
+      border-radius:14px;
+      background:var(--panel);
+      display:grid;
+      grid-template-columns:minmax(240px,0.95fr) minmax(280px,1.05fr);
+      gap:24px;
+      align-items:start;
+    }
+
+    .card-column{
+      min-width:0;
+    }
+
+    .text-label{
+      display:block;
+      font-size:.78rem;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      color:var(--muted);
+      margin-bottom:8px;
+    }
+
+    .card-details{
+      display:grid;
+      gap:8px;
+    }
+
+    .card-detail{
+      margin:0;
+      line-height:1.55;
+    }
+
+    .poem{
+      margin:0;
+      white-space:pre-line;
+      color:#111;
+      line-height:1.65;
+    }
+
     .back-link{
       margin-top:28px;
     }
@@ -198,6 +253,12 @@
       background:#f9fafb;
     }
 
+    @media (max-width:760px){
+      .card-text-block{
+        grid-template-columns:1fr;
+      }
+    }
+
     @media (max-width:640px){
       .wrap{
         padding:22px 14px 50px;
@@ -214,13 +275,17 @@
       .sketch-hero-grid .gallery-item img{
         height:520px;
       }
+
+      .card-grid .gallery-item img{
+        height:420px;
+      }
     }
   </style>
 </head>
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
-<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
       <a class="nav-pill" href="../index.html">Sketches</a>
       <a class="nav-pill" href="index.html">Aliens</a>
     </nav>
@@ -235,25 +300,66 @@
       <div class="sketch-hero-grid">
         <a class="gallery-item" href="../../images/Sketches/aliens/Siron Alien - original.jpg">
           <img src="../../images/Sketches/aliens/Siron Alien - original.jpg" alt="Siron Alien original sketch by Ron English" loading="lazy" />
-        
         </a>
       </div>
     </section>
 
     <section class="section-card" aria-labelledby="digitized-versions">
       <h2 id="digitized-versions">Digitized Versions</h2>
-    
 
       <div class="gallery-grid">
         <a class="gallery-item" href="../../images/Sketches/aliens/Siron Alien - B&W.jpg">
           <img src="../../images/Sketches/aliens/Siron Alien - B&W.jpg" alt="Siron Alien digitized black-and-white version by Ron English" loading="lazy" />
-         
         </a>
 
         <a class="gallery-item" href="../../images/Sketches/aliens/Siron Alien - color.jpg">
           <img src="../../images/Sketches/aliens/Siron Alien - color.jpg" alt="Siron Alien digitized color version by Ron English" loading="lazy" />
-       
         </a>
+      </div>
+    </section>
+
+    <section class="section-card" aria-labelledby="trading-card">
+      <h2 id="trading-card">Trading Card</h2>
+
+      <div class="card-grid">
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/siron card 1.jpg">
+          <img src="../../images/Sketches/aliens 2/siron card 1.jpg" alt="Siron Alien trading card image 1" loading="lazy" />
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/siron card 2.jpg">
+          <img src="../../images/Sketches/aliens 2/siron card 2.jpg" alt="Siron Alien trading card image 2" loading="lazy" />
+        </a>
+      </div>
+
+      <div class="card-text-block">
+        <div class="card-column">
+          <span class="text-label">Card details</span>
+          <div class="card-details">
+            <p class="card-detail"><strong>Series:</strong> 2</p>
+            <p class="card-detail"><strong>Number:</strong> 01</p>
+            <p class="card-detail"><strong>Affiliation:</strong> Aliens</p>
+            <p class="card-detail"><strong>Occupation:</strong> Promoter at Area 54</p>
+            <p class="card-detail"><strong>Preoccupation:</strong> Area 54</p>
+            <p class="card-detail"><strong>Virtue:</strong> Gets high on gravity</p>
+            <p class="card-detail"><strong>Vice:</strong> Breathes more than her fair share of air</p>
+          </div>
+        </div>
+
+        <div class="card-column">
+          <span class="text-label">Poem</span>
+          <p class="poem">Every other brother
+Has the very same mother.
+Every other sister
+Has a dad named Mister.
+Siron Alien
+Ain't a real good listener—
+She ain't got no ears,
+Just tiny transistors.
+You can talk back
+In tongue-tied twisters,
+But she won't pay no mind
+So long as you whisper.</p>
+        </div>
       </div>
     </section>
 
