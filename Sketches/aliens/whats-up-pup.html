@@ -118,6 +118,13 @@
       justify-content:center;
     }
 
+    .card-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:20px;
+      margin-top:8px;
+    }
+
     .gallery-item{
       display:block;
       text-decoration:none;
@@ -157,6 +164,12 @@
       padding:8px;
     }
 
+    .card-grid .gallery-item img{
+      height:520px;
+      background:var(--panel);
+      padding:10px;
+    }
+
     .entry-body{
       padding:10px 12px 12px;
       text-align:center;
@@ -180,6 +193,48 @@
       text-align:center;
     }
 
+    .card-text-block{
+      margin-top:20px;
+      padding:18px;
+      border:1px solid var(--border);
+      border-radius:14px;
+      background:var(--panel);
+      display:grid;
+      grid-template-columns:minmax(240px,0.95fr) minmax(280px,1.05fr);
+      gap:24px;
+      align-items:start;
+    }
+
+    .card-column{
+      min-width:0;
+    }
+
+    .text-label{
+      display:block;
+      font-size:.78rem;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      color:var(--muted);
+      margin-bottom:8px;
+    }
+
+    .card-details{
+      display:grid;
+      gap:8px;
+    }
+
+    .card-detail{
+      margin:0;
+      line-height:1.55;
+    }
+
+    .poem{
+      margin:0;
+      white-space:pre-line;
+      color:#111;
+      line-height:1.65;
+    }
+
     .back-link{
       margin-top:28px;
     }
@@ -198,6 +253,12 @@
       background:#f9fafb;
     }
 
+    @media (max-width:760px){
+      .card-text-block{
+        grid-template-columns:1fr;
+      }
+    }
+
     @media (max-width:640px){
       .wrap{
         padding:22px 14px 50px;
@@ -214,13 +275,17 @@
       .sketch-hero-grid .gallery-item img{
         height:520px;
       }
+
+      .card-grid .gallery-item img{
+        height:420px;
+      }
     }
   </style>
 </head>
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
-<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
       <a class="nav-pill" href="../index.html">Sketches</a>
       <a class="nav-pill" href="index.html">Aliens</a>
     </nav>
@@ -235,25 +300,71 @@
       <div class="sketch-hero-grid">
         <a class="gallery-item" href="../../images/Sketches/aliens/What's Up Pup - original.jpg">
           <img src="../../images/Sketches/aliens/What's Up Pup - original.jpg" alt="What's Up Pup original sketch by Ron English" loading="lazy" />
-        
         </a>
       </div>
     </section>
 
     <section class="section-card" aria-labelledby="digitized-versions">
       <h2 id="digitized-versions">Digitized Versions</h2>
-      
 
       <div class="gallery-grid">
         <a class="gallery-item" href="../../images/Sketches/aliens/What's Up Pup - B&W.jpg">
           <img src="../../images/Sketches/aliens/What's Up Pup - B&W.jpg" alt="What's Up Pup digitized black-and-white version by Ron English" loading="lazy" />
-        
         </a>
 
         <a class="gallery-item" href="../../images/Sketches/aliens/What's Up Pup - color.jpg">
           <img src="../../images/Sketches/aliens/What's Up Pup - color.jpg" alt="What's Up Pup digitized color version by Ron English" loading="lazy" />
-         
         </a>
+      </div>
+    </section>
+
+    <section class="section-card" aria-labelledby="trading-card">
+      <h2 id="trading-card">Trading Card</h2>
+
+      <div class="card-grid">
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/space pup card 1.jpg">
+          <img src="../../images/Sketches/aliens 2/space pup card 1.jpg" alt="Space Pup trading card image 1" loading="lazy" />
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/space pup card 2.jpg">
+          <img src="../../images/Sketches/aliens 2/space pup card 2.jpg" alt="Space Pup trading card image 2" loading="lazy" />
+        </a>
+      </div>
+
+      <div class="card-text-block">
+        <div class="card-column">
+          <span class="text-label">Card details</span>
+          <div class="card-details">
+            <p class="card-detail"><strong>Series:</strong> 1</p>
+            <p class="card-detail"><strong>Number:</strong> 03</p>
+            <p class="card-detail"><strong>Affiliation:</strong> Aliens</p>
+            <p class="card-detail"><strong>Occupation:</strong> Bipolar puppy</p>
+            <p class="card-detail"><strong>Preoccupation:</strong> Barking at the breeze</p>
+            <p class="card-detail"><strong>Virtue:</strong> Wags the tails of the tired</p>
+            <p class="card-detail"><strong>Vice:</strong> Too cute</p>
+          </div>
+        </div>
+
+        <div class="card-column">
+          <span class="text-label">Poem</span>
+          <p class="poem">Space Pup always felt a little out of place—
+He wanted to live in outer space.
+Where there are no horizons,
+Just the cold, the void,
+The need to avoid those asteroids.
+Space Pup got his wish
+When his planet was destroyed.
+Personally, Space Pup
+Was overjoyed.
+The rest of his litter
+Were a little more annoyed.
+But Space Pup liked being homeless
+And unemployed.
+Look up, look up—
+Is that a flying saucer or a flying tea cup?
+Mana from heaven or perhaps space junk?
+Or maybe it's just Space Pup.</p>
+        </div>
       </div>
     </section>
 
