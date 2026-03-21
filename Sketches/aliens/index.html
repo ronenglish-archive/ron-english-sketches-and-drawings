@@ -3,27 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Aliens | Sketches &amp; Drawings | Ron English Catalogue Raisonné</title>
+  <title>Glove Alien | Ron English Catalogue Raisonné</title>
 
   <link rel="stylesheet" href="../../css/styles.css" />
 
   <style>
     :root{
       --border:#e5e7eb;
-      --muted:#6b7280;
+      --muted:#4b5563;
       --shadow:0 10px 30px rgba(0,0,0,.08);
       --radius:18px;
       --bg:#ffffff;
-      --card:#ffffff;
-      --card-hover:#ffffff;
-      --panel:#f8fafc;
-      --pill-bg:#ffffff;
-      --pill-hover:#f9fafb;
+      --panel:#f3f4f6;
     }
 
-    *{
-      box-sizing:border-box;
-    }
+    *{ box-sizing:border-box; }
+
+    html{ scroll-behavior:smooth; }
 
     body{
       margin:0;
@@ -35,7 +31,7 @@
     }
 
     .wrap{
-      max-width:1240px;
+      max-width:1100px;
       margin:0 auto;
       padding:28px 18px 60px;
     }
@@ -52,22 +48,17 @@
       padding:8px 14px;
       border-radius:999px;
       border:1px solid var(--border);
-      background:var(--pill-bg);
+      background:#fff;
       color:#111;
       text-decoration:none;
       font-size:14px;
-      transition:background .12s ease, border-color .12s ease, transform .12s ease;
     }
 
-    .nav-pill:hover{
-      background:var(--pill-hover);
-      border-color:#d1d5db;
-      transform:translateY(-1px);
-    }
+    .nav-pill:hover{ background:#f9fafb; }
 
     .page-header{
       max-width:1100px;
-      margin:0;
+      margin:0 0 28px;
       padding:0;
       text-align:left;
     }
@@ -79,114 +70,96 @@
       line-height:1.05;
     }
 
-    .intro-text{
-      max-width:1100px;
-      margin:0 0 28px;
-      padding:0;
-      line-height:1.6;
-      text-align:left;
+    .section-card{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:22px;
+      margin-bottom:24px;
     }
 
-    .intro-text p{
-      margin:0 0 14px;
-      max-width:none;
-      width:100%;
-      color:var(--muted);
-      font-size:18px;
+    .section-card h2{
+      margin:0 0 8px;
+      font-size:1.4rem;
     }
 
     .gallery-grid{
-      margin-top:28px;
       display:grid;
-      grid-template-columns:repeat(4,minmax(0,1fr));
-      gap:18px;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+    }
+
+    .sketch-hero-grid{
+      display:grid;
+      grid-template-columns:minmax(280px,560px);
+      gap:20px;
+      justify-content:center;
     }
 
     .gallery-item{
       display:block;
       text-decoration:none;
       color:inherit;
-      background:var(--card);
+      background:#fff;
       border:1px solid var(--border);
-      border-radius:var(--radius);
+      border-radius:16px;
       overflow:hidden;
-      box-shadow:var(--shadow);
-      transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+      transition:transform .18s ease, box-shadow .18s ease;
+      box-shadow:0 4px 18px rgba(0,0,0,.04);
     }
 
     .gallery-item:hover{
-      transform:translateY(-2px);
-      box-shadow:0 16px 40px rgba(0,0,0,.12);
-      border-color:#d1d5db;
-      background:var(--card-hover);
+      transform:translateY(-3px);
+      box-shadow:0 10px 24px rgba(0,0,0,.08);
     }
 
     .gallery-item img{
-      width:100%;
-      height:220px;
-      object-fit:contain;
       display:block;
-      background:var(--panel);
-      padding:10px;
-      border-bottom:1px solid var(--border);
-      margin:0;
-      border-radius:0;
-    }
-
-    .entry-body{
-      padding:16px 18px 18px;
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      justify-content:center;
-      text-align:center;
-    }
-
-    .gallery-item .entry-body .work-title{
-      margin:0;
-      padding:0;
       width:100%;
-      font-size:18px;
-      line-height:1.35;
-      font-weight:600;
-      text-align:center;
+      height:280px;
+      object-fit:contain;
+      background:var(--panel);
+      padding:6px;
+      border-bottom:1px solid var(--border);
     }
 
-    footer{
-      margin-top:34px;
-      padding-top:16px;
-      border-top:1px solid var(--border);
-      color:var(--muted);
-      font-size:14px;
+    .sketch-hero-grid .gallery-item{
+      max-width:560px;
+      width:100%;
+      margin:0 auto;
     }
 
-    @media (max-width:1100px){
-      .gallery-grid{
-        grid-template-columns:repeat(3,minmax(0,1fr));
-      }
+    .sketch-hero-grid .gallery-item img{
+      height:620px;
+      background:var(--panel);
+      padding:8px;
     }
 
-    @media (max-width:820px){
-      .gallery-grid{
-        grid-template-columns:repeat(2,minmax(0,1fr));
-      }
+    .back-link{ margin-top:28px; }
+
+    .back-link a{
+      display:inline-block;
+      text-decoration:none;
+      color:#111;
+      border:1px solid var(--border);
+      border-radius:999px;
+      padding:10px 16px;
+      background:#fff;
     }
 
-    @media (max-width:560px){
-      .gallery-grid{
-        grid-template-columns:1fr;
-      }
+    .back-link a:hover{ background:#f9fafb; }
 
-      .gallery-item img{
-        height:240px;
-      }
+    @media (max-width:640px){
+      .wrap{ padding:22px 14px 50px; }
+      .gallery-item img{ height:240px; }
+      .sketch-hero-grid{ grid-template-columns:1fr; }
+      .sketch-hero-grid .gallery-item img{ height:520px; }
     }
   </style>
 </head>
-
 <body>
   <main class="wrap">
-
     <nav class="nav-pills" aria-label="Site navigation">
       <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
       <a class="nav-pill" href="../index.html">Sketches</a>
@@ -194,43 +167,34 @@
     </nav>
 
     <header class="page-header">
-      <h1 class="page-title">Aliens</h1>
+      <h1 class="page-title">Glove Alien</h1>
     </header>
 
-    <section class="intro-text">
-      <p>
-        Alien character drawings from the Ron English archive, shown here through digitized and colored versions where available.
-      </p>
-      <p>
-        This index presents individual alien characters from the sketches and drawings section. Each entry leads to a dedicated page for that character, where available, with related material such as original sketches, digitized versions, alternate views, and other supporting images. Additional character records are continuing to be developed.
-      </p>
+    <section class="section-card" aria-labelledby="original-sketch">
+      <h2 id="original-sketch">Original Sketch</h2>
+      <div class="sketch-hero-grid">
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Glove Alien ORIGINAL.jpg">
+          <img src="../../images/Sketches/aliens 2/Glove Alien ORIGINAL.jpg" alt="Glove Alien original sketch by Ron English" loading="lazy" />
+        </a>
+      </div>
     </section>
 
-    <section class="gallery-grid" id="gallery" aria-label="Alien sketches"></section>
+    <section class="section-card" aria-labelledby="digitized-versions">
+      <h2 id="digitized-versions">Digitized Versions</h2>
+      <div class="gallery-grid">
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Glove Alien B&W.jpg">
+          <img src="../../images/Sketches/aliens 2/Glove Alien B&W.jpg" alt="Glove Alien digitized black-and-white version by Ron English" loading="lazy" />
+        </a>
 
-    <footer>
-      Published via GitHub Pages for long-term public access.
-    </footer>
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Glove Alien COLOR.jpg">
+          <img src="../../images/Sketches/aliens 2/Glove Alien COLOR.jpg" alt="Glove Alien digitized color version by Ron English" loading="lazy" />
+        </a>
+      </div>
+    </section>
 
+    <div class="back-link">
+      <a href="index.html">← Back to Aliens</a>
+    </div>
   </main>
-
-  <script>
-    const items = [["500-Pound Poultry Alien","500-pound-poultry-alien.html","../../images/Sketches/aliens/poultry-alien.jpg","500 lb Poultry Alien by Ron English"],["Absubtract Analsupress","absubtract-analsupress.html","../../images/Sketches/aliens/Absubtract Analsupress - B&W.jpg","Absubtract Analsupress by Ron English"],["Adam Alien","adam-alien.html","../../images/Sketches/aliens/adam-alien.jpg","Adam Alien by Ron English"],["Adrian Alien","adrian-alien.html","../../images/Sketches/aliens/adrian-alien.jpg","Adrian Alien by Ron English"],["Aerospam Demotron","aerospam-demotron.html","../../images/Sketches/aliens/Aerospam Demotron.jpg","Aerospam Demotron by Ron English"],["Alexandrinus Reflection","alexandrinus-reflection.html","../../images/Sketches/aliens/Alexandrinus Reflection.jpg","Alexandrinus Reflection by Ron English"],["Aliegenie","aliegenie.html","../../images/Sketches/aliens/Aliegenie - B&W.jpg","Aliegenie by Ron English"],["Alien Bot","alien-bot.html","../../images/Sketches/aliens 2/Alien Bot COLOR.jpg","Alien Bot by Ron English"],["Alien Cherub","alien-cherub.html","../../images/Sketches/aliens/alien-cherub.jpg","Alien Cherub by Ron English"],["Alien Offspring","alien-offspring.html","../../images/Sketches/aliens/alien-offspring.jpg","Alien Offspring by Ron English"],["Alien Spiral Eyes","alien-spiral-eyes.html","../../images/Sketches/aliens 2/Alien Spiral Eyes - B&W.jpg","Alien Spiral Eyes by Ron English"],["Alien Superman","alien-superman.html","../../images/Sketches/aliens/alien-superman.jpg","Alien Superman by Ron English"],["all-ears-ernie","all-ears-ernie.html","../../images/Sketches/aliens/all-ears-ernie.jpg","all-ears-ernie by Ron English"],["Alley Boutwit","alley-boutwit.html","../../images/Sketches/aliens/Alley Boutwit.jpg","Alley Boutwit by Ron English"],["Amblyopiate","amblyopiate.html","../../images/Sketches/aliens/Amblyopiate - B&W.jpg","Amblyopiate by Ron English"],["Ampadextal Testamonk","ampadextal-testamonk.html","../../images/Sketches/aliens/Ampadextal Testamonk - color.jpg","Ampadextal Testamonk by Ron English"],["Andresistor Toomoo","andresistor-toomoo.html","../../images/Sketches/aliens 2/Andresistor Toomoo - B&W.jpg","Andresistor Toomoo by Ron English"],["Andresonor Vanvermon","andresonor-vanvermon.html","../../images/Sketches/aliens/Andresonor Vanvermon.jpg","Andresonor Vanvermon by Ron English"],["Anexus Elefander","anexus-elefander.html","../../images/Sketches/aliens/Anexus Elefander - color.jpg","Anexus Elefander by Ron English"],["Antron Gridiron Alien","antron-gridiron-alien.html","../../images/Sketches/aliens/antron-gridiron-alien.jpg","Antron Gridiron Alien by Ron English"],["Aphelionia","aphelionia.html","../../images/Sketches/aliens/Aphelionia - B&W.jpg","Aphelionia by Ron English"],["Aqua Lung Alien","aqua-lung-alien.html","../../images/Sketches/aliens/aqua-lung-alien.jpg","Aqua Lung Alien by Ron English"],["Ardent Adventurer","ardent-adventurer.html","../../images/Sketches/aliens/Ardent Adventurer - color.jpg","Ardent Adventurer by Ron English"],["Asher Gnasher","asher-gnasher.html","../../images/Sketches/aliens/Asher Gnasher - B&W.jpg","Asher Gnasher by Ron English"],["Aston Nish","aston-nish.html","../../images/Sketches/aliens 2/Aston Nish - color.jpg","Aston Nish by Ron English"],["Astragrockle","astragrockle.html","../../images/Sketches/aliens/Astragrockle - B&W.jpg","Astragrockle by Ron English"],["Astral Alex","astral-alex.html","../../images/Sketches/aliens/Astral Alex - B&W.jpg","Astral Alex by Ron English"],["Astral Galexic","astral-galexic.html","../../images/Sketches/aliens/Astral Galexic - B&W.jpg","Astral Galexic by Ron English"],["Astral Galexic version 2","astral-galexic-version-2.html","../../images/Sketches/aliens 2/Astral Galexic version 2 - B&W.jpg","Astral Galexic version 2 by Ron English"],["Astro","astro.html","../../images/Sketches/aliens/Astro Yin Yang COLOR.jpg","Astro by Ron English"],["Astrokurse","astrokurse.html","../../images/Sketches/aliens/Astrokurse - B&W.jpg","Astrokurse by Ron English"],["Astropatra","astropatra.html","../../images/Sketches/aliens/Astropatra - B&W.jpg","Astropatra by Ron English"],["Astrostotle","astrostotle.html","../../images/Sketches/aliens/Astrostotle - B&W.jpg","Astrostotle by Ron English"],["Axus Aliender","axus-aliender.html","../../images/Sketches/aliens/Axus Aliender - color.jpg","Axus Aliender by Ron English"],["Bacchan Complainer","bacchan-complainer.html","../../images/Sketches/aliens/Bacchan Complainer - color.jpg","Bacchan Complainer by Ron English"],["Bee Sting Alien","bee-sting-alien.html","../../images/Sketches/aliens/bee-sting-alien.jpg","Bee Sting Alien by Ron English"],["Bert E. Brator","bert-e-brator.html","../../images/Sketches/aliens/Bert E. Brator - B&W.jpg","Bert E. Brator by Ron English"],["Berzerk Krypton","berzerk-krypton.html","../../images/Sketches/aliens 2/Berzerk Krypton - color.jpg","Berzerk Krypton by Ron English"],["Blotto Grog","blotto-grog.html","../../images/Sketches/aliens 2/Blotto Grog - B&W.jpg","Blotto Grog by Ron English"],["Blubby Bono","blubby-bono.html","../../images/Sketches/aliens 2/Blubby Bono - color.jpg","Blubby Bono by Ron English"],["Bob Knobble","bob-knobble.html","../../images/Sketches/aliens/Bob Knobble - B&W.jpg","Bob Knobble by Ron English"],["Bozobreath Anusless","bozobreath-anusless.html","../../images/Sketches/aliens/Bozobreath Anusless - B&W.jpg","Bozobreath Anusless by Ron English"],["Braniacosmus","braniacosmus.html","../../images/Sketches/aliens/Braniacosmus - B&W.jpg","Braniacosmus by Ron English"],["Brooke Chinook","brooke-chinook.html","../../images/Sketches/aliens/Brooke Chinook - B&W.jpg","Brooke Chinook by Ron English"],["Caelumbis","caelumbis.html","../../images/Sketches/aliens/Caelumbis - B&W.jpg","Caelumbis by Ron English"],["Caezahr","caezahr.html","../../images/Sketches/aliens/Caezahr - B&W.jpg","Caezahr by Ron English"],["Cairene Cosmos","cairene-cosmos.html","../../images/Sketches/aliens 2/Cairene Cosmos - colorway 1.jpg","Cairene Cosmos by Ron English"],["Caption Alien","caption-alien.html","../../images/Sketches/aliens 2/Caption Alien COLOR.jpg","Caption Alien by Ron English"],["Catalien","catalien.html","../../images/Sketches/aliens/Catalien - B&W.jpg","Catalien by Ron English"],["Catmask","catmask.html","../../images/Sketches/aliens/Catmask - B&W.jpg","Catmask by Ron English"],["Cavaler Avaler","cavaler-avaler.html","../../images/Sketches/aliens 2/Cavaler Avaler - B&W.jpg","Cavaler Avaler by Ron English"],["CB Astronaut Fishbowl","cb-astronaut-fishbowl.html","../../images/Sketches/aliens/cb-astronaut-fishbowl.jpg","CB Astronaut Fishbowl by Ron English"],["CB Astronaut Internal Aliens","cb-astronaut-internal-aliens.html","../../images/Sketches/aliens/cb-astronaut-internal-aliens.jpg","CB Astronaut Internal Aliens by Ron English"],["CB Astronaut Microphone","cb-astronaut-microphone.html","../../images/Sketches/aliens/cb-astronaut-microphone.jpg","CB Astronaut Microphone by Ron English"],["CB Astronaut Star Skull","cb-astronaut-star-skull.html","../../images/Sketches/aliens/cb-astronaut-star-skull.jpg","CB Astronaut Star Skull by Ron English"],["Celestial Terrestrial","celestial-terrestial.html","../../images/Sketches/aliens/Celestial Terrestial - color.jpg","Celestial Terrestrial by Ron English"],["Celibscent Scanidol","celibscent-scanidol.html","../../images/Sketches/aliens/Celibscent Scanidol - B&W.jpg","Celibscent Scanidol by Ron English"],["Cereb Raul","cereb-raul.html","../../images/Sketches/aliens/cereb-raul.jpg","Cereb Raul by Ron English"],["Charlie Brown Alien","charlie-brown-alien.html","../../images/Sketches/aliens/charlie-brown-alien.jpg","Charlie Brown Alien by Ron English"],["Cheer Breeder Alien","cheer-breeder.html","../../images/Sketches/aliens/cheer-breeder-alien.jpg","Cheer Breeder Alien by Ron English"],["Clegg Bleater","clegg-bleater.html","../../images/Sketches/aliens 2/Clegg Bleater - B&W.jpg","Clegg Bleater by Ron English"],["Cloud Cover","cloud-cover.html","../../images/Sketches/aliens/Cloud Cover - B&W.jpg","Cloud Cover by Ron English"],["Codextra Manasser","codextra-manasser.html","../../images/Sketches/aliens 2/Codextra Manasser - colorway 1.jpg","Codextra Manasser by Ron English"],["Cosmet Raith","cosmet-raith.html","../../images/Sketches/aliens/Cosmet Raith - B&W.jpg","Cosmet Raith by Ron English"],["Cosmic Karla","cosmic-karla.html","../../images/Sketches/aliens/Cosmic Karla - B&W.jpg","Cosmic Karla by Ron English"],["Cosmo Polite","cosmo-polite.html","../../images/Sketches/aliens/Cosmo Polite - B&W.jpg","Cosmo Polite by Ron English"],["Cosmo Politian","cosmo-politian.html","../../images/Sketches/aliens 2/Cosmo Politian - colorway 1.jpg","Cosmo Politian by Ron English"],["Cosmo Titian","cosmo-titian.html","../../images/Sketches/aliens/Cosmo Titian - B&W.jpg","Cosmo Titian by Ron English"],["Crash Helmet (Space Face UFO)","crash-helmet.html","../../images/Sketches/aliens/crash-helmet-space-face-ufo.jpg","Crash Helmet (Space Face UFO) by Ron English"],["Crocmonster (King Croc)","crockmonster.html","../../images/Sketches/aliens/crocmonster-king-croc.jpg","Crocmonster (King Croc) by Ron English"],["Cronik Comet","cronik-comet.html","../../images/Sketches/aliens/Cronik Comet.jpg","Cronik Comet by Ron English"],["Curious Hauge","curious-hauge.html","../../images/Sketches/aliens/Curious Hauge - color.jpg","Curious Hauge by Ron English"],["Cybor External","cybor-external.html","../../images/Sketches/aliens/Cybor External - color.jpg","Cybor External by Ron English"],["Deep Drowned Alien","deep-drowned-alien.html","../../images/Sketches/aliens/deep-drowned-alien.jpg","Deep Drowned Alien by Ron English"],["Demi Mondaine","demi-mondain.html","../../images/Sketches/aliens/Demi Mondaine.jpg","Demi Mondaine by Ron English"],["Di Zygus","di-zygus.html","../../images/Sketches/aliens 2/Di Zygus - B&W.jpg","Di Zygus by Ron English"],["Didicoy Vagrant","didicoy-vagrant.html","../../images/Sketches/aliens 2/Didicoy Vagrant - colorway 1.jpg","Didicoy Vagrant by Ron English"],["DJ Alien Angel","dj-alien-angel.html","../../images/Sketches/aliens/dj-alien-angel.jpg","DJ Alien Angel by Ron English"],["Dwell Cogo","dwell-cogo.html","../../images/Sketches/aliens/Dwell Cogo - color.jpg","Dwell Cogo by Ron English"],["E. T. Banditti","e-t-banditti.html","../../images/Sketches/aliens/E. T. Banditti - B&W.jpg","E. T. Banditti by Ron English"],["Egg Spaceship","egg-spaceship.html","../../images/Sketches/aliens/Egg Spaceship - color.jpg","Egg Spaceship by Ron English"],["Elated Xtra Terrestrial","elated-xtra-terrestrial.html","../../images/Sketches/aliens 2/Elated Xtra Terrestrial - colorway 1.jpg","Elated Xtra Terrestrial by Ron English"],["Electropia Exotropia","electropia-exotropia.html","../../images/Sketches/aliens 2/Electropia Exotropia - colorway 1.jpg","Electropia Exotropia by Ron English"],["Elexacon Angel","elexacon-angel.html","../../images/Sketches/aliens 2/Elexacon Angel - colorway 1.jpg","Elexacon Angel by Ron English"],["Empty Suit Alien","empty-suit-alien.html","../../images/Sketches/aliens/empty-suit-alien.jpg","Empty Suit Alien by Ron English"],["Empyreambler","empyreambler.html","../../images/Sketches/aliens/Empyreambler - B&W.jpg","Empyreambler by Ron English"],["Equinoxious","equinoxious.html","../../images/Sketches/aliens/Equinoxious - color 1.jpg","Equinoxious by Ron English"],["Equinoxious-2","equinoxious-2.html","../../images/Sketches/aliens/Equinoxious-2 - B&W.jpg","Equinoxious-2 by Ron English"],["Eternal Bernal","eternal-bernal.html","../../images/Sketches/aliens/Eternal Bernal - B&W.jpg","Eternal Bernal by Ron English"],["Etymogual Benedictus","etymogual-benedictus.html","../../images/Sketches/aliens/Etymogual Benedictus - color.jpg","Etymogual Benedictus by Ron English"],["Eve Alien","eve-alien.html","../../images/Sketches/aliens/eve-alien.jpg","Eve Alien by Ron English"],["Extratron Gallexyz","extratron-gallexyz.html","../../images/Sketches/aliens/Extratron Gallexyz - color.jpg","Extratron Gallexyz by Ron English"],["Eye Speak Alien","eye-speak-alien.html","../../images/Sketches/aliens/eye-speak-alien.jpg","Eye Speak Alien by Ron English"],["Eyesove Tismas","eyesove-tismas.html","../../images/Sketches/aliens 2/Eyesove Tismas - colorway 1.jpg","Eyesove Tismas by Ron English"],["Fabian Alien","fabian-alien.html","../../images/Sketches/aliens/fabian-alien.jpg","Fabian Alien by Ron English"],["Feline Nine Alien","feline-nine-alien.html","../../images/Sketches/aliens/feline-nine-alien.jpg","Feline Nine Alien by Ron English"],["Fetal Deceit Phil","fetal-deceit-phil.html","../../images/Sketches/aliens/Fetal Deceit Phil - color.jpg","Fetal Deceit Phil by Ron English"],["Fetal Fraxulus","fetal-fraxulus.html","../../images/Sketches/aliens 2/Fetal Fraxulus - color.jpg","Fetal Fraxulus by Ron English"],["Fish Bulb Alien","fish-bulb-alien.html","../../images/Sketches/aliens/fish-bulb-alien.jpg","Fish Bulb Alien by Ron English"],["Fishbowl UFO","fishbowl-ufo.html","../../images/Sketches/aliens/fishbowl-ufo.jpg","Fishbowl UFO by Ron English"],["Flavorpee Zronback","flavorpee-zronback.html","../../images/Sketches/aliens 2/Flavorpee Zronback - color.jpg","Flavorpee Zronback by Ron English"],["Fleshire Gwyn","fleshire-gwyn.html","../../images/Sketches/aliens 2/Fleshire Gwyn.jpg","Fleshire Gwyn by Ron English"],["Flexulus","flexulus.html","../../images/Sketches/aliens/Flexulus - B&W.jpg","Flexulus by Ron English"],["Flushal Recokon","flushal-recokon.html","../../images/Sketches/aliens/Flushal Recokon.jpg","Flushal Recokon by Ron English"],["Forgon Intruder","forgon-intruder.html","../../images/Sketches/aliens/Forgon Intruder.jpg","Forgon Intruder by Ron English"],["Frazier Razor","frazier-razor.html","../../images/Sketches/aliens 2/Frazier Razor - colorway 1.jpg","Frazier Razor by Ron English"],["Freakachu Alien","freakachu-alien.html","../../images/Sketches/aliens/freakachu-alien.jpg","Freakachu Alien by Ron English"],["Fuelatron Jellybone","fuelatron-jellybone.html","../../images/Sketches/aliens 2/Fuelatron Jellybone - colorway 1.jpg","Fuelatron Jellybone by Ron English"],["Galacter Equanimous","galacter-equanimous.html","../../images/Sketches/aliens/Galacter Equanimous - B&W.jpg","Galacter Equanimous by Ron English"],["Galactic Gamine","galactic-gamine.html","../../images/Sketches/aliens/Galactic Gamine - B&W.jpg","Galactic Gamine by Ron English"],["Galaxel","galaxel.html","../../images/Sketches/aliens/Galaxel - B&W.jpg","Galaxel by Ron English"],["Gangrenous Blast","gangrenous-blast.html","../../images/Sketches/aliens/Gangrenous Blast - color.jpg","Gangrenous Blast by Ron English"],["Garth Raider Alien","garth-raider-alien.html","../../images/Sketches/aliens/garth-raider-alien.jpg","Garth Raider Alien by Ron English"],["General Genitals Alien","general-genitals-alien.html","../../images/Sketches/aliens/general-genitals-alien.jpg","General Genitals Alien by Ron English"],["Genhumas Transretnal","genhumas-transretnal.html","../../images/Sketches/aliens/Genhumas Transretnal - B&W.jpg","Genhumas Transretnal by Ron English"],["Genus Dexus","genus-dexus.html","../../images/Sketches/aliens/Genus Dexus - B&W.jpg","Genus Dexus by Ron English"],["Glove Alien","glove-alien.html","../../images/Sketches/aliens 2/Glove Alien COLOR.jpg","Glove Alien by Ron English"],["Goldie Aquanaut","goldie-aquanaut.html","../../images/Sketches/aliens/goldie-aquanaut.jpg","Goldie Aquanaut by Ron English"],["Gralien","gralien.html","../../images/Sketches/aliens/Gralien - B&W.jpg","Gralien by Ron English"],["Grey Combatter","grey-combatter.html","../../images/Sketches/aliens/Grey Combatter - B&W.jpg","Grey Combatter by Ron English"],["Grey Omomyid","grey-omomyid.html","../../images/Sketches/aliens 2/Grey Omomyid - B&W.jpg","Grey Omomyid by Ron English"],["Grift Drifter","grift-drifter.html","../../images/Sketches/aliens 2/Grift Drifter - colorway 1.jpg","Grift Drifter by Ron English"],["Grimical Credance","grimical-credance.html","../../images/Sketches/aliens/Grimical Credance - color.jpg","Grimical Credance by Ron English"],["Grinnie Martian","grinnie-martian.html","../../images/Sketches/aliens 2/Grinnie Martian - colorway 1.jpg","Grinnie Martian by Ron English"],["Grumps","grumps-alien.html","../../images/Sketches/aliens/grumps.jpg","Grumps by Ron English"],["Happree Zelonaut","happree-zelonaut.html","../../images/Sketches/aliens/Happree Zelonaut - color.jpg","Happree Zelonaut by Ron English"],["Heinel Schnapp","heinel-schnapp.html","../../images/Sketches/aliens/Heinel Schnapp - B&W.jpg","Heinel Schnapp by Ron English"],["Hobgoblien","hobgoblien.html","../../images/Sketches/aliens 2/Hobgoblien - B&W.jpg","Hobgoblien by Ron English"],["Incontinent Alien","incontinent-alien.html","../../images/Sketches/aliens/incontinent-alien.jpg","Incontinent Alien by Ron English"],["Infinitisis","infinitisis.html","../../images/Sketches/aliens/Infinitisis - B&W.jpg","Infinitisis by Ron English"],["Inner Sane","inner-sane.html","../../images/Sketches/aliens/Inner Sane - B&W.jpg","Inner Sane by Ron English"],["Intercosmo","intercosmo.html","../../images/Sketches/aliens/Intercosmo - B&W.jpg","Intercosmo by Ron English"],["Internal Planted","internal-planted.html","../../images/Sketches/aliens/Internal Planted - B&W.jpg","Internal Planted by Ron English"],["Inveterate Vertibralien","inveterate-vertibralien.html","../../images/Sketches/aliens/Inveterate Vertibralien - B&W.jpg","Inveterate Vertibralien by Ron English"],["Jake and Flake Ape Alien","jake-and-flake-ape-alien.html","../../images/Sketches/aliens/jake-and-flake-ape-alien.jpg","Jake and Flake Ape Alien by Ron English"],["Jibber Jahman","jibber-jahman.html","../../images/Sketches/aliens 2/Jibber Jahman - colorway 1.jpg","Jibber Jahman by Ron English"],["Kidmark Que","kidmark-que.html","../../images/Sketches/aliens/Kidmark Que - color.jpg","Kidmark Que by Ron English"],["Lavishless Fabuness","lavishless-fabuness.html","../../images/Sketches/aliens/Lavishless Fabuness - B&W.jpg","Lavishless Fabuness by Ron English"],["Lavishless Fauness","lavishless-fauness.html","../../images/Sketches/aliens/Lavishless Fauness - B&W.jpg","Lavishless Fauness by Ron English"],["Leisurabilly Indeafatigable","leisurabilly-indeafatigable.html","../../images/Sketches/aliens/Leisurabilly Indeafatigable - B&W.jpg","Leisurabilly Indeafatigable by Ron English"],["Liberty Import (UFO Liberty)","liberty-import.html","../../images/Sketches/aliens/liberty-import-ufo-liberty.jpg","Liberty Import (UFO Liberty) by Ron English"],["Light Cult Cryptonaut","light-cult-cryptonaut.html","../../images/Sketches/aliens/light-cult-cryptonaut.jpg","Light Cult Cryptonaut by Ron English"],["Lightning Hawk","lightning-hawk.html","../../images/Sketches/aliens/lightning-hawk.jpg","Lightning Hawk by Ron English"],["Lillithone Saviour","lillithone-saviour.html","../../images/Sketches/aliens/Lillithone Saviour - color.jpg","Lillithone Saviour by Ron English"],["Lugubrian","lugubrian.html","../../images/Sketches/aliens 2/Lugubrian - B&W.jpg","Lugubrian by Ron English"],["Lugushire","lugushire.html","../../images/Sketches/aliens 2/Lugushire - B&W.jpg","Lugushire by Ron English"],["Lunashtick","lunashtick.html","../../images/Sketches/aliens/Lunashtick - B&W.jpg","Lunashtick by Ron English"],["Marilyn Bordeaux Alien","marilyn-bordeaux-alien.html","../../images/Sketches/aliens/marilyn-bordeaux-alien.jpg","Marilyn Bordeaux Alien by Ron English"],["Maximum Myopia","maximum-myopia.html","../../images/Sketches/aliens 2/Maximum Myopia - colorway 1.jpg","Maximum Myopia by Ron English"],["Medulla Gullah","medulla-gullah.html","../../images/Sketches/aliens/Medulla Gullah - B&W.jpg","Medulla Gullah by Ron English"],["Megagalactron","megagalactron.html","../../images/Sketches/aliens/Megagalactron - B&W.jpg","Megagalactron by Ron English"],["Mira Mecia","mira-mecia.html","../../images/Sketches/aliens/Mira Mecia - B&W.jpg","Mira Mecia by Ron English"],["Mirreckless Mucilaginor","mirreckless-mucilaginor.html","../../images/Sketches/aliens/Mirreckless Mucilaginor - B&W.jpg","Mirreckless Mucilaginor by Ron English"],["Moe Clown Alien","moe-clown-alien.html","../../images/Sketches/aliens/moe-clown-alien.jpg","Moe Clown Alien by Ron English"],["Ms Terious Celeillated","ms-terious-celeillated.html","../../images/Sketches/aliens 2/Ms Terious Celeillated - colorway 1.jpg","Ms Terious Celeillated by Ron English"],["Myntra Venus","myntra-venus.html","../../images/Sketches/aliens/Myntra Venus - B&W.jpg","Myntra Venus by Ron English"],["Mystical Visitor","mystical-visitor.html","../../images/Sketches/aliens/Mystical Visitor - color.jpg","Mystical Visitor by Ron English"],["Mythical Sith Mouse","mythical-sith-mouse.html","../../images/Sketches/aliens/mythical-sith-mouse.jpg","Mythical Sith Mouse by Ron English"],["Nastronaut Snubbin","nastronaut-snubbin.html","../../images/Sketches/aliens/nastronaut-snubbin.jpg","Nastronaut Snubbin by Ron English"],["Neandastral","neandastral.html","../../images/Sketches/aliens/Neandastral - B&W.jpg","Neandastral by Ron English"],["Nebulator","nebulator.html","../../images/Sketches/aliens/Nebulator - B&W.jpg","Nebulator by Ron English"],["Obese Alien","obese-alien.html","../../images/Sketches/aliens/Obese Alien - front color.jpg","Obese Alien by Ron English"],["Oculestria","oculestria.html","../../images/Sketches/aliens/Oculestria - B&W.jpg","Oculestria by Ron English"],["OG Sinner Alien","og-sinner-alien.html","../../images/Sketches/aliens/og-sinner-alien.jpg","OG Sinner Alien by Ron English"],["Oogie Boogie","oogie-boogie.html","../../images/Sketches/aliens/Oogie Boogie - B&W.jpg","Oogie Boogie by Ron English"],["Orgie Porgie Alien","orgie-porgie-alien.html","../../images/Sketches/aliens/orgie-porgie-alien.jpg","Orgie Porgie Alien by Ron English"],["Orion Pod Slime","orion-pod-slime.html","../../images/Sketches/aliens/orion-pod-slime-side.jpg","Orion Pod Slime by Ron English"],["Orion the Obese Alien","orion-the-obese-alien.html","../../images/Sketches/aliens/orion-the-obese-alien.jpg","Orion the Obese Alien by Ron English"],["Otherworld Overlord","otherworld-overlord.html","../../images/Sketches/aliens 2/Otherworld Overlord - B&W.jpg","Otherworld Overlord by Ron English"],["Palliduness Flatulence","palliduness-flatulence.html","../../images/Sketches/aliens 2/Palliduness Flatulence - B&W.jpg","Palliduness Flatulence by Ron English"],["Patchy Podium","patchy-podium.html","../../images/Sketches/aliens/Patchy Podium.jpg","Patchy Podium by Ron English"],["Perp Petual","perp-petual.html","../../images/Sketches/aliens/Perp Petual - color.jpg","Perp Petual by Ron English"],["Phoebus Fetus Alien","phoebus-fetus-alien.html","../../images/Sketches/aliens/phoebus-fetus-alien.jpg","Phoebus Fetus Alien by Ron English"],["Phone Home Alien","phone-home-alien.html","../../images/Sketches/aliens/phone-home-alien.jpg","Phone Home Alien by Ron English"],["Pluton Ian","pluton-ian.html","../../images/Sketches/aliens/Pluton Ian - B&W.jpg","Pluton Ian by Ron English"],["polly-woggle","polly-woggle.html","../../images/Sketches/aliens/polly-woggle.jpg","polly-woggle by Ron English"],["Popeye Alien","popeye-alien.html","../../images/Sketches/aliens/popeye-alien.jpg","Popeye Alien by Ron English"],["Poultry Rex Eggshell Ship Alien","poultry-rex-and-eggshell-ship.html","../../images/Sketches/aliens/poultry-rex-eggshell-ship-alien.jpg","Poultry Rex Eggshell Ship Alien by Ron English"],["Prechinca Peach","prechinca-peach.html","../../images/Sketches/aliens 2/Prechinca Peach - colorway 1.jpg","Prechinca Peach by Ron English"],["Proteus Lowlander","proteus-lowlander.html","../../images/Sketches/aliens/Proteus Lowlander - B&W.jpg","Proteus Lowlander by Ron English"],["Psalty Turin Shout","psalty-turin-shout.html","../../images/Sketches/aliens/Psalty Turin Shout - color.jpg","Psalty Turin Shout by Ron English"],["Pudge Alien","pudge-alien.html","../../images/Sketches/aliens 2/Pudge Alien COLOR.jpg","Pudge Alien by Ron English"],["Quarkadee","quarkadee.html","../../images/Sketches/aliens/quarkadee.jpg","Quarkadee by Ron English"],["quarterback-squeak","quarterback-squeak.html","../../images/Sketches/aliens/quarterback-squeak.jpg","quarterback-squeak by Ron English"],["Quasamos","quasamos.html","../../images/Sketches/aliens 2/Quasamos - B&W.jpg","Quasamos by Ron English"],["Ratrental Adreheum","ratrental-adreheum.html","../../images/Sketches/aliens/Ratrental Adreheum - B&W.jpg","Ratrental Adreheum by Ron English"],["Ravelbless Calluconcious","ravelbless-calluconcious.html","../../images/Sketches/aliens/Ravelbless Calluconcious - B&W.jpg","Ravelbless Calluconcious by Ron English"],["Remora Rabbbit","remora-rabbbit.html","../../images/Sketches/aliens 2/Remora Rabbbit - colorway 1.jpg","Remora Rabbbit by Ron English"],["Reptilian Rhapsody","reptilian-rhapsody.html","../../images/Sketches/aliens/Reptilian Rhapsody - B&W.jpg","Reptilian Rhapsody by Ron English"],["Reptoculi","reptoculi.html","../../images/Sketches/aliens 2/Reptoculi - B&W.jpg","Reptoculi by Ron English"],["Revel Rioter","revel-rioter.html","../../images/Sketches/aliens/Revel Rioter - color.jpg","Revel Rioter by Ron English"],["Rocket Alien","rocket-alien.html","../../images/Sketches/aliens/rocket-alien.jpg","Rocket Alien by Ron English"],["Sally Yanger","sally-yanger.html","../../images/Sketches/aliens 2/Sally Yanger - B&W.jpg","Sally Yanger by Ron English"],["Samboner Infaspace","samboner-infaspace.html","../../images/Sketches/aliens 2/Samboner Infaspace - colorway 1.jpg","Samboner Infaspace by Ron English"],["Sandmo Abstance","sandmo-abstance.html","../../images/Sketches/aliens/Sandmo Abstance - B&W.jpg","Sandmo Abstance by Ron English"],["Satur Nine","satur-nine.html","../../images/Sketches/aliens/Satur Nine - B&W.jpg","Satur Nine by Ron English"],["Saturn Sam the Space Cowboy","saturn-sam.html","../../images/Sketches/aliens/saturn-sam-the-space-cowboy.jpg","Saturn Sam the Space Cowboy by Ron English"],["Saturnine Samwich","saturnine-samwich.html","../../images/Sketches/aliens/Saturnine Samwich - B&W.jpg","Saturnine Samwich by Ron English"],["Schedufool Unit 42","schedufool-unit-42.html","../../images/Sketches/aliens/Schedufool Unit 42 - Colorway 1.jpg","Schedufool Unit 42 by Ron English"],["Schlubber","schlubber.html","../../images/Sketches/aliens/Schlubber - Colorway 1.jpg","Schlubber by Ron English"],["Scotty Illuminati Alien","scotty-illuminati.html","../../images/Sketches/aliens/scotty-illuminati-alien.jpg","Scotty Illuminati Alien by Ron English"],["Senior Homecause","senior-homecause.html","../../images/Sketches/aliens/Senior Homecause.jpg","Senior Homecause by Ron English"],["Sermound Canibalier","sermound-canibalier.html","../../images/Sketches/aliens 2/Sermound Canibalier - B&W.jpg","Sermound Canibalier by Ron English"],["Sirius Circus Alien","sirius-circus-alien.html","../../images/Sketches/aliens/sirius-circus-alien.jpg","Sirius Circus Alien by Ron English"],["Siron Alien","siron-alien.html","../../images/Sketches/aliens/siron-alien.jpg","Siron Alien by Ron English"],["Sirus Alien","sirus-alien.html","../../images/Sketches/aliens/sirus-alien.jpg","Sirus Alien by Ron English"],["Skullcrow","skullcrow.html","../../images/Sketches/aliens 2/Skullcrow - B&W.jpg","Skullcrow by Ron English"],["Space Bunny Suit Alien","space-bunnny-suit-alien.html","../../images/Sketches/aliens/space-bunny-suit-alien.jpg","Space Bunny Suit Alien by Ron English"],["Spatch cock","spatch-cock.html","../../images/Sketches/aliens/Spatch cock.jpg","Spatch cock by Ron English"],["Spirastro","spirastro.html","../../images/Sketches/aliens/Spirastro - B&W.jpg","Spirastro by Ron English"],["Squinch","squinch.html","../../images/Sketches/aliens/Squinch - B&W.jpg","Squinch by Ron English"],["Star Skull Alien","star-skull-alien.html","../../images/Sketches/aliens 2/Star Skull Alien - colorway 1.jpg","Star Skull Alien by Ron English"],["Star Trooper Alien","star-trooper-alien.html","../../images/Sketches/aliens/star-trooper-alien.jpg","Star Trooper Alien by Ron English"],["Starfarer Epicureans Max","starfarer-epicureans-max.html","../../images/Sketches/aliens/Starfarer Epicureans Max - color.jpg","Starfarer Epicureans Max by Ron English"],["starskull-rocket","starskull-rocket.html","../../images/Sketches/aliens/starskull-rocket.jpg","starskull-rocket by Ron English"],["Storm Thunder","storm-thunder.html","../../images/Sketches/aliens/Storm Thunder - color.jpg","Storm Thunder by Ron English"],["Strabismus Estropian","scrabismus-estropian.html","../../images/Sketches/aliens 2/Scrabismus Estropian - colorway 1.jpg","Strabismus Estropian by Ron English"],["Stupor Trooper Alien","stupor-trooper-alien.html","../../images/Sketches/aliens/stupor-trooper-alien.jpg","Stupor Trooper Alien by Ron English"],["Svelt Lown","svelt-lown.html","../../images/Sketches/aliens/Svelt Lown - B&W.jpg","Svelt Lown by Ron English"],["Tantalus Zathuman 45","tantalus-zathuman-45.html","../../images/Sketches/aliens/Tantalus Zathuman 45 - B&W.jpg","Tantalus Zathuman 45 by Ron English"],["Teardrop Alien","teardrop-alien.html","../../images/Sketches/aliens 2/Teardrop Alien COLOR.jpg","Teardrop Alien by Ron English"],["Thcycler Sanbow","thcycler-sanbow.html","../../images/Sketches/aliens/Thcycler Sanbow - color.jpg","Thcycler Sanbow by Ron English"],["Titfotat","titfotat.html","../../images/Sketches/aliens 2/Titfotat - B&W.jpg","Titfotat by Ron English"],["Toothie Ruthie","toothie-ruthie.html","../../images/Sketches/aliens/toothie-ruthie.jpg","Toothie Ruthie by Ron English"],["Trans Mogrifie","trans-mogrifie.html","../../images/Sketches/aliens/Trans Mogrifie - B&W.jpg","Trans Mogrifie by Ron English"],["Transretinal Orion","transretinal-orion.html","../../images/Sketches/aliens 2/Transretinal Orion - B&W.jpg","Transretinal Orion by Ron English"],["Trippant Traveler","trippant-traveler.html","../../images/Sketches/aliens/Trippant Traveler - color.jpg","Trippant Traveler by Ron English"],["Trooper Mechanical Proxy","trooper-mechanical-proxy.html","../../images/Sketches/aliens/trooper-mechanical-proxy.jpg","Trooper Mechanical Proxy by Ron English"],["Tsechgo the Terror","tsechgo-the-terror.html","../../images/Sketches/aliens/Tsechgo the Terror - color.jpg","Tsechgo the Terror by Ron English"],["Udder Space Cowgirl","udder-space-cowgirl.html","../../images/Sketches/aliens/udder-space-cowgirls-spaceship.jpg","Udder Space Cowgirl by Ron English"],["Venusian Uranian","venusian-uranian.html","../../images/Sketches/aliens 2/Venusian Uranian - colorway 1.jpg","Venusian Uranian by Ron English"],["Virgin Alien","virgin-alien.html","../../images/Sketches/aliens/virgin-alien.jpg","Virgin Alien by Ron English"],["Vivatous Vee","vivatous-vee.html","../../images/Sketches/aliens/Vivatous Vee - color.jpg","Vivatous Vee by Ron English"],["Vol Kant","vol-kant.html","../../images/Sketches/aliens/Vol Kant - B&W.jpg","Vol Kant by Ron English"],["Voyagel Wonderer","voyagel-wonderer.html","../../images/Sketches/aliens/Voyagel Wonderer - color.jpg","Voyagel Wonderer by Ron English"],["Vultron Vortex","vulcan-vortex.html","../../images/Sketches/aliens/Vulcan Vortex - color.jpg","Vultron Vortex by Ron English"],["Wackotron Rover","wackotron-rover.html","../../images/Sketches/aliens/Wackotron Rover - color.jpg","Wackotron Rover by Ron English"],["Walleyed Strabismus","walleyed-strabismus.html","../../images/Sketches/aliens/Walleyed Strabismus - B&W.jpg","Walleyed Strabismus by Ron English"],["Way Ward","way-ward.html","../../images/Sketches/aliens/Way Ward - color.jpg","Way Ward by Ron English"],["Whats Up Pup Alien","whats-up-pup.html","../../images/Sketches/aliens/whats-up-pup-alien.jpg","Whats Up Pup Alien by Ron English"],["Wingman Miller","wingman-miller.html","../../images/Sketches/aliens/wingman-miller.jpg","Wingman Miller by Ron English"],["Xeno Dochium","xeno-dochium.html","../../images/Sketches/aliens 2/Xeno Dochium - colorway 1.jpg","Xeno Dochium by Ron English"],["Yinyang Swirl","yinyang-swirl.html","../../images/Sketches/aliens 2/Yinyang Swirl - color.jpg","Yinyang Swirl by Ron English"],["you-born-alien","you-born-alien.html","../../images/Sketches/aliens/you-born-alien.jpg","you-born-alien by Ron English"],["Zerk Zuckzerd","zerk-zuckzerd.html","../../images/Sketches/aliens 2/Zerk Zuckzerd - B&W.jpg","Zerk Zuckzerd by Ron English"],["Zonk Temulent","zonk-temulent.html","../../images/Sketches/aliens/Zonk Temulent - color.jpg","Zonk Temulent by Ron English"],["Zyvax Quirkbana","zyvax-quirkbana.html","../../images/Sketches/aliens/zyvax-quirkbana.jpg","Zyvax Quirkbana by Ron English"]];
-
-    const gallery = document.getElementById('gallery');
-
-    items.forEach(([title, href, src, alt]) => {
-      const card = document.createElement('a');
-      card.className = 'gallery-item';
-      card.href = href;
-      card.innerHTML = `
-        <img src="${src}" alt="${alt}" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">${title}</p>
-        </div>
-      `;
-      gallery.appendChild(card);
-    });
-  </script>
 </body>
 </html>
