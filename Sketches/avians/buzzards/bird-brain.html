@@ -86,7 +86,7 @@
     }
 
     .section-card h2{
-      margin:0 0 14px;
+      margin:0 0 8px;
       font-size:1.4rem;
     }
 
@@ -96,18 +96,18 @@
       gap:20px;
     }
 
-    .originals-grid{
-      grid-template-columns:minmax(260px, 520px);
+    .sketch-hero-grid{
+      display:grid;
+      grid-template-columns:minmax(280px,560px);
+      gap:20px;
       justify-content:center;
     }
 
-    .originals-grid .gallery-item{
-      margin:0 auto;
-    }
-
-    .originals-grid .gallery-item img{
-      height:520px;
-      padding:8px;
+    .card-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:20px;
+      margin-top:8px;
     }
 
     .gallery-item{
@@ -130,10 +130,71 @@
     .gallery-item img{
       display:block;
       width:100%;
-      height:320px;
+      height:280px;
       object-fit:contain;
       background:var(--panel);
+      padding:6px;
+      border-bottom:1px solid var(--border);
+    }
+
+    .sketch-hero-grid .gallery-item{
+      max-width:560px;
+      width:100%;
+      margin:0 auto;
+    }
+
+    .sketch-hero-grid .gallery-item img{
+      height:620px;
+      background:var(--panel);
       padding:8px;
+    }
+
+    .card-grid .gallery-item img{
+      height:520px;
+      background:var(--panel);
+      padding:10px;
+    }
+
+    .card-text-block{
+      margin-top:20px;
+      padding:18px;
+      border:1px solid var(--border);
+      border-radius:14px;
+      background:var(--panel);
+      display:grid;
+      grid-template-columns:minmax(240px,0.95fr) minmax(280px,1.05fr);
+      gap:24px;
+      align-items:start;
+    }
+
+    .card-column{
+      min-width:0;
+    }
+
+    .text-label{
+      display:block;
+      font-size:.78rem;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      color:var(--muted);
+      margin-bottom:8px;
+    }
+
+    .card-details{
+      display:grid;
+      gap:8px;
+    }
+
+    .card-detail{
+      margin:0;
+      line-height:1.55;
+    }
+
+    .poem{
+      margin:0;
+      white-space:pre-line;
+      color:#111;
+      line-height:1.65;
     }
 
     .back-link{
@@ -154,6 +215,12 @@
       background:#f9fafb;
     }
 
+    @media (max-width:760px){
+      .card-text-block{
+        grid-template-columns:1fr;
+      }
+    }
+
     @media (max-width:640px){
       .wrap{
         padding:22px 14px 50px;
@@ -163,7 +230,15 @@
         height:240px;
       }
 
-      .originals-grid .gallery-item img{
+      .sketch-hero-grid{
+        grid-template-columns:1fr;
+      }
+
+      .sketch-hero-grid .gallery-item img{
+        height:520px;
+      }
+
+      .card-grid .gallery-item img{
         height:420px;
       }
     }
@@ -174,7 +249,6 @@
     <nav class="nav-pills" aria-label="Site navigation">
       <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
       <a class="nav-pill" href="../../index.html">Sketches</a>
-      <a class="nav-pill" href="../index.html">Avians</a>
       <a class="nav-pill" href="index.html">Buzzards</a>
     </nav>
 
@@ -182,25 +256,73 @@
       <h1 class="page-title">Bird Brain</h1>
     </header>
 
-    <section class="section-card" aria-labelledby="original-drawing">
-      <h2 id="original-drawing">Original Drawing</h2>
-      <div class="gallery-grid originals-grid">
-        <a class="gallery-item" href="../../../images/Sketches/avians/buzzards/Bird%20Brain%20ORIGINAL.jpg">
-          <img src="../../../images/Sketches/avians/buzzards/Bird%20Brain%20ORIGINAL.jpg" alt="Bird Brain original drawing by Ron English" loading="lazy" />
+    <section class="section-card" aria-labelledby="original-sketch">
+      <h2 id="original-sketch">Original Drawing</h2>
+
+      <div class="sketch-hero-grid">
+        <a class="gallery-item" href="../../../images/Sketches/avians/buzzards/Bird Brain ORIGINAL.jpg">
+          <img src="../../../images/Sketches/avians/buzzards/Bird Brain ORIGINAL.jpg" alt="Bird Brain original drawing by Ron English" loading="lazy" />
         </a>
       </div>
     </section>
 
     <section class="section-card" aria-labelledby="digitized-versions">
       <h2 id="digitized-versions">Digitized Versions</h2>
+
       <div class="gallery-grid">
-        <a class="gallery-item" href="../../../images/Sketches/avians/buzzards/Bird%20Brain%20B%26W.jpg">
-          <img src="../../../images/Sketches/avians/buzzards/Bird%20Brain%20B%26W.jpg" alt="Bird Brain black-and-white digital version by Ron English" loading="lazy" />
+        <a class="gallery-item" href="../../../images/Sketches/avians/buzzards/Bird Brain B&W.jpg">
+          <img src="../../../images/Sketches/avians/buzzards/Bird Brain B&W.jpg" alt="Bird Brain black-and-white digitized version by Ron English" loading="lazy" />
         </a>
 
-        <a class="gallery-item" href="../../../images/Sketches/avians/buzzards/Bird%20Brain%20COLOR.jpg">
-          <img src="../../../images/Sketches/avians/buzzards/Bird%20Brain%20COLOR.jpg" alt="Bird Brain color digital version by Ron English" loading="lazy" />
+        <a class="gallery-item" href="../../../images/Sketches/avians/buzzards/Bird Brain COLOR.jpg">
+          <img src="../../../images/Sketches/avians/buzzards/Bird Brain COLOR.jpg" alt="Bird Brain color digitized version by Ron English" loading="lazy" />
         </a>
+      </div>
+    </section>
+
+    <section class="section-card" aria-labelledby="trading-card">
+      <h2 id="trading-card">Trading Card</h2>
+
+      <div class="card-grid">
+        <a class="gallery-item" href="../../../images/Sketches/avians/buzzards/bird brain 1.jpg">
+          <img src="../../../images/Sketches/avians/buzzards/bird brain 1.jpg" alt="Bird Brain trading card image 1" loading="lazy" />
+        </a>
+
+        <a class="gallery-item" href="../../../images/Sketches/avians/buzzards/bird brain 2.jpg">
+          <img src="../../../images/Sketches/avians/buzzards/bird brain 2.jpg" alt="Bird Brain trading card image 2" loading="lazy" />
+        </a>
+      </div>
+
+      <div class="card-text-block">
+        <div class="card-column">
+          <span class="text-label">Card details</span>
+          <div class="card-details">
+            <p class="card-detail"><strong>Series:</strong> 3</p>
+            <p class="card-detail"><strong>Number:</strong> 24</p>
+            <p class="card-detail"><strong>Affiliation:</strong> Buzzards</p>
+            <p class="card-detail"><strong>Occupation:</strong> Infant</p>
+            <p class="card-detail"><strong>Preoccupation:</strong> Growing old</p>
+            <p class="card-detail"><strong>Virtue:</strong> Makes insanity seem cool</p>
+            <p class="card-detail"><strong>Vice:</strong> Makes cool seem cruel</p>
+          </div>
+        </div>
+
+        <div class="card-column">
+          <span class="text-label">Poem</span>
+          <p class="poem">One egg for Able,
+One egg for Cain,
+One holds a heart,
+One holds a brain.
+One is the fountain,
+One is the drain.
+One is human,
+One is humane.
+One is mad, one is insane.
+One could feel through windows,
+One could see through pain.
+But both were just myths
+Inside a bird's brain.</p>
+        </div>
       </div>
     </section>
 
