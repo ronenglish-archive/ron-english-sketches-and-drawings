@@ -118,6 +118,13 @@
       justify-content:center;
     }
 
+    .card-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:20px;
+      margin-top:8px;
+    }
+
     .gallery-item{
       display:block;
       text-decoration:none;
@@ -155,6 +162,12 @@
       height:620px;
       background:var(--panel);
       padding:8px;
+    }
+
+    .card-grid .gallery-item img{
+      height:520px;
+      background:var(--panel);
+      padding:10px;
     }
 
     .entry-body{
@@ -262,62 +275,56 @@
       .sketch-hero-grid .gallery-item img{
         height:520px;
       }
+
+      .card-grid .gallery-item img{
+        height:420px;
+      }
     }
   </style>
 </head>
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
-<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
       <a class="nav-pill" href="../index.html">Sketches</a>
       <a class="nav-pill" href="index.html">Aliens</a>
     </nav>
 
     <header class="page-header">
       <h1 class="page-title">Sirus Alien</h1>
-
     </header>
 
     <section class="section-card" aria-labelledby="original-sketch">
       <h2 id="original-sketch">Original Drawing</h2>
- 
 
       <div class="sketch-hero-grid">
         <a class="gallery-item" href="../../images/Sketches/aliens/Sirus Alien ORIGINAL.jpg">
           <img src="../../images/Sketches/aliens/Sirus Alien ORIGINAL.jpg" alt="Sirus Alien original drawing by Ron English" loading="lazy" />
-         
-
-          </div>
         </a>
       </div>
     </section>
 
     <section class="section-card" aria-labelledby="digital-versions">
       <h2 id="digital-versions">Digitized Versions</h2>
-   
 
       <div class="gallery-grid">
         <a class="gallery-item" href="../../images/Sketches/aliens/Sirus Alien B&W.jpg">
           <img src="../../images/Sketches/aliens/Sirus Alien B&W.jpg" alt="Sirus Alien black-and-white digital version by Ron English" loading="lazy" />
-        
         </a>
 
         <a class="gallery-item" href="../../images/Sketches/aliens/Sirus Alien COLOR.jpg">
           <img src="../../images/Sketches/aliens/Sirus Alien COLOR.jpg" alt="Sirus Alien color digital version by Ron English" loading="lazy" />
-         
         </a>
       </div>
     </section>
 
     <section class="section-card" aria-labelledby="collector-card">
       <h2 id="collector-card">Collector Card</h2>
-     
 
-      <div class="gallery-grid">
+      <div class="card-grid">
         <a class="gallery-item" href="../../images/Sketches/aliens/sirus-card-front.jpg">
           <img src="../../images/Sketches/aliens/sirus-card-front.jpg" alt="Sirus Alien collector card front" loading="lazy" />
           <div class="entry-body">
-
             <p class="work-note">Collector card front.</p>
           </div>
         </a>
@@ -325,7 +332,6 @@
         <a class="gallery-item" href="../../images/Sketches/aliens/sirus-card-back.jpg">
           <img src="../../images/Sketches/aliens/sirus-card-back.jpg" alt="Sirus Alien collector card back" loading="lazy" />
           <div class="entry-body">
-    
             <p class="work-note">Collector card back.</p>
           </div>
         </a>
