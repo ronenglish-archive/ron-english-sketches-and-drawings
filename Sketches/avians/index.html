@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Avians | Sketches &amp; Drawings | Ron English Catalogue Raisonné</title>
+
+  <link rel="stylesheet" href="../../../css/styles.css" />
+
+  <style>
+    :root{
+      --border:#e5e7eb;
+      --muted:#6b7280;
+      --shadow:0 10px 30px rgba(0,0,0,.08);
+      --radius:18px;
+      --bg:#ffffff;
+      --card:#ffffff;
+      --card-hover:#ffffff;
+      --panel:#f8fafc;
+      --pill-bg:#ffffff;
+      --pill-hover:#f9fafb;
+    }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:#111;
+      background:var(--bg);
+      padding-left:0;
+      padding-right:0;
+    }
+
+    .wrap{
+      max-width:1240px;
+      margin:0 auto;
+      padding:28px 18px 60px;
+    }
+
+    .nav-pills{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:22px;
+      margin-bottom:22px;
+    }
+
+    .nav-pill{
+      padding:8px 14px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background:var(--pill-bg);
+      color:#111;
+      text-decoration:none;
+      font-size:14px;
+      transition:background .12s ease, border-color .12s ease, transform .12s ease;
+    }
+
+    .nav-pill:hover{
+      background:var(--pill-hover);
+      border-color:#d1d5db;
+      transform:translateY(-1px);
+    }
+
+    .page-header{
+      max-width:1100px;
+      margin:0;
+      padding:0;
+      text-align:left;
+    }
+
+    .page-title{
+      margin:0 0 10px;
+      font-size:clamp(2rem,4vw,3rem);
+      letter-spacing:-.02em;
+      line-height:1.05;
+    }
+
+    .intro-text{
+      max-width:1100px;
+      margin:0 0 28px;
+      padding:0;
+      line-height:1.6;
+      text-align:left;
+    }
+
+    .intro-text p{
+      margin:0 0 14px;
+      max-width:none;
+      width:100%;
+      color:var(--muted);
+      font-size:18px;
+    }
+
+    .gallery-grid{
+      margin-top:28px;
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:18px;
+    }
+
+    .gallery-item{
+      display:block;
+      text-decoration:none;
+      color:inherit;
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+    }
+
+    .gallery-item:hover{
+      transform:translateY(-2px);
+      box-shadow:0 16px 40px rgba(0,0,0,.12);
+      border-color:#d1d5db;
+      background:var(--card-hover);
+    }
+
+    .gallery-item img{
+      width:100%;
+      height:220px;
+      object-fit:contain;
+      display:block;
+      background:var(--panel);
+      padding:10px;
+      border-bottom:1px solid var(--border);
+      margin:0;
+      border-radius:0;
+    }
+
+    .entry-body{
+      padding:16px 18px 18px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+    }
+
+    .gallery-item .entry-body .work-title{
+      margin:0;
+      padding:0;
+      width:100%;
+      font-size:18px;
+      line-height:1.35;
+      font-weight:600;
+      text-align:center;
+    }
+
+    .gallery-item .entry-body .work-subtitle{
+      margin:6px 0 0;
+      padding:0;
+      width:100%;
+      font-size:14px;
+      line-height:1.45;
+      color:var(--muted);
+      text-align:center;
+    }
+
+    footer{
+      margin-top:34px;
+      padding-top:16px;
+      border-top:1px solid var(--border);
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    @media (max-width:1100px){
+      .gallery-grid{
+        grid-template-columns:repeat(3,minmax(0,1fr));
+      }
+    }
+
+    @media (max-width:820px){
+      .gallery-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+      }
+    }
+
+    @media (max-width:560px){
+      .gallery-grid{
+        grid-template-columns:1fr;
+      }
+
+      .gallery-item img{
+        height:240px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+
+    <nav class="nav-pills" aria-label="Site navigation">
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="../index.html">Sketches</a>
+    </nav>
+
+    <header class="page-header">
+      <h1 class="page-title">Avians</h1>
+    </header>
+
+    <section class="gallery-grid" aria-label="Avian sketch categories">
+
+      <a class="gallery-item" href="buzzards/index.html">
+        <img src="../../images/Sketches/avians/buzzards/hero.jpg" alt="Buzzard drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Buzzards</p>
+        </div>
+      </a>
+
+      <a class="gallery-item" href="ducks/index.html">
+        <img src="../../images/Sketches/avians/ducks/hero.jpg" alt="Duck drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Ducks</p>
+        </div>
+      </a>
+
+      <a class="gallery-item" href="other birds/index.html">
+        <img src="../../images/Sketches/avians/other birds/hero.jpg" alt="Other bird drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Other Birds</p>
+        </div>
+      </a>
+
+    </section>
+
+    <footer>
+      Published via GitHub Pages for long-term public access.
+    </footer>
+
+  </main>
+</body>
+</html>
