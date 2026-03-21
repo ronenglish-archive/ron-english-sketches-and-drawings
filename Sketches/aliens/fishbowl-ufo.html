@@ -104,6 +104,13 @@
       justify-content:center;
     }
 
+    .card-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:20px;
+      margin-top:8px;
+    }
+
     .gallery-item{
       display:block;
       text-decoration:none;
@@ -155,6 +162,54 @@
       padding:8px;
     }
 
+    .card-grid .gallery-item img{
+      height:520px;
+      background:var(--panel);
+      padding:10px;
+    }
+
+    .card-text-block{
+      margin-top:20px;
+      padding:18px;
+      border:1px solid var(--border);
+      border-radius:14px;
+      background:var(--panel);
+      display:grid;
+      grid-template-columns:minmax(240px,0.95fr) minmax(280px,1.05fr);
+      gap:24px;
+      align-items:start;
+    }
+
+    .card-column{
+      min-width:0;
+    }
+
+    .text-label{
+      display:block;
+      font-size:.78rem;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      color:var(--muted);
+      margin-bottom:8px;
+    }
+
+    .card-details{
+      display:grid;
+      gap:8px;
+    }
+
+    .card-detail{
+      margin:0;
+      line-height:1.55;
+    }
+
+    .poem{
+      margin:0;
+      white-space:pre-line;
+      color:#111;
+      line-height:1.65;
+    }
+
     .back-link{
       margin-top:28px;
     }
@@ -171,6 +226,12 @@
 
     .back-link a:hover{
       background:#f9fafb;
+    }
+
+    @media (max-width:760px){
+      .card-text-block{
+        grid-template-columns:1fr;
+      }
     }
 
     @media (max-width:640px){
@@ -193,6 +254,10 @@
 
       .digitized-grid .gallery-item img{
         height:340px;
+      }
+
+      .card-grid .gallery-item img{
+        height:420px;
       }
     }
   </style>
@@ -234,6 +299,52 @@
             loading="lazy"
           />
         </a>
+      </div>
+    </section>
+
+    <section class="section-card" aria-labelledby="trading-card">
+      <h2 id="trading-card">Trading Card</h2>
+
+      <div class="card-grid">
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/fishbowl card 1.jpg">
+          <img src="../../images/Sketches/aliens 2/fishbowl card 1.jpg" alt="Fishbowl Astronaut trading card image 1" loading="lazy" />
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/fishbowl card 2.jpg">
+          <img src="../../images/Sketches/aliens 2/fishbowl card 2.jpg" alt="Fishbowl Astronaut trading card image 2" loading="lazy" />
+        </a>
+      </div>
+
+      <div class="card-text-block">
+        <div class="card-column">
+          <span class="text-label">Card details</span>
+          <div class="card-details">
+            <p class="card-detail"><strong>Series:</strong> 2</p>
+            <p class="card-detail"><strong>Number:</strong> 23</p>
+            <p class="card-detail"><strong>Affiliation:</strong> Aliens</p>
+            <p class="card-detail"><strong>Occupation:</strong> Astronaut</p>
+            <p class="card-detail"><strong>Preoccupation:</strong> Aqua air</p>
+            <p class="card-detail"><strong>Virtue:</strong> Open minded</p>
+            <p class="card-detail"><strong>Vice:</strong> Splashy behavior</p>
+          </div>
+        </div>
+
+        <div class="card-column">
+          <span class="text-label">Poem</span>
+          <p class="poem">Astro H2O,
+Two micro minutes
+From total loss,
+Swimming in
+A see-through fish bowl.
+He never knew
+What we don't know.
+He can't swim,
+Just goes with the flow.
+Underwater
+Is the new outer space.
+And those who don't swim
+Will surely loose face.</p>
+        </div>
       </div>
     </section>
 
