@@ -90,13 +90,6 @@
       font-size:1.4rem;
     }
 
-    .section-intro{
-      margin:0 0 18px;
-      color:var(--muted);
-      line-height:1.6;
-      max-width:72ch;
-    }
-
     .gallery-grid{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -107,6 +100,13 @@
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
       gap:20px;
+    }
+
+    .card-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:20px;
+      margin-top:8px;
     }
 
     .gallery-item{
@@ -142,27 +142,52 @@
       padding:8px;
     }
 
-    .entry-body{
-      padding:10px 12px 12px;
-      text-align:center;
+    .card-grid .gallery-item img{
+      height:520px;
+      background:var(--panel);
+      padding:10px;
     }
 
-    .gallery-item .entry-body .work-title{
-      margin:0 0 4px;
-      padding:0;
-      font-size:1rem;
-      font-weight:600;
-      line-height:1.3;
-      text-align:center;
+    .card-text-block{
+      margin-top:20px;
+      padding:18px;
+      border:1px solid var(--border);
+      border-radius:14px;
+      background:var(--panel);
+      display:grid;
+      grid-template-columns:minmax(240px,0.95fr) minmax(280px,1.05fr);
+      gap:24px;
+      align-items:start;
     }
 
-    .gallery-item .entry-body .work-note{
-      margin:0;
-      padding:0;
+    .card-column{
+      min-width:0;
+    }
+
+    .text-label{
+      display:block;
+      font-size:.78rem;
+      text-transform:uppercase;
+      letter-spacing:.08em;
       color:var(--muted);
-      font-size:.92rem;
-      line-height:1.35;
-      text-align:center;
+      margin-bottom:8px;
+    }
+
+    .card-details{
+      display:grid;
+      gap:8px;
+    }
+
+    .card-detail{
+      margin:0;
+      line-height:1.55;
+    }
+
+    .poem{
+      margin:0;
+      white-space:pre-line;
+      color:#111;
+      line-height:1.65;
     }
 
     .back-link{
@@ -183,6 +208,12 @@
       background:#f9fafb;
     }
 
+    @media (max-width:760px){
+      .card-text-block{
+        grid-template-columns:1fr;
+      }
+    }
+
     @media (max-width:640px){
       .wrap{
         padding:22px 14px 50px;
@@ -195,13 +226,17 @@
       .originals-grid .gallery-item img{
         height:320px;
       }
+
+      .card-grid .gallery-item img{
+        height:420px;
+      }
     }
   </style>
 </head>
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
-<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
       <a class="nav-pill" href="../index.html">Sketches</a>
       <a class="nav-pill" href="index.html">Aliens</a>
     </nav>
@@ -214,52 +249,90 @@
       <h2 id="original-sketches">Original Drawings</h2>
 
       <div class="originals-grid">
-        <a class="gallery-item" href="../../images/Sketches/aliens/Light Cult Cryptonaut - pose 1 original.jpg">
-          <img src="../../images/Sketches/aliens/Light Cult Cryptonaut - pose 1 original.jpg" alt="Light Cult Cryptonaut pose 1 original sketch by Ron English" loading="lazy" />
-      
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Light Cult Cryptonaut - pose 1 original.jpg">
+          <img src="../../images/Sketches/aliens 2/Light Cult Cryptonaut - pose 1 original.jpg" alt="Light Cult Cryptonaut pose 1 original sketch by Ron English" loading="lazy" />
         </a>
 
-        <a class="gallery-item" href="../../images/Sketches/aliens/Light Cult Cryptonaut - pose 2 original.jpg">
-          <img src="../../images/Sketches/aliens/Light Cult Cryptonaut - pose 2 original.jpg" alt="Light Cult Cryptonaut pose 2 original sketch by Ron English" loading="lazy" />
-         
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Light Cult Cryptonaut - pose 2 original.jpg">
+          <img src="../../images/Sketches/aliens 2/Light Cult Cryptonaut - pose 2 original.jpg" alt="Light Cult Cryptonaut pose 2 original sketch by Ron English" loading="lazy" />
         </a>
       </div>
     </section>
 
     <section class="section-card" aria-labelledby="digitized-versions">
       <h2 id="digitized-versions">Digitized Versions</h2>
-     
 
       <div class="gallery-grid">
-        <a class="gallery-item" href="../../images/Sketches/aliens/Light Cult Cryptonaut - pose 1 B&W.jpg">
-          <img src="../../images/Sketches/aliens/Light Cult Cryptonaut - pose 1 B&W.jpg" alt="Light Cult Cryptonaut pose 1 digitized black-and-white version by Ron English" loading="lazy" />
-      
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Light Cult Cryptonaut - pose 1 B&W.jpg">
+          <img src="../../images/Sketches/aliens 2/Light Cult Cryptonaut - pose 1 B&W.jpg" alt="Light Cult Cryptonaut pose 1 digitized black-and-white version by Ron English" loading="lazy" />
         </a>
 
-        <a class="gallery-item" href="../../images/Sketches/aliens/Light Cult Cryptonaut - pose 2 B&W.jpg">
-          <img src="../../images/Sketches/aliens/Light Cult Cryptonaut - pose 2 B&W.jpg" alt="Light Cult Cryptonaut pose 2 digitized black-and-white version by Ron English" loading="lazy" />
-        
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Light Cult Cryptonaut - pose 2 B&W.jpg">
+          <img src="../../images/Sketches/aliens 2/Light Cult Cryptonaut - pose 2 B&W.jpg" alt="Light Cult Cryptonaut pose 2 digitized black-and-white version by Ron English" loading="lazy" />
         </a>
 
-        <a class="gallery-item" href="../../images/Sketches/aliens/Light Cult Cryptonaut - pose 3 B&W.jpg">
-          <img src="../../images/Sketches/aliens/Light Cult Cryptonaut - pose 3 B&W.jpg" alt="Light Cult Cryptonaut pose 3 digitized black-and-white version by Ron English" loading="lazy" />
-      
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Light Cult Cryptonaut - pose 3 B&W.jpg">
+          <img src="../../images/Sketches/aliens 2/Light Cult Cryptonaut - pose 3 B&W.jpg" alt="Light Cult Cryptonaut pose 3 digitized black-and-white version by Ron English" loading="lazy" />
         </a>
 
-        <a class="gallery-item" href="../../images/Sketches/aliens/Light Cult Cryptonaut - pose 1 color.jpg">
-          <img src="../../images/Sketches/aliens/Light Cult Cryptonaut - pose 1 color.jpg" alt="Light Cult Cryptonaut pose 1 digitized color version by Ron English" loading="lazy" />
- 
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Light Cult Cryptonaut - pose 1 color.jpg">
+          <img src="../../images/Sketches/aliens 2/Light Cult Cryptonaut - pose 1 color.jpg" alt="Light Cult Cryptonaut pose 1 digitized color version by Ron English" loading="lazy" />
         </a>
 
-        <a class="gallery-item" href="../../images/Sketches/aliens/Light Cult Cryptonaut - pose 2 color.jpg">
-          <img src="../../images/Sketches/aliens/Light Cult Cryptonaut - pose 2 color.jpg" alt="Light Cult Cryptonaut pose 2 digitized color version by Ron English" loading="lazy" />
-        
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Light Cult Cryptonaut - pose 2 color.jpg">
+          <img src="../../images/Sketches/aliens 2/Light Cult Cryptonaut - pose 2 color.jpg" alt="Light Cult Cryptonaut pose 2 digitized color version by Ron English" loading="lazy" />
         </a>
 
-        <a class="gallery-item" href="../../images/Sketches/aliens/Light Cult Cryptonaut - pose 3 color.jpg">
-          <img src="../../images/Sketches/aliens/Light Cult Cryptonaut - pose 3 color.jpg" alt="Light Cult Cryptonaut pose 3 digitized color version by Ron English" loading="lazy" />
-       
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/Light Cult Cryptonaut - pose 3 color.jpg">
+          <img src="../../images/Sketches/aliens 2/Light Cult Cryptonaut - pose 3 color.jpg" alt="Light Cult Cryptonaut pose 3 digitized color version by Ron English" loading="lazy" />
         </a>
+      </div>
+    </section>
+
+    <section class="section-card" aria-labelledby="trading-card">
+      <h2 id="trading-card">Trading Card</h2>
+
+      <div class="card-grid">
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/cryptonaut card 1.jpg">
+          <img src="../../images/Sketches/aliens 2/cryptonaut card 1.jpg" alt="Light Cult Cryptonaut trading card image 1" loading="lazy" />
+        </a>
+
+        <a class="gallery-item" href="../../images/Sketches/aliens 2/cryptonaut card 2.jpg">
+          <img src="../../images/Sketches/aliens 2/cryptonaut card 2.jpg" alt="Light Cult Cryptonaut trading card image 2" loading="lazy" />
+        </a>
+      </div>
+
+      <div class="card-text-block">
+        <div class="card-column">
+          <span class="text-label">Card details</span>
+          <div class="card-details">
+            <p class="card-detail"><strong>Series:</strong> 1</p>
+            <p class="card-detail"><strong>Number:</strong> 34</p>
+            <p class="card-detail"><strong>Affiliation:</strong> Aliens</p>
+            <p class="card-detail"><strong>Occupation:</strong> Light provider</p>
+            <p class="card-detail"><strong>Preoccupation:</strong> Being the light of the world</p>
+            <p class="card-detail"><strong>Virtue:</strong> He is the light</p>
+            <p class="card-detail"><strong>Vice:</strong> He keeps us up at night</p>
+          </div>
+        </div>
+
+        <div class="card-column">
+          <span class="text-label">Poem</span>
+          <p class="poem">Deep in the darkest corner of paradise,
+There's an open door
+With a blinding light.
+An eternal memory, a second sight,
+The moon's reflection
+Of the sun's bright night.
+Light Cult Cryptonaut
+May be Orion's acolyte,
+Or the devil's difference
+Between black and white.
+Is he our courage? Is he our right?
+Is he our hope? Is he our blight?
+Is he the darkness? Is he the light?
+Be the light!</p>
+        </div>
       </div>
     </section>
 
