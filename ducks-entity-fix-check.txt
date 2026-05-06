@@ -1,0 +1,23 @@
+﻿DUCKS ENTITY FIX CHECK
+Generated: 05/06/2026 18:25:41
+Folder: D:\github\ron-english-sketches-and-drawings\Sketches\avians\ducks
+
+STILL HAS POSSIBLE MOJIBAKE: alien-quack-crown.html
+STILL HAS POSSIBLE MOJIBAKE: allie-quack.html
+STILL HAS POSSIBLE MOJIBAKE: bub-quack.html
+STILL HAS POSSIBLE MOJIBAKE: bub-quack-guernica.html
+STILL HAS POSSIBLE MOJIBAKE: dr-bub-quack.html
+STILL HAS POSSIBLE MOJIBAKE: duck-at-war.html
+STILL HAS POSSIBLE MOJIBAKE: duck-boat.html
+STILL HAS POSSIBLE MOJIBAKE: duck-fetus.html
+STILL HAS POSSIBLE MOJIBAKE: duck-house-riverview-estates.html
+STILL HAS POSSIBLE MOJIBAKE: eddie-six-quack.html
+STILL HAS POSSIBLE MOJIBAKE: eddie-six-quack-and-football.html
+STILL HAS POSSIBLE MOJIBAKE: flying-duck.html
+STILL HAS POSSIBLE MOJIBAKE: football-duck.html
+STILL HAS POSSIBLE MOJIBAKE: hatch-quack.html
+STILL HAS POSSIBLE MOJIBAKE: index.html
+STILL HAS POSSIBLE MOJIBAKE: jet-quack.html
+STILL HAS POSSIBLE MOJIBAKE: punk-duck.html
+STILL HAS POSSIBLE MOJIBAKE: quack-egg.html
+STILL HAS POSSIBLE MOJIBAKE: quack-guernica.html

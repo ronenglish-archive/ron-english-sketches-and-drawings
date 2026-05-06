@@ -1,0 +1,5 @@
+﻿REPO-WIDE MOJIBAKE REPORT
+Generated: 05/06/2026 18:22:04
+Repo: D:\github\ron-english-sketches-and-drawings
+
+No mojibake patterns found in any HTML file.

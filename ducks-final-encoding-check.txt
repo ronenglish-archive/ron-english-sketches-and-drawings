@@ -1,0 +1,15 @@
+﻿DUCKS FINAL ENCODING CHECK
+Generated: 05/06/2026 18:31:48
+Folder: D:\github\ron-english-sketches-and-drawings\Sketches\avians\ducks
+Backup: D:\github\ron-english-sketches-and-drawings\_script-backups\ducks-html-before-entity-fix-final2-20260506-183148
+
+STILL HAS POSSIBLE MOJIBAKE: dr-bub-quack.html
+  He markets as Quack&#226;€&rdquo;
+
+
+Allie relevant lines:
+    <title>Allie Quack | Ducks | Ron English Catalogue Raisonn&eacute;</title>
+  But it's always the pins
+  Nine little pins, Allie's next of kin,
+  Pray to God you'll be racked again.</p>
+        <a href="index.html">&larr; Back to Ducks</a>
