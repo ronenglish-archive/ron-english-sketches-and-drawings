@@ -1,0 +1,775 @@
+﻿DUCK IMAGE PATH REPORT
+Generated: 05/06/2026 16:52:03
+
+Repo:
+D:\github\ron-english-sketches-and-drawings
+
+HTML page folder:
+D:\github\ron-english-sketches-and-drawings\Sketches\avians\ducks
+
+Image folder:
+D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks
+
+Does HTML folder exist?  True
+Does image folder exist? True
+
+HTML FILES FOUND
+--------------------------------
+bird-brain.html
+birdy-bob-buzzard.html
+buzz-ard.html
+buzzard-boat.html
+buzzard-family-icon.html
+buzzard-flapping-wings.html
+buzzard-house-towering-estates.html
+buzzards-logo.html
+buzz-egg.html
+cluckzilla.html
+delusionville-pilots-buzzard.html
+grousegoose-huffyplume.html
+hatch-buzzard.html
+index.html
+lightning-bird.html
+orange-nosed-buttbrain.html
+scrap-ard.html
+vull-ture.html
+
+IMAGE FILES FOUND IN IMAGE FOLDER
+--------------------------------
+Bub Quack sketch 1 COLOR.png
+Bub Quack sketch 1 ORIGINAL.jpg
+Bub Quack sketch 2 B&W.png
+Bub Quack sketch 2 COLOR.png
+Bub Quack sketch 2 ORIGINAL.jpg
+Bub Quack sketch 3 B&W.png
+Bub Quack sketch 3 COLOR.png
+Bub Quack sketch 3 ORIGINAL.jpg
+Bub Quack sketch 4 B&W.png
+Bub Quack sketch 4 COLOR.png
+Bub Quack sketch 4 ORIGINAL.jpg
+Bub Quack sketch 5 ORIGINAL.jpg
+Bub Quack sketch 6 COLOR.png
+Bub Quack sketch 6 ORIGINAL.jpg
+Bub Quack sketch 7 COLOR.png
+Bub Quack sketch 7 ORIGINAL.jpg
+Dr Bub ORIGINAL.jpg
+Dr Bub Quack back B&W.png
+Dr Bub Quack back COLOR.png
+Dr Bub Quack early version B&W.png
+Dr Bub Quack early version COLOR.jpg
+Dr Bub Quack front B&W.png
+Dr Bub Quack front COLOR.png
+Dr Bub Quack front version 2 B&W.png
+Dr Bub Quack front version 2 ORIGINAL COLOR.jpg
+Dr Bub Quack side B&W.png
+Dr Bub Quack side COLOR.png
+Dr Bub Quack side version 2 B&W.png
+Dr Bub Quack side version 2 COLOR.png
+Dr Bub Quack side version 2 ORIGINAL.jpg
+Dr. Bub Quack B&W.png
+Dr. Bub Quack COLOR.png
+Dr. Bub Quack ORIGINAL.jpg
+Dr. Bub Quack side version 2 ORIGINAL COLOR.jpg
+Duck at War B&W.png
+Duck at War COLOR.png
+Duck at War ORIGINAL COLOR.jpg
+Duck boat back ORIGINAL.jpg
+Duck Boat front B&W.png
+Duck Boat Front COLOR.png
+Duck boat front ORIGINAL.jpg
+Duck Boat side B&W.png
+Duck Boat side ORIGINAL.jpg
+Duck Fetus B&W.png
+Duck Fetus COLOR.png
+Duck Fetus ORIGINAL.jpg
+Duck House - Riverview Estates B&Wg.png
+Duck House - Riverview Estates COLOR.png
+Duck House - Riverview Estates ORIGINAL COLOR.jpg
+duckback COLOR.png
+duckside COLOR.png
+Eddie “Six” Quack B&W.png
+Eddie “Six” Quack COLOR.jpg
+Eddie “Six” Quack ORIGINAL.jpg
+Eddie Six Quack and Football B&W.png
+Eddie Six Quack and Football COLOR.png
+Eddie Six Quack early version B&W.png
+Eddie Six Quack early version COLOR.png
+Eddie Six Quack early version ORIGINAL.jpg
+Flying Duck B&W.png
+Flying Duck COLOR.jpg
+Flying Duck ORIGINAL.jpg
+Football Duck ORIGINAL.jpg
+Hatch Quack B&W.png
+Hatch Quack COLOR.png
+Hatch Quack ORIGINAL.jpg
+Jet Quack early version B&W.png
+Jet Quack early version COLOR.png
+Jet Quack early version ORIGINAL.jpg
+Jet Quack Quack B&w.png
+Jet Quack Quack COLOR.jpg
+Jet Quack Quack ORIGINAL.jpg
+Punk Duck B&W.png
+Punk Duck back COLOR.png
+Punk Duck back ORIGINAL.jpg
+Punk Duck front COLOR.png
+Punk Duck front ORIGINAL.jpg
+Punk Duck ORIGINAL COLOR.png
+Punk Duck ORIGINAL.jpg
+Quack Egg COLOR.png
+Quack Egg ORIGINAL.jpg
+Quack Guernica 1 B&W.png
+Quack Guernica 1 COLOR.png
+Quack Guernica 2 B&W.png
+Quack Guernica 2 COLOR.png
+series 1 #11 back - DUCKS - Allie Quack - common.png
+series 1 #11 front - DUCKS - allie quack - common.png
+Small Duck COLOR.jpg
+
+HTML IMAGE PATH CHECK
+--------------------------------
+
+PAGE: bird-brain.html
+FULL PAGE PATH: D:\github\ron-english-sketches-and-drawings\Sketches\avians\ducks\bird-brain.html
+--------------------------------
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Bird Brain ORIGINAL.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Bird Brain ORIGINAL.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Bird Brain B&amp;W.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Bird Brain B&W.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Bird Brain COLOR.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Bird Brain COLOR.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/bird brain trading card front.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\bird brain trading card front.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/bird brain trading card back.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\bird brain trading card back.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Bird Brain ORIGINAL.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Bird Brain ORIGINAL.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Bird Brain B&amp;W.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Bird Brain B&W.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Bird Brain COLOR.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Bird Brain COLOR.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/bird brain trading card front.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\bird brain trading card front.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/bird brain trading card back.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\bird brain trading card back.jpg
+
+
+PAGE: birdy-bob-buzzard.html
+FULL PAGE PATH: D:\github\ron-english-sketches-and-drawings\Sketches\avians\ducks\birdy-bob-buzzard.html
+--------------------------------
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Birdy-Bob Buzzard B&amp;W.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Birdy-Bob Buzzard B&W.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Birdy-Bob Buzzard COLOR.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Birdy-Bob Buzzard COLOR.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/series 2 %2326 front - BUZZARDS - Birdy Bob Buzzard - Uncommon.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\series 2 #26 front - BUZZARDS - Birdy Bob Buzzard - Uncommon.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/series 2 %2326 back - BUZZARDS - Birdy-Bob Buzzard - uncommon.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\series 2 #26 back - BUZZARDS - Birdy-Bob Buzzard - uncommon.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Birdy-Bob Buzzard B&amp;W.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Birdy-Bob Buzzard B&W.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Birdy-Bob Buzzard COLOR.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Birdy-Bob Buzzard COLOR.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/series 2 %2326 front - BUZZARDS - Birdy Bob Buzzard - Uncommon.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\series 2 #26 front - BUZZARDS - Birdy Bob Buzzard - Uncommon.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/series 2 %2326 back - BUZZARDS - Birdy-Bob Buzzard - uncommon.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\series 2 #26 back - BUZZARDS - Birdy-Bob Buzzard - uncommon.jpg
+
+
+PAGE: buzz-ard.html
+FULL PAGE PATH: D:\github\ron-english-sketches-and-drawings\Sketches\avians\ducks\buzz-ard.html
+--------------------------------
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Buzz Ard ORIGINAL.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzz Ard ORIGINAL.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Buzz Ard B&amp;W.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzz Ard B&W.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Buzz Ard COLOR.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzz Ard COLOR.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Buzz Ard ORIGINAL.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzz Ard ORIGINAL.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Buzz Ard B&amp;W.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzz Ard B&W.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Buzz Ard COLOR.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzz Ard COLOR.jpg
+
+
+PAGE: buzzard-boat.html
+FULL PAGE PATH: D:\github\ron-english-sketches-and-drawings\Sketches\avians\ducks\buzzard-boat.html
+--------------------------------
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Buzzard Boat ORIGINAL.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzard Boat ORIGINAL.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Buzzard Boat B&amp;W.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzard Boat B&W.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Buzzard Boat COLOR.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzard Boat COLOR.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Buzzard Boat ORIGINAL.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzard Boat ORIGINAL.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Buzzard Boat B&amp;W.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzard Boat B&W.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Buzzard Boat COLOR.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzard Boat COLOR.jpg
+
+
+PAGE: buzzard-family-icon.html
+FULL PAGE PATH: D:\github\ron-english-sketches-and-drawings\Sketches\avians\ducks\buzzard-family-icon.html
+--------------------------------
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Buzzard Family Icon ORIGINAL.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzard Family Icon ORIGINAL.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Buzzard Family Icon B&amp;W.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzard Family Icon B&W.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Buzzard Family Icon COLOR.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzard Family Icon COLOR.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Buzzard Family Icon ORIGINAL.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzard Family Icon ORIGINAL.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Buzzard Family Icon B&amp;W.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzard Family Icon B&W.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Buzzard Family Icon COLOR.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzard Family Icon COLOR.jpg
+
+
+PAGE: buzzard-flapping-wings.html
+FULL PAGE PATH: D:\github\ron-english-sketches-and-drawings\Sketches\avians\ducks\buzzard-flapping-wings.html
+--------------------------------
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Buzzard Flapping Wings ORIGINAL.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzard Flapping Wings ORIGINAL.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Buzzard Flapping Wings COLOR digital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzard Flapping Wings COLOR digital.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Buzzard Flapping Wings ORIGINAL.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzard Flapping Wings ORIGINAL.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Buzzard Flapping Wings COLOR digital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzard Flapping Wings COLOR digital.jpg
+
+
+PAGE: buzzard-house-towering-estates.html
+FULL PAGE PATH: D:\github\ron-english-sketches-and-drawings\Sketches\avians\ducks\buzzard-house-towering-estates.html
+--------------------------------
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Buzzard House - Towering Estates ORIGINAL.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzard House - Towering Estates ORIGINAL.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Buzzard House - Towering Estates B&amp;Wdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzard House - Towering Estates B&Wdigital.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Buzzard House - Towering Estates COLORdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzard House - Towering Estates COLORdigital.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Buzzard House - Towering Estates ORIGINAL.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzard House - Towering Estates ORIGINAL.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Buzzard House - Towering Estates B&amp;Wdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzard House - Towering Estates B&Wdigital.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Buzzard House - Towering Estates COLORdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzard House - Towering Estates COLORdigital.jpg
+
+
+PAGE: buzzards-logo.html
+FULL PAGE PATH: D:\github\ron-english-sketches-and-drawings\Sketches\avians\ducks\buzzards-logo.html
+--------------------------------
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Buzzards Logo ORIGINAL.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzards Logo ORIGINAL.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Buzzards Logo B&amp;Wdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzards Logo B&Wdigital.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Buzzards Logo COLORdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzards Logo COLORdigital.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Buzzards Logo ORIGINAL.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzards Logo ORIGINAL.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Buzzards Logo B&amp;Wdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzards Logo B&Wdigital.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Buzzards Logo COLORdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzards Logo COLORdigital.jpg
+
+
+PAGE: buzz-egg.html
+FULL PAGE PATH: D:\github\ron-english-sketches-and-drawings\Sketches\avians\ducks\buzz-egg.html
+--------------------------------
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Buzz Egg ORIGINAL.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzz Egg ORIGINAL.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Buzz Egg COLOR.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzz Egg COLOR.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Buzz Egg ORIGINAL.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzz Egg ORIGINAL.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Buzz Egg COLOR.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzz Egg COLOR.jpg
+
+
+PAGE: cluckzilla.html
+FULL PAGE PATH: D:\github\ron-english-sketches-and-drawings\Sketches\avians\ducks\cluckzilla.html
+--------------------------------
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Cluckzilla ORIGINAL.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Cluckzilla ORIGINAL.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Cluckzilla B&amp;Wdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Cluckzilla B&Wdigital.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Cluckzilla COLORdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Cluckzilla COLORdigital.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Cluckzilla ORIGINAL.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Cluckzilla ORIGINAL.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Cluckzilla B&amp;Wdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Cluckzilla B&Wdigital.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Cluckzilla COLORdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Cluckzilla COLORdigital.jpg
+
+
+PAGE: delusionville-pilots-buzzard.html
+FULL PAGE PATH: D:\github\ron-english-sketches-and-drawings\Sketches\avians\ducks\delusionville-pilots-buzzard.html
+--------------------------------
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Delusionville Pilots - Buzzard side view ORIGINAL.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Delusionville Pilots - Buzzard side view ORIGINAL.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Delusionville Pilots - Buzzard B&amp;Wdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Delusionville Pilots - Buzzard B&Wdigital.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Delusionville Pilots - Buzzard COLORdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Delusionville Pilots - Buzzard COLORdigital.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Delusionville Pilots - Buzzard side view B&amp;Wdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Delusionville Pilots - Buzzard side view B&Wdigital.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Delusionville Pilots - Buzzard side view COLORdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Delusionville Pilots - Buzzard side view COLORdigital.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Delusionville Pilots - Buzzard side view ORIGINAL.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Delusionville Pilots - Buzzard side view ORIGINAL.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Delusionville Pilots - Buzzard B&amp;Wdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Delusionville Pilots - Buzzard B&Wdigital.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Delusionville Pilots - Buzzard COLORdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Delusionville Pilots - Buzzard COLORdigital.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Delusionville Pilots - Buzzard side view B&amp;Wdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Delusionville Pilots - Buzzard side view B&Wdigital.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Delusionville Pilots - Buzzard side view COLORdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Delusionville Pilots - Buzzard side view COLORdigital.jpg
+
+
+PAGE: grousegoose-huffyplume.html
+FULL PAGE PATH: D:\github\ron-english-sketches-and-drawings\Sketches\avians\ducks\grousegoose-huffyplume.html
+--------------------------------
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Grousegoose Huffyplume ORIGINAL.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Grousegoose Huffyplume ORIGINAL.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Grousegoose Huffyplume B&amp;Wdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Grousegoose Huffyplume B&Wdigital.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Grousegoose Huffyplume COLORdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Grousegoose Huffyplume COLORdigital.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Grousegoose Huffyplume ORIGINAL.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Grousegoose Huffyplume ORIGINAL.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Grousegoose Huffyplume B&amp;Wdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Grousegoose Huffyplume B&Wdigital.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Grousegoose Huffyplume COLORdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Grousegoose Huffyplume COLORdigital.jpg
+
+
+PAGE: hatch-buzzard.html
+FULL PAGE PATH: D:\github\ron-english-sketches-and-drawings\Sketches\avians\ducks\hatch-buzzard.html
+--------------------------------
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Hatch buzzard ORIGINAL.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Hatch buzzard ORIGINAL.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Hatch buzzard B&amp;Wdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Hatch buzzard B&Wdigital.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Hatch buzzard COLORdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Hatch buzzard COLORdigital.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Hatch buzzard ORIGINAL.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Hatch buzzard ORIGINAL.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Hatch buzzard B&amp;Wdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Hatch buzzard B&Wdigital.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Hatch buzzard COLORdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Hatch buzzard COLORdigital.jpg
+
+
+PAGE: index.html
+FULL PAGE PATH: D:\github\ron-english-sketches-and-drawings\Sketches\avians\ducks\index.html
+--------------------------------
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Bird Brain COLOR.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Bird Brain COLOR.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Birdy-Bob Buzzard COLOR.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Birdy-Bob Buzzard COLOR.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Buzz Ard COLOR.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzz Ard COLOR.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Buzz Egg COLOR.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzz Egg COLOR.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Buzzard Boat COLOR.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzard Boat COLOR.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Buzzard Family Icon COLOR.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzard Family Icon COLOR.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Buzzard Flapping Wings COLOR digital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzard Flapping Wings COLOR digital.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Buzzard House - Towering Estates COLORdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzard House - Towering Estates COLORdigital.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Buzzards Logo COLORdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Buzzards Logo COLORdigital.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Cluckzilla COLORdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Cluckzilla COLORdigital.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Delusionville Pilots - Buzzard COLORdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Delusionville Pilots - Buzzard COLORdigital.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Grousegoose Huffyplume COLORdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Grousegoose Huffyplume COLORdigital.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Hatch buzzard COLORdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Hatch buzzard COLORdigital.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/lightning bird COLORdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\lightning bird COLORdigital.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/orange-nosed-buttbrain-colordigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\orange-nosed-buttbrain-colordigital.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Scrap Ard back digital COLOR.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Scrap Ard back digital COLOR.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Vull Ture COLORdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Vull Ture COLORdigital.jpg
+
+NO IMAGE HREF LINKS FOUND
+
+
+PAGE: lightning-bird.html
+FULL PAGE PATH: D:\github\ron-english-sketches-and-drawings\Sketches\avians\ducks\lightning-bird.html
+--------------------------------
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/lightning bird B&amp;Wdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\lightning bird B&Wdigital.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/lightning bird COLORdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\lightning bird COLORdigital.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/lightning bird B&amp;Wdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\lightning bird B&Wdigital.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/lightning bird COLORdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\lightning bird COLORdigital.jpg
+
+
+PAGE: orange-nosed-buttbrain.html
+FULL PAGE PATH: D:\github\ron-english-sketches-and-drawings\Sketches\avians\ducks\orange-nosed-buttbrain.html
+--------------------------------
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Orange-Nosed Buttbrain ORIGINAL.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Orange-Nosed Buttbrain ORIGINAL.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Orange-Nosed Buttbrain  B&amp;Wdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Orange-Nosed Buttbrain  B&Wdigital.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/orange-nosed-buttbrain-colordigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\orange-nosed-buttbrain-colordigital.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Orange-Nosed Buttbrain ORIGINAL.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Orange-Nosed Buttbrain ORIGINAL.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Orange-Nosed Buttbrain  B&amp;Wdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Orange-Nosed Buttbrain  B&Wdigital.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/orange-nosed-buttbrain-colordigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\orange-nosed-buttbrain-colordigital.jpg
+
+
+PAGE: scrap-ard.html
+FULL PAGE PATH: D:\github\ron-english-sketches-and-drawings\Sketches\avians\ducks\scrap-ard.html
+--------------------------------
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Scrap Ard Flying ORIGINAL.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Scrap Ard Flying ORIGINAL.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Scrap Ard Flying ORIGINAL COLORdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Scrap Ard Flying ORIGINAL COLORdigital.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Scrap Ard ORIGINAL COLOR (2).jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Scrap Ard ORIGINAL COLOR (2).jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Scrap Ard ORIGINAL.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Scrap Ard ORIGINAL.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Scrap Ard side ORIGINAL COLOR.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Scrap Ard side ORIGINAL COLOR.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Scrap Ard - B&amp;Wdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Scrap Ard - B&Wdigital.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Scrap Ard back B&amp;Wdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Scrap Ard back B&Wdigital.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Scrap Ard back digital COLOR.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Scrap Ard back digital COLOR.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Scrap Ard side B&amp;Wdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Scrap Ard side B&Wdigital.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Scrap Ard side COLOR.png
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Scrap Ard side COLOR.png
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Scrap Ard Flying ORIGINAL.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Scrap Ard Flying ORIGINAL.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Scrap Ard Flying ORIGINAL COLORdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Scrap Ard Flying ORIGINAL COLORdigital.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Scrap Ard ORIGINAL COLOR (2).jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Scrap Ard ORIGINAL COLOR (2).jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Scrap Ard ORIGINAL.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Scrap Ard ORIGINAL.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Scrap Ard side ORIGINAL COLOR.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Scrap Ard side ORIGINAL COLOR.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Scrap Ard - B&amp;Wdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Scrap Ard - B&Wdigital.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Scrap Ard back B&amp;Wdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Scrap Ard back B&Wdigital.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Scrap Ard back digital COLOR.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Scrap Ard back digital COLOR.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Scrap Ard side B&amp;Wdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Scrap Ard side B&Wdigital.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Scrap Ard side COLOR.png
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Scrap Ard side COLOR.png
+
+
+PAGE: vull-ture.html
+FULL PAGE PATH: D:\github\ron-english-sketches-and-drawings\Sketches\avians\ducks\vull-ture.html
+--------------------------------
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Vull Ture ORIGINAL.jpeg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Vull Ture ORIGINAL.jpeg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Vull Ture Flying COLOR original.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Vull Ture Flying COLOR original.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Vull Ture B&amp;Wdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Vull Ture B&Wdigital.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/Vull Ture COLORdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Vull Ture COLORdigital.jpg
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/series 1 %237 front - BUZZARDS - Vull Ture.png
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\series 1 #7 front - BUZZARDS - Vull Ture.png
+
+IMG SRC: MISSING
+SRC: ../../../images/Sketches/avians/ducks/series 1 %237 back - BUZZARDS - Vull ture - common.png
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\series 1 #7 back - BUZZARDS - Vull ture - common.png
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Vull Ture ORIGINAL.jpeg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Vull Ture ORIGINAL.jpeg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Vull Ture Flying COLOR original.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Vull Ture Flying COLOR original.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Vull Ture B&amp;Wdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Vull Ture B&Wdigital.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/Vull Ture COLORdigital.jpg
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\Vull Ture COLORdigital.jpg
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/series 1 %237 front - BUZZARDS - Vull Ture.png
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\series 1 #7 front - BUZZARDS - Vull Ture.png
+
+IMAGE HREF: MISSING
+HREF: ../../../images/Sketches/avians/ducks/series 1 %237 back - BUZZARDS - Vull ture - common.png
+RESOLVES TO: D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks\series 1 #7 back - BUZZARDS - Vull ture - common.png
+

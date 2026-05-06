@@ -1,9 +1,9 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Buzz Ard | Ron English Catalogue Raisonné</title>
+  <title>Buzz Ard | Buzzards | Ron English Catalogue Raisonné</title>
 
   <link rel="stylesheet" href="../../../css/styles.css" />
 
@@ -15,6 +15,8 @@
       --radius:18px;
       --bg:#ffffff;
       --panel:#f3f4f6;
+      --pill-bg:#ffffff;
+      --pill-hover:#f9fafb;
     }
 
     *{
@@ -35,7 +37,7 @@
     }
 
     .wrap{
-      max-width:1100px;
+      max-width:1240px;
       margin:0 auto;
       padding:28px 18px 60px;
     }
@@ -52,14 +54,17 @@
       padding:8px 14px;
       border-radius:999px;
       border:1px solid var(--border);
-      background:#fff;
+      background:var(--pill-bg);
       color:#111;
       text-decoration:none;
       font-size:14px;
+      transition:background .12s ease, border-color .12s ease, transform .12s ease;
     }
 
     .nav-pill:hover{
-      background:#f9fafb;
+      background:var(--pill-hover);
+      border-color:#d1d5db;
+      transform:translateY(-1px);
     }
 
     .page-header{
@@ -76,6 +81,22 @@
       line-height:1.05;
     }
 
+    .intro-text{
+      max-width:1100px;
+      margin:0 0 28px;
+      padding:0;
+      line-height:1.6;
+      text-align:left;
+    }
+
+    .intro-text p{
+      margin:0 0 14px;
+      max-width:none;
+      width:100%;
+      color:var(--muted);
+      font-size:18px;
+    }
+
     .section-card{
       background:#fff;
       border:1px solid var(--border);
@@ -90,10 +111,12 @@
       font-size:1.4rem;
     }
 
-    .subsection-title{
-      margin:0 0 14px;
-      font-size:1rem;
-      color:#111;
+    .section-intro{
+      margin:0 0 18px;
+      color:var(--muted);
+      line-height:1.6;
+      max-width:none;
+      width:100%;
     }
 
     .gallery-grid{
@@ -102,19 +125,11 @@
       gap:20px;
     }
 
-    .sketch-hero-grid{
+    .index-grid{
+      margin-top:28px;
       display:grid;
-      grid-template-columns:minmax(280px,560px);
-      gap:20px;
-      justify-content:center;
-    }
-
-    .single-card-grid{
-      display:grid;
-      grid-template-columns:minmax(220px,320px);
-      gap:20px;
-      justify-content:start;
-      margin-bottom:24px;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:18px;
     }
 
     .card-grid{
@@ -147,44 +162,34 @@
       height:280px;
       object-fit:contain;
       background:var(--panel);
-      padding:6px;
+      padding:8px;
       border-bottom:1px solid var(--border);
     }
 
-    .sketch-hero-grid .gallery-item{
-      max-width:560px;
+    .index-grid .gallery-item img{
+      height:260px;
+      padding:10px;
+    }
+
+    .entry-body{
+      padding:16px 18px 18px;
+      text-align:center;
+    }
+
+    .work-title{
+      margin:0;
+      padding:0;
       width:100%;
-      margin:0 auto;
-    }
-
-    .sketch-hero-grid .gallery-item img{
-      height:620px;
-      background:var(--panel);
-      padding:8px;
-    }
-
-    .single-card-grid .gallery-item img{
-      height:420px;
-      background:var(--panel);
-      padding:8px;
+      font-size:18px;
+      line-height:1.35;
+      font-weight:600;
+      text-align:center;
     }
 
     .card-grid .gallery-item img{
       height:520px;
       background:var(--panel);
       padding:10px;
-    }
-
-    .entry-body{
-      padding:10px 12px 12px;
-      text-align:center;
-    }
-
-    .work-note{
-      margin:0;
-      color:var(--muted);
-      font-size:.92rem;
-      line-height:1.35;
     }
 
     .card-text-block{
@@ -247,35 +252,44 @@
       background:#f9fafb;
     }
 
+    footer{
+      margin-top:34px;
+      padding-top:16px;
+      border-top:1px solid var(--border);
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    @media (max-width:1100px){
+      .index-grid{
+        grid-template-columns:repeat(3,minmax(0,1fr));
+      }
+    }
+
+    @media (max-width:820px){
+      .index-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+      }
+    }
+
     @media (max-width:760px){
       .card-text-block{
         grid-template-columns:1fr;
       }
     }
 
-    @media (max-width:640px){
+    @media (max-width:560px){
       .wrap{
         padding:22px 14px 50px;
       }
 
-      .gallery-item img{
-        height:240px;
-      }
-
-      .sketch-hero-grid{
+      .index-grid{
         grid-template-columns:1fr;
       }
 
-      .sketch-hero-grid .gallery-item img{
-        height:520px;
-      }
-
-      .single-card-grid{
-        grid-template-columns:1fr;
-      }
-
-      .single-card-grid .gallery-item img{
-        height:360px;
+      .gallery-item img,
+      .index-grid .gallery-item img{
+        height:260px;
       }
 
       .card-grid .gallery-item img{
@@ -284,8 +298,10 @@
     }
   </style>
 </head>
+
 <body>
   <main class="wrap">
+
     <nav class="nav-pills" aria-label="Site navigation">
       <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
       <a class="nav-pill" href="../../index.html">Sketches</a>
@@ -297,89 +313,46 @@
       <h1 class="page-title">Buzz Ard</h1>
     </header>
 
-    <section class="section-card" aria-labelledby="original-drawing">
-      <h2 id="original-drawing">Original Drawing</h2>
-
-      <div class="sketch-hero-grid">
-        <a class="gallery-item" href="../../../images/Sketches/avians/buzzards/Buzz Ard ORIGINAL.jpg">
-          <img src="../../../images/Sketches/avians/buzzards/Buzz Ard ORIGINAL.jpg" alt="Buzz Ard original drawing by Ron English" loading="lazy" />
+    <section class="section-card" aria-labelledby="original-drawings">
+      <h2 id="original-drawings">Original Drawings</h2>
+      <p class="section-intro">
+        Original drawing material documented for this Buzzards record.
+      </p>
+      <div class="gallery-grid">
+        <a class="gallery-item" href="../../../images/Sketches/avians/buzzards/Buzz%20Ard%20ORIGINAL.jpg">
+          <img src="../../../images/Sketches/avians/buzzards/Buzz%20Ard%20ORIGINAL.jpg" alt="Buzz Ard original drawing by Ron English" loading="lazy" />
         </a>
       </div>
     </section>
-
     <section class="section-card" aria-labelledby="digitized-versions">
       <h2 id="digitized-versions">Digitized Versions</h2>
-
       <div class="gallery-grid">
-        <a class="gallery-item" href="../../../images/Sketches/avians/buzzards/Buzz Ard B&W.jpg">
-          <img src="../../../images/Sketches/avians/buzzards/Buzz Ard B&W.jpg" alt="Buzz Ard black-and-white digitized version by Ron English" loading="lazy" />
+        <a class="gallery-item" href="../../../images/Sketches/avians/buzzards/Buzz%20Ard%20B%26W.jpg">
+          <img src="../../../images/Sketches/avians/buzzards/Buzz%20Ard%20B%26W.jpg" alt="Buzz Ard digitized version by Ron English" loading="lazy" />
         </a>
-
-        <a class="gallery-item" href="../../../images/Sketches/avians/buzzards/Buzz Ard COLOR.jpg">
-          <img src="../../../images/Sketches/avians/buzzards/Buzz Ard COLOR.jpg" alt="Buzz Ard color digitized version by Ron English" loading="lazy" />
+        <a class="gallery-item" href="../../../images/Sketches/avians/buzzards/Buzz%20Ard%20COLOR.jpg">
+          <img src="../../../images/Sketches/avians/buzzards/Buzz%20Ard%20COLOR.jpg" alt="Buzz Ard digitized version by Ron English" loading="lazy" />
         </a>
       </div>
     </section>
-
-    <section class="section-card" aria-labelledby="trading-cards">
-      <h2 id="trading-cards">Trading Cards</h2>
-
-
-      <div class="single-card-grid">
-        <a class="gallery-item" href="../../../images/Sketches/avians/buzzards/Buzz Ard Trading Card.jpg">
-          <img src="../../../images/Sketches/avians/buzzards/Buzz Ard Trading Card.jpg" alt="Buzz Ard existing trading card" loading="lazy" />
-       
+    <section class="section-card" aria-labelledby="collector-cards">
+      <h2 id="collector-cards">Collector Cards</h2>
+      <div class="gallery-grid">
+        <a class="gallery-item" href="../../../images/Sketches/avians/buzzards/buzz%20ard%20card%201.jpg">
+          <img src="../../../images/Sketches/avians/buzzards/buzz%20ard%20card%201.jpg" alt="Buzz Ard collector card by Ron English" loading="lazy" />
         </a>
-      </div>
-
-      <h3 class="subsection-title">Delusionville Trading Cards</h3>
-      <div class="card-grid">
-        <a class="gallery-item" href="../../../images/Sketches/avians/buzzards/buzz ard card 1.jpg">
-          <img src="../../../images/Sketches/avians/buzzards/buzz ard card 1.jpg" alt="Buzz Ard trading card image 1" loading="lazy" />
+        <a class="gallery-item" href="../../../images/Sketches/avians/buzzards/buzz%20ard%20card%202.jpg">
+          <img src="../../../images/Sketches/avians/buzzards/buzz%20ard%20card%202.jpg" alt="Buzz Ard collector card by Ron English" loading="lazy" />
         </a>
-
-        <a class="gallery-item" href="../../../images/Sketches/avians/buzzards/buzz ard card 2.jpg">
-          <img src="../../../images/Sketches/avians/buzzards/buzz ard card 2.jpg" alt="Buzz Ard trading card image 2" loading="lazy" />
+        <a class="gallery-item" href="../../../images/Sketches/avians/buzzards/Buzz%20Ard%20Trading%20Card.jpg">
+          <img src="../../../images/Sketches/avians/buzzards/Buzz%20Ard%20Trading%20Card.jpg" alt="Buzz Ard collector card by Ron English" loading="lazy" />
         </a>
-      </div>
-
-      <div class="card-text-block">
-        <div class="card-column">
-          <span class="text-label">Card details</span>
-          <div class="card-details">
-            <p class="card-detail"><strong>Series:</strong> 2</p>
-            <p class="card-detail"><strong>Number:</strong> 08</p>
-            <p class="card-detail"><strong>Affiliation:</strong> Buzzards</p>
-            <p class="card-detail"><strong>Occupation:</strong> Being wealthy</p>
-            <p class="card-detail"><strong>Preoccupation:</strong> Leftovers</p>
-            <p class="card-detail"><strong>Virtue:</strong> Snob appeal</p>
-            <p class="card-detail"><strong>Vice:</strong> Eats her own eggs</p>
-          </div>
-        </div>
-
-        <div class="card-column">
-          <span class="text-label">Poem</span>
-          <p class="poem">Time's not forever,
-It just slips away.
-Patience ain't for buzzards—
-We are birds of prey.
-Wealth is pious, work is slavery.
-Leisure is virtue, cowardice bravery.
-Patience is wasted on the lazy.
-Thoughts are wasted on the crazy.
-A dime buys a dollar,
-The poor have no cents.
-Guilt is wasted on innocence.
-Your oppression is our self-defense.
-To challenge our authority
-Is a capital offence.</p>
-        </div>
       </div>
     </section>
-
     <div class="back-link">
       <a href="index.html">← Back to Buzzards</a>
     </div>
+
   </main>
 </body>
 </html>

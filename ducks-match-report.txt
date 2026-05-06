@@ -1,0 +1,307 @@
+﻿DUCKS MATCH REPORT
+Generated: 05/06/2026 17:59:54
+
+Current PowerShell location:
+D:\github\ron-english-sketches-and-drawings
+
+Image folder:
+D:\github\ron-english-sketches-and-drawings\images\Sketches\avians\ducks
+
+Page folder:
+D:\github\ron-english-sketches-and-drawings\Sketches\avians\ducks
+
+Does image folder exist? True
+Does page folder exist?  True
+
+Total files found in image folder: 117
+
+CURRENT HTML FILES IN DUCKS PAGE FOLDER
+---------------------------------------
+index.html
+
+MATCH COUNTS BY CHARACTER
+---------------------------------------
+
+Alien Quack Crown: 2
+Pattern: ^Alien Quack Crown 
+  - Alien Quack Crown B&W.png
+  - Alien Quack Crown COLOR.png
+
+Allie Quack: 6
+Pattern: ^Allie Quack 
+  - Allie Quack COLOR.png
+  - Allie Quack early version B&W.png
+  - Allie Quack early version COLOR.png
+  - Allie Quack early version ORIGINAL.jpg
+  - Allie Quack walking B&W.png
+  - Allie Quack walking COLOR.png
+
+Bub Quack: 19
+Pattern: ^Bub Quack (sketch|and Friends)
+  - Bub Quack and Friends ORIGINAL COLOR.jpg
+  - Bub Quack sketch 1 B&W.png
+  - Bub Quack sketch 1 COLOR.png
+  - Bub Quack sketch 1 ORIGINAL.jpg
+  - Bub Quack sketch 2 B&W.png
+  - Bub Quack sketch 2 COLOR.png
+  - Bub Quack sketch 2 ORIGINAL.jpg
+  - Bub Quack sketch 3 B&W.png
+  - Bub Quack sketch 3 COLOR.png
+  - Bub Quack sketch 3 ORIGINAL.jpg
+  - Bub Quack sketch 4 B&W.png
+  - Bub Quack sketch 4 COLOR.png
+  - Bub Quack sketch 4 ORIGINAL copy.jpg
+  - Bub Quack sketch 4 ORIGINAL.jpg
+  - Bub Quack sketch 5 ORIGINAL.jpg
+  - Bub Quack sketch 6 COLOR.png
+  - Bub Quack sketch 6 ORIGINAL.jpg
+  - Bub Quack sketch 7 COLOR.png
+  - Bub Quack sketch 7 ORIGINAL.jpg
+
+Bub Quack Guernica: 3
+Pattern: ^Bub Quack Guernica 
+  - Bub Quack Guernica B&W.png
+  - Bub Quack Guernica COLOR.png
+  - Bub Quack Guernica ORIGINAL.jpg
+
+Dr. Bub Quack: 22
+Pattern: ^(Dr Bub|Dr\. Bub|Character Cards BACKS dr bub quack|Dr Bub Quack - Quack)
+  - Character Cards BACKS dr bub quack.jpg
+  - Dr Bub B&W.png
+  - Dr Bub COLOR.jpg
+  - Dr Bub ORIGINAL.jpg
+  - Dr Bub Quack - Quack ain't no yoke.tif
+  - Dr Bub Quack back B&W.png
+  - Dr Bub Quack back COLOR.png
+  - Dr Bub Quack early version B&W.png
+  - Dr Bub Quack early version COLOR.jpg
+  - Dr Bub Quack front B&W.png
+  - Dr Bub Quack front COLOR.png
+  - Dr Bub Quack front version 2 B&W.png
+  - Dr Bub Quack front version 2 ORIGINAL COLOR.jpg
+  - Dr Bub Quack side B&W.png
+  - Dr Bub Quack side COLOR.png
+  - Dr Bub Quack side version 2 B&W.png
+  - Dr Bub Quack side version 2 COLOR.png
+  - Dr Bub Quack side version 2 ORIGINAL.jpg
+  - Dr. Bub Quack B&W.png
+  - Dr. Bub Quack COLOR.png
+  - Dr. Bub Quack ORIGINAL.jpg
+  - Dr. Bub Quack side version 2 ORIGINAL COLOR.jpg
+
+Duck at War: 3
+Pattern: ^Duck at War 
+  - Duck at War B&W.png
+  - Duck at War COLOR.png
+  - Duck at War ORIGINAL COLOR.jpg
+
+Duck Boat: 8
+Pattern: ^(Duck Boat|Duck boat|duckback|duckside)
+  - Duck boat back ORIGINAL.jpg
+  - Duck Boat front B&W.png
+  - Duck Boat Front COLOR.png
+  - Duck boat front ORIGINAL.jpg
+  - Duck Boat side B&W.png
+  - Duck Boat side ORIGINAL.jpg
+  - duckback COLOR.png
+  - duckside COLOR.png
+
+Duck Fetus: 3
+Pattern: ^Duck Fetus 
+  - Duck Fetus B&W.png
+  - Duck Fetus COLOR.png
+  - Duck Fetus ORIGINAL.jpg
+
+Duck House - Riverview Estates: 3
+Pattern: ^Duck House - Riverview Estates 
+  - Duck House - Riverview Estates B&Wg.png
+  - Duck House - Riverview Estates COLOR.png
+  - Duck House - Riverview Estates ORIGINAL COLOR.jpg
+
+Eddie Six Quack: 6
+Pattern: ^(Eddie .Six. Quack|Eddie Six Quack early version)
+  - Eddie “Six” Quack B&W.png
+  - Eddie “Six” Quack COLOR.jpg
+  - Eddie “Six” Quack ORIGINAL.jpg
+  - Eddie Six Quack early version B&W.png
+  - Eddie Six Quack early version COLOR.png
+  - Eddie Six Quack early version ORIGINAL.jpg
+
+Eddie Six Quack and Football: 2
+Pattern: ^Eddie Six Quack and Football 
+  - Eddie Six Quack and Football B&W.png
+  - Eddie Six Quack and Football COLOR.png
+
+Flying Duck: 3
+Pattern: ^Flying Duck 
+  - Flying Duck B&W.png
+  - Flying Duck COLOR.jpg
+  - Flying Duck ORIGINAL.jpg
+
+Football Duck: 3
+Pattern: ^Football Duck 
+  - Football Duck B&W.png
+  - Football Duck COLOR.jpg
+  - Football Duck ORIGINAL.jpg
+
+Hatch Quack: 3
+Pattern: ^Hatch Quack 
+  - Hatch Quack B&W.png
+  - Hatch Quack COLOR.png
+  - Hatch Quack ORIGINAL.jpg
+
+Jet Quack: 6
+Pattern: ^Jet Quack 
+  - Jet Quack early version B&W.png
+  - Jet Quack early version COLOR.png
+  - Jet Quack early version ORIGINAL.jpg
+  - Jet Quack Quack B&w.png
+  - Jet Quack Quack COLOR.jpg
+  - Jet Quack Quack ORIGINAL.jpg
+
+Punk Duck: 7
+Pattern: ^Punk Duck 
+  - Punk Duck B&W.png
+  - Punk Duck back COLOR.png
+  - Punk Duck back ORIGINAL.jpg
+  - Punk Duck front COLOR.png
+  - Punk Duck front ORIGINAL.jpg
+  - Punk Duck ORIGINAL COLOR.png
+  - Punk Duck ORIGINAL.jpg
+
+Quack Egg: 2
+Pattern: ^Quack Egg 
+  - Quack Egg COLOR.png
+  - Quack Egg ORIGINAL.jpg
+
+Quack Guernica: 4
+Pattern: ^Quack Guernica 
+  - Quack Guernica 1 B&W.png
+  - Quack Guernica 1 COLOR.png
+  - Quack Guernica 2 B&W.png
+  - Quack Guernica 2 COLOR.png
+
+Small Duck: 2
+Pattern: ^Small Duck 
+  - Small Duck B&W.jpg
+  - Small Duck COLOR.jpg
+
+ALL FILES IN DUCKS IMAGE FOLDER
+---------------------------------------
+Alien Quack Crown B&W.png
+Alien Quack Crown COLOR.png
+Allie Quack COLOR.png
+Allie Quack early version B&W.png
+Allie Quack early version COLOR.png
+Allie Quack early version ORIGINAL.jpg
+Allie Quack walking B&W.png
+Allie Quack walking COLOR.png
+Bub Quack and Friends ORIGINAL COLOR.jpg
+Bub Quack Guernica B&W.png
+Bub Quack Guernica COLOR.png
+Bub Quack Guernica ORIGINAL.jpg
+Bub Quack sketch 1 B&W.png
+Bub Quack sketch 1 COLOR.png
+Bub Quack sketch 1 ORIGINAL.jpg
+Bub Quack sketch 2 B&W.png
+Bub Quack sketch 2 COLOR.png
+Bub Quack sketch 2 ORIGINAL.jpg
+Bub Quack sketch 3 B&W.png
+Bub Quack sketch 3 COLOR.png
+Bub Quack sketch 3 ORIGINAL.jpg
+Bub Quack sketch 4 B&W.png
+Bub Quack sketch 4 COLOR.png
+Bub Quack sketch 4 ORIGINAL copy.jpg
+Bub Quack sketch 4 ORIGINAL.jpg
+Bub Quack sketch 5 ORIGINAL.jpg
+Bub Quack sketch 6 COLOR.png
+Bub Quack sketch 6 ORIGINAL.jpg
+Bub Quack sketch 7 COLOR.png
+Bub Quack sketch 7 ORIGINAL.jpg
+Character Cards BACKS dr bub quack.jpg
+Dr Bub B&W.png
+Dr Bub COLOR.jpg
+Dr Bub ORIGINAL.jpg
+Dr Bub Quack - Quack ain't no yoke.tif
+Dr Bub Quack back B&W.png
+Dr Bub Quack back COLOR.png
+Dr Bub Quack early version B&W.png
+Dr Bub Quack early version COLOR.jpg
+Dr Bub Quack front B&W.png
+Dr Bub Quack front COLOR.png
+Dr Bub Quack front version 2 B&W.png
+Dr Bub Quack front version 2 ORIGINAL COLOR.jpg
+Dr Bub Quack side B&W.png
+Dr Bub Quack side COLOR.png
+Dr Bub Quack side version 2 B&W.png
+Dr Bub Quack side version 2 COLOR.png
+Dr Bub Quack side version 2 ORIGINAL.jpg
+Dr. Bub Quack B&W.png
+Dr. Bub Quack COLOR.png
+Dr. Bub Quack ORIGINAL.jpg
+Dr. Bub Quack side version 2 ORIGINAL COLOR.jpg
+Duck at War B&W.png
+Duck at War COLOR.png
+Duck at War ORIGINAL COLOR.jpg
+Duck boat back ORIGINAL.jpg
+Duck Boat front B&W.png
+Duck Boat Front COLOR.png
+Duck boat front ORIGINAL.jpg
+Duck Boat side B&W.png
+Duck Boat side ORIGINAL.jpg
+Duck Fetus B&W.png
+Duck Fetus COLOR.png
+Duck Fetus ORIGINAL.jpg
+Duck House - Riverview Estates B&Wg.png
+Duck House - Riverview Estates COLOR.png
+Duck House - Riverview Estates ORIGINAL COLOR.jpg
+duckback COLOR.png
+duckside COLOR.png
+Eddie “Six” Quack B&W.png
+Eddie “Six” Quack COLOR.jpg
+Eddie “Six” Quack ORIGINAL.jpg
+Eddie Six Quack and Football B&W.png
+Eddie Six Quack and Football COLOR.png
+Eddie Six Quack early version B&W.png
+Eddie Six Quack early version COLOR.png
+Eddie Six Quack early version ORIGINAL.jpg
+Flying Duck B&W.png
+Flying Duck COLOR.jpg
+Flying Duck ORIGINAL.jpg
+Football Duck B&W.png
+Football Duck COLOR.jpg
+Football Duck ORIGINAL.jpg
+Hatch Quack B&W.png
+Hatch Quack COLOR.png
+Hatch Quack ORIGINAL.jpg
+Jet Quack early version B&W.png
+Jet Quack early version COLOR.png
+Jet Quack early version ORIGINAL.jpg
+Jet Quack Quack B&w.png
+Jet Quack Quack COLOR.jpg
+Jet Quack Quack ORIGINAL.jpg
+Punk Duck B&W.png
+Punk Duck back COLOR.png
+Punk Duck back ORIGINAL.jpg
+Punk Duck front COLOR.png
+Punk Duck front ORIGINAL.jpg
+Punk Duck ORIGINAL COLOR.png
+Punk Duck ORIGINAL.jpg
+Quack Egg COLOR.png
+Quack Egg ORIGINAL.jpg
+Quack Guernica 1 B&W.png
+Quack Guernica 1 COLOR.png
+Quack Guernica 2 B&W.png
+Quack Guernica 2 COLOR.png
+series 1 #11 back - DUCKS - Allie Quack - common.png
+series 1 #11 front - DUCKS - allie quack - common.png
+series 1 #12 back - DUCKS - Dr bub quack - common.png
+series 1 #12 front - DUCKS - dr bub quack - common.png
+series 2 #12 back - DUCKS - Eddie Six Quack - common.jpg
+series 2 #12 front - DUCKS - Eddie Six Quack - common.jpg
+series 2 #13 back - DUCKS - Punk Duck - common.jpg
+series 2 #13 front - DUCKS - Punk Duck.jpg
+series 2 #29 back - DUCKS - Jet Quack - uncommon.jpg
+series 2 #29 front - DUCKS - Jet Quack - Uncommon.jpg
+Small Duck B&W.jpg
+Small Duck COLOR.jpg
