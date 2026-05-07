@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -325,10 +325,10 @@
         </div>
       </a>
 
-      <a class="entry" href="grins/index.html">
-        <img src="../images/Sketches/grinnies-hero.jpg" alt="Grins drawings by Ron English">
+      <a class="entry" href="grinnies/index.html">
+        <img src="../images/Sketches/grinnies-hero.jpg" alt="Grinnies drawings by Ron English">
         <div class="entry-body">
-          <h3>Grins</h3>
+          <h3>Grinnies</h3>
         </div>
       </a>
 
@@ -446,4 +446,3 @@
   </main>
 </body>
 </html>
-

@@ -1,0 +1,51 @@
+﻿Grins A-name build report
+Generated: 2026-05-07 10:10:11
+
+Image folder: D:\github\ron-english-sketches-and-drawings\images\Sketches\grins
+HTML folder:  D:\github\ron-english-sketches-and-drawings\Sketches\grins
+
+Pages created or updated:
+- Sketches\grins\index.html
+- Sketches\grins\alien-baby-grin.html - Alien Baby Grin
+- Sketches\grins\alien-grin.html - Alien Grin
+- Sketches\grins\angel-grin.html - Angel Grin
+- Sketches\grins\angel-wings-grin.html - Angel Wings Grin
+- Sketches\grins\artist-grin.html - Artist Grin
+- Sketches\grins\astro-boy-grin.html - Astro Boy Grin
+- Sketches\grins\astrogrin.html - Astrogrin
+
+Pages using the no-original standard:
+- Alien Baby Grin
+- Alien Grin
+- Angel Grin
+- Angel Wings Grin
+- Artist Grin
+- Astro Boy Grin
+
+Images used:
+- Alien Baby Grin / Digitized Versions: Alien Baby Grin colorway 1.jpg
+- Alien Baby Grin / Digitized Versions: Alien Baby Grin colorway 2.jpg
+- Alien Baby Grin / Digitized Versions: Alien Baby Grin colorway 3.jpg
+- Alien Grin / Digitized Versions: Alien Grin COLOR.png
+- Alien Grin / Digitized Versions: Alien Grin side view.png
+- Alien Grin / Digitized Versions: Alien Grin side view (2).png
+- Alien Grin / Digitized Versions: Alien Grin side view (3).png
+- Alien Grin / Digitized Versions: Alien Grin side view (4).png
+- Alien Grin / Digitized Versions: Alien Grin side view (5).png
+- Alien Grin / Digitized Versions: Alien Grin side view (6) copy.png
+- Alien Grin / Digitized Versions: Alien Grin side view (7).png
+- Angel Grin / Digitized Versions: Angel Grin B&W.jpg
+- Angel Grin / Collector Cards: Angel Grin card.jpg
+- Angel Grin / Collector Cards: Angel Grin card.png
+- Angel Wings Grin / Digitized Versions: Angel Wings Grin 1.png
+- Angel Wings Grin / Digitized Versions: Angel Wings Grin 2.png
+- Angel Wings Grin / Digitized Versions: Angel Wings Grin 3.png
+- Artist Grin / Digitized Versions: Artist Grin B&W.jpg
+- Artist Grin / Digitized Versions: Artist Grin COLOR.jpg
+- Artist Grin / Collector Cards: Artist Grin card.jpg
+- Artist Grin / Collector Cards: Artist Grin card.png
+- Astro Boy Grin / Digitized Versions: Astro Boy Grin COLOR.jpg
+- Astro Boy Grin / Collector Cards: Astro Boy Grin card.jpg
+- Astrogrin / Original Drawing: Astrogrin ORIGINAL.jpg
+- Astrogrin / Digitized Versions: Astrogrin B&W.jpg
+- Astrogrin / Digitized Versions: Astrogrin COLOR.jpg

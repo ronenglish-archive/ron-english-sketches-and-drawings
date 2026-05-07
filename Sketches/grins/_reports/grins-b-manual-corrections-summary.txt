@@ -1,0 +1,67 @@
+﻿Grins B manual corrections report
+Generated: 2026-05-07 13:56:23
+
+B-name image files scanned after exclusions: 182
+Pages generated: 36
+
+Excluded from generated pages:
+- Bart Grin front ORIGINAL COLOR.jpg
+- Bart Grin side ORIGINAL COLOR.jpg
+- Batman Grin ORIGINAL.jpg
+- Batman Grin Icon .jpg
+- Big Boy Grin ORIGINAL COLOR.jpg
+
+Kind overrides:
+- Baby Grin ORIGINAL COLOR.jpg -> Cards
+- Badly Drawn Batman Grin ORIGINAL COLOR.jpg -> Digitals
+- Baseball Grin ORIGINAL COLOR 2.jpg -> Cards
+- Baseball Grin ORIGINAL COLOR 3.jpg -> Cards
+- Basketball Grin ORIGINAL COLOR.jpg -> Cards
+- Batman Grin ORIGINAL COLOR.jpg -> Cards
+- Batman Grin side ORIGINAL.jpg -> Digitals
+- B-Rex Grin ORIGINAL COLOR.jpg -> Cards
+
+Group overrides:
+- Batman Grin three quarters COLOR 1.png -> Batman Grin Torso
+- Batman Grin three quarters COLOR 2.png -> Batman Grin Torso
+- Batman Grin three quarters COLOR 3.png -> Batman Grin Torso
+- Batman Grin three quarters COLOR 4.png -> Batman Grin Torso
+- Bored Ape Cowboy Grin COLOR 2.jpg -> Bored Ape Grin
+
+Pages:
+- Babalouie Grin -> babalouie-grin.html | originals: 1, digitals: 2, cards: 0, thumb: Babalouie Grin COLOR.jpg
+- Baby Grin -> baby-grin.html | originals: 2, digitals: 1, cards: 1, thumb: Baby Grin COLOR.jpg
+- Baby Grin 2 -> baby-grin-2.html | originals: 1, digitals: 2, cards: 1, thumb: Baby Grin 2 COLOR.jpg
+- Badly Drawn Batman Grin -> badly-drawn-batman-grin.html | originals: 0, digitals: 1, cards: 0, thumb: Badly Drawn Batman Grin ORIGINAL COLOR.jpg
+- Barney Grin -> barney-grin.html | originals: 8, digitals: 12, cards: 0, thumb: Barney Grin front 1 COLOR.jpg
+- Barney Grin Guernical -> barney-grin-guernical.html | originals: 1, digitals: 2, cards: 0, thumb: Barney Grin Guernical COLOR.jpg
+- Bart Grin -> bart-grin.html | originals: 4, digitals: 10, cards: 0, thumb: Bart Grin Chubby front COLOR.jpg
+- Bartman Grin -> bartman-grin.html | originals: 2, digitals: 2, cards: 0, thumb: Bartman Grin flying COLOR.jpg
+- Baseball Grin -> baseball-grin.html | originals: 1, digitals: 2, cards: 3, thumb: Baseball Grin COLOR.jpg
+- Basketball Bulldog Grin -> basketball-bulldog-grin.html | originals: 0, digitals: 2, cards: 0, thumb: Basketball Bulldog Grin COLOR.jpg
+- Basketball Grin -> basketball-grin.html | originals: 8, digitals: 7, cards: 1, thumb: Basketball Grin COLOR.jpg
+- Bat Grin -> bat-grin.html | originals: 2, digitals: 4, cards: 0, thumb: Bat Grin front COLOR.jpg
+- Bat Grin version 2 -> bat-grin-version-2.html | originals: 2, digitals: 4, cards: 0, thumb: Bat Grin version 2 front COLOR.jpg
+- Batman Grin -> batman-grin.html | originals: 1, digitals: 5, cards: 1, thumb: Batman Grin COLOR.jpg
+- Batman Grin and Robin 2 -> batman-grin-and-robin-2.html | originals: 1, digitals: 0, cards: 0, thumb: Batman Grin and Robin 2 ORIGINAL.jpg
+- Batman Grin Icon -> batman-grin-icon.html | originals: 0, digitals: 2, cards: 0, thumb: Batman Grin Icon COLOR.jpg
+- Batman Grin Torso -> batman-grin-torso.html | originals: 0, digitals: 4, cards: 0, thumb: Batman Grin three quarters COLOR 1.png
+- Battle Cat Grin -> battle-cat-grin.html | originals: 2, digitals: 4, cards: 0, thumb: Battle Cat Grin COLOR.jpg
+- Battle Skull Grin -> battle-skull-grin.html | originals: 1, digitals: 3, cards: 0, thumb: Battle Skull Grin COLOR 1.jpg
+- Bearbrick Skull -> bearbrick-skull.html | originals: 1, digitals: 2, cards: 0, thumb: Bearbrick Skull COLOR.jpg
+- Bear Grin Forked Tongue -> bear-grin-forked-tongue.html | originals: 2, digitals: 3, cards: 0, thumb: Bear Grin Forked Tongue COLOR 1.jpg
+- Beast Man Grin -> beast-man-grin.html | originals: 1, digitals: 2, cards: 0, thumb: Beast Man Grin COLOR.jpg
+- Bert Grin -> bert-grin.html | originals: 2, digitals: 2, cards: 0, thumb: Bert Grin COLOR.jpg
+- Big Boy Grin -> big-boy-grin.html | originals: 1, digitals: 2, cards: 0, thumb: Big Boy Grin COLOR.jpg
+- Biggie Grin -> biggie-grin.html | originals: 1, digitals: 2, cards: 0, thumb: Biggie Grin COLOR.jpg
+- Blanka Grin -> blanka-grin.html | originals: 1, digitals: 0, cards: 0, thumb: Blanka Grin ORIGINAL.jpg
+- Blotchy Grin -> blotchy-grin.html | originals: 1, digitals: 1, cards: 0, thumb: Blotchy Grin B&W.jpg
+- Blue From Blue’s Clues Grin -> blue-from-blue-s-clues-grin.html | originals: 1, digitals: 2, cards: 0, thumb: Blue From Blue’s Clues Grin COLOR.jpg
+- Boba Fett Grin -> boba-fett-grin.html | originals: 4, digitals: 8, cards: 0, thumb: Boba Fett Grin front COLOR.jpg
+- Boo Boo Bear Grin -> boo-boo-bear-grin.html | originals: 1, digitals: 2, cards: 0, thumb: Boo Boo Bear Grin COLOR.jpg
+- Bored Ape Cowboy Grin -> bored-ape-cowboy-grin.html | originals: 0, digitals: 1, cards: 0, thumb: Bored Ape Cowboy Grin COLOR.jpg
+- Bored Ape Grin -> bored-ape-grin.html | originals: 0, digitals: 2, cards: 0, thumb: Bored Ape Cowboy Grin COLOR 2.jpg
+- B-Rex Grin -> b-rex-grin.html | originals: 3, digitals: 3, cards: 1, thumb: B-Rex Grin side B&W.jpg
+- Bugs Grin -> bugs-grin.html | originals: 1, digitals: 2, cards: 0, thumb: Bugs Grin COLOR.jpg
+- Bulldog Grin -> bulldog-grin.html | originals: 0, digitals: 2, cards: 0, thumb: Bulldog Grin COLOR.jpg
+- Businessman Grin -> businessman-grin.html | originals: 4, digitals: 8, cards: 0, thumb: Businessman Grin COLOR.jpg
