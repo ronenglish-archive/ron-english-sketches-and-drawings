@@ -110,6 +110,13 @@
       border-radius:16px;
       overflow:hidden;
       box-shadow:0 4px 18px rgba(0,0,0,.04);
+      margin:0;
+    }
+
+    .gallery-item a{
+      display:block;
+      color:inherit;
+      text-decoration:none;
     }
 
     .gallery-item img{
@@ -130,6 +137,14 @@
     .card-grid .gallery-item img{
       height:520px;
       padding:10px;
+    }
+
+    .image-caption{
+      padding:10px 12px 12px;
+      font-size:14px;
+      line-height:1.45;
+      color:var(--muted);
+      text-align:center;
     }
 
     .entry-body{
@@ -184,7 +199,9 @@
       line-height:1.7;
     }
 
-    .related-file-list a{ color:#111; }
+    .related-file-list a{
+      color:#111;
+    }
 
     .back-link{ margin-top:28px; }
 
@@ -244,20 +261,26 @@
       <h2 id="original-drawings">Original Drawings</h2>
       <p class="section-intro">Original drawing material documented for this Ducks record.</p>
       <div class="gallery-grid">
-        <a class="gallery-item" href="../../../images/Sketches/avians/ducks/Hatch Quack ORIGINAL.jpg">
-          <img src="../../../images/Sketches/avians/ducks/Hatch Quack ORIGINAL.jpg" alt="Hatch Quack original drawing by Ron English" loading="lazy" />
-        </a>
+        <figure class="gallery-item">
+          <a href="../../../images/Sketches/avians/ducks/Hatch Quack ORIGINAL.jpg">
+            <img src="../../../images/Sketches/avians/ducks/Hatch Quack ORIGINAL.jpg" alt="Hatch Quack original drawing by Ron English" loading="lazy" />
+          </a>
+        </figure>
       </div>
     </section>
     <section class="section-card" aria-labelledby="digitized-versions">
       <h2 id="digitized-versions">Digitized Versions</h2>
       <div class="gallery-grid">
-        <a class="gallery-item" href="../../../images/Sketches/avians/ducks/Hatch Quack B&amp;W.png">
-          <img src="../../../images/Sketches/avians/ducks/Hatch Quack B&amp;W.png" alt="Hatch Quack digitized version by Ron English" loading="lazy" />
-        </a>
-        <a class="gallery-item" href="../../../images/Sketches/avians/ducks/Hatch Quack COLOR.png">
-          <img src="../../../images/Sketches/avians/ducks/Hatch Quack COLOR.png" alt="Hatch Quack digitized version by Ron English" loading="lazy" />
-        </a>
+        <figure class="gallery-item">
+          <a href="../../../images/Sketches/avians/ducks/Hatch Quack B&amp;W.png">
+            <img src="../../../images/Sketches/avians/ducks/Hatch Quack B&amp;W.png" alt="Hatch Quack digitized version by Ron English" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="gallery-item">
+          <a href="../../../images/Sketches/avians/ducks/Hatch Quack COLOR.png">
+            <img src="../../../images/Sketches/avians/ducks/Hatch Quack COLOR.png" alt="Hatch Quack digitized version by Ron English" loading="lazy" />
+          </a>
+        </figure>
       </div>
     </section>
     <div class="back-link">
