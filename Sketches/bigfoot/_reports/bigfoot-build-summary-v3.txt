@@ -1,0 +1,117 @@
+﻿Bigfoot build report V3
+Generated: 2026-05-07 08:39:57
+
+Image folder: D:\github\ron-english-sketches-and-drawings\images\Sketches\bigfoot
+HTML folder:  D:\github\ron-english-sketches-and-drawings\Sketches\bigfoot
+
+Pages created or updated:
+- Sketches\bigfoot\index.html
+- Sketches\bigfoot\lady-bigfoot.html - Lady Bigfoot
+- Sketches\bigfoot\little-bigfoot.html - Little Bigfoot
+- Sketches\bigfoot\urban-bigfoot.html - Urban Bigfoot
+- Sketches\bigfoot\bigfoot-living-room.html - Bigfoot Living Room
+- Sketches\bigfoot\bigfoot-messiah.html - Bigfoot Messiah
+- Sketches\bigfoot\midget-bigfoot.html - Midget Bigfoot
+- Sketches\bigfoot\bigfoot-tourist.html - Bigfoot Tourist
+- Sketches\bigfoot\lil-bigfoot.html - Li'l Bigfoot
+- Sketches\bigfoot\bigfoot-feet.html - Bigfoot Feet
+- Sketches\bigfoot\urban-bigfoot-with-hoodie.html - Urban Bigfoot with Hoodie
+- Sketches\bigfoot\fake-father-bigfoot.html - Fake Father Bigfoot
+- Sketches\bigfoot\new-urban-bigfoot.html - New Urban Bigfoot
+- Sketches\bigfoot\bigfoot-toddler.html - Bigfoot Toddler
+- Sketches\bigfoot\lil-bigfoot-with-beard.html - Li'l Bigfoot with Beard
+- Sketches\bigfoot\myth-mother-bigfoot.html - Myth Mother Bigfoot
+- Sketches\bigfoot\washington-bigfoot.html - Washington Bigfoot
+- Sketches\bigfoot\bigfoot-family-icon.html - Bigfoot Family Icon
+
+Archived stale standalone page if present:
+- Sketches\bigfoot\bigfoot-footprint.html
+
+Pages using the no-original standard:
+- Urban Bigfoot with Hoodie
+- Bigfoot Toddler
+- Myth Mother Bigfoot
+- Bigfoot Family Icon
+
+Images used:
+- Lady Bigfoot / Original Drawing: Lady Bigfoot ORIGINAL.jpg
+- Lady Bigfoot / Digitized Versions: Lady Bigfoot B&W.jpg
+- Lady Bigfoot / Digitized Versions: Lady Bigfoot COLOR.jpg
+- Little Bigfoot / Original Drawing: Little Bigfoot ORIGINAL.jpg
+- Little Bigfoot / Digitized Versions: Little Bigfoot B&W.jpg
+- Little Bigfoot / Digitized Versions: Little Bigfoot COLOR.jpg
+- Urban Bigfoot / Original Drawing: Urban Bigfoot 1 front ORIGINAL.jpg
+- Urban Bigfoot / Original Drawing: Urban Bigfoot 1 back ORIGINAL.jpg
+- Urban Bigfoot / Original Drawing: Urban Bigfoot 1 left side ORIGINAL.jpg
+- Urban Bigfoot / Original Drawing: Urban Bigfoot 1 right side ORIGINAL.jpg
+- Urban Bigfoot / Digitized Versions: Urban Bigfoot 1 front B&W.jpg
+- Urban Bigfoot / Digitized Versions: Urban Bigfoot 1 back B&W.jpg
+- Urban Bigfoot / Digitized Versions: Urban Bigfoot 1 left side B&W.jpg
+- Urban Bigfoot / Digitized Versions: Urban Bigfoot right side 1 B&W.jpg
+- Urban Bigfoot / Digitized Versions: Urban Bigfoot 1 front COLOR.jpg
+- Urban Bigfoot / Digitized Versions: Urban Bigfoot 1 back COLOR.jpg
+- Urban Bigfoot / Digitized Versions: Urban Bigfoot 1 left side COLOR.jpg
+- Urban Bigfoot / Digitized Versions: Urban Bigfoot 1 right side COLOR.jpg
+- Urban Bigfoot / Trading Cards: series 1 #52 front - BIGFOOTS - urban bigfoot - ultrarare.jpg
+- Urban Bigfoot / Trading Cards: series 1 #52 back - BIGFOOTS - Urban Bigfoot - ultrarare.jpg
+- Bigfoot Living Room / Original Drawing: Bigfoot Living Room 1 ORIGINAL.jpg
+- Bigfoot Living Room / Original Drawing: Bigfoot Living Room 2 ORIGINAL.jpg
+- Bigfoot Living Room / Digitized Versions: Bigfoot Living Room 1A B&W.jpg
+- Bigfoot Living Room / Digitized Versions: Bigfoot Living Room 1B B&W.jpg
+- Bigfoot Messiah / Original Drawing: Bigfoot Messiah ORIGINAL.jpg
+- Bigfoot Messiah / Digitized Versions: Bigfoot Messiah B&w.jpg
+- Bigfoot Messiah / Digitized Versions: Bigfoot Messiah COLOR.jpg
+- Midget Bigfoot / Original Drawing: Midget Bigfoot ORIGINAL.jpg
+- Midget Bigfoot / Digitized Versions: Midget Bigfoot B&W.jpg
+- Midget Bigfoot / Digitized Versions: Midget Bigfoot COLOR.jpg
+- Midget Bigfoot / Trading Cards: series 2 #38 front - BIGFOOTS - MIdget Bigfoot - rare.jpg
+- Midget Bigfoot / Trading Cards: series 2 #38 back - BIGFOOTS - Midget Bigfoot - rare.jpg
+- Midget Bigfoot / Additional Collector Card: Midget Bigfoot card.jpg
+- Bigfoot Tourist / Original Drawing: Bigfoot Tourist ORIGINAL.jpg
+- Bigfoot Tourist / Original Drawing: Bigfoot Tourist ORIGINAL COLOR.jpg
+- Bigfoot Tourist / Digitized Versions: Bigfoot Tourist B&W.jpg
+- Bigfoot Tourist / Digitized Versions: Bigfoot Tourist COLOR.jpg
+- Li'l Bigfoot / Original Drawing: Li'l Bigfoot ORIGINAL.jpg
+- Li'l Bigfoot / Digitized Versions: Li'l Bigfoot B&W.jpg
+- Li'l Bigfoot / Digitized Versions: Li'l Bigfoot COLOR.jpg
+- Li'l Bigfoot / Trading Cards: series 1 #36 front - BIGFOOTS - Lil Bigfoot - uncommon.jpg
+- Li'l Bigfoot / Trading Cards: series 1 #36 back - BIGFOOT - Li'l Bigfoot - uncommon.jpg
+- Li'l Bigfoot / Additional Collector Card: Li'l Bigfoot card.jpg
+- Bigfoot Feet / Original Drawing: Bigfoot feet ORIGINAL.jpg
+- Bigfoot Feet / Original Drawing: Bigfoot Footprint ORIGINAL.jpg
+- Urban Bigfoot with Hoodie / Digitized Versions: Urban Bigfoot with Hoodie front.jpg
+- Urban Bigfoot with Hoodie / Digitized Versions: Urban Bigfoot with Hoodie side.jpg
+- Fake Father Bigfoot / Original Drawing: Fake Father Bigfoot ORIGINAL.jpg
+- Fake Father Bigfoot / Digitized Versions: Fake Father Bigfoot B&w.jpg
+- Fake Father Bigfoot / Digitized Versions: Fake Father Bigfoot COLOR.jpg
+- Fake Father Bigfoot / Trading Cards: series 2 #6 front - BIGFOOTS - fake Father Bigfoot - common.jpg
+- Fake Father Bigfoot / Trading Cards: series 2 #6 back - BIGFOOTS - Fake Father Bigfoot - common.jpg
+- Fake Father Bigfoot / Additional Collector Card: Fake Father Bigfoot card.jpg
+- New Urban Bigfoot / Original Drawing: New Urban Bigfoot ORIGINAL.jpg
+- New Urban Bigfoot / Digitized Versions: New Urban Bigfoot B&W.jpg
+- New Urban Bigfoot / Digitized Versions: New Urban Bigfoot COLOR.jpg
+- New Urban Bigfoot / Additional Collector Card: New Urban Bigfoot card.jpg
+- Bigfoot Toddler / Digitized Versions: Bigfoot Toddler B&W.jpg
+- Bigfoot Toddler / Digitized Versions: Bigfoot Toddler COLOR.jpg
+- Li'l Bigfoot with Beard / Original Drawing: Li'l Bigfoot with beard front ORIGINAL.jpg
+- Li'l Bigfoot with Beard / Original Drawing: Li'l Bigfoot with beard front ORIGINAL COLORED.jpg
+- Li'l Bigfoot with Beard / Original Drawing: Li'l Bigfoot with beard front ORIGINAL COLOR rainbow.jpg
+- Li'l Bigfoot with Beard / Original Drawing: Li'l Bigfoot with beard back ORIGINAL.jpg
+- Li'l Bigfoot with Beard / Original Drawing: Li'l Bigfoot with beard side ORIGINAL.jpg
+- Li'l Bigfoot with Beard / Original Drawing: Li'l Bigfoot with beard three quarters ORIGINAL.jpg
+- Li'l Bigfoot with Beard / Digitized Versions: Li'l Bigfoot with beard front B&W.jpg
+- Li'l Bigfoot with Beard / Digitized Versions: Li'l Bigfoot with beard back B&W.jpg
+- Li'l Bigfoot with Beard / Digitized Versions: Li'l Bigfoot with beard side B&w.jpg
+- Li'l Bigfoot with Beard / Digitized Versions: Li'l Bigfoot with beard three quarters B&W.jpg
+- Li'l Bigfoot with Beard / Digitized Versions: Li'l Bigfoot with beard front COLOR.jpg
+- Li'l Bigfoot with Beard / Digitized Versions: Li'l Bigfoot with beard back COLOR.jpg
+- Li'l Bigfoot with Beard / Digitized Versions: Li'l Bigfoot with beard side COLOR.jpg
+- Li'l Bigfoot with Beard / Digitized Versions: Li'l Bigfoot with beard three quarters COLOR.jpg
+- Myth Mother Bigfoot / Digitized Versions: Myth Mother Bigfoot B&W.jpg
+- Myth Mother Bigfoot / Digitized Versions: Myth Mother Bigfoot COLOR.jpg
+- Myth Mother Bigfoot / Trading Cards: series 2 #7 front - BIGFOOTS - Myth Mother Bigfoot - common copy.jpg
+- Myth Mother Bigfoot / Trading Cards: series 2 #7 back - BIGFOOTS - Myth Mother Bigfoot - common.jpg
+- Myth Mother Bigfoot / Additional Collector Card: Myth Mother Bigfoot card.jpg
+- Washington Bigfoot / Original Drawing: Washington Bigfoot ORIGINAL.jpg
+- Washington Bigfoot / Digitized Versions: Washington Bigfoot B&w.jpg
+- Bigfoot Family Icon / Digitized Versions: Bigfoot Family Icon COLOR.jpg
