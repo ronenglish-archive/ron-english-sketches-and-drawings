@@ -1,0 +1,13 @@
+﻿Grins index thumbnail inspection
+Generated: 2026-05-08 08:08:23
+
+Index path: D:\github\ron-english-sketches-and-drawings\Sketches\grins\index.html
+Likely index cards found: 433
+Requested targets checked: 9
+
+Reports:
+- D:\github\ron-english-sketches-and-drawings\Sketches\grins\_reports\inspect-index-thumbnails\01-all-index-cards-20260508-080823.csv
+- D:\github\ron-english-sketches-and-drawings\Sketches\grins\_reports\inspect-index-thumbnails\02-requested-thumbnail-targets-20260508-080823.csv
+- D:\github\ron-english-sketches-and-drawings\Sketches\grins\_reports\inspect-index-thumbnails\03-best-match-snippets-20260508-080823.csv
+
+Send ChatGPT the rows from 02-requested-thumbnail-targets if a thumbnail update script still fails.

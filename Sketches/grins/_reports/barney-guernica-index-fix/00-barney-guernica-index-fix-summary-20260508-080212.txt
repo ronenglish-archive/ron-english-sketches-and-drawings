@@ -1,0 +1,20 @@
+﻿Grins Barney Guernica/index thumbnail fix
+Generated: 2026-05-08 08:02:12
+
+ReportOnly: False
+Index thumbnail updates requested: 9
+Barney Grin Guernica live pages found: 1
+Changes listed: 11
+Warnings: 0
+
+Archive folder:
+- D:\github\ron-english-sketches-and-drawings\Sketches\grins\_archived-merged-pages\barney-guernica-index-fix-20260508-080212
+
+Safety notes:
+- Image files are not deleted or moved.
+- Barney Grin Guernica page(s) are archived, not permanently deleted.
+- index.html is backed up before editing.
+
+Reports:
+- D:\github\ron-english-sketches-and-drawings\Sketches\grins\_reports\barney-guernica-index-fix\01-barney-guernica-index-fix-changes-20260508-080212.csv
+- D:\github\ron-english-sketches-and-drawings\Sketches\grins\_reports\barney-guernica-index-fix\02-barney-guernica-index-fix-warnings-20260508-080212.csv

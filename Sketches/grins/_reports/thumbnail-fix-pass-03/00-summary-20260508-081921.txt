@@ -1,0 +1,11 @@
+﻿Grins index thumbnail fix - pass 03
+Generated: 2026-05-08 08:19:21
+
+ReportOnly: False
+Requested thumbnails: 15
+Updated cards: 13
+Warnings: 2
+
+Report files:
+- D:\github\ron-english-sketches-and-drawings\Sketches\grins\_reports\thumbnail-fix-pass-03\01-updated-cards-20260508-081921.csv
+- D:\github\ron-english-sketches-and-drawings\Sketches\grins\_reports\thumbnail-fix-pass-03\02-warnings-20260508-081921.csv

@@ -1,0 +1,66 @@
+﻿Grins D-F build report
+Generated: 2026-05-08 05:11:33
+
+Image folder: D:\github\ron-english-sketches-and-drawings\images\Sketches\grins
+HTML folder:  D:\github\ron-english-sketches-and-drawings\Sketches\grins
+
+D-F image files scanned: 69
+Pages proposed: 40
+
+Pages:
+- DEADMAU5 Grin -> deadmau5-grin.html | originals: 0, digitals: 3, cards: 0
+- DEADMAU5 Grin Running COLORS -> deadmau5-grin-running-colors.html | originals: 0, digitals: 1, cards: 0
+- DEADMAUGrin back COLORS -> deadmaugrin-back-colors.html | originals: 0, digitals: 1, cards: 0
+- DEADMAUGrin COLORS -> deadmaugrin-colors.html | originals: 0, digitals: 1, cards: 0
+- DEADMAUGrin side COLORS -> deadmaugrin-side-colors.html | originals: 0, digitals: 1, cards: 0
+- Deputy Dog Grin -> deputy-dog-grin.html | originals: 0, digitals: 1, cards: 0
+- Dr Bub Quack Animation 1 -> dr-bub-quack-animation-1.html | originals: 0, digitals: 1, cards: 0
+- Dr Bub Quack Animation 2 -> dr-bub-quack-animation-2.html | originals: 0, digitals: 1, cards: 0
+- Dr Bub Quack Grin -> dr-bub-quack-grin.html | originals: 0, digitals: 1, cards: 0
+- Drink the Koolaid 1 -> drink-the-koolaid-1.html | originals: 0, digitals: 1, cards: 0
+- Drink the Koolaid 2 -> drink-the-koolaid-2.html | originals: 0, digitals: 1, cards: 0
+- Dripping Grin -> dripping-grin.html | originals: 3, digitals: 2, cards: 1
+- Droopy Dog Grin -> droopy-dog-grin.html | originals: 1, digitals: 0, cards: 0
+- Dunny Grin -> dunny-grin.html | originals: 4, digitals: 2, cards: 0
+- Elefanka Grin Side View -> elefanka-grin-side-view.html | originals: 1, digitals: 0, cards: 0
+- Elephant Grin -> elephant-grin.html | originals: 3, digitals: 0, cards: 0
+- Elmo Grin -> elmo-grin.html | originals: 1, digitals: 2, cards: 0
+- Eminem Grin -> eminem-grin.html | originals: 1, digitals: 1, cards: 0
+- Ernie Grin -> ernie-grin.html | originals: 2, digitals: 1, cards: 0
+- EZ Nuts Grin -> ez-nuts-grin.html | originals: 1, digitals: 1, cards: 0
+- Fat Stormtrooper Grin -> fat-stormtrooper-grin.html | originals: 1, digitals: 0, cards: 0
+- Faze Banks Grin -> faze-banks-grin.html | originals: 0, digitals: 1, cards: 0
+- Felix Grin -> felix-grin.html | originals: 3, digitals: 2, cards: 0
+- Firecracker Skeleton Grin -> firecracker-skeleton-grin.html | originals: 1, digitals: 0, cards: 0
+- Flaming O Grin -> flaming-o-grin.html | originals: 1, digitals: 0, cards: 0
+- Floating Grinnie -> floating-grinnie.html | originals: 1, digitals: 0, cards: 0
+- Flower Brain Grin -> flower-brain-grin.html | originals: 0, digitals: 1, cards: 0
+- Flower Grin -> flower-grin.html | originals: 1, digitals: 1, cards: 0
+- Flower Grin ORIGINAL COLOR (2) -> flower-grin-original-color-2.html | originals: 1, digitals: 0, cards: 0
+- Flower Grin ORIGINAL COLOR (3) -> flower-grin-original-color-3.html | originals: 1, digitals: 0, cards: 0
+- Flower Grin version 2 -> flower-grin-version-2.html | originals: 1, digitals: 2, cards: 0
+- Flying Grinnie -> flying-grinnie.html | originals: 1, digitals: 0, cards: 0
+- Football Grin -> football-grin.html | originals: 1, digitals: 0, cards: 0
+- Football Player Grin -> football-player-grin.html | originals: 1, digitals: 0, cards: 0
+- Foot in Mouth -> foot-in-mouth.html | originals: 1, digitals: 0, cards: 0
+- Franken Fat Grin -> franken-fat-grin.html | originals: 1, digitals: 1, cards: 0
+- Franken Grin -> franken-grin.html | originals: 0, digitals: 1, cards: 0
+- Freak Bro Afro Stache -> freak-bro-afro-stache.html | originals: 1, digitals: 1, cards: 0
+- Freak Bro Grin -> freak-bro-grin.html | originals: 1, digitals: 0, cards: 0
+- Freak Cat -> freak-cat.html | originals: 1, digitals: 0, cards: 0
+
+Pages using the no-original standard:
+- DEADMAU5 Grin
+- DEADMAU5 Grin Running COLORS
+- DEADMAUGrin back COLORS
+- DEADMAUGrin COLORS
+- DEADMAUGrin side COLORS
+- Deputy Dog Grin
+- Dr Bub Quack Animation 1
+- Dr Bub Quack Animation 2
+- Dr Bub Quack Grin
+- Drink the Koolaid 1
+- Drink the Koolaid 2
+- Faze Banks Grin
+- Flower Brain Grin
+- Franken Grin

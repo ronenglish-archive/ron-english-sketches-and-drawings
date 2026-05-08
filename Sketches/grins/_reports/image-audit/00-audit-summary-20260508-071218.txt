@@ -1,0 +1,35 @@
+﻿Grins image/page audit
+Generated: 2026-05-08 07:12:18
+
+Repo root: D:\github\ron-english-sketches-and-drawings
+Image folder: D:\github\ron-english-sketches-and-drawings\images\Sketches\grins
+HTML folder: D:\github\ron-english-sketches-and-drawings\Sketches\grins
+Report folder: D:\github\ron-english-sketches-and-drawings\Sketches\grins\_reports\image-audit
+
+Image files found in folder: 1447
+HTML files scanned: 370
+HTML image references found: 2345
+Unique image files referenced by HTML and found in folder: 969
+Image files not used on any Grins HTML page: 478
+HTML image references pointing to missing files: 0
+Proposed unused-image groups/pages: 257
+
+Recommended next step:
+1. Open 03-proposed-groups-for-unused-images CSV first.
+2. Review whether proposed page grouping looks right.
+3. Open 02-unused-images-to-place CSV to inspect individual file placements.
+4. Tell ChatGPT any corrections before generating an update script.
+
+Reports created:
+- D:\github\ron-english-sketches-and-drawings\Sketches\grins\_reports\image-audit\01-all-grins-images-20260508-071218.csv
+- D:\github\ron-english-sketches-and-drawings\Sketches\grins\_reports\image-audit\02-unused-images-to-place-20260508-071218.csv
+- D:\github\ron-english-sketches-and-drawings\Sketches\grins\_reports\image-audit\03-proposed-groups-for-unused-images-20260508-071218.csv
+- D:\github\ron-english-sketches-and-drawings\Sketches\grins\_reports\image-audit\04-html-references-missing-files-20260508-071218.csv
+- D:\github\ron-english-sketches-and-drawings\Sketches\grins\_reports\image-audit\05-all-html-image-references-20260508-071218.csv
+- D:\github\ron-english-sketches-and-drawings\Sketches\grins\_reports\image-audit\06-existing-grins-pages-20260508-071218.csv
+
+Notes:
+- This script did not modify pages or images.
+- Proposed section is based on filename patterns only and should be reviewed.
+- Filenames containing ORIGINAL COLOR are flagged because they may be originals, color studies, digitized versions, or collector cards depending on the case.
+- Filenames containing # must be URL-encoded as %23 in HTML paths.

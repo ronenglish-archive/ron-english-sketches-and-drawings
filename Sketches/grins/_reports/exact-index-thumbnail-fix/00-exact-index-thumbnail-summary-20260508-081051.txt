@@ -1,0 +1,11 @@
+﻿Exact Grins index thumbnail fix from inspection report
+Generated: 2026-05-08 08:10:51
+
+ReportOnly: False
+Requested updates: 9
+Updated cards: 9
+Warnings: 0
+
+Reports:
+- D:\github\ron-english-sketches-and-drawings\Sketches\grins\_reports\exact-index-thumbnail-fix\01-exact-index-thumbnail-changes-20260508-081051.csv
+- D:\github\ron-english-sketches-and-drawings\Sketches\grins\_reports\exact-index-thumbnail-fix\02-exact-index-thumbnail-warnings-20260508-081051.csv

@@ -1,0 +1,18 @@
+﻿Grins cleanup pass 01
+Generated: 2026-05-08 07:49:53
+
+ReportOnly: False
+Index updates requested: 13
+Merge plans requested: 4
+Changes listed: 43
+Warnings: 0
+
+Safety notes:
+- This script does not delete image files.
+- This script does not delete source HTML pages.
+- It removes merged source cards from the Grins index only.
+- Edited HTML files are backed up before writing.
+
+Reports:
+- D:\github\ron-english-sketches-and-drawings\Sketches\grins\_reports\cleanup-pass-01\01-cleanup-pass-01-changes-20260508-074953.csv
+- D:\github\ron-english-sketches-and-drawings\Sketches\grins\_reports\cleanup-pass-01\02-cleanup-pass-01-warnings-20260508-074953.csv

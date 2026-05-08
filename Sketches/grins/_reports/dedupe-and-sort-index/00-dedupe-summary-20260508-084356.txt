@@ -1,0 +1,15 @@
+﻿Grins index dedupe and alphabetical sort
+Generated: 2026-05-08 08:43:56
+ReportOnly: False
+
+Original cards found: 397
+Cards kept: 397
+Duplicate/source cards removed: 0
+Warnings: 0
+
+No changes were needed.
+
+Reports:
+D:\github\ron-english-sketches-and-drawings\Sketches\grins\_reports\dedupe-and-sort-index\01-kept-index-cards-20260508-084356.csv
+D:\github\ron-english-sketches-and-drawings\Sketches\grins\_reports\dedupe-and-sort-index\02-removed-duplicate-cards-20260508-084356.csv
+D:\github\ron-english-sketches-and-drawings\Sketches\grins\_reports\dedupe-and-sort-index\03-warnings-20260508-084356.csv

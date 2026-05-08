@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Grins | Sketches and Drawings | Grins | Ron English Catalogue Raisonn&eacute;</title>
+  <title>Grins | Ron English Catalogue Raisonn&eacute;</title>
 
   <link rel="stylesheet" href="../../css/styles.css" />
 
@@ -18,13 +18,8 @@
       --pill-hover:#f9fafb;
     }
 
-    *{
-      box-sizing:border-box;
-    }
-
-    html{
-      scroll-behavior:smooth;
-    }
+    *{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
 
     body{
       margin:0;
@@ -41,15 +36,13 @@
       padding:28px 18px 60px;
     }
 
-    .page-narrow{
-      max-width:1100px;
-    }
-
     .nav-pills{
       display:flex;
       flex-wrap:wrap;
       gap:10px;
       margin:22px 0;
+      justify-content:center;
+      text-align:center;
     }
 
     .nav-pill{
@@ -71,9 +64,9 @@
 
     .page-header{
       max-width:1100px;
-      margin:0 0 28px;
+      margin:0 auto 28px;
       padding:0;
-      text-align:left;
+      text-align:center;
     }
 
     .page-title{
@@ -81,42 +74,24 @@
       font-size:clamp(2rem,4vw,3rem);
       letter-spacing:-.02em;
       line-height:1.05;
+      text-align:center;
     }
 
     .intro-text{
       max-width:1100px;
-      margin:0 0 28px;
+      margin:0 auto 28px;
       padding:0;
       line-height:1.6;
-      text-align:left;
+      text-align:center;
     }
 
     .intro-text p{
-      margin:0 0 14px;
+      margin:0 auto 14px;
       max-width:none;
       width:100%;
       color:var(--muted);
       font-size:18px;
-    }
-
-    .section-card{
-      background:#fff;
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:22px;
-      margin-bottom:24px;
-    }
-
-    .section-card h2{
-      margin:0 0 8px;
-      font-size:1.4rem;
-    }
-
-    .section-intro{
-      margin:0 0 18px;
-      color:var(--muted);
-      line-height:1.6;
+      text-align:center;
     }
 
     .index-grid{
@@ -124,19 +99,6 @@
       display:grid;
       grid-template-columns:repeat(4,minmax(0,1fr));
       gap:18px;
-    }
-
-    .gallery-grid,
-    .card-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-      gap:20px;
-    }
-
-    .originals-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:20px;
     }
 
     .gallery-item{
@@ -158,38 +120,14 @@
       border-color:#d1d5db;
     }
 
-    .gallery-item a{
-      display:block;
-      color:inherit;
-      text-decoration:none;
-    }
-
     .gallery-item img{
       display:block;
       width:100%;
+      height:260px;
       object-fit:contain;
       background:var(--panel);
-      padding:8px;
-      border-bottom:0;
-    }
-
-    .index-grid .gallery-item img{
-      height:260px;
       padding:10px;
       border-bottom:1px solid var(--border);
-    }
-
-    .gallery-grid .gallery-item img{
-      height:300px;
-    }
-
-    .originals-grid .gallery-item img{
-      height:440px;
-    }
-
-    .card-grid .gallery-item img{
-      height:520px;
-      padding:10px;
     }
 
     .entry-body{
@@ -211,142 +149,88 @@
       text-align:center;
     }
 
-    .back-link{
-      margin-top:28px;
-    }
-
-    .back-link a{
-      display:inline-block;
-      text-decoration:none;
-      color:#111;
-      border:1px solid var(--border);
-      border-radius:999px;
-      padding:10px 16px;
-      background:#fff;
-    }
-
-    .back-link a:hover{
-      background:#f9fafb;
-    }
-
     footer{
       margin-top:34px;
       padding-top:16px;
       border-top:1px solid var(--border);
       color:var(--muted);
       font-size:14px;
+      text-align:center;
     }
 
     @media (max-width:1100px){
-      .index-grid{
-        grid-template-columns:repeat(3,minmax(0,1fr));
-      }
+      .index-grid{ grid-template-columns:repeat(3,minmax(0,1fr)); }
     }
 
     @media (max-width:820px){
-      .index-grid{
-        grid-template-columns:repeat(2,minmax(0,1fr));
-      }
+      .index-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); }
     }
 
     @media (max-width:560px){
-      .wrap{
-        padding:22px 14px 50px;
-      }
-
-      .index-grid,
-      .gallery-grid,
-      .card-grid,
-      .originals-grid{
-        grid-template-columns:1fr;
-      }
-
-      .index-grid .gallery-item img,
-      .gallery-grid .gallery-item img{
-        height:260px;
-      }
-
-      .originals-grid .gallery-item img{
-        height:340px;
-      }
-
-      .card-grid .gallery-item img{
-        height:420px;
-      }
+      .wrap{ padding:22px 14px 50px; }
+      .index-grid{ grid-template-columns:1fr; }
+      .gallery-item img{ height:260px; }
     }
-  
-    /* BEGIN SKETCHES CENTERING OVERRIDES */
-    .nav-pills{
-      justify-content:center;
-      text-align:center;
+  </style>
+  <style id="grins-index-title-centering-fix">
+    /*
+      Grins index title-centering fix.
+      This is intentionally scoped to the Grins index grid so it does not affect
+      other catalogue pages.
+    */
+
+    .index-grid .gallery-item,
+    .index-grid a.gallery-item {
+      text-align: center !important;
+      justify-items: center;
+      align-items: start;
     }
 
-    .page-header{
-      text-align:center;
-      margin-left:auto;
-      margin-right:auto;
+    .index-grid .gallery-item img,
+    .index-grid a.gallery-item img {
+      display: block;
+      margin-left: auto !important;
+      margin-right: auto !important;
     }
 
-    .page-title,
-    h1.page-title{
-      text-align:center;
+    .index-grid .gallery-item .entry-body,
+    .index-grid a.gallery-item .entry-body {
+      display: block;
+      width: 100%;
+      text-align: center !important;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    .intro-text{
-      text-align:center;
-      margin-left:auto;
-      margin-right:auto;
+    .index-grid .gallery-item .entry-body *,
+    .index-grid a.gallery-item .entry-body * {
+      text-align: center !important;
     }
 
-    .intro-text p{
-      text-align:center;
-      margin-left:auto;
-      margin-right:auto;
+    .index-grid .gallery-item .work-title,
+    .index-grid a.gallery-item .work-title,
+    .index-grid .gallery-item p.work-title,
+    .index-grid a.gallery-item p.work-title {
+      display: block;
+      width: 100%;
+      text-align: center !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
     }
 
-    .section-card h2,
-    .section-card h3{
-      text-align:center;
+    .index-grid .gallery-item .work-meta,
+    .index-grid a.gallery-item .work-meta,
+    .index-grid .gallery-item .entry-meta,
+    .index-grid a.gallery-item .entry-meta {
+      display: block;
+      width: 100%;
+      text-align: center !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
     }
-
-    .section-intro{
-      text-align:center;
-      margin-left:auto;
-      margin-right:auto;
-    }
-
-    .entry-body{
-      align-items:center;
-      justify-content:center;
-      text-align:center;
-    }
-
-    .entry-body h3,
-    .entry-body p,
-    .work-title,
-    .work-subtitle,
-    .image-caption,
-    .gallery-item .entry-body .work-title,
-    .gallery-item .entry-body .work-subtitle,
-    .gallery-item .entry-body .work-note{
-      text-align:center;
-      width:100%;
-    }
-
-    footer{
-      text-align:center;
-    }
-
-    .back-link{
-      text-align:left;
-    }
-
-    .back-link a{
-      text-align:left;
-    }
-    /* END SKETCHES CENTERING OVERRIDES */
   </style>
 </head>
+
 <body>
   <main class="wrap">
     <nav class="nav-pills" aria-label="Site navigation">
@@ -360,279 +244,1962 @@
     </header>
 
     <section class="intro-text">
-      <p>Grin character drawings from the Ron English archive, built in batches for careful review. This page currently includes A-name records.</p>
+      <p>Grin character drawings from the Ron English archive, organized as individual catalogue pages.</p>
     </section>
 
     <section class="index-grid" aria-label="Grin sketches">
-
       <a class="gallery-item" href="alien-baby-grin.html">
-        <img src="../../images/Sketches/grins/Alien%20Baby%20Grin%20colorway%201.jpg" alt="Alien Baby Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Alien Baby Grin</p>
-        </div>
+      <img src="../../images/Sketches/grins/Alien%20Baby%20Grin%20colorway%201.jpg" alt="Alien Baby Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Alien Baby Grin</p>
+      </div>
       </a>
 
       <a class="gallery-item" href="alien-grin.html">
-        <img src="../../images/Sketches/grins/Alien%20Grin%20COLOR.png" alt="Alien Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Alien Grin</p>
-        </div>
+      <img src="../../images/Sketches/grins/Alien%20Grin%20COLOR.png" alt="Alien Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Alien Grin</p>
+      </div>
       </a>
 
       <a class="gallery-item" href="angel-grin.html">
-        <img src="../../images/Sketches/grins/Angel%20Grin%20B&amp;W.jpg" alt="Angel Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Angel Grin</p>
-        </div>
+      <img src="../../images/Sketches/grins/Angel%20Grin%20B&amp;W.jpg" alt="Angel Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Angel Grin</p>
+      </div>
       </a>
 
       <a class="gallery-item" href="angel-wings-grin.html">
-        <img src="../../images/Sketches/grins/Angel%20Wings%20Grin%201.png" alt="Angel Wings Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Angel Wings Grin</p>
-        </div>
+      <img src="../../images/Sketches/grins/Angel%20Wings%20Grin%201.png" alt="Angel Wings Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Angel Wings Grin</p>
+      </div>
       </a>
 
       <a class="gallery-item" href="artist-grin.html">
-        <img src="../../images/Sketches/grins/Artist%20Grin%20COLOR.jpg" alt="Artist Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Artist Grin</p>
-        </div>
+      <img src="../../images/Sketches/grins/Artist%20Grin%20COLOR.jpg" alt="Artist Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Artist Grin</p>
+      </div>
       </a>
 
       <a class="gallery-item" href="astro-boy-grin.html">
-        <img src="../../images/Sketches/grins/Astro%20Boy%20Grin%20COLOR.jpg" alt="Astro Boy Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Astro Boy Grin</p>
-        </div>
+      <img src="../../images/Sketches/grins/Astro%20Boy%20Grin%20COLOR.jpg" alt="Astro Boy Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Astro Boy Grin</p>
+      </div>
       </a>
 
       <a class="gallery-item" href="astrogrin.html">
-        <img src="../../images/Sketches/grins/Astrogrin%20COLOR.jpg" alt="Astrogrin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Astrogrin</p>
-        </div>
+      <img src="../../images/Sketches/grins/Astrogrin%20COLOR.jpg" alt="Astrogrin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Astrogrin</p>
+      </div>
       </a>
-      <!-- BEGIN GENERATED GRINS B -->
 
       <a class="gallery-item" href="babalouie-grin.html">
-        <img src="../../images/Sketches/grins/Babalouie%20Grin%20COLOR.jpg" alt="Babalouie Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Babalouie Grin</p>
-        </div>
+      <img src="../../images/Sketches/grins/Babalouie%20Grin%20COLOR.jpg" alt="Babalouie Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Babalouie Grin</p>
+      </div>
       </a>
-      <a class="gallery-item" href="baby-grin.html">
-        <img src="../../images/Sketches/grins/Baby%20Grin%20COLOR.jpg" alt="Baby Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Baby Grin</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="baby-grin-2.html">
-        <img src="../../images/Sketches/grins/Baby%20Grin%202%20COLOR.jpg" alt="Baby Grin 2 by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Baby Grin 2</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="badly-drawn-batman-grin.html">
-        <img src="../../images/Sketches/grins/Badly%20Drawn%20Batman%20Grin%20ORIGINAL%20COLOR.jpg" alt="Badly Drawn Batman Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Badly Drawn Batman Grin</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="barney-grin.html">
-        <img src="../../images/Sketches/grins/Barney%20Grin%20front%201%20COLOR.jpg" alt="Barney Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Barney Grin</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="barney-grin-guernical.html">
-        <img src="../../images/Sketches/grins/Barney%20Grin%20Guernical%20COLOR.jpg" alt="Barney Grin Guernical by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Barney Grin Guernical</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="bart-grin.html">
-        <img src="../../images/Sketches/grins/Bart%20Grin%20Chubby%20front%20COLOR.jpg" alt="Bart Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Bart Grin</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="bartman-grin.html">
-        <img src="../../images/Sketches/grins/Bartman%20Grin%20flying%20COLOR.jpg" alt="Bartman Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Bartman Grin</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="baseball-grin.html">
-        <img src="../../images/Sketches/grins/Baseball%20Grin%20COLOR.jpg" alt="Baseball Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Baseball Grin</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="basketball-bulldog-grin.html">
-        <img src="../../images/Sketches/grins/Basketball%20Bulldog%20Grin%20COLOR.jpg" alt="Basketball Bulldog Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Basketball Bulldog Grin</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="basketball-grin.html">
-        <img src="../../images/Sketches/grins/Basketball%20Grin%20COLOR.jpg" alt="Basketball Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Basketball Grin</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="bat-grin.html">
-        <img src="../../images/Sketches/grins/Bat%20Grin%20front%20COLOR.jpg" alt="Bat Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Bat Grin</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="bat-grin-version-2.html">
-        <img src="../../images/Sketches/grins/Bat%20Grin%20version%202%20front%20COLOR.jpg" alt="Bat Grin version 2 by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Bat Grin version 2</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="batman-grin.html">
-        <img src="../../images/Sketches/grins/Batman%20Grin%20COLOR.jpg" alt="Batman Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Batman Grin</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="batman-grin-and-robin-2.html">
-        <img src="../../images/Sketches/grins/Batman%20Grin%20and%20Robin%202%20ORIGINAL.jpg" alt="Batman Grin and Robin 2 by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Batman Grin and Robin 2</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="batman-grin-icon.html">
-        <img src="../../images/Sketches/grins/Batman%20Grin%20Icon%20COLOR.jpg" alt="Batman Grin Icon by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Batman Grin Icon</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="batman-grin-torso.html">
-        <img src="../../images/Sketches/grins/Batman%20Grin%20three%20quarters%20COLOR%201.png" alt="Batman Grin Torso by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Batman Grin Torso</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="battle-cat-grin.html">
-        <img src="../../images/Sketches/grins/Battle%20Cat%20Grin%20COLOR.jpg" alt="Battle Cat Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Battle Cat Grin</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="battle-skull-grin.html">
-        <img src="../../images/Sketches/grins/Battle%20Skull%20Grin%20COLOR%201.jpg" alt="Battle Skull Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Battle Skull Grin</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="bearbrick-skull.html">
-        <img src="../../images/Sketches/grins/Bearbrick%20Skull%20COLOR.jpg" alt="Bearbrick Skull by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Bearbrick Skull</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="bear-grin-forked-tongue.html">
-        <img src="../../images/Sketches/grins/Bear%20Grin%20Forked%20Tongue%20COLOR%201.jpg" alt="Bear Grin Forked Tongue by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Bear Grin Forked Tongue</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="beast-man-grin.html">
-        <img src="../../images/Sketches/grins/Beast%20Man%20Grin%20COLOR.jpg" alt="Beast Man Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Beast Man Grin</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="bert-grin.html">
-        <img src="../../images/Sketches/grins/Bert%20Grin%20COLOR.jpg" alt="Bert Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Bert Grin</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="big-boy-grin.html">
-        <img src="../../images/Sketches/grins/Big%20Boy%20Grin%20COLOR.jpg" alt="Big Boy Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Big Boy Grin</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="biggie-grin.html">
-        <img src="../../images/Sketches/grins/Biggie%20Grin%20COLOR.jpg" alt="Biggie Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Biggie Grin</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="blanka-grin.html">
-        <img src="../../images/Sketches/grins/Blanka%20Grin%20ORIGINAL.jpg" alt="Blanka Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Blanka Grin</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="blotchy-grin.html">
-        <img src="../../images/Sketches/grins/Blotchy%20Grin%20B&amp;W.jpg" alt="Blotchy Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Blotchy Grin</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="blue-from-blue-s-clues-grin.html">
-        <img src="../../images/Sketches/grins/Blue%20From%20Blue%E2%80%99s%20Clues%20Grin%20COLOR.jpg" alt="Blue From Blue’s Clues Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Blue From Blue’s Clues Grin</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="boba-fett-grin.html">
-        <img src="../../images/Sketches/grins/Boba%20Fett%20Grin%20front%20COLOR.jpg" alt="Boba Fett Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Boba Fett Grin</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="boo-boo-bear-grin.html">
-        <img src="../../images/Sketches/grins/Boo%20Boo%20Bear%20Grin%20COLOR.jpg" alt="Boo Boo Bear Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Boo Boo Bear Grin</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="bored-ape-cowboy-grin.html">
-        <img src="../../images/Sketches/grins/Bored%20Ape%20Cowboy%20Grin%20COLOR.jpg" alt="Bored Ape Cowboy Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Bored Ape Cowboy Grin</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="bored-ape-grin.html">
-        <img src="../../images/Sketches/grins/Bored%20Ape%20Cowboy%20Grin%20COLOR%202.jpg" alt="Bored Ape Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Bored Ape Grin</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="b-rex-grin.html">
-        <img src="../../images/Sketches/grins/B-Rex%20Grin%20side%20B&amp;W.jpg" alt="B-Rex Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">B-Rex Grin</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="bugs-grin.html">
-        <img src="../../images/Sketches/grins/Bugs%20Grin%20COLOR.jpg" alt="Bugs Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Bugs Grin</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="bulldog-grin.html">
-        <img src="../../images/Sketches/grins/Bulldog%20Grin%20COLOR.jpg" alt="Bulldog Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Bulldog Grin</p>
-        </div>
-      </a>
-      <a class="gallery-item" href="businessman-grin.html">
-        <img src="../../images/Sketches/grins/Businessman%20Grin%20COLOR.jpg" alt="Businessman Grin by Ron English" loading="lazy" />
-        <div class="entry-body">
-          <p class="work-title">Businessman Grin</p>
-        </div>
-      </a>
-      <!-- END GENERATED GRINS B -->
 
+      <a class="gallery-item" href="baby-grin.html">
+      <img src="../../images/Sketches/grins/Baby%20Grin%20COLOR.jpg" alt="Baby Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Baby Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="baby-grin-2.html">
+      <img src="../../images/Sketches/grins/Baby%20Grin%202%20COLOR.jpg" alt="Baby Grin 2 by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Baby Grin 2</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="badly-drawn-batman-grin.html">
+      <img src="../../images/Sketches/grins/Badly%20Drawn%20Batman%20Grin%20ORIGINAL%20COLOR.jpg" alt="Badly Drawn Batman Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Badly Drawn Batman Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="barney-grin.html">
+      <img src="../../images/Sketches/grins/Barney%20Grin%20front%201%20COLOR.jpg" alt="Barney Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Barney Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="bart-grin.html">
+      <img src="../../images/Sketches/grins/Bart%20Grin%20Chubby%20front%20COLOR.jpg" alt="Bart Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Bart Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="bartman-grin.html">
+      <img src="../../images/Sketches/grins/Bartman%20Grin%20flying%20COLOR.jpg" alt="Bartman Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Bartman Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="baseball-grin.html">
+      <img src="../../images/Sketches/grins/Baseball%20Grin%20COLOR.jpg" alt="Baseball Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Baseball Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="basketball-bulldog-grin.html">
+      <img src="../../images/Sketches/grins/Basketball%20Bulldog%20Grin%20COLOR.jpg" alt="Basketball Bulldog Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Basketball Bulldog Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="basketball-grin.html">
+      <img src="../../images/Sketches/grins/Basketball%20Grin%20COLOR.jpg" alt="Basketball Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Basketball Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="bat-grin.html">
+      <img src="../../images/Sketches/grins/Bat%20Grin%20front%20COLOR.jpg" alt="Bat Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Bat Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="bat-grin-version-2.html">
+      <img src="../../images/Sketches/grins/Bat%20Grin%20version%202%20front%20COLOR.jpg" alt="Bat Grin Version 2 by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Bat Grin Version 2</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="batman-grin.html">
+      <img src="../../images/Sketches/grins/Batman%20Grin%20COLOR.jpg" alt="Batman Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Batman Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="batman-grin-and-robin-2.html">
+      <img src="../../images/Sketches/grins/Batman%20Grin%20and%20Robin%202%20ORIGINAL.jpg" alt="Batman Grin and Robin 2 by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Batman Grin and Robin 2</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="batman-grin-icon.html">
+      <img src="../../images/Sketches/grins/Batman%20Grin%20Icon%20COLOR.jpg" alt="Batman Grin Icon by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Batman Grin Icon</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="batman-grin-torso.html">
+      <img src="../../images/Sketches/grins/Batman%20Grin%20three%20quarters%20COLOR%201.png" alt="Batman Grin Torso by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Batman Grin Torso</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="battle-cat-grin.html">
+      <img src="../../images/Sketches/grins/Battle%20Cat%20Grin%20Crouching%20COLOR.jpg" alt="Battle Cat Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Battle Cat Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="battle-skull-grin.html">
+      <img src="../../images/Sketches/grins/Battle%20Skull%20Grin%20COLOR%201.jpg" alt="Battle Skull Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Battle Skull Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="bear-grin-forked-tongue.html">
+      <img src="../../images/Sketches/grins/Bear%20Grin%20Forked%20Tongue%20COLOR%202.jpg" alt="Bear Grin Forked Tongue by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Bear Grin Forked Tongue</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="bearbrick-skull.html">
+      <img src="../../images/Sketches/grins/Bearbrick%20Skull%20COLOR.jpg" alt="Bearbrick Skull by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Bearbrick Skull</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="beast-man-grin.html">
+      <img src="../../images/Sketches/grins/Beast%20Man%20Grin%20COLOR.jpg" alt="Beast Man Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Beast Man Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="bert-grin.html">
+      <img src="../../images/Sketches/grins/Bert%20Grin%20COLOR.jpg" alt="Bert Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Bert Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="big-boy-grin.html">
+      <img src="../../images/Sketches/grins/Big%20Boy%20Grin%20COLOR.jpg" alt="Big Boy Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Big Boy Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="biggie-grin.html">
+      <img src="../../images/Sketches/grins/Biggie%20Grin%20ORIGINAL%20COLOR.png" alt="Biggie Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Biggie Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="blanka-grin.html">
+      <img src="../../images/Sketches/grins/Blanka%20Grin%20ORIGINAL.jpg" alt="Blanka Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Blanka Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="blotchy-grin.html">
+      <img src="../../images/Sketches/grins/Blotchy%20Grin%20B%26W.jpg" alt="Blotchy Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Blotchy Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="blue-from-blue-s-clues-grin.html">
+      <img src="../../images/Sketches/grins/Blue%20From%20Blue%E2%80%99s%20Clues%20Grin%20COLOR.jpg" alt="Blue&#39;s Clues Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Blue&#39;s Clues Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="boba-fett-grin.html">
+      <img src="../../images/Sketches/grins/Boba%20Fett%20Grin%20front%20COLOR.jpg" alt="Boba Fett Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Boba Fett Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="boo-boo-bear-grin.html">
+      <img src="../../images/Sketches/grins/Boo%20Boo%20Bear%20Grin%20COLOR.jpg" alt="Boo Boo Bear Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Boo Boo Bear Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="bored-ape-grin.html">
+      <img src="../../images/Sketches/grins/Bored%20Ape%20Cowboy%20Grin%20COLOR%202.jpg" alt="Bored Ape Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Bored Ape Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="b-rex-grin.html">
+      <img src="../../images/Sketches/grins/B-Rex%20Grin%20side%20COLOR%201.jpg" alt="B-Rex Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">B-Rex Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="bugs-grin.html">
+      <img src="../../images/Sketches/grins/Bugs%20Grin%20COLOR.jpg" alt="Bugs Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Bugs Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="bulldog-grin.html">
+      <img src="../../images/Sketches/grins/Bulldog%20Grin%20COLOR.jpg" alt="Bulldog Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Bulldog Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="businessman-grin.html">
+      <img src="../../images/Sketches/grins/Businessman%20Grin%20COLOR.jpg" alt="Businessman Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Businessman Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="butterfly-wings-grin.html">
+      <img src="../../images/Sketches/grins/Butterfly%20Wings%20Grin%202.png" alt="Butterfly Wings Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Butterfly Wings Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="c3po-grin.html">
+      <img src="../../images/Sketches/grins/C3PO%20Grin%20COLOR.jpg" alt="C3PO Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">C3PO Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="cafeteria-lady-grin.html">
+      <img src="../../images/Sketches/grins/Cafeteria%20Lady%20Grin%20COLOR.jpg" alt="Cafeteria Lady Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Cafeteria Lady Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="cap-n-cornstarch-grin.html">
+      <img src="../../images/Sketches/grins/Cap%E2%80%99n%20Cornstarch%20Grin%20COLOR.jpg" alt="Cap&#39;n Cornstarch Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Cap&#39;n Cornstarch Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="carmelo-grin.html">
+      <img src="../../images/Sketches/grins/Carmelo%20Grin%20COLOR.jpg" alt="Carmelo Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Carmelo Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="cartman-grin.html">
+      <img src="../../images/Sketches/grins/Cartman%20Grin%20ORIGINAL%20COLOR%202.jpg" alt="Cartman Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Cartman Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="cat-grin.html">
+      <img src="../../images/Sketches/grins/Cat%20Grin%202%20COLOR.jpg" alt="Cat Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Cat Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="cat-in-hat-grin.html">
+      <img src="../../images/Sketches/grins/Cat%20in%20Hat%20Grin%20COLOR.jpg" alt="Cat in Hat Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Cat in Hat Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="catbrain-grin.html">
+      <img src="../../images/Sketches/grins/Catbrain%20Grin%20ORIGINAL.jpg" alt="Catbrain Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Catbrain Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="charlie-brown-grin.html">
+      <img src="../../images/Sketches/grins/Charlie%20Grin%20Flying%20COLOR.jpg" alt="Charlie Brown Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Charlie Brown Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="charlie-grin-x-ray.html">
+      <img src="../../images/Sketches/grins/Charlie%20Grin%20X%20Ray%20COLOR.jpg" alt="Charlie Grin X Ray by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Charlie Grin X Ray</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="cheshire-cat-grin.html">
+      <img src="../../images/Sketches/grins/Cheshire%20Cat%20Grin%20COLOR.jpg" alt="Cheshire Cat Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Cheshire Cat Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="chico-roco-grin.html">
+      <img src="../../images/Sketches/grins/Chico%20Roco%20front%20Variation%20B%26W.jpg" alt="Chico Roco by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Chico Roco</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="chuckie-grin.html">
+      <img src="../../images/Sketches/grins/Chuckie%20Grin%20ORIGINAL%20COLOR.jpg" alt="Chuckie Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Chuckie Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="count-calorie-grin.html">
+      <img src="../../images/Sketches/grins/Count%20Calorie%20Grin%20COLOR.jpg" alt="Count Calorie by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Count Calorie</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="courage-dog-grin.html">
+      <img src="../../images/Sketches/grins/Courage%20Dog%20Grin%20COLOR.jpg" alt="Courage Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Courage Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="covid-grin.html">
+      <img src="../../images/Sketches/grins/COVID%20Grin%20COLOR.jpg" alt="COVID Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">COVID Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="cow-grin.html">
+      <img src="../../images/Sketches/grins/Cow%20Grin%20COLOR.jpg" alt="Cow Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Cow Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="creepy-creature.html">
+      <img src="../../images/Sketches/grins/Creepy%20Creature%20COLOR.jpg" alt="Creepy Creature by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Creepy Creature</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="croc-grin.html">
+      <img src="../../images/Sketches/grins/Croc%20Grin%20ORIGINAL%20COLOR.jpg" alt="Croc Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Croc Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="cryptopunk-grin.html">
+      <img src="../../images/Sketches/grins/Cryptopunk%20Grin%20COLOR.png" alt="Cryptopunk Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Cryptopunk Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="darth-vader-grin.html">
+      <img src="../../images/Sketches/grins/Darth%20Vader%20Grin%20COLOR.png" alt="Darth Vader Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Darth Vader Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="david-grin.html">
+      <img src="../../images/Sketches/grins/David%20Grin%20COLOR.jpg" alt="David Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">David Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="deadmau5-grin.html">
+      <img src="../../images/Sketches/grins/DEADMAU5%20Grin%20COLOR%202.jpg" alt="DEADMAU5 Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">DEADMAU5 Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="dementon-grin.html">
+      <img src="../../images/Sketches/grins/Dementon%20Grin%20COLOR.jpg" alt="Dementon Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Dementon Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="deputy-dog-grin.html">
+      <img src="../../images/Sketches/grins/Deputy%20Dog%20Grin%20COLOR.jpg" alt="Deputy Dog Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Deputy Dog Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="devil-grin.html">
+      <img src="../../images/Sketches/grins/Devil%20Grin%20COLOR.jpg" alt="Devil Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Devil Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="devine-devil.html">
+      <img src="../../images/Sketches/grins/Devine%20Devil%20COLOR.jpg" alt="Devine Devil by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Devine Devil</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="dino-heart-grin.html">
+      <img src="../../images/Sketches/grins/Dino%20Heart%20Grin%20COLOR.png" alt="Dino Heart Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Dino Heart Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="dj-grin.html">
+      <img src="../../images/Sketches/grins/DJ%20Grin%20COLOR.jpg" alt="DJ Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">DJ Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="dog-grin.html">
+      <img src="../../images/Sketches/grins/Dog%20Grin%20COLOR.jpg" alt="Dog Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Dog Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="dog-head-grin.html">
+      <img src="../../images/Sketches/grins/Dog%20Head%20Grin%20COLOR.jpg" alt="Dog Head Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Dog Head Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="dr-bub-quack-grin.html">
+      <img src="../../images/Sketches/grins/Dr%20Bub%20Quack%20Grin%20COLOR.jpg" alt="Dr Bub Quack Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Dr Bub Quack Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="dripping-grin.html">
+      <img src="../../images/Sketches/grins/Dripping%20Grin%20ORIGINAL%20COLOR.jpg" alt="Dripping Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Dripping Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="droopy-dog-grin.html">
+      <img src="../../images/Sketches/grins/Droopy%20Dog%20Grin%20COLOR.jpg" alt="Droopy Dog Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Droopy Dog Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="dunny-grin.html">
+      <img src="../../images/Sketches/grins/Dunny%20Grin%20COLOR.jpg" alt="Dunny Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Dunny Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="elefanka-grin.html">
+      <img src="../../images/Sketches/grins/Elefanka%20Grin%20Side%20View%20COLOR.png" alt="Elefanka Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Elefanka Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="elefanka-with-angel-wings-grin.html">
+      <img src="../../images/Sketches/grins/Elefanka%20With%20Angel%20Wings%20Grin%20COLOR.jpg" alt="Elefanka With Angel Wings Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Elefanka With Angel Wings Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="elephant-grin.html">
+      <img src="../../images/Sketches/grins/Elephant%20Grin%20COLOR.jpg" alt="Elephant Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Elephant Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="elmo-grin.html">
+      <img src="../../images/Sketches/grins/Elmo%20Grin%20COLOR.jpg" alt="Elmo Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Elmo Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="eminem-grin.html">
+      <img src="../../images/Sketches/grins/Eminem%20Grin%20COLOR.jpg" alt="Eminem Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Eminem Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="ernie-grin.html">
+      <img src="../../images/Sketches/grins/Ernie%20Grin%20ORIGINAL%20COLOR.jpg" alt="Ernie Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Ernie Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="ez-nuts-grin.html">
+      <img src="../../images/Sketches/grins/EZ%20Nuts%20Grin%202%20COLOR.jpg" alt="EZ Nuts Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">EZ Nuts Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="fat-stormtrooper-grin.html">
+      <img src="../../images/Sketches/grins/Fat%20Stormtrooper%20Grin%20back%20ORIGINAL.jpg" alt="Fat Stormtrooper Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Fat Stormtrooper Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="faze-banks-grin.html">
+      <img src="../../images/Sketches/grins/Faze%20Banks%20Grin%20COLOR.jpg" alt="Faze Banks Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Faze Banks Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="felix-grin.html">
+      <img src="../../images/Sketches/grins/Felix%20Grin%20Front%20COLOR.jpg" alt="Felix Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Felix Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="finn-grin.html">
+      <img src="../../images/Sketches/grins/Finn%20Grin%20COLOR.jpg" alt="Finn Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Finn Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="firecracker-skeleton-grin.html">
+      <img src="../../images/Sketches/grins/Firecracker%20Skeleton%20Grin%20ORIGINAL.jpg" alt="Firecracker Skeleton Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Firecracker Skeleton Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="flaming-o-grin.html">
+      <img src="../../images/Sketches/grins/Flaming%20O%20Grin%20COLOR.jpg" alt="Flaming O Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Flaming O Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="floating-grinnie.html">
+      <img src="../../images/Sketches/grins/Floating%20Grinnie%20ORIGINAL.jpg" alt="Floating Grinnie by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Floating Grinnie</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="flower-brain-grin.html">
+      <img src="../../images/Sketches/grins/Flower%20Brain%20Grin%20COLOR.png" alt="Flower Brain Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Flower Brain Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="flower-grin.html">
+      <img src="../../images/Sketches/grins/Flower%20Grin%20COLOR.jpg" alt="Flower Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Flower Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="flower-grin-version-2.html">
+      <img src="../../images/Sketches/grins/Flower%20Grin%20version%202%20COLOR.jpg" alt="Flower Grin version 2 by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Flower Grin version 2</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="foot-in-mouth.html">
+      <img src="../../images/Sketches/grins/Foot%20in%20Mouth%20ORIGINAL%20COLOR.jpg" alt="Foot in Mouth by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Foot in Mouth</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="football-grin.html">
+      <img src="../../images/Sketches/grins/Football%20Grin%20ORIGINAL.jpg" alt="Football Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Football Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="football-player-grin.html">
+      <img src="../../images/Sketches/grins/Football%20Player%20Grin%20COLOR.jpg" alt="Football Player Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Football Player Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="franken-fat-grin.html">
+      <img src="../../images/Sketches/grins/Franken%20Fat%20Grin%20COLOR.jpg" alt="Franken Fat Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Franken Fat Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="franken-grin.html">
+      <img src="../../images/Sketches/grins/Franken%20Grin%20COLOR.png" alt="Franken Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Franken Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="freak-bro-afro-stache.html">
+      <img src="../../images/Sketches/grins/Freak%20Bro%20Afro%20Stache%20COLOR.jpg" alt="Freak Bro Afro Stache by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Freak Bro Afro Stache</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="freak-bro-grin.html">
+      <img src="../../images/Sketches/grins/Freak%20Bro%20Grin%20COLOR.jpg" alt="Freak Bro Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Freak Bro Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="freak-cat.html">
+      <img src="../../images/Sketches/grins/Freak%20Cat%20COLOR.jpg" alt="Freak Cat by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Freak Cat</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="freddy-funko-grin.html">
+      <img src="../../images/Sketches/grins/Freddy%20Funko%20Grin%20COLOR.jpg" alt="Freddy Funko Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Freddy Funko Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="freddy-funko-grin-2.html">
+      <img src="../../images/Sketches/grins/Freddy%20Funko%20Grin%202%20COLOR.jpg" alt="Freddy Funko Grin 2 by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Freddy Funko Grin 2</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="garfield-grin.html">
+      <img src="../../images/Sketches/grins/Garfield%20Grin%20COLOR.1.jpg" alt="Garfield Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Garfield Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="george-jetson-grin.html">
+      <img src="../../images/Sketches/grins/George%20Jetson%20Grin%20COLOR.jpg" alt="George Jetson Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">George Jetson Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="ghostbuster-grin.html">
+      <img src="../../images/Sketches/grins/Ghostbuster%20Grin%20ORIGINAL.jpg" alt="Ghostbuster Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Ghostbuster Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="godzilla-heart-grin.html">
+      <img src="../../images/Sketches/grins/Godzilla%20Heart%20Grin%20COLOR.jpg" alt="Godzilla Heart Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Godzilla Heart Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="gorilla-grin.html">
+      <img src="../../images/Sketches/grins/Gorilla%20Grin%20COLOR.jpg" alt="Gorilla Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Gorilla Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="gorilla-grin-2.html">
+      <img src="../../images/Sketches/grins/Gorilla%20Grin%202%20Front%20COLOR.jpg" alt="Gorilla Grin 2 by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Gorilla Grin 2</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="grim-grin.html">
+      <img src="../../images/Sketches/grins/Grim%20Reaper%20Grin%20COLOR.jpg" alt="Grim Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Grim Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="grin.html">
+      <img src="../../images/Sketches/grins/Grin%20B%26W.jpg" alt="Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="grin-brain-cone.html">
+      <img src="../../images/Sketches/grins/Grin%20Brain%20Cone%20COLOR.jpg" alt="Grin Brain Cone by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Grin Brain Cone</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="grin-bunny-ears.html">
+      <img src="../../images/Sketches/grins/Grin%20Bunny%20Ears%20COLOR.jpg" alt="Grin Bunny Ears by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Grin Bunny Ears</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="grin-car.html">
+      <img src="../../images/Sketches/grins/Grin%20Car%20side%20COLOR.jpg" alt="Grin Car by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Grin Car</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="grin-flower.html">
+      <img src="../../images/Sketches/grins/Grin%20Flower%20COLOR.jpg" alt="Grin Flower by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Grin Flower</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="grin-god.html">
+      <img src="../../images/Sketches/grins/Grin%20God%20COLOR.jpg" alt="Grin God by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Grin God</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="grin-kitty.html">
+      <img src="../../images/Sketches/grins/Grin%20Kitty%20ORIGINAL.jpg" alt="Grin Kitty by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Grin Kitty</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="grin-mouth.html">
+      <img src="../../images/Sketches/grins/Grin%20Mouth%20ORIGINAL.jpg" alt="Grin Mouth by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Grin Mouth</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="grin-planet.html">
+      <img src="../../images/Sketches/grins/Grin%20Planet%20COLOR.jpg" alt="Grin Planet by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Grin Planet</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="grin-reaper-version-2.html">
+      <img src="../../images/Sketches/grins/Grin%20Reaper%20version%202%20COLOR.jpg" alt="Grin Reaper version 2 by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Grin Reaper version 2</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="grin-reaper-with-facemask.html">
+      <img src="../../images/Sketches/grins/Grin%20Reaper%20With%20Facemask%20ORIGINAL%20COLOR%201.jpg" alt="Grin Reaper With Facemask by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Grin Reaper With Facemask</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="grin-smoker.html">
+      <img src="../../images/Sketches/grins/Grin%20Smoker%20COLOR.jpg" alt="Grin Smoker by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Grin Smoker</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="grinch-grin.html">
+      <img src="../../images/Sketches/grins/Grinch%20Grin%20COLOR.jpg" alt="Grinch Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Grinch Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="grinnie.html">
+      <img src="../../images/Sketches/grins/Grinnie%20Side%20view%20COLOR.png" alt="Grinnie by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Grinnie</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="grinnie-delusionville-pilot.html">
+      <img src="../../images/Sketches/grins/Grinnie%20Delusionville%20Pilot%20in%20plane%20front%20COLOR.jpg" alt="Grinnie Delusionville Pilot by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Grinnie Delusionville Pilot</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="grinnie-on-horseback.html">
+      <img src="../../images/Sketches/grins/Grinnie%20on%20Horseback%20ORIGINAL.jpg" alt="Grinnie on Horseback by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Grinnie on Horseback</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="grinnies-grin.html">
+      <img src="../../images/Sketches/grins/Grinnies%20Grin%20ORIGINAL%202.jpg" alt="Grinnies Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Grinnies Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="grinnies-on-tv.html">
+      <img src="../../images/Sketches/grins/Grinnies%20on%20TV%20COLOR.jpg" alt="Grinnies on TV by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Grinnies on TV</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="grinplanet-nobody.html">
+      <img src="../../images/Sketches/grins/Grinplanet%20Nobody%20COLOR.jpg" alt="Grinplanet Nobody by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Grinplanet Nobody</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="grogu-grin.html">
+      <img src="../../images/Sketches/grins/Grogu%20Grin%20COLOR.jpg" alt="Grogu Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Grogu Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="grouch-grin.html">
+      <img src="../../images/Sketches/grins/Grouch%20Grin%20COLOR.jpg" alt="Grouch Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Grouch Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="gummy-bear-grin.html">
+      <img src="../../images/Sketches/grins/Gummy%20Bear%20Grin%20COLOR.jpg" alt="Gummy Bear Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Gummy Bear Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="hawaiian-punch-grin.html">
+      <img src="../../images/Sketches/grins/Hawaiian%20Punch%20Grin%20COLOR.jpg" alt="Hawaiian Punch Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Hawaiian Punch Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="hello-kitty-grin.html">
+      <img src="../../images/Sketches/grins/Hello%20Kitty%20Grin%20ORIGINAL%20COLOR.jpg" alt="Hello Kitty Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Hello Kitty Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="homer-grin.html">
+      <img src="../../images/Sketches/grins/Homer%20Grin%20headshot%20COLOR.jpg" alt="Homer Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Homer Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="honey-butts-grin.html">
+      <img src="../../images/Sketches/grins/Honey%20Butts%20Grin%20COLOR.jpg" alt="Honey Butts Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Honey Butts Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="hound-grin.html">
+      <img src="../../images/Sketches/grins/Hound%20Grin%20%20COLOR.jpg" alt="Hound Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Hound Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="hr-puffenstuff-grin.html">
+      <img src="../../images/Sketches/grins/HR%20Puffenstuff%20Grin%20COLOR.jpg" alt="HR Puffenstuff Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">HR Puffenstuff Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="jake-grin.html">
+      <img src="../../images/Sketches/grins/Jake%20the%20Dog%20Grin%20COLOR.jpg" alt="Jake Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Jake Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="jane-jetson-grin.html">
+      <img src="../../images/Sketches/grins/Jane%20Jetson%20Grin%20COLOR.1.jpg" alt="Jane Jetson Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Jane Jetson Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="jeremiah-grin.html">
+      <img src="../../images/Sketches/grins/Jeremiah%20Grin%201%20ORIGINAL.jpg" alt="Jeremiah Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Jeremiah Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="jimi-hendrix-grin.html">
+      <img src="../../images/Sketches/grins/Jimi%20Hendrix%20Grin%20ORIGINAL%20COLOR%203.jpg" alt="Jimi Hendrix Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Jimi Hendrix Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="joker-grin.html">
+      <img src="../../images/Sketches/grins/Joker%20Grin%20COLOR.jpg" alt="Joker Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Joker Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="kanegon-grin.html">
+      <img src="../../images/Sketches/grins/Kanegon%20Grin%20COLOR.jpg" alt="Kanegon Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Kanegon Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="kevin-durant-grin.html">
+      <img src="../../images/Sketches/grins/Kevin%20Durant%201%20ORIGINAL.jpg" alt="Kevin Durant Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Kevin Durant Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="kiss-gene-grin.html">
+      <img src="../../images/Sketches/grins/Kiss%20Gene%20Grin%20COLOR.jpg" alt="Kiss Gene Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Kiss Gene Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="krusty-the-clown-grin.html">
+      <img src="../../images/Sketches/grins/Krusty%20the%20Clown%20Grin%20front%20COLOR.jpg" alt="Krusty the Clown Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Krusty the Clown Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="kursed-grin.html">
+      <img src="../../images/Sketches/grins/Kursed%20Grin%20Side%20View%20COLOR.jpg" alt="Kursed Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Kursed Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="lagoon-creature-grin.html">
+      <img src="../../images/Sketches/grins/Lagoon%20Creature%20Grin%20COLOR.jpg" alt="Lagoon Creature Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Lagoon Creature Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="lemon-boy-grin.html">
+      <img src="../../images/Sketches/grins/Lemon%20Boy%20grin%20COLOR.jpg" alt="Lemon Boy grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Lemon Boy grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="liberty-grin.html">
+      <img src="../../images/Sketches/grins/Liberty%20Grin%20COLOR.jpg" alt="Liberty Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Liberty Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="lion-face-grin.html">
+      <img src="../../images/Sketches/grins/Lion%20Face%20Grin%20COLOR%202.jpg" alt="Lion Face Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Lion Face Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="lisa-grin.html">
+      <img src="../../images/Sketches/grins/Lisa%20Grin%20front%20COLOR.jpg" alt="Lisa grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Lisa grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="lucky-cat-grin.html">
+      <img src="../../images/Sketches/grins/Lucky%20Cat%20Grin%20COLOR.jpg" alt="Lucky Cat Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Lucky Cat Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="m-u-s-c-l-e-he-man-grinnie.html">
+      <img src="../../images/Sketches/grins/M.U.S.C.L.E.%20He-Man%20Grinnie%20front%20COLOR.png" alt="M.U.S.C.L.E. He-Man Grinnie by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">M.U.S.C.L.E. He-Man Grinnie</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="mad-mickey-grin.html">
+      <img src="../../images/Sketches/grins/Mad%20Mickey%20Grin%20ORIGINAL%20COLOR.jpg" alt="Mad Mickey Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Mad Mickey Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="maggie-grin.html">
+      <img src="../../images/Sketches/grins/Maggie%20Grin%20front%20COLOR.jpg" alt="Maggie Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Maggie Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="man-shark.html">
+      <img src="../../images/Sketches/grins/Man%20Shark%20COLORED.jpg" alt="Man Shark by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Man Shark</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="manny-pacquaio-grin.html">
+      <img src="../../images/Sketches/grins/Manny%20Pacquaio%20Grin%20ORIGINAL%20COLOR%203.jpg" alt="Manny Pacquaio Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Manny Pacquaio Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="marge-grin.html">
+      <img src="../../images/Sketches/grins/Marge%20Grin%20front%20COLOR.jpg" alt="Marge Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Marge Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="mario-grin.html">
+      <img src="../../images/Sketches/grins/Mario%20Grin%20front%20COLOR.jpg" alt="Mario Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Mario Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="max-grin.html">
+      <img src="../../images/Sketches/grins/Max%20Grin%20COLOR.jpg" alt="Max Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Max Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="mc-grin.html">
+      <img src="../../images/Sketches/grins/MC%20Supersized%20Grin%202%20COLOR.jpg" alt="MC Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">MC Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="melting-grinnie.html">
+      <img src="../../images/Sketches/grins/Melting%20Grinnie%20side%20view%203%20COLOR.png" alt="Melting Grinnie by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Melting Grinnie</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="melting-monster-grin.html">
+      <img src="../../images/Sketches/grins/Melting%20Monster%20Grin%20COLOR.jpg" alt="Melting Monster Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Melting Monster Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="mentadusa.html">
+      <img src="../../images/Sketches/grins/Mentadusa%20COLOR.jpg" alt="Mentadusa by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Mentadusa</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="mickey-grin.html">
+      <img src="../../images/Sketches/grins/Mickey%20Grin%20head%20COLOR.jpg" alt="Mickey Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Mickey Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="mishka-eyeball-grin.html">
+      <img src="../../images/Sketches/grins/Mishka%20Eyeball%20Grin%20COLOR.jpg" alt="Mishka Eyeball Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Mishka Eyeball Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="modzilla-grin.html">
+      <img src="../../images/Sketches/grins/Modzilla%20Grin%20Side%20B%26W.jpg" alt="Modzilla Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Modzilla Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="mogul-grin.html">
+      <img src="../../images/Sketches/grins/Mogul%20Grin%20COLOR.jpg" alt="Mogul Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Mogul Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="monkey-shiner-angel-grin.html">
+      <img src="../../images/Sketches/grins/Monkey%20Shiner%20Angel%20Grin%20COLOR.jpg" alt="Monkey Shiner Angel Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Monkey Shiner Angel Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="monkey-shriner-grin.html">
+      <img src="../../images/Sketches/grins/Monkey%20Shriner%20Grin%20COLOR.jpg" alt="Monkey Shriner Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Monkey Shriner Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="mounted-gorilla-grin.html">
+      <img src="../../images/Sketches/grins/Mounted%20Gorilla%20Grin%20COLOR.jpg" alt="Mounted Gorilla Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Mounted Gorilla Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="mouth-grin.html">
+      <img src="../../images/Sketches/grins/Mouth%20Grin%20COLOR.jpg" alt="Mouth Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Mouth Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="mr-met-grin.html">
+      <img src="../../images/Sketches/grins/Mr%20Met%20Grin%20ORIGINAL%20COLOR.jpg" alt="Mr Met Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Mr Met Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="mr-potato-grin.html">
+      <img src="../../images/Sketches/grins/Mr%20Potato%20Grin%20COLOR.jpg" alt="Mr Potato Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Mr Potato Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="mummy-grin.html">
+      <img src="../../images/Sketches/grins/Mummy%20Grin%20COLOR.jpg" alt="Mummy Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Mummy Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="mush-man-grin.html">
+      <img src="../../images/Sketches/grins/Mush%20Man%20grin%20COLOR.jpg" alt="Mush Man Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Mush Man Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="mutley-grin.html">
+      <img src="../../images/Sketches/grins/Mutley%20Grin%20COLOR.1.jpg" alt="Mutley Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Mutley Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="negative-positive-grin.html">
+      <img src="../../images/Sketches/grins/Negative%20Positive%20Grin%20ORIGINAL%20COLOR.jpg" alt="Negative Positive Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Negative Positive Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="ninja-turtle-grin.html">
+      <img src="../../images/Sketches/grins/Ninja%20Turtle%20Grin%20COLOR.jpg" alt="Ninja Turtle Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Ninja Turtle Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="olive-oil-grin.html">
+      <img src="../../images/Sketches/grins/Olive%20Oil%20Grin%20COLOR.jpg" alt="Olive Oil Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Olive Oil Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="orion-grin.html">
+      <img src="../../images/Sketches/grins/Orion%20Grin%20side%20ORIGINAL.jpeg" alt="Orion Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Orion Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="panda-bear-grin.html">
+      <img src="../../images/Sketches/grins/Panda%20Bear%20Grin%20COLOR.jpg" alt="Panda Bear Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Panda Bear Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="patrick-grin.html">
+      <img src="../../images/Sketches/grins/Patrick%20Grin%20COLOR.jpg" alt="Patrick Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Patrick Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="peko-girl-grin.html">
+      <img src="../../images/Sketches/grins/Peko%20Girl%20Grin%20COLOR.jpg" alt="Peko Girl Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Peko Girl Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="pepz-boy-grin.html">
+      <img src="../../images/Sketches/grins/Pepz%20Boy%20Grin%20COLOR.jpg" alt="Pepz Boy Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Pepz Boy Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="peter-grin.html">
+      <img src="../../images/Sketches/grins/Peter%20Grin%20COLOR.jpg" alt="Peter Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Peter Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="peter-potamus-grin.html">
+      <img src="../../images/Sketches/grins/Peter%20Potamus%20Grin%20COLOR.jpg" alt="Peter Potamus Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Peter Potamus Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="pinocchio-grin.html">
+      <img src="../../images/Sketches/grins/pinnochio%20grin%20right%20side%20-%20Trace%20girl%20-%20colored%20by%20susan%20-%20png.jpg" alt="Pinocchio Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Pinocchio Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="pizza-this-grin.html">
+      <img src="../../images/Sketches/grins/Pizza%20This%20Grin%20COLOR.jpg" alt="Pizza This Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Pizza This Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="plush-bear-grin.html">
+      <img src="../../images/Sketches/grins/Plush%20Bear%20Grin%20front%20COLOR.jpg" alt="Plush Bear Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Plush Bear Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="plush-grin.html">
+      <img src="../../images/Sketches/grins/Plush%20Grin%20front%20ORIGINAL%20COLOR.jpg" alt="Plush Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Plush Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="popeye-butthead-grin.html">
+      <img src="../../images/Sketches/grins/Popeye%20Butthead%20Grin%20COLOR.jpg" alt="Popeye Butthead Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Popeye Butthead Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="powerpuff-girl-bubbles-grin.html">
+      <img src="../../images/Sketches/grins/Powerpuff%20Girl%20Bubbles%20Grin%20COLOR.jpg" alt="Powerpuff Girl Bubbles Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Powerpuff Girl Bubbles Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="pumpkin-grin.html">
+      <img src="../../images/Sketches/grins/Pumpkin%20Grin%20COLOR.jpg" alt="Pumpkin Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Pumpkin Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="qhrist-grin-1.html">
+      <img src="../../images/Sketches/grins/Qhrist%20Grin%201%20COLOR.jpg" alt="Qhrist Grin 1 by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Qhrist Grin 1</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="quick-draw-mcgraw-grin.html">
+      <img src="../../images/Sketches/grins/Quick%20Draw%20McGraw%20Grin%20COLOR.jpg" alt="Quick Draw McGraw Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Quick Draw McGraw Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="rabbbit-grin.html">
+      <img src="../../images/Sketches/grins/Two-Faced%20Rabbbit%20Grin%20back%20COLOR.jpg" alt="Rabbbit Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Rabbbit Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="rabbit-grin.html">
+      <img src="../../images/Sketches/grins/Rabbit%20Grin%20COLOR.jpg" alt="Rabbit Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Rabbit Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="rabbit-grin-2.html">
+      <img src="../../images/Sketches/grins/Rabbit%20Grin%202%20COLOR.jpg" alt="Rabbit Grin 2 by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Rabbit Grin 2</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="ramones-grin.html">
+      <img src="../../images/Sketches/grins/Ramones%20Grin%201%20ORIGINAL.jpg" alt="Ramones Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Ramones Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="richie-grin.html">
+      <img src="../../images/Sketches/grins/Richie%20Grin%20ORIGINAL%20COLOR.jpg" alt="Richie Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Richie Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="robbie-spray-grin.html">
+      <img src="../../images/Sketches/grins/Robbie%20Spray%20Grin%20COLOR.jpg" alt="Robbie Spray Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Robbie Spray Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="robby-robot-grin.html">
+      <img src="../../images/Sketches/grins/Robby%20Robot%20Grin%20COLOR.jpg" alt="Robby Robot Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Robby Robot Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="ron-fink-grin.html">
+      <img src="../../images/Sketches/grins/Ron%20Fink%20Grin%20COLOR.jpg" alt="Ron Fink Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Ron Fink Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="ron-grin-face-icon.html">
+      <img src="../../images/Sketches/grins/Ron%20Grin%20Face%20Icon%20ORIGINAL%20COLOR.jpg" alt="Ron Grin Face Icon by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Ron Grin Face Icon</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="rosie-jetson-grin.html">
+      <img src="../../images/Sketches/grins/Rosie%20Jetson%20Grin%20COLOR.jpg" alt="Rosie Jetson Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Rosie Jetson Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="rugrat-grin.html">
+      <img src="../../images/Sketches/grins/Rugrat%20Grin%20COLOR.jpg" alt="Rugrat Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Rugrat Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="santa-cruz-hand-grin.html">
+      <img src="../../images/Sketches/grins/Santa%20Cruz%20Hand%20Grin%20COLOR.png" alt="Santa Cruz Hand Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Santa Cruz Hand Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="santa-grin.html">
+      <img src="../../images/Sketches/grins/Santa%20Grin%201%20COLOR.jpg" alt="Santa Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Santa Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="scooby-doo-grin.html">
+      <img src="../../images/Sketches/grins/Scooby%20Doo%20Grin%20COLOR.jpg" alt="Scooby Doo Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Scooby Doo Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="scream-grin.html">
+      <img src="../../images/Sketches/grins/Scream%20Grin%20COLOR.jpg" alt="Scream Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Scream Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="sever-fairy-landshark-grin-mickey-fin.html">
+      <img src="../../images/Sketches/grins/Sever%20Fairy%20Landshark%20Grin%20(Mickey%20Fin)%20COLOR.jpg" alt="Sever Fairy Landshark Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Sever Fairy Landshark Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="shark-grin-hotrod.html">
+      <img src="../../images/Sketches/grins/Shark%20Grin%20Hotrod%20COLOR.jpg" alt="Shark Grin Hotrod by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Shark Grin Hotrod</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="simpsons-family.html">
+      <img src="../../images/Sketches/grins/Simpsons%20Family%20Grins%201%20ORIGINAL.jpg" alt="Simpsons Family by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Simpsons Family</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="skeleton-grin.html">
+      <img src="../../images/Sketches/grins/Skeleton%20Grin%20front%20COLOR.jpg" alt="Skeleton Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Skeleton Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="slo-moe-grin.html">
+      <img src="../../images/Sketches/grins/Slo%20Moe%20Grin%20Portrait%20COLOR.jpg" alt="Slo Moe Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Slo Moe Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="slushsquatch-grin.html">
+      <img src="../../images/Sketches/grins/Slushsquatch%20Grin%20COLOR.jpg" alt="Slushsquatch Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Slushsquatch Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="smack-crack-pop-grin.html">
+      <img src="../../images/Sketches/grins/Smack%2C%20Crack%2C%20Pop%20Grin%20COLOR.jpg" alt="Smack, Crack, Pop Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Smack, Crack, Pop Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="smiley-face-dog-grin-newcastle.html">
+      <img src="../../images/Sketches/grins/Smiley%20Face%20Dog%20Grin%20Newcastle%20B%26W.jpg" alt="Smiley Face Dog Grin Newcastle by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Smiley Face Dog Grin Newcastle</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="smoking-grin.html">
+      <img src="../../images/Sketches/grins/Smoking%20Grin%20COLOR%202.png" alt="Smoking Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Smoking Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="smurf-grin.html">
+      <img src="../../images/Sketches/grins/Smurf%20Grin%20COLOR.jpg" alt="Smurf Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Smurf Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="smurfette-grin.html">
+      <img src="../../images/Sketches/grins/Smurfette%20Grin%20COLOR.jpg" alt="Smurfette Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Smurfette Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="snoopy-grin.html">
+      <img src="../../images/Sketches/grins/Snoopy%20Grin%20back%20COLOR.1.jpg" alt="Snoopy Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Snoopy Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="snoopy-traditional-grin.html">
+      <img src="../../images/Sketches/grins/Snoopy%20Traditional%20Grin%20COLOR.jpg" alt="Snoopy Traditional Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Snoopy Traditional Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="snoopy-traditional-grin-2.html">
+      <img src="../../images/Sketches/grins/Snoopy%20Traditional%20Grin%202%20ORIGINAL.jpg" alt="Snoopy Traditional Grin 2 by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Snoopy Traditional Grin 2</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="soccer-ball-grin.html">
+      <img src="../../images/Sketches/grins/Soccer%20Ball%20Grin%20ORIGINAL%20COLOR.jpg" alt="Soccer Ball Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Soccer Ball Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="sock-monkey-grin.html">
+      <img src="../../images/Sketches/grins/Sock%20Monkey%20Grin%20COLOR.jpg" alt="Sock Monkey Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Sock Monkey Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="sonic-grin.html">
+      <img src="../../images/Sketches/grins/Sonic%20Grin%20COLOR.jpg" alt="Sonic Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Sonic Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="space-shark-grin.html">
+      <img src="../../images/Sketches/grins/Space%20Shark%20Grin%20ORIGINAL%20COLOR.jpg" alt="Space Shark Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Space Shark Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="spaz-grin.html">
+      <img src="../../images/Sketches/grins/Spaz%20Grin%20ORIGINAL%20COLOR.jpg" alt="Spaz Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Spaz Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="speak-more-evil-grin.html">
+      <img src="../../images/Sketches/grins/Speak%20More%20Evil%20Grin%20COLOR.jpg" alt="Speak More Evil Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Speak More Evil Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="spitting-grin.html">
+      <img src="../../images/Sketches/grins/Spitting%20Grin%20COLOR.jpg" alt="Spitting Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Spitting Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="spongebob-grin.html">
+      <img src="../../images/Sketches/grins/Spongebob%20Grin%20COLOR.jpg" alt="Spongebob Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Spongebob Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="squirrel-squirt-grin.html">
+      <img src="../../images/Sketches/grins/Squirrel%20Squirt%20Grin%20COLOR.jpg" alt="Squirrel Squirt Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Squirrel Squirt Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="staples-pigeon-grin.html">
+      <img src="../../images/Sketches/grins/Staples%20Pigeon%20Grin%20side%20COLOR.jpg" alt="Staples Pigeon Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Staples Pigeon Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="starskull-trooper-grin.html">
+      <img src="../../images/Sketches/grins/Starskull%20Trooper%20Grin%20COLOR.jpg" alt="Starskull Trooper Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Starskull Trooper Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="stewie-grin.html">
+      <img src="../../images/Sketches/grins/Stewie%20Grin%20COLOR.jpg" alt="Stewie Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Stewie Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="stitch-grin.html">
+      <img src="../../images/Sketches/grins/Stitch%20Grin%20COLOR.jpg" alt="Stitch Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Stitch Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="stormtrooper-grin.html">
+      <img src="../../images/Sketches/grins/Stormtrooper%20Grin%20COLOR.jpg" alt="Stormtrooper Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Stormtrooper Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="street-fighter-guile-grin.html">
+      <img src="../../images/Sketches/grins/Street%20Fighter%20Guile%20Grin%20COLOR.jpg" alt="Street Fighter Guile Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Street Fighter Guile Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="sugar-clown-grin.html">
+      <img src="../../images/Sketches/grins/Sugar%20Clown%20Grin%20COLOR.jpg" alt="Sugar Clown Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Sugar Clown Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="sugar-diabetic-bear-grin.html">
+      <img src="../../images/Sketches/grins/Sugar%20Diabetic%20Bear%20Grin%20COLOR.jpg" alt="Sugar Diabetic Bear Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Sugar Diabetic Bear Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="sugar-smack-grin.html">
+      <img src="../../images/Sketches/grins/Sugar%20Smack%20Grin%20COLOR.jpg" alt="Sugar Smack Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Sugar Smack Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="surf-girl-grin.html">
+      <img src="../../images/Sketches/grins/Surf%20Girl%20Grin%20ORIGINAL%20COLOR.jpg" alt="Surf Girl Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Surf Girl Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="taz-grin.html">
+      <img src="../../images/Sketches/grins/Taz%20Grin%20circle%20COLOR.jpg" alt="Taz Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Taz Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="techno-kitten-grin.html">
+      <img src="../../images/Sketches/grins/Techno%20Kitten%20Grin%20COLOR.jpg" alt="Techno Kitten Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Techno Kitten Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="teddy-bear-grin.html">
+      <img src="../../images/Sketches/grins/Teddy%20Bear%20Grin%20Standing%20COLOR.jpg" alt="Teddy Bear Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Teddy Bear Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="telegrinnie.html">
+      <img src="../../images/Sketches/grins/Teletubby%20Grin%20Flying%20COLOR.jpg" alt="Telegrinnie by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Telegrinnie</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="tiger-grin.html">
+      <img src="../../images/Sketches/grins/Tiger%20Grin%202%20ORIGINAL%20colorway%201.jpg" alt="Tiger Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Tiger Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="tiger-sphinx-grin.html">
+      <img src="../../images/Sketches/grins/Tiger%20Sphinx%20Grin%20ORIGINAL%20COLOR.jpg" alt="Tiger Sphinx Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Tiger Sphinx Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="timid-shark-grin.html">
+      <img src="../../images/Sketches/grins/Timid%20Shark%20Grin%20COLOR.jpg" alt="Timid Shark Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Timid Shark Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="timmy-turner-grin.html">
+      <img src="../../images/Sketches/grins/Timmy%20Turner%20Grin%20COLOR.jpg" alt="Timmy Turner Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Timmy Turner Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="tmnt-leonardo-grin.html">
+      <img src="../../images/Sketches/grins/Tmnt%20Leonardo%20Grin%20COLOR.jpg" alt="Tmnt Leonardo Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Tmnt Leonardo Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="tmnt-michelangelo-grin.html">
+      <img src="../../images/Sketches/grins/Tmnt%20Michelangelo%20Grin%20COLOR.jpg" alt="TMNT Michelangelo Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">TMNT Michelangelo Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="tmnt-raphael-grin.html">
+      <img src="../../images/Sketches/grins/Tmnt%20Raphael%20Grin%20COLOR.jpg" alt="Tmnt Raphael Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Tmnt Raphael Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="tom-n-jerry-grins.html">
+      <img src="../../images/Sketches/grins/Tom%20N%20Jerry%20Grins%20ORIGINAL%20COLOR.jpg" alt="Tom N Jerry Grins by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Tom N Jerry Grins</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="tony-tiger-grin.html">
+      <img src="../../images/Sketches/grins/Tony%20Tiger%20Grin%201%20COLOR.jpg" alt="Tony Tiger Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Tony Tiger Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="topcat-grin.html">
+      <img src="../../images/Sketches/grins/Topcat%20Grin%20COLOR.jpg" alt="Topcat Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Topcat Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="trippy-grin.html">
+      <img src="../../images/Sketches/grins/Trippy%20Grin%20COLORWAY%203.png" alt="Trippy Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Trippy Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="tupac-grin.html">
+      <img src="../../images/Sketches/grins/Tupac%20Grin%20COLOR.jpg" alt="Tupac Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Tupac Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="tweetie-grin.html">
+      <img src="../../images/Sketches/grins/Tweetie%20Grin%20ORIGINAL.jpg" alt="Tweetie Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Tweetie Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="ultraman-grin.html">
+      <img src="../../images/Sketches/grins/Ultraman%20Grin%20COLOR.jpg" alt="Ultraman Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Ultraman Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="unicorn-grin.html">
+      <img src="../../images/Sketches/grins/Unicorn%20Grin%20COLOR%201.jpg" alt="Unicorn Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Unicorn Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="unipig-grin.html">
+      <img src="../../images/Sketches/grins/Unipig%20Grin%20COLOR.jpg" alt="Unipig Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Unipig Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="urban-bigfoot-grin.html">
+      <img src="../../images/Sketches/grins/Urban%20Bigfoot%20Grin%20side%20head%20ORIGINAL.jpg" alt="Urban Bigfoot Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Urban Bigfoot Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="vampire-grin.html">
+      <img src="../../images/Sketches/grins/Vampire%20Grin%20Front%20COLOR.jpg" alt="Vampire Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Vampire Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="wing-grin.html">
+      <img src="../../images/Sketches/grins/Wing%20Grin%20body%20COLOR.png" alt="Wing Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Wing Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="wolf-grin.html">
+      <img src="../../images/Sketches/grins/Wolf%20Grin%20COLOR.jpg" alt="Wolf Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Wolf Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="woodstock-grin.html">
+      <img src="../../images/Sketches/grins/Woodstock%20Grin%20three%20quarters%20COLOR.jpg" alt="Woodstock Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Woodstock Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="yellow-submarine-grin.html">
+      <img src="../../images/Sketches/grins/Yellow%20Submarine%20Grin%20COLOR.jpg" alt="Yellow Submarine Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Yellow Submarine Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="yin-yang-face-grin.html">
+      <img src="../../images/Sketches/grins/Yin%20Yang%20Face%20Grin%20COLOR.jpg" alt="Yin Yang Face Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Yin Yang Face Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="yin-yang-grin-1.html">
+      <img src="../../images/Sketches/grins/Yin%20Yang%20Grin%201%20COLOR.jpg" alt="Yin Yang Grin 1 by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Yin Yang Grin 1</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="yin-yang-grin-2.html">
+      <img src="../../images/Sketches/grins/Yin%20Yang%20Grin%202%20COLOR.jpg" alt="Yin Yang Grin 2 by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Yin Yang Grin 2</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="yogi-bear-grin.html">
+      <img src="../../images/Sketches/grins/Yogi%20Bear%20Grin%20COLOR.jpg" alt="Yogi Bear Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Yogi Bear Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="yucky-charmer-grin.html">
+      <img src="../../images/Sketches/grins/Yucky%20Charmer%20Grin%20COLOR.jpg" alt="Yucky Charmer Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Yucky Charmer Grin</p>
+      </div>
+      </a>
+
+      <a class="gallery-item" href="zephyr-zelephant-grin.html">
+      <img src="../../images/Sketches/grins/Zephyr%20Zelephant%20Grin%20COLOR.png" alt="Zephyr Zelephant Grin by Ron English" loading="lazy" />
+      <div class="entry-body">
+      <p class="work-title">Zephyr Zelephant Grin</p>
+      </div>
+      </a>
     </section>
 
     <footer>
@@ -641,6 +2208,44 @@
   </main>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

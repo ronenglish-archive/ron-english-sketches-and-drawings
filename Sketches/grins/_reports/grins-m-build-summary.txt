@@ -1,0 +1,128 @@
+﻿Grins M build report
+Generated: 2026-05-08 05:21:43
+
+Image folder: D:\github\ron-english-sketches-and-drawings\images\Sketches\grins
+HTML folder:  D:\github\ron-english-sketches-and-drawings\Sketches\grins
+
+M image files scanned: 167
+Pages proposed: 86
+
+Pages:
+- DEADMAU5 Grin -> deadmau5-grin.html | originals: 0, digitals: 3, cards: 0
+- DEADMAU5 Grin Running COLORS -> deadmau5-grin-running-colors.html | originals: 0, digitals: 1, cards: 0
+- DEADMAUGrin back COLORS -> deadmaugrin-back-colors.html | originals: 0, digitals: 1, cards: 0
+- DEADMAUGrin COLORS -> deadmaugrin-colors.html | originals: 0, digitals: 1, cards: 0
+- DEADMAUGrin side COLORS -> deadmaugrin-side-colors.html | originals: 0, digitals: 1, cards: 0
+- Deputy Dog Grin -> deputy-dog-grin.html | originals: 0, digitals: 1, cards: 0
+- Dr Bub Quack Animation 1 -> dr-bub-quack-animation-1.html | originals: 0, digitals: 1, cards: 0
+- Dr Bub Quack Animation 2 -> dr-bub-quack-animation-2.html | originals: 0, digitals: 1, cards: 0
+- Dr Bub Quack Grin -> dr-bub-quack-grin.html | originals: 0, digitals: 1, cards: 0
+- Drink the Koolaid 1 -> drink-the-koolaid-1.html | originals: 0, digitals: 1, cards: 0
+- Drink the Koolaid 2 -> drink-the-koolaid-2.html | originals: 0, digitals: 1, cards: 0
+- Dripping Grin -> dripping-grin.html | originals: 3, digitals: 2, cards: 1
+- Droopy Dog Grin -> droopy-dog-grin.html | originals: 1, digitals: 0, cards: 0
+- Dunny Grin -> dunny-grin.html | originals: 4, digitals: 2, cards: 0
+- Elefanka Grin Side View -> elefanka-grin-side-view.html | originals: 1, digitals: 0, cards: 0
+- Elephant Grin -> elephant-grin.html | originals: 3, digitals: 0, cards: 0
+- Elmo Grin -> elmo-grin.html | originals: 1, digitals: 2, cards: 0
+- Eminem Grin -> eminem-grin.html | originals: 1, digitals: 1, cards: 0
+- Ernie Grin -> ernie-grin.html | originals: 2, digitals: 1, cards: 0
+- EZ Nuts Grin -> ez-nuts-grin.html | originals: 1, digitals: 1, cards: 0
+- Fat Stormtrooper Grin -> fat-stormtrooper-grin.html | originals: 1, digitals: 0, cards: 0
+- Faze Banks Grin -> faze-banks-grin.html | originals: 0, digitals: 1, cards: 0
+- Felix Grin -> felix-grin.html | originals: 3, digitals: 2, cards: 0
+- Firecracker Skeleton Grin -> firecracker-skeleton-grin.html | originals: 1, digitals: 0, cards: 0
+- Flaming O Grin -> flaming-o-grin.html | originals: 1, digitals: 0, cards: 0
+- Floating Grinnie -> floating-grinnie.html | originals: 1, digitals: 0, cards: 0
+- Flower Brain Grin -> flower-brain-grin.html | originals: 0, digitals: 1, cards: 0
+- Flower Grin -> flower-grin.html | originals: 1, digitals: 1, cards: 0
+- Flower Grin ORIGINAL COLOR (2) -> flower-grin-original-color-2.html | originals: 1, digitals: 0, cards: 0
+- Flower Grin ORIGINAL COLOR (3) -> flower-grin-original-color-3.html | originals: 1, digitals: 0, cards: 0
+- Flower Grin version 2 -> flower-grin-version-2.html | originals: 1, digitals: 2, cards: 0
+- Flying Grinnie -> flying-grinnie.html | originals: 1, digitals: 0, cards: 0
+- Football Grin -> football-grin.html | originals: 1, digitals: 0, cards: 0
+- Football Player Grin -> football-player-grin.html | originals: 1, digitals: 0, cards: 0
+- Foot in Mouth -> foot-in-mouth.html | originals: 1, digitals: 0, cards: 0
+- Franken Fat Grin -> franken-fat-grin.html | originals: 1, digitals: 1, cards: 0
+- Franken Grin -> franken-grin.html | originals: 0, digitals: 1, cards: 0
+- Freak Bro Afro Stache -> freak-bro-afro-stache.html | originals: 1, digitals: 1, cards: 0
+- Freak Bro Grin -> freak-bro-grin.html | originals: 1, digitals: 0, cards: 0
+- Freak Cat -> freak-cat.html | originals: 1, digitals: 0, cards: 0
+- Garfield Grin -> garfield-grin.html | originals: 1, digitals: 0, cards: 0
+- George Jetson Grin -> george-jetson-grin.html | originals: 1, digitals: 0, cards: 0
+- Ghostbuster Grin -> ghostbuster-grin.html | originals: 1, digitals: 0, cards: 0
+- Godzilla Heart Grin -> godzilla-heart-grin.html | originals: 1, digitals: 1, cards: 0
+- Gorilla grin -> gorilla-grin.html | originals: 1, digitals: 0, cards: 1
+- Gorilla Grin 2 -> gorilla-grin-2.html | originals: 2, digitals: 3, cards: 0
+- Grim Grin -> grim-grin.html | originals: 1, digitals: 0, cards: 0
+- Grim Grin (Grin Reaper) -> grim-grin-grin-reaper.html | originals: 1, digitals: 0, cards: 0
+- Grim Reaper Grin -> grim-reaper-grin.html | originals: 2, digitals: 2, cards: 1
+- Grim Reefer -> grim-reefer.html | originals: 1, digitals: 1, cards: 0
+- Grin animation -> grin-animation.html | originals: 3, digitals: 4, cards: 0
+- Grin Animation front B&W (1) -> grin-animation-front-b-and-w-1.html | originals: 0, digitals: 1, cards: 0
+- Grin Animation side B&W (1) -> grin-animation-side-b-and-w-1.html | originals: 0, digitals: 1, cards: 0
+- Grin Baby -> grin-baby.html | originals: 2, digitals: 2, cards: 0
+- Grin Brain Cone -> grin-brain-cone.html | originals: 1, digitals: 1, cards: 0
+- Grin Bunny Ears -> grin-bunny-ears.html | originals: 0, digitals: 2, cards: 0
+- Grin Bunny Three Ears -> grin-bunny-three-ears.html | originals: 1, digitals: 0, cards: 0
+- Grin Bunny Two Ears -> grin-bunny-two-ears.html | originals: 1, digitals: 0, cards: 0
+- Grin Car -> grin-car.html | originals: 4, digitals: 4, cards: 0
+- Grinch Grin -> grinch-grin.html | originals: 1, digitals: 1, cards: 0
+- Grin Flower -> grin-flower.html | originals: 1, digitals: 1, cards: 0
+- Grin God -> grin-god.html | originals: 6, digitals: 4, cards: 0
+- Grin Kitty -> grin-kitty.html | originals: 1, digitals: 1, cards: 0
+- Grin Mouth -> grin-mouth.html | originals: 1, digitals: 0, cards: 0
+- grinne side view -> grinne-side-view.html | originals: 0, digitals: 1, cards: 0
+- grinnie -> grinnie.html | originals: 0, digitals: 3, cards: 0
+- Grinnie and Friends Totem Pole -> grinnie-and-friends-totem-pole.html | originals: 1, digitals: 0, cards: 0
+- Grinnie Delusionville Pilot -> grinnie-delusionville-pilot.html | originals: 0, digitals: 2, cards: 0
+- Grinnie Delusionville Pilot in plane -> grinnie-delusionville-pilot-in-plane.html | originals: 0, digitals: 2, cards: 0
+- Grinnie Family Icon -> grinnie-family-icon.html | originals: 0, digitals: 1, cards: 0
+- grinnie front view -> grinnie-front-view.html | originals: 0, digitals: 1, cards: 0
+- Grinnie on Horseback -> grinnie-on-horseback.html | originals: 2, digitals: 0, cards: 0
+- Grinnies Grin -> grinnies-grin.html | originals: 1, digitals: 1, cards: 0
+- grinnies grin face animation -> grinnies-grin-face-animation.html | originals: 0, digitals: 1, cards: 0
+- Grinnie Side view -> grinnie-side-view.html | originals: 0, digitals: 1, cards: 0
+- Grinnies on TV -> grinnies-on-tv.html | originals: 1, digitals: 1, cards: 0
+- Grinnies Twins -> grinnies-twins.html | originals: 1, digitals: 1, cards: 0
+- Grin Planet -> grin-planet.html | originals: 0, digitals: 1, cards: 0
+- Grinplanet Nobody -> grinplanet-nobody.html | originals: 0, digitals: 1, cards: 0
+- Grin Reaper version 2 -> grin-reaper-version-2.html | originals: 0, digitals: 1, cards: 0
+- Grin Reaper With Facemask -> grin-reaper-with-facemask.html | originals: 3, digitals: 0, cards: 0
+- Grin Smoker -> grin-smoker.html | originals: 0, digitals: 2, cards: 0
+- Grin Smoker B&W shaded -> grin-smoker-b-and-w-shaded.html | originals: 0, digitals: 1, cards: 0
+- Grin Smoker Portrait -> grin-smoker-portrait.html | originals: 1, digitals: 0, cards: 0
+- Grouch Grin -> grouch-grin.html | originals: 1, digitals: 0, cards: 0
+- Gummy Bear Grin -> gummy-bear-grin.html | originals: 1, digitals: 0, cards: 0
+
+Pages using the no-original standard:
+- DEADMAU5 Grin
+- DEADMAU5 Grin Running COLORS
+- DEADMAUGrin back COLORS
+- DEADMAUGrin COLORS
+- DEADMAUGrin side COLORS
+- Deputy Dog Grin
+- Dr Bub Quack Animation 1
+- Dr Bub Quack Animation 2
+- Dr Bub Quack Grin
+- Drink the Koolaid 1
+- Drink the Koolaid 2
+- Faze Banks Grin
+- Flower Brain Grin
+- Franken Grin
+- Grin Animation front B&W (1)
+- Grin Animation side B&W (1)
+- Grin Bunny Ears
+- grinne side view
+- grinnie
+- Grinnie Delusionville Pilot
+- Grinnie Delusionville Pilot in plane
+- Grinnie Family Icon
+- grinnie front view
+- grinnies grin face animation
+- Grinnie Side view
+- Grin Planet
+- Grinplanet Nobody
+- Grin Reaper version 2
+- Grin Smoker
+- Grin Smoker B&W shaded

@@ -1,0 +1,20 @@
+﻿Grins safe placement pass
+Generated: 2026-05-08 07:18:00
+
+ReportOnly: True
+Image files scanned: 1447
+HTML files scanned: 370
+Unreferenced files considered for placement: 473
+Known intentionally-unused files skipped: 5
+Target pages/groups: 237
+Changes listed: 473
+
+Important:
+- This script does not delete image files.
+- Existing pages are backed up before editing.
+- New pages are added to the Grins index only if the href is not already present.
+- Some groupings may still need manual review after this pass.
+
+Reports:
+- D:\github\ron-english-sketches-and-drawings\Sketches\grins\_reports\safe-placement-pass\01-safe-placement-changes-20260508-071800.csv
+- D:\github\ron-english-sketches-and-drawings\Sketches\grins\_reports\safe-placement-pass\02-skipped-files-20260508-071800.csv

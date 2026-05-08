@@ -1,0 +1,15 @@
+﻿Grins cleanup pass 20
+Generated: 
+2026-05-08 10:14:13
+ReportOnly: 
+False
+
+Changes logged: 
+69
+Warnings logged: 
+0
+
+Reports:
+D:\github\ron-english-sketches-and-drawings\Sketches\grins\_reports\cleanup-pass-20\00-summary-20260508-101413.txt
+D:\github\ron-english-sketches-and-drawings\Sketches\grins\_reports\cleanup-pass-20\01-changes-20260508-101413.csv
+D:\github\ron-english-sketches-and-drawings\Sketches\grins\_reports\cleanup-pass-20\02-warnings-20260508-101413.csv
