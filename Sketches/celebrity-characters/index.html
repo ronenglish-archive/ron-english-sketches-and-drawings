@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Celebrity Characters | Sketches &amp; Drawings | Ron English Catalogue Raisonné</title>
+
+  <link rel="stylesheet" href="../../css/styles.css" />
+
+  <style>
+    :root{
+      --border:#e5e7eb;
+      --muted:#6b7280;
+      --shadow:0 10px 30px rgba(0,0,0,.08);
+      --radius:18px;
+      --bg:#ffffff;
+      --card:#ffffff;
+      --card-hover:#ffffff;
+      --panel:#f8fafc;
+      --pill-bg:#ffffff;
+      --pill-hover:#f9fafb;
+    }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:#111;
+      background:var(--bg);
+      padding-left:0;
+      padding-right:0;
+    }
+
+    .wrap{
+      max-width:1240px;
+      margin:0 auto;
+      padding:28px 18px 60px;
+    }
+
+    .nav-pills{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:22px;
+      margin-bottom:22px;
+      justify-content:center;
+      text-align:center;
+    }
+
+    .nav-pill{
+      padding:8px 14px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background:var(--pill-bg);
+      color:#111;
+      text-decoration:none;
+      font-size:14px;
+      transition:background .12s ease, border-color .12s ease, transform .12s ease;
+    }
+
+    .nav-pill:hover{
+      background:var(--pill-hover);
+      border-color:#d1d5db;
+      transform:translateY(-1px);
+    }
+
+    .page-header{
+      max-width:1100px;
+      margin:0 auto;
+      padding:0;
+      text-align:center;
+    }
+
+    .page-title{
+      margin:0 0 10px;
+      font-size:clamp(2rem,4vw,3rem);
+      letter-spacing:-.02em;
+      line-height:1.05;
+      text-align:center;
+    }
+
+    .intro-text{
+      max-width:900px;
+      margin:0 auto 28px;
+      padding:0;
+      line-height:1.6;
+      text-align:center;
+    }
+
+    .intro-text p{
+      margin:0 0 14px;
+      color:var(--muted);
+      font-size:18px;
+      text-align:center;
+    }
+
+    .gallery-grid{
+      margin-top:28px;
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:18px;
+    }
+
+    .gallery-item{
+      display:block;
+      text-decoration:none;
+      color:inherit;
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+    }
+
+    .gallery-item:hover{
+      transform:translateY(-2px);
+      box-shadow:0 16px 40px rgba(0,0,0,.12);
+      border-color:#d1d5db;
+      background:var(--card-hover);
+    }
+
+    .gallery-item img{
+      width:100%;
+      height:220px;
+      object-fit:contain;
+      display:block;
+      background:var(--panel);
+      padding:10px;
+      border-bottom:1px solid var(--border);
+      margin:0;
+      border-radius:0;
+    }
+
+    .entry-body{
+      padding:16px 18px 18px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+    }
+
+    .work-title{
+      margin:0;
+      padding:0;
+      width:100%;
+      font-size:18px;
+      line-height:1.35;
+      font-weight:600;
+      text-align:center;
+    }
+
+    footer{
+      margin-top:34px;
+      padding-top:16px;
+      border-top:1px solid var(--border);
+      color:var(--muted);
+      font-size:14px;
+      text-align:center;
+    }
+
+    @media (max-width:1100px){
+      .gallery-grid{
+        grid-template-columns:repeat(3,minmax(0,1fr));
+      }
+    }
+
+    @media (max-width:820px){
+      .gallery-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+      }
+    }
+
+    @media (max-width:560px){
+      .gallery-grid{
+        grid-template-columns:1fr;
+      }
+
+      .gallery-item img{
+        height:240px;
+      }
+    }
+  </style>
+  <!-- Celebrity Characters centering overrides -->
+  <style id="celebrity-centering-overrides">
+    /* Keep the main visible catalogue text centered */
+    .site-header,
+    .site-header h1,
+    .page-header,
+    .page-title,
+    .intro-text,
+    .intro-text p,
+    .section-card h2,
+    .section-intro,
+    .entry-body,
+    .work-title,
+    .card-title,
+    .gallery-title,
+    .category-title,
+    .character-title,
+    figcaption,
+    footer {
+      text-align: center !important;
+    }
+
+    /* Center top pill navigation */
+    .top-nav,
+    .nav-pills {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      justify-content: center !important;
+      text-align: center !important;
+    }
+
+    .top-nav a,
+    .nav-pills a,
+    .nav-pill {
+      text-align: center !important;
+    }
+
+    /* Center card content and card titles */
+    .entry-body,
+    .card-body,
+    .gallery-card,
+    .gallery-item {
+      text-align: center !important;
+    }
+
+    .gallery-item .work-title,
+    .gallery-item p,
+    .entry-body p {
+      text-align: center !important;
+    }
+
+    /* Keep the Back link left-aligned, as requested */
+    .back-link,
+    .back-link a {
+      text-align: left !important;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <nav class="nav-pills" aria-label="Site navigation">
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="../index.html">Sketches</a>
+    </nav>
+
+    <header class="page-header">
+      <h1 class="page-title">Celebrity Characters</h1>
+    </header>
+
+    <section class="intro-text">
+      <p>Celebrity, pop-culture, and character-based sketches and drawings by Ron English.</p>
+    </section>
+
+    <section class="gallery-grid" aria-label="Celebrity character sketch categories">
+      <a class="gallery-item" href="andy-warhol/index.html">
+        <img src="../../images/Sketches/celebrity-characters/Andy%20Warhol%20HERO.jpg" alt="Andy Warhol drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Andy Warhol</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="dudebox/index.html">
+        <img src="../../images/Sketches/celebrity-characters/Dudebox%20HERO.jpg" alt="Dudebox drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Dudebox</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="flava/index.html">
+        <img src="../../images/Sketches/celebrity-characters/flava%20HERO.jpg" alt="Flava Flav drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Flava Flav</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="flintstones/index.html">
+        <img src="../../images/Sketches/celebrity-characters/flintstones%20HERO.jpg" alt="Flintstones drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Flintstones</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="huckelberry/index.html">
+        <img src="../../images/Sketches/celebrity-characters/huckelberry%20hound%20HERO.jpg" alt="Huckleberry Hound drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Huckleberry Hound</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="looney-tunes/index.html">
+        <img src="../../images/Sketches/celebrity-characters/looney%20tunes%20HERO.png" alt="Looney Tunes drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Looney Tunes</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="mad-magazine/index.html">
+        <img src="../../images/Sketches/celebrity-characters/Mad%20Magazine%20HERO.jpg" alt="Mad Magazine drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Mad Magazine</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="marilyn/index.html">
+        <img src="../../images/Sketches/celebrity-characters/Marilyn%20HERO.JPG" alt="Marilyn Monroe drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Marilyn Monroe</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="morton/index.html">
+        <img src="../../images/Sketches/celebrity-characters/morton%20salt%20HERO.jpg" alt="Morton Salt Girl drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Morton Salt Girl</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="numb-nuts/index.html">
+        <img src="../../images/Sketches/celebrity-characters/Numb%20Nut%20HERO.jpg" alt="Numb Nuts Family drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Numb Nuts Family</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="peanuts/index.html">
+        <img src="../../images/Sketches/celebrity-characters/peanuts%20HERO.jpg" alt="Peanuts drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Peanuts</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="peewee/index.html">
+        <img src="../../images/Sketches/celebrity-characters/PeeWee%20HERO.jpg" alt="PeeWee Herman drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">PeeWee Herman</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="pepe/index.html">
+        <img src="../../images/Sketches/celebrity-characters/Pepe%20HERO.jpg" alt="Pepe the Frog drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Pepe the Frog</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="politicians/index.html">
+        <img src="../../images/Sketches/celebrity-characters/politicians%20HERO.png" alt="Politicians drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Politicians</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popeye/index.html">
+        <img src="../../images/Sketches/celebrity-characters/Popeye%20HERO.jpg" alt="Popeye Family drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popeye Family</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="sesame-street/index.html">
+        <img src="../../images/Sketches/celebrity-characters/sesame%20HERO.png" alt="Sesame Street drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Sesame Street</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="simpsons/index.html">
+        <img src="../../images/Sketches/celebrity-characters/simpsons%20HERO.jpg" alt="Simpsons drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Simpsons</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="south-park/index.html">
+        <img src="../../images/Sketches/celebrity-characters/South%20Park%20HERO.jpg" alt="South Park drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">South Park</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="spongebob-family/index.html">
+        <img src="../../images/Sketches/celebrity-characters/spongebob%20HERO.png" alt="Spongebob Family drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Spongebob Family</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="star-wars/index.html">
+        <img src="../../images/Sketches/celebrity-characters/star%20wars%20HERO.jpg" alt="Star Wars drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Star Wars</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="starbucks/index.html">
+        <img src="../../images/Sketches/celebrity-characters/Starbucks%20HERO.jpg" alt="Starbucks drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Starbucks</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="street-fighters/index.html">
+        <img src="../../images/Sketches/celebrity-characters/Street%20Fighter%20HERO.png" alt="Street Fighters drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Street Fighters</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="superman/index.html">
+        <img src="../../images/Sketches/celebrity-characters/Superman%20HERO.jpg" alt="Superman drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Superman</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="teletubbies/index.html">
+        <img src="../../images/Sketches/celebrity-characters/teletubby%20HERO.png" alt="Teletubbies drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Teletubbies</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="tmnt/index.html">
+        <img src="../../images/Sketches/celebrity-characters/TMNT%20HERO.jpg" alt="TMNT drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">TMNT</p>
+        </div>
+      </a>
+    </section>
+
+    <footer>
+      Published via GitHub Pages for long-term public access.
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,400 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Young Andy | Andy Warhol | Celebrity Characters | Ron English Catalogue Raisonn&eacute;</title>
+  <link rel="stylesheet" href="../../../../css/styles.css" />
+  <style>
+    :root{
+      --border:#e5e7eb;
+      --muted:#4b5563;
+      --shadow:0 10px 30px rgba(0,0,0,.08);
+      --radius:18px;
+      --bg:#ffffff;
+      --panel:#f3f4f6;
+      --pill-hover:#f9fafb;
+    }
+
+    *{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:#111;
+      background:var(--bg);
+      padding-left:0;
+      padding-right:0;
+    }
+
+    .wrap{
+      max-width:1240px;
+      margin:0 auto;
+      padding:28px 18px 60px;
+    }
+
+    .page-narrow{ max-width:1100px; }
+
+    .nav-pills{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin:22px 0;
+      justify-content:center;
+      text-align:center;
+    }
+
+    .nav-pill{
+      padding:8px 14px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background:#fff;
+      color:#111;
+      text-decoration:none;
+      font-size:14px;
+      transition:background .12s ease,border-color .12s ease,transform .12s ease;
+    }
+
+    .nav-pill:hover{
+      background:var(--pill-hover);
+      border-color:#d1d5db;
+      transform:translateY(-1px);
+    }
+
+    .page-header{
+      max-width:1100px;
+      margin:0 auto 28px;
+      padding:0;
+      text-align:center;
+    }
+
+    .page-title{
+      margin:0 0 10px;
+      font-size:clamp(2rem,4vw,3rem);
+      letter-spacing:-.02em;
+      line-height:1.05;
+      text-align:center;
+    }
+
+    .intro-text{
+      max-width:900px;
+      margin:0 auto 28px;
+      padding:0;
+      line-height:1.6;
+      text-align:center;
+      color:var(--muted);
+      font-size:18px;
+    }
+
+    .section-card{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:22px;
+      margin-bottom:24px;
+    }
+
+    .section-card h2{
+      margin:0 0 18px;
+      font-size:1.4rem;
+      text-align:center;
+    }
+
+    .section-intro{
+      margin:0 auto;
+      color:var(--muted);
+      line-height:1.6;
+      text-align:center;
+      max-width:760px;
+    }
+
+    .index-grid{
+      margin-top:28px;
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:18px;
+    }
+
+    .gallery-grid,
+    .card-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+    }
+
+    .originals-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:20px;
+    }
+
+    .gallery-item{
+      display:block;
+      text-decoration:none;
+      color:inherit;
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:16px;
+      overflow:hidden;
+      box-shadow:0 4px 18px rgba(0,0,0,.04);
+      margin:0;
+      transition:transform .12s ease,box-shadow .12s ease,border-color .12s ease;
+    }
+
+    .gallery-item:hover{
+      transform:translateY(-2px);
+      box-shadow:0 16px 40px rgba(0,0,0,.12);
+      border-color:#d1d5db;
+    }
+
+    .gallery-item a{
+      display:block;
+      color:inherit;
+      text-decoration:none;
+    }
+
+    .gallery-item img{
+      display:block;
+      width:100%;
+      object-fit:contain;
+      background:var(--panel);
+      padding:10px;
+      border-bottom:0;
+    }
+
+    .index-grid .gallery-item img{
+      height:280px;
+      border-bottom:1px solid var(--border);
+    }
+
+    .gallery-grid .gallery-item img{ height:320px; }
+    .originals-grid .gallery-item img{ height:440px; }
+    .card-grid .gallery-item img{ height:520px; }
+
+    .entry-body{
+      padding:16px 18px 18px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+    }
+
+    .work-title{
+      margin:0;
+      padding:0;
+      width:100%;
+      font-size:18px;
+      line-height:1.35;
+      font-weight:600;
+      text-align:center;
+    }
+
+    .back-link{ margin-top:28px; text-align:left; }
+
+    .back-link a{
+      display:inline-block;
+      text-decoration:none;
+      color:#111;
+      border:1px solid var(--border);
+      border-radius:999px;
+      padding:10px 16px;
+      background:#fff;
+      text-align:left;
+    }
+
+    .back-link a:hover{ background:#f9fafb; }
+
+    footer{
+      margin-top:34px;
+      padding-top:16px;
+      border-top:1px solid var(--border);
+      color:var(--muted);
+      font-size:14px;
+      text-align:center;
+    }
+
+    @media (max-width:900px){
+      .index-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); }
+    }
+
+    @media (max-width:560px){
+      .wrap{ padding:22px 14px 50px; }
+      .index-grid,
+      .gallery-grid,
+      .card-grid,
+      .originals-grid{ grid-template-columns:1fr; }
+      .index-grid .gallery-item img,
+      .gallery-grid .gallery-item img{ height:260px; }
+      .originals-grid .gallery-item img{ height:340px; }
+      .card-grid .gallery-item img{ height:420px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap page-narrow">
+    <nav class="nav-pills" aria-label="Site navigation">
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="../../../index.html">Sketches</a>
+      <a class="nav-pill" href="../../index.html">Celebrity Characters</a>
+      <a class="nav-pill" href="../index.html">Andy Warhol</a>
+    </nav>
+
+    <header class="page-header">
+      <h1 class="page-title">Young Andy</h1>
+    </header>
+
+    <section class="section-card" aria-labelledby="original-drawing">
+      <h2 id="original-drawing">Original Drawing</h2>
+      <div class="originals-grid">
+        <figure class="gallery-item">
+          <a href="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%201%20original.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%201%20original.jpg" alt="Young Andy 1 original by Ron English" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="gallery-item">
+          <a href="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%202%20original.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%202%20original.jpg" alt="Young Andy 2 original by Ron English" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="gallery-item">
+          <a href="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%203%20original.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%203%20original.jpg" alt="Young Andy 3 original by Ron English" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="gallery-item">
+          <a href="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%204%20original.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%204%20original.jpg" alt="Young Andy 4 original by Ron English" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="gallery-item">
+          <a href="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%205%20original.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%205%20original.jpg" alt="Young Andy 5 original by Ron English" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="gallery-item">
+          <a href="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%206%20original.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%206%20original.jpg" alt="Young Andy 6 original by Ron English" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="gallery-item">
+          <a href="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%207%20original.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%207%20original.jpg" alt="Young Andy 7 original by Ron English" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="gallery-item">
+          <a href="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%208%20original.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%208%20original.jpg" alt="Young Andy 8 original by Ron English" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="gallery-item">
+          <a href="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%209%20original.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%209%20original.jpg" alt="Young Andy 9 original by Ron English" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="gallery-item">
+          <a href="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2010%20original.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2010%20original.jpg" alt="Young Andy 10 original by Ron English" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="gallery-item">
+          <a href="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2011%20original.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2011%20original.jpg" alt="Young Andy 11 original by Ron English" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="gallery-item">
+          <a href="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2012%20original.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2012%20original.jpg" alt="Young Andy 12 original by Ron English" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="gallery-item">
+          <a href="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2013%20original.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2013%20original.jpg" alt="Young Andy 13 original by Ron English" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="gallery-item">
+          <a href="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2014%20original.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2014%20original.jpg" alt="Young Andy 14 original by Ron English" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="gallery-item">
+          <a href="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2015%20original.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2015%20original.jpg" alt="Young Andy 15 original by Ron English" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="gallery-item">
+          <a href="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2016%20original.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2016%20original.jpg" alt="Young Andy 16 original by Ron English" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="gallery-item">
+          <a href="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2017%20original.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2017%20original.jpg" alt="Young Andy 17 original by Ron English" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="gallery-item">
+          <a href="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2018%20original.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2018%20original.jpg" alt="Young Andy 18 original by Ron English" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="gallery-item">
+          <a href="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2019%20original.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2019%20original.jpg" alt="Young Andy 19 original by Ron English" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="gallery-item">
+          <a href="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2020%20original.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2020%20original.jpg" alt="Young Andy 20 original by Ron English" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="gallery-item">
+          <a href="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2021%20original.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2021%20original.jpg" alt="Young Andy 21 original by Ron English" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="gallery-item">
+          <a href="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2022%20original.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2022%20original.jpg" alt="Young Andy 22 original by Ron English" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="gallery-item">
+          <a href="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2023%20original.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2023%20original.jpg" alt="Young Andy 23 original by Ron English" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="gallery-item">
+          <a href="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2024%20original.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2024%20original.jpg" alt="Young Andy 24 original by Ron English" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="gallery-item">
+          <a href="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2025%20original.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2025%20original.jpg" alt="Young Andy 25 original by Ron English" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="gallery-item">
+          <a href="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2026%20original.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%2026%20original.jpg" alt="Young Andy 26 original by Ron English" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="gallery-item">
+          <a href="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%20ORIGINAL.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../../../images/Sketches/celebrity-characters/Andy%20Warhol/Young%20Andy%20ORIGINAL.jpg" alt="Young Andy ORIGINAL by Ron English" loading="lazy" />
+          </a>
+        </figure>
+      </div>
+    </section>
+
+
+
+    <div class="back-link">
+      <a href="../index.html">&larr; Back to Andy Warhol</a>
+    </div>
+
+    <footer>
+      Published via GitHub Pages for long-term public access.
+    </footer>
+  </main>
+</body>
+</html>
