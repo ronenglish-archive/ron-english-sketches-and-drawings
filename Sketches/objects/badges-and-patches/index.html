@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Badges and Patches | Sketches &amp; Drawings | Ron English Catalogue Raisonné</title>
+
+  <link rel="stylesheet" href="../../../css/styles.css" />
+
+  <style>
+    :root{ --border:#e5e7eb; --muted:#4b5563; --shadow:0 10px 30px rgba(0,0,0,.08); --radius:18px; --bg:#ffffff; --panel:#f3f4f6; --pill-hover:#f9fafb; }
+    *{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+    body{ margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; color:#111; background:var(--bg); padding-left:0; padding-right:0; }
+    .wrap{ max-width:1240px; margin:0 auto; padding:28px 18px 60px; }
+    .page-narrow{ max-width:1100px; }
+    .nav-pills{ display:flex; flex-wrap:wrap; gap:10px; margin:22px 0; justify-content:center; text-align:center; }
+    .nav-pill{ padding:8px 14px; border-radius:999px; border:1px solid var(--border); background:#fff; color:#111; text-decoration:none; font-size:14px; transition:background .12s ease,border-color .12s ease,transform .12s ease; }
+    .nav-pill:hover{ background:var(--pill-hover); border-color:#d1d5db; transform:translateY(-1px); }
+    .page-header{ max-width:1100px; margin:0 auto 28px; padding:0; text-align:center; }
+    .page-title{ margin:0 0 10px; font-size:clamp(2rem,4vw,3rem); letter-spacing:-.02em; line-height:1.05; text-align:center; }
+    .section-card{ background:#fff; border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow); padding:22px; margin-bottom:24px; }
+    .section-card h2{ margin:0 0 14px; font-size:1.4rem; text-align:center; }
+    .section-intro{ margin:0 0 18px; color:var(--muted); line-height:1.6; text-align:center; }
+    .index-grid{ margin-top:28px; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px; justify-items:center; }
+    .section-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px; justify-items:center; }
+    .gallery-grid,.originals-grid,.card-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:20px; justify-items:center; }
+    .gallery-item{ width:100%; display:block; text-decoration:none; color:inherit; background:#fff; border:1px solid var(--border); border-radius:16px; overflow:hidden; box-shadow:0 4px 18px rgba(0,0,0,.04); margin:0; transition:transform .12s ease,box-shadow .12s ease,border-color .12s ease; text-align:center; }
+    .gallery-item:hover{ transform:translateY(-2px); box-shadow:0 16px 40px rgba(0,0,0,.12); border-color:#d1d5db; }
+    .gallery-item a{ display:block; color:inherit; text-decoration:none; text-align:center; }
+    .gallery-item img{ display:block; width:100%; object-fit:contain; background:var(--panel); padding:8px; border-bottom:0; margin-left:auto; margin-right:auto; }
+    .index-grid .gallery-item img,.section-grid .gallery-item img{ height:240px; padding:10px; border-bottom:1px solid var(--border); }
+    .originals-grid .gallery-item img{ height:420px; }
+    .gallery-grid .gallery-item img{ height:320px; }
+    .card-grid .gallery-item img{ height:420px; }
+    .file-placeholder{ min-height:220px; display:flex; align-items:center; justify-content:center; text-align:center; background:var(--panel); color:var(--muted); padding:18px; font-weight:600; }
+    .entry-body{ width:100%; padding:16px 18px 18px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
+    .work-title{ margin:0 auto; padding:0; width:100%; font-size:18px; line-height:1.35; font-weight:600; text-align:center; }
+    .back-link{ margin-top:28px; text-align:left; }
+    .back-link a{ display:inline-block; text-decoration:none; color:#111; border:1px solid var(--border); border-radius:999px; padding:10px 16px; background:#fff; text-align:left; }
+    .back-link a:hover{ background:#f9fafb; }
+    footer{ margin-top:34px; padding-top:16px; border-top:1px solid var(--border); color:var(--muted); font-size:14px; text-align:center; }
+    @media (max-width:560px){ .wrap{ padding:22px 14px 50px; } .index-grid,.section-grid,.gallery-grid,.originals-grid,.card-grid{ grid-template-columns:1fr; } .index-grid .gallery-item img,.section-grid .gallery-item img{ height:240px; } .originals-grid .gallery-item img{ height:340px; } .gallery-grid .gallery-item img{ height:280px; } .card-grid .gallery-item img{ height:340px; } }
+  </style>
+  <style id="sketches-global-centering-and-image-fix">
+    /* Global repair: center image captions/text and prevent index thumbnails from cropping. */
+    .gallery-item,
+    .gallery-item a,
+    .gallery-item figure,
+    .entry-card,
+    .entry-card a,
+    .index-card,
+    .index-card a,
+    .category-card,
+    .category-card a,
+    .work-card,
+    .work-card a,
+    .subcat-card,
+    .subcat-card a,
+    figure,
+    figcaption,
+    .entry-body,
+    .work-title,
+    .entry-title,
+    .card-title,
+    .gallery-title,
+    .item-title,
+    .caption,
+    .thumb-caption,
+    .image-caption {
+      text-align: center !important;
+    }
+
+    .entry-body,
+    .work-title,
+    .entry-title,
+    .card-title,
+    .gallery-title,
+    .item-title,
+    figcaption,
+    .caption,
+    .thumb-caption,
+    .image-caption {
+      width: 100% !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+
+    .entry-body {
+      display: flex !important;
+      flex-direction: column !important;
+    }
+
+    .index-grid .gallery-item img,
+    .index-grid .entry-card img,
+    .index-grid .index-card img,
+    .index-grid .category-card img,
+    .index-grid .work-card img,
+    .category-grid .gallery-item img,
+    .category-grid .entry-card img,
+    .category-grid .index-card img,
+    .category-grid .category-card img,
+    .category-grid .work-card img,
+    .subcategories-grid img,
+    .gallery-index img,
+    .sketch-grid img,
+    .cards-grid img {
+      object-fit: contain !important;
+      object-position: center center !important;
+      background: #f3f4f6 !important;
+    }
+
+    .index-grid .gallery-item,
+    .index-grid .entry-card,
+    .index-grid .index-card,
+    .index-grid .category-card,
+    .index-grid .work-card,
+    .category-grid .gallery-item,
+    .category-grid .entry-card,
+    .category-grid .index-card,
+    .category-grid .category-card,
+    .category-grid .work-card {
+      overflow: hidden !important;
+    }
+
+    .index-grid .gallery-item img,
+    .index-grid .entry-card img,
+    .index-grid .index-card img,
+    .index-grid .category-card img,
+    .index-grid .work-card img {
+      height: 240px !important;
+      max-height: 240px !important;
+      padding: 10px !important;
+    }
+
+    @media (max-width: 560px) {
+      .index-grid .gallery-item img,
+      .index-grid .entry-card img,
+      .index-grid .index-card img,
+      .index-grid .category-card img,
+      .index-grid .work-card img {
+        height: 220px !important;
+        max-height: 220px !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap page-narrow">
+    <nav class="nav-pills" aria-label="Site navigation">
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="../index.html">Sketches</a>
+      <a class="nav-pill" href="../../../Sketches/objects/index.html">Objects</a>
+      <a class="nav-pill" href="../../../Sketches/objects/badges-and-patches/index.html">Badges and Patches</a>
+    </nav>
+
+    <header class="page-header">
+      <h1 class="page-title">Badges and Patches</h1>
+    </header>
+
+    <section class="index-grid" aria-label="Badges and Patches sketch and drawing pages">
+      <a class="gallery-item" href="grenadebul-bpatch/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/GRENADEBULBpatch.jpg" alt="Grenadebul Bpatch drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Grenadebul Bpatch</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="grenadebul-bpatch2/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/GRENADEBULBpatch2.jpg" alt="Grenadebul Bpatch2 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Grenadebul Bpatch2</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="lightbulb-grenade-patch-26/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/lightbulb-grenade-patch-26.png" alt="Lightbulb Grenade Patch 26 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Lightbulb Grenade Patch 26</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="lightbulb-grenade-patch-28/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/lightbulb-grenade-patch-28.png" alt="Lightbulb Grenade Patch 28 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Lightbulb Grenade Patch 28</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="lightbulb-grenade-patch-30/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/lightbulb-grenade-patch-30.png" alt="Lightbulb Grenade Patch 30 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Lightbulb Grenade Patch 30</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="lightbulb-grenade-patch-32/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/lightbulb-grenade-patch-32.png" alt="Lightbulb Grenade Patch 32 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Lightbulb Grenade Patch 32</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="lightbulb-grenade-patch-34/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/lightbulb-grenade-patch-34.png" alt="Lightbulb Grenade Patch 34 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Lightbulb Grenade Patch 34</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="lightbulb-grenade-patch-36/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/lightbulb-grenade-patch-36.png" alt="Lightbulb Grenade Patch 36 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Lightbulb Grenade Patch 36</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popaganda-patch-13/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/popaganda-patch-13.png" alt="Popaganda Patch 13 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popaganda Patch 13</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popaganda-patch-14/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/popaganda-patch-14.png" alt="Popaganda Patch 14 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popaganda Patch 14</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popaganda-patch-15/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/popaganda-patch-15.png" alt="Popaganda Patch 15 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popaganda Patch 15</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popaganda-patch-16/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/popaganda-patch-16.png" alt="Popaganda Patch 16 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popaganda Patch 16</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popaganda-patch-17/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/popaganda-patch-17.png" alt="Popaganda Patch 17 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popaganda Patch 17</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popaganda-patch-18/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/popaganda-patch-18.png" alt="Popaganda Patch 18 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popaganda Patch 18</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popaganda-patrol-1/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/popaganda-patrol-1.png" alt="Popaganda Patrol 1 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popaganda Patrol 1</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popaganda-patrol-10/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/popaganda-patrol-10.png" alt="Popaganda Patrol 10 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popaganda Patrol 10</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popaganda-patrol-11/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/popaganda-patrol-11.png" alt="Popaganda Patrol 11 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popaganda Patrol 11</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popaganda-patrol-12/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/popaganda-patrol-12.png" alt="Popaganda Patrol 12 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popaganda Patrol 12</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popaganda-patrol-19/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/popaganda-patrol-19.png" alt="Popaganda Patrol 19 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popaganda Patrol 19</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popaganda-patrol-2/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/popaganda-patrol-2.png" alt="Popaganda Patrol 2 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popaganda Patrol 2</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popaganda-patrol-20/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/popaganda-patrol-20.png" alt="Popaganda Patrol 20 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popaganda Patrol 20</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popaganda-patrol-21/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/popaganda-patrol-21.png" alt="Popaganda Patrol 21 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popaganda Patrol 21</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popaganda-patrol-22/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/popaganda-patrol-22.png" alt="Popaganda Patrol 22 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popaganda Patrol 22</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popaganda-patrol-23/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/popaganda-patrol-23.png" alt="Popaganda Patrol 23 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popaganda Patrol 23</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popaganda-patrol-24/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/popaganda-patrol-24.png" alt="Popaganda Patrol 24 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popaganda Patrol 24</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popaganda-patrol-25/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/popaganda-patrol-25.png" alt="Popaganda Patrol 25 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popaganda Patrol 25</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popaganda-patrol-27/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/popaganda-patrol-27.png" alt="Popaganda Patrol 27 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popaganda Patrol 27</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popaganda-patrol-29/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/popaganda-patrol-29.png" alt="Popaganda Patrol 29 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popaganda Patrol 29</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popaganda-patrol-3/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/popaganda-patrol-3.png" alt="Popaganda Patrol 3 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popaganda Patrol 3</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popaganda-patrol-31/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/popaganda-patrol-31.png" alt="Popaganda Patrol 31 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popaganda Patrol 31</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popaganda-patrol-4/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/popaganda-patrol-4.png" alt="Popaganda Patrol 4 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popaganda Patrol 4</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popaganda-patrol-5/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/popaganda-patrol-5.png" alt="Popaganda Patrol 5 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popaganda Patrol 5</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popaganda-patrol-6/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/popaganda-patrol-6.png" alt="Popaganda Patrol 6 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popaganda Patrol 6</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popaganda-patrol-7/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/popaganda-patrol-7.png" alt="Popaganda Patrol 7 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popaganda Patrol 7</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popaganda-patrol-8/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/popaganda-patrol-8.png" alt="Popaganda Patrol 8 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popaganda Patrol 8</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popaganda-patrol-9/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/popaganda-patrol-9.png" alt="Popaganda Patrol 9 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popaganda Patrol 9</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popaganda-patrol33/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/popaganda-patrol33.png" alt="Popaganda Patrol33 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popaganda Patrol33</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="popaganda-patrol35/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/popaganda-patrol35.png" alt="Popaganda Patrol35 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Popaganda Patrol35</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="starbucks/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/starbucks%20(2).jpg" alt="Starbucks drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Starbucks</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="starbucksflat-pdf/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/starbucksflat.pdf_1.jpg" alt="Starbucksflat.pdf drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Starbucksflat.pdf</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="starskul-lpatch/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/STARSKULLpatch.jpg" alt="Starskul Lpatch drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Starskul Lpatch</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="starskul-lpatch2/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/STARSKULLpatch2.jpg" alt="Starskul Lpatch2 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Starskul Lpatch2</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="starskul-lpatch4/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/STARSKULLpatch4.jpg" alt="Starskul Lpatch4 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Starskul Lpatch4</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="starskull1/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/starskull1.jpg" alt="Starskull1 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Starskull1</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="starskull3/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/starskull3.jpg" alt="Starskull3 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Starskull3</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="starskullbasketball/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/starskullbasketball.jpg" alt="Starskullbasketball drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Starskullbasketball</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="starskullpattern2/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/starskullpattern2.jpg" alt="Starskullpattern2 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Starskullpattern2</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="travel-stickers-01/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/travel_stickers-01.png" alt="Travel Stickers 01 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Travel Stickers 01</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="travel-stickers-02/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/travel_stickers-02.png" alt="Travel Stickers 02 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Travel Stickers 02</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="travel-stickers-03/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/travel_stickers-03.png" alt="Travel Stickers 03 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Travel Stickers 03</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="travel-stickers-04/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/travel_stickers-04.png" alt="Travel Stickers 04 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Travel Stickers 04</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="travel-stickers-05/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/travel_stickers-05.png" alt="Travel Stickers 05 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Travel Stickers 05</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="travel-stickers-06/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/travel_stickers-06.png" alt="Travel Stickers 06 drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Travel Stickers 06</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="wingsgrinscolor/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/wingsgrinscolor.jpg" alt="Wingsgrinscolor drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Wingsgrinscolor</p>
+        </div>
+      </a>
+      <a class="gallery-item" href="yinyangbrainpatch/index.html">
+        <img src="../../../images/Sketches/Objects/badges-and-patches/yinyangbrainpatch.jpg" alt="Yinyangbrainpatch drawings by Ron English" loading="lazy" />
+        <div class="entry-body">
+          <p class="work-title">Yinyangbrainpatch</p>
+        </div>
+      </a>
+    </section>
+
+    <div class="back-link">
+      <a href="../index.html">&larr; Back</a>
+    </div>
+
+    <footer>
+      Published via GitHub Pages for long-term public access.
+    </footer>
+  </main>
+</body>
+</html>

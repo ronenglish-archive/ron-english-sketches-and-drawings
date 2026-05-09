@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lit Muse | Kursed | Ron English Catalogue Raisonné</title>
+
+  <link rel="stylesheet" href="../../../css/styles.css" />
+
+  <style>
+    :root{ --border:#e5e7eb; --muted:#4b5563; --shadow:0 10px 30px rgba(0,0,0,.08); --radius:18px; --bg:#ffffff; --panel:#f3f4f6; --pill-hover:#f9fafb; }
+    *{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+    body{ margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; color:#111; background:var(--bg); padding-left:0; padding-right:0; }
+    .wrap{ max-width:1240px; margin:0 auto; padding:28px 18px 60px; }
+    .page-narrow{ max-width:1100px; }
+    .nav-pills{ display:flex; flex-wrap:wrap; gap:10px; margin:22px 0; justify-content:center; text-align:center; }
+    .nav-pill{ padding:8px 14px; border-radius:999px; border:1px solid var(--border); background:#fff; color:#111; text-decoration:none; font-size:14px; transition:background .12s ease,border-color .12s ease,transform .12s ease; }
+    .nav-pill:hover{ background:var(--pill-hover); border-color:#d1d5db; transform:translateY(-1px); }
+    .page-header{ max-width:1100px; margin:0 auto 28px; padding:0; text-align:center; }
+    .page-title{ margin:0 0 10px; font-size:clamp(2rem,4vw,3rem); letter-spacing:-.02em; line-height:1.05; text-align:center; }
+    .section-card{ background:#fff; border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow); padding:22px; margin-bottom:24px; }
+    .section-card h2{ margin:0 0 8px; font-size:1.4rem; text-align:center; }
+    .section-intro{ margin:0 0 18px; color:var(--muted); line-height:1.6; text-align:center; }
+    .index-grid{ margin-top:28px; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px; justify-items:center; }
+    .gallery-grid,.originals-grid,.card-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:20px; justify-items:center; }
+    .gallery-item{ width:100%; display:block; text-decoration:none; color:inherit; background:#fff; border:1px solid var(--border); border-radius:16px; overflow:hidden; box-shadow:0 4px 18px rgba(0,0,0,.04); margin:0; transition:transform .12s ease,box-shadow .12s ease,border-color .12s ease; text-align:center; }
+    .gallery-item:hover{ transform:translateY(-2px); box-shadow:0 16px 40px rgba(0,0,0,.12); border-color:#d1d5db; }
+    .gallery-item a{ display:block; color:inherit; text-decoration:none; text-align:center; }
+    .gallery-item img{ display:block; width:100%; object-fit:contain; background:var(--panel); padding:8px; border-bottom:0; margin-left:auto; margin-right:auto; }
+    .index-grid .gallery-item img{ height:240px; padding:10px; border-bottom:1px solid var(--border); }
+    .originals-grid .gallery-item img{ height:420px; }
+    .gallery-grid .gallery-item img{ height:320px; }
+    .card-grid .gallery-item img{ height:420px; }
+    .file-placeholder{ min-height:220px; display:flex; align-items:center; justify-content:center; text-align:center; background:var(--panel); color:var(--muted); padding:18px; font-weight:600; }
+    .entry-body{ width:100%; padding:16px 18px 18px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
+    .work-title{ margin:0 auto; padding:0; width:100%; font-size:18px; line-height:1.35; font-weight:600; text-align:center; }
+    .back-link{ margin-top:28px; text-align:left; }
+    .back-link a{ display:inline-block; text-decoration:none; color:#111; border:1px solid var(--border); border-radius:999px; padding:10px 16px; background:#fff; text-align:left; }
+    .back-link a:hover{ background:#f9fafb; }
+    footer{ margin-top:34px; padding-top:16px; border-top:1px solid var(--border); color:var(--muted); font-size:14px; text-align:center; }
+    @media (max-width:560px){ .wrap{ padding:22px 14px 50px; } .index-grid,.gallery-grid,.originals-grid,.card-grid{ grid-template-columns:1fr; } .index-grid .gallery-item img{ height:240px; } .originals-grid .gallery-item img{ height:340px; } .gallery-grid .gallery-item img{ height:280px; } .card-grid .gallery-item img{ height:340px; } }
+  </style>
+  <style id="sketches-global-centering-and-image-fix">
+    /* Global repair: center image captions/text and prevent index thumbnails from cropping. */
+    .gallery-item,
+    .gallery-item a,
+    .gallery-item figure,
+    .entry-card,
+    .entry-card a,
+    .index-card,
+    .index-card a,
+    .category-card,
+    .category-card a,
+    .work-card,
+    .work-card a,
+    .subcat-card,
+    .subcat-card a,
+    figure,
+    figcaption,
+    .entry-body,
+    .work-title,
+    .entry-title,
+    .card-title,
+    .gallery-title,
+    .item-title,
+    .caption,
+    .thumb-caption,
+    .image-caption {
+      text-align: center !important;
+    }
+
+    .entry-body,
+    .work-title,
+    .entry-title,
+    .card-title,
+    .gallery-title,
+    .item-title,
+    figcaption,
+    .caption,
+    .thumb-caption,
+    .image-caption {
+      width: 100% !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+
+    .entry-body {
+      display: flex !important;
+      flex-direction: column !important;
+    }
+
+    .index-grid .gallery-item img,
+    .index-grid .entry-card img,
+    .index-grid .index-card img,
+    .index-grid .category-card img,
+    .index-grid .work-card img,
+    .category-grid .gallery-item img,
+    .category-grid .entry-card img,
+    .category-grid .index-card img,
+    .category-grid .category-card img,
+    .category-grid .work-card img,
+    .subcategories-grid img,
+    .gallery-index img,
+    .sketch-grid img,
+    .cards-grid img {
+      object-fit: contain !important;
+      object-position: center center !important;
+      background: #f3f4f6 !important;
+    }
+
+    .index-grid .gallery-item,
+    .index-grid .entry-card,
+    .index-grid .index-card,
+    .index-grid .category-card,
+    .index-grid .work-card,
+    .category-grid .gallery-item,
+    .category-grid .entry-card,
+    .category-grid .index-card,
+    .category-grid .category-card,
+    .category-grid .work-card {
+      overflow: hidden !important;
+    }
+
+    .index-grid .gallery-item img,
+    .index-grid .entry-card img,
+    .index-grid .index-card img,
+    .index-grid .category-card img,
+    .index-grid .work-card img {
+      height: 240px !important;
+      max-height: 240px !important;
+      padding: 10px !important;
+    }
+
+    @media (max-width: 560px) {
+      .index-grid .gallery-item img,
+      .index-grid .entry-card img,
+      .index-grid .index-card img,
+      .index-grid .category-card img,
+      .index-grid .work-card img {
+        height: 220px !important;
+        max-height: 220px !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap page-narrow">
+    <nav class="nav-pills" aria-label="Site navigation">
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="../../index.html">Sketches</a>
+      <a class="nav-pill" href="../index.html">Kursed</a>
+    </nav>
+
+    <header class="page-header">
+      <h1 class="page-title">Lit Muse</h1>
+    </header>
+    <section class="section-card" aria-labelledby="original-drawing">
+      <h2 id="original-drawing">Original Drawing</h2>
+      <div class="originals-grid">
+        <figure class="gallery-item">
+          <a href="../../../images/Sketches/Kursed/Lit%20Muse%20ORIGINAL.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../../images/Sketches/Kursed/Lit%20Muse%20ORIGINAL.jpg" alt="Lit Muse original drawing by Ron English" loading="lazy" />
+          </a>
+        </figure>
+      </div>
+    </section>
+    <section class="section-card" aria-labelledby="digitized-versions">
+      <h2 id="digitized-versions">Digitized Versions</h2>
+      <div class="gallery-grid">
+        <figure class="gallery-item">
+          <a href="../../../images/Sketches/Kursed/Lit%20Muse%20B%26W.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../../images/Sketches/Kursed/Lit%20Muse%20B%26W.jpg" alt="Lit Muse digitized version by Ron English" loading="lazy" />
+          </a>
+        </figure>
+        <figure class="gallery-item">
+          <a href="../../../images/Sketches/Kursed/Lit%20Muse%20COLOR.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../../images/Sketches/Kursed/Lit%20Muse%20COLOR.jpg" alt="Lit Muse digitized version by Ron English" loading="lazy" />
+          </a>
+        </figure>
+      </div>
+    </section>
+
+    <div class="back-link">
+      <a href="../index.html">&larr; Back to Kursed</a>
+    </div>
+
+    <footer>
+      Published via GitHub Pages for long-term public access.
+    </footer>
+  </main>
+</body>
+</html>

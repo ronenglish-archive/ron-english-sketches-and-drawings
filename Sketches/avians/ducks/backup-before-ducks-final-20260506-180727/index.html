@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -75,6 +75,110 @@
       text-align:left;
     }
     /* END SKETCHES CENTERING OVERRIDES */
+  </style>
+  <style id="sketches-global-centering-and-image-fix">
+    /* Global repair: center image captions/text and prevent index thumbnails from cropping. */
+    .gallery-item,
+    .gallery-item a,
+    .gallery-item figure,
+    .entry-card,
+    .entry-card a,
+    .index-card,
+    .index-card a,
+    .category-card,
+    .category-card a,
+    .work-card,
+    .work-card a,
+    .subcat-card,
+    .subcat-card a,
+    figure,
+    figcaption,
+    .entry-body,
+    .work-title,
+    .entry-title,
+    .card-title,
+    .gallery-title,
+    .item-title,
+    .caption,
+    .thumb-caption,
+    .image-caption {
+      text-align: center !important;
+    }
+
+    .entry-body,
+    .work-title,
+    .entry-title,
+    .card-title,
+    .gallery-title,
+    .item-title,
+    figcaption,
+    .caption,
+    .thumb-caption,
+    .image-caption {
+      width: 100% !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+
+    .entry-body {
+      display: flex !important;
+      flex-direction: column !important;
+    }
+
+    .index-grid .gallery-item img,
+    .index-grid .entry-card img,
+    .index-grid .index-card img,
+    .index-grid .category-card img,
+    .index-grid .work-card img,
+    .category-grid .gallery-item img,
+    .category-grid .entry-card img,
+    .category-grid .index-card img,
+    .category-grid .category-card img,
+    .category-grid .work-card img,
+    .subcategories-grid img,
+    .gallery-index img,
+    .sketch-grid img,
+    .cards-grid img {
+      object-fit: contain !important;
+      object-position: center center !important;
+      background: #f3f4f6 !important;
+    }
+
+    .index-grid .gallery-item,
+    .index-grid .entry-card,
+    .index-grid .index-card,
+    .index-grid .category-card,
+    .index-grid .work-card,
+    .category-grid .gallery-item,
+    .category-grid .entry-card,
+    .category-grid .index-card,
+    .category-grid .category-card,
+    .category-grid .work-card {
+      overflow: hidden !important;
+    }
+
+    .index-grid .gallery-item img,
+    .index-grid .entry-card img,
+    .index-grid .index-card img,
+    .index-grid .category-card img,
+    .index-grid .work-card img {
+      height: 240px !important;
+      max-height: 240px !important;
+      padding: 10px !important;
+    }
+
+    @media (max-width: 560px) {
+      .index-grid .gallery-item img,
+      .index-grid .entry-card img,
+      .index-grid .index-card img,
+      .index-grid .category-card img,
+      .index-grid .work-card img {
+        height: 220px !important;
+        max-height: 220px !important;
+      }
+    }
   </style>
 </head>
 <body>
