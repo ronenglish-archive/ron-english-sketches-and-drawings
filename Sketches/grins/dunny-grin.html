@@ -40,6 +40,24 @@
     @media (max-width:820px){.index-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
     @media (max-width:560px){.wrap{padding:22px 14px 50px;}.index-grid,.gallery-grid,.card-grid,.originals-grid{grid-template-columns:1fr;}.index-grid .gallery-item img,.gallery-grid .gallery-item img{height:260px;}.originals-grid .gallery-item img{height:340px;}.card-grid .gallery-item img{height:420px;}}
   </style>
+  <style id="grins-cleanup-centering-fix">
+    .gallery-item,
+    .gallery-item .entry-body,
+    .gallery-item .work-title,
+    .gallery-item figcaption,
+    .section-card h2,
+    .page-header,
+    .page-title {
+      text-align: center !important;
+    }
+
+    .gallery-item img {
+      object-fit: contain !important;
+      object-position: center center !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  </style>
 </head>
 <body>
   <main class="wrap page-narrow">
@@ -109,5 +127,7 @@
   </main>
 </body>
 </html>
+
+
 
 

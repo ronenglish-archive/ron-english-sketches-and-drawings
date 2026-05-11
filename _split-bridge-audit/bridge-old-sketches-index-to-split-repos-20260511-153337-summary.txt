@@ -1,0 +1,23 @@
+﻿Old Sketches index bridge summary
+Generated: 2026-05-11 15:33:37
+
+Edited file:
+D:\github\ron-english-sketches-and-drawings\Sketches\index.html
+
+Backup folder:
+D:\github-backups\ron-english-sketches-and-drawings\bridge-old-sketches-index-to-split-repos-20260511-153337
+
+Category links updated: 28
+Remaining local links reported for review: 1
+
+Updated links CSV:
+D:\github\ron-english-sketches-and-drawings\_split-bridge-audit\bridge-old-sketches-index-to-split-repos-20260511-153337-updated-links.csv
+
+Unchanged local links CSV:
+D:\github\ron-english-sketches-and-drawings\_split-bridge-audit\bridge-old-sketches-index-to-split-repos-20260511-153337-unchanged-local-sketches-links.csv
+
+Important:
+- The visual design of Sketches/index.html was preserved.
+- Only href values for recognized category links were changed.
+- No files were deleted, moved, or renamed.
+- The six split repos were not changed.

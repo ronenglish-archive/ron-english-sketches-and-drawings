@@ -184,6 +184,24 @@
       .card-grid .gallery-item img{ height:420px; }
     }
   </style>
+  <style id="grins-cleanup-centering-fix">
+    .gallery-item,
+    .gallery-item .entry-body,
+    .gallery-item .work-title,
+    .gallery-item figcaption,
+    .section-card h2,
+    .page-header,
+    .page-title {
+      text-align: center !important;
+    }
+
+    .gallery-item img {
+      object-fit: contain !important;
+      object-position: center center !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  </style>
 </head>
 <body>
   <main class="wrap page-narrow">
@@ -277,5 +295,7 @@
   </main>
 </body>
 </html>
+
+
 
 

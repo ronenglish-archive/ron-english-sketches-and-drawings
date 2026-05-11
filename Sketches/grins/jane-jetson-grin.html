@@ -184,6 +184,24 @@
       .card-grid .gallery-item img{ height:420px; }
     }
   </style>
+  <style id="grins-cleanup-centering-fix">
+    .gallery-item,
+    .gallery-item .entry-body,
+    .gallery-item .work-title,
+    .gallery-item figcaption,
+    .section-card h2,
+    .page-header,
+    .page-title {
+      text-align: center !important;
+    }
+
+    .gallery-item img {
+      object-fit: contain !important;
+      object-position: center center !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  </style>
 </head>
 <body>
   <main class="wrap page-narrow">
@@ -218,11 +236,7 @@
             <img src="../../images/Sketches/grins/Jane%20Jetson%20Grin%20B%26W.jpg" alt="Jane Jetson Grin B&amp;W by Ron English" loading="lazy" />
           </a>
         </figure>
-        <figure class="gallery-item">
-          <a href="../../images/Sketches/grins/Jane%20Jetson%20Grin%20COLOR.1.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="../../images/Sketches/grins/Jane%20Jetson%20Grin%20COLOR.1.jpg" alt="Jane Jetson Grin COLOR.1 by Ron English" loading="lazy" />
-          </a>
-        </figure>
+        
         <figure class="gallery-item">
           <a href="../../images/Sketches/grins/Jane%20Jetson%20Grin%20COLOR.jpg" target="_blank" rel="noopener noreferrer">
             <img src="../../images/Sketches/grins/Jane%20Jetson%20Grin%20COLOR.jpg" alt="Jane Jetson Grin COLOR by Ron English" loading="lazy" />
@@ -237,5 +251,8 @@
   </main>
 </body>
 </html>
+
+
+
 
 

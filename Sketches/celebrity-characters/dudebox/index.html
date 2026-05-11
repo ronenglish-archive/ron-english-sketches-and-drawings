@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -410,6 +410,34 @@
       }
     }
   </style>
+  <style id="dudebox-family-index-fix">
+    .index-grid {
+      margin-top: 28px;
+      display: grid !important;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)) !important;
+      gap: 18px !important;
+    }
+
+    .index-grid .gallery-item img {
+      height: 260px !important;
+      max-height: 260px !important;
+      object-fit: contain !important;
+      object-position: center center !important;
+      background: #f3f4f6 !important;
+      padding: 10px !important;
+    }
+
+    @media (max-width: 560px) {
+      .index-grid {
+        grid-template-columns: 1fr !important;
+      }
+
+      .index-grid .gallery-item img {
+        height: 240px !important;
+        max-height: 240px !important;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -423,21 +451,21 @@
     <header class="page-header">
       <h1 class="page-title">Dudebox</h1>
     </header>
-
-    <section class="index-grid" aria-label="Dudebox character groups">
+    <section class="index-grid" aria-label="Dudebox character pages">
       <a class="gallery-item" href="dudebox-bear/index.html">
-        <img src="../../../images/Sketches/celebrity-characters/Dudebox/Dudebox%20Bear%20front%20ORIGINAL%20COLOR.jpg" alt="Dudebox Bear by Ron English" loading="lazy" />
+        <img src="../../../images/Sketches/celebrity-characters/Dudebox/Dudebox%20Bear%20front%20ORIGINAL%20COLOR.jpg" alt="Dudebox Bear drawings by Ron English" loading="lazy" />
         <div class="entry-body">
           <p class="work-title">Dudebox Bear</p>
         </div>
       </a>
       <a class="gallery-item" href="dudebox-otto-manic-star-skull/index.html">
-        <img src="../../../images/Sketches/celebrity-characters/Dudebox/Dudebox%20Otto%20Manic%20Star%20Skull%20front%20ORIGINAL%20COLOR.jpg" alt="Dudebox Otto Manic Star Skull by Ron English" loading="lazy" />
+        <img src="../../../images/Sketches/celebrity-characters/Dudebox/Dudebox%20Otto%20Manic%20Star%20Skull%20front%20ORIGINAL%20COLOR.jpg" alt="Dudebox Otto Manic Star Skull drawings by Ron English" loading="lazy" />
         <div class="entry-body">
           <p class="work-title">Dudebox Otto Manic Star Skull</p>
         </div>
       </a>
     </section>
+
 
     <div class="back-link">
       <a href="../index.html">&larr; Back to Celebrity Characters</a>
@@ -449,3 +477,7 @@
   </main>
 </body>
 </html>
+
+
+
+

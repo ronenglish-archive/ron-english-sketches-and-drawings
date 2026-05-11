@@ -184,6 +184,24 @@
       .card-grid .gallery-item img{ height:420px; }
     }
   </style>
+  <style id="grins-cleanup-centering-fix">
+    .gallery-item,
+    .gallery-item .entry-body,
+    .gallery-item .work-title,
+    .gallery-item figcaption,
+    .section-card h2,
+    .page-header,
+    .page-title {
+      text-align: center !important;
+    }
+
+    .gallery-item img {
+      object-fit: contain !important;
+      object-position: center center !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  </style>
 </head>
 <body>
   <main class="wrap page-narrow">
@@ -201,21 +219,13 @@
       <h2 id="original-drawing">Original Drawing</h2>
 
       <div class="originals-grid">
-        <figure class="gallery-item">
-          <a href="../../images/Sketches/grins/Taz%20Grin%20circle%20ORIGINAL.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="../../images/Sketches/grins/Taz%20Grin%20circle%20ORIGINAL.jpg" alt="Taz Grin circle ORIGINAL by Ron English" loading="lazy" />
-          </a>
-        </figure>
+        
 
         <figure class="gallery-item">
           <a href="../../images/Sketches/grins/Taz%20Grin%20ORIGINAL.jpg" target="_blank" rel="noopener noreferrer">
             <img src="../../images/Sketches/grins/Taz%20Grin%20ORIGINAL.jpg" alt="Taz Grin ORIGINAL by Ron English" loading="lazy" />
           </a>
-        </figure>        <figure class="gallery-item">
-          <a href="../../images/Sketches/grins/Taz%20Grin%20Flower%20Face%20ORIGINAL.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="../../images/Sketches/grins/Taz%20Grin%20Flower%20Face%20ORIGINAL.jpg" alt="Taz Grin Flower Face ORIGINAL by Ron English" loading="lazy" />
-          </a>
-        </figure>
+        </figure>        
 
 
       </div>
@@ -250,6 +260,12 @@
 
 
 
+      
+        <figure class="gallery-item">
+          <a href="../../images/Sketches/grins/Taz%20Grin%20Flower%20Face%20ORIGINAL.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../images/Sketches/grins/Taz%20Grin%20Flower%20Face%20ORIGINAL.jpg" alt="Taz Grin Flower Face digitized version by Ron English" loading="lazy" />
+          </a>
+        </figure>
       </div>
     </section>
 
@@ -259,6 +275,10 @@
   </main>
 </body>
 </html>
+
+
+
+
 
 
 

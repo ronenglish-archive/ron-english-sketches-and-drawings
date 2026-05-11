@@ -1,0 +1,341 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Snails | Ron English Sketches and Drawings</title>
+
+  <link rel="stylesheet" href="../../css/styles.css" />
+  <style>
+    :root{
+      --border:#e5e7eb;
+      --muted:#4b5563;
+      --shadow:0 10px 30px rgba(0,0,0,.08);
+      --radius:18px;
+      --bg:#ffffff;
+      --panel:#f3f4f6;
+      --pill-hover:#f9fafb;
+    }
+
+    *{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:#111;
+      background:var(--bg);
+      padding-left:0;
+      padding-right:0;
+    }
+
+    .wrap{
+      max-width:1240px;
+      margin:0 auto;
+      padding:28px 18px 60px;
+    }
+
+    .page-narrow{ max-width:1100px; }
+
+    .nav-pills{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin:22px 0;
+      justify-content:center;
+      text-align:center;
+    }
+
+    .nav-pill{
+      padding:8px 14px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background:#fff;
+      color:#111;
+      text-decoration:none;
+      font-size:14px;
+      transition:background .12s ease, border-color .12s ease, transform .12s ease;
+    }
+
+    .nav-pill:hover{
+      background:var(--pill-hover);
+      border-color:#d1d5db;
+      transform:translateY(-1px);
+    }
+
+    .page-header{
+      max-width:1100px;
+      margin:0 auto 28px;
+      padding:0;
+      text-align:center;
+    }
+
+    .page-title{
+      margin:0 0 10px;
+      font-size:clamp(2rem,4vw,3rem);
+      letter-spacing:-.02em;
+      line-height:1.05;
+      text-align:center;
+    }
+
+    .section-intro{
+      max-width:780px;
+      margin:0 auto 24px;
+      color:var(--muted);
+      line-height:1.6;
+      text-align:center;
+    }
+
+    .section-card{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:22px;
+      margin-bottom:24px;
+    }
+
+    .section-card h2{
+      margin:0 0 8px;
+      font-size:1.4rem;
+      text-align:center;
+    }
+
+    .gallery-grid,
+    .card-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+    }
+
+    .originals-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:20px;
+    }
+
+    .gallery-item{
+      display:block;
+      text-decoration:none;
+      color:inherit;
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:16px;
+      overflow:hidden;
+      box-shadow:0 4px 18px rgba(0,0,0,.04);
+      margin:0;
+      transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+      text-align:center;
+    }
+
+    .gallery-item:hover{
+      transform:translateY(-2px);
+      box-shadow:0 16px 40px rgba(0,0,0,.12);
+      border-color:#d1d5db;
+    }
+
+    .gallery-item a{
+      display:block;
+      color:inherit;
+      text-decoration:none;
+    }
+
+    .gallery-item img{
+      display:block;
+      width:100%;
+      object-fit:contain;
+      object-position:center center;
+      background:var(--panel);
+      padding:8px;
+      border-bottom:0;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    .gallery-grid .gallery-item img{ height:300px; }
+    .originals-grid .gallery-item img{ height:440px; }
+    .card-grid .gallery-item img{ height:320px; }
+
+    .entry-body{
+      padding:14px 14px 16px;
+      text-align:center;
+    }
+
+    .work-title{
+      margin:0;
+      font-weight:700;
+      font-size:1.05rem;
+      line-height:1.25;
+      text-align:center;
+    }
+
+    .back-link{
+      margin-top:28px;
+      text-align:left;
+    }
+
+    .back-link a{
+      display:inline-block;
+      text-decoration:none;
+      color:#111;
+      border:1px solid var(--border);
+      border-radius:999px;
+      padding:10px 16px;
+      background:#fff;
+      text-align:left;
+    }
+
+    .back-link a:hover{ background:#f9fafb; }
+
+    @media (max-width:560px){
+      .wrap{ padding:22px 14px 50px; }
+
+      .gallery-grid,
+      .card-grid,
+      .originals-grid{
+        grid-template-columns:1fr;
+      }
+
+      .gallery-grid .gallery-item img{ height:260px; }
+      .originals-grid .gallery-item img{ height:340px; }
+      .card-grid .gallery-item img{ height:280px; }
+    }
+  </style>
+  <style id="landing-index-grid-model-fix">
+    .index-grid{
+      margin-top:28px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:18px;
+      justify-items:center;
+    }
+
+    .index-grid .gallery-item{
+      width:100%;
+      display:block;
+      text-decoration:none;
+      color:inherit;
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:16px;
+      overflow:hidden;
+      box-shadow:0 4px 18px rgba(0,0,0,.04);
+      margin:0;
+      transition:transform .12s ease,box-shadow .12s ease,border-color .12s ease;
+      text-align:center;
+    }
+
+    .index-grid .gallery-item:hover{
+      transform:translateY(-2px);
+      box-shadow:0 16px 40px rgba(0,0,0,.12);
+      border-color:#d1d5db;
+    }
+
+    .index-grid .gallery-item img{
+      display:block;
+      width:100%;
+      height:240px;
+      object-fit:contain;
+      object-position:center center;
+      background:#f3f4f6;
+      padding:10px;
+      border-bottom:1px solid var(--border);
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    .index-grid .entry-body{
+      width:100%;
+      padding:16px 18px 18px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+    }
+
+    .index-grid .work-title{
+      margin:0 auto;
+      padding:0;
+      width:100%;
+      font-size:18px;
+      line-height:1.35;
+      font-weight:600;
+      text-align:center;
+    }
+
+    @media (max-width:560px){
+      .index-grid{
+        grid-template-columns:1fr;
+      }
+
+      .index-grid .gallery-item img{
+        height:220px;
+        max-height:220px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <nav class="nav-pills" aria-label="Site navigation">
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
+      <a class="nav-pill" href="../index.html">Sketches</a>
+    </nav>
+
+    <header class="page-header">
+      <h1 class="page-title">Snails</h1>
+    </header>
+
+        <section class="index-grid" aria-label="Snails sketch and drawing pages">
+<a class="gallery-item" href="pony-snail/index.html">
+          <img src="../../images/Sketches/Snails/Pony%20Snail%20COLOR.jpg" alt="Pony Snail sketches and drawings by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Pony Snail</p>
+          </div>
+        </a>
+        <a class="gallery-item" href="dale-snail/index.html">
+          <img src="../../images/Sketches/Snails/Dale%20Snail%20COLOR.jpg" alt="Dale Snail sketches and drawings by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Dale Snail</p>
+          </div>
+        </a>
+        <a class="gallery-item" href="snailmobile/index.html">
+          <img src="../../images/Sketches/Snails/Snailmobile%20COLOR.jpg" alt="Snailmobile sketches and drawings by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Snailmobile</p>
+          </div>
+        </a>
+        <a class="gallery-item" href="cocksnail/index.html">
+          <img src="../../images/Sketches/Snails/Cocksnail%20COLOR.png" alt="Cocksnail sketches and drawings by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Cocksnail</p>
+          </div>
+        </a>
+        <a class="gallery-item" href="snailien-king/index.html">
+          <img src="../../images/Sketches/Snails/Snailien%20King%20COLOR%203.png" alt="Snailien King sketches and drawings by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Snailien King</p>
+          </div>
+        </a>
+        <a class="gallery-item" href="bobsnail/index.html">
+          <img src="../../images/Sketches/Snails/Bobsnail%20COLOR.png" alt="Bobsnail sketches and drawings by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Bobsnail</p>
+          </div>
+        </a>
+        <a class="gallery-item" href="fairy-snail/index.html">
+          <img src="../../images/Sketches/Snails/Fairy%20Snail%20COLOR.jpg" alt="Fairy Snail sketches and drawings by Ron English" loading="lazy" />
+          <div class="entry-body">
+            <p class="work-title">Fairy Snail</p>
+          </div>
+        </a>
+    </section>
+
+    <div class="back-link">
+      <a href="../index.html">&larr; Back to Sketches</a>
+    </div>
+  </main>
+</body>
+</html>
+

@@ -193,6 +193,24 @@
       .card-grid .gallery-item img{ height:420px; }
     }
   </style>
+  <style id="grins-cleanup-centering-fix">
+    .gallery-item,
+    .gallery-item .entry-body,
+    .gallery-item .work-title,
+    .gallery-item figcaption,
+    .section-card h2,
+    .page-header,
+    .page-title {
+      text-align: center !important;
+    }
+
+    .gallery-item img {
+      object-fit: contain !important;
+      object-position: center center !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  </style>
 </head>
 <body>
   <main class="wrap page-narrow">
@@ -209,15 +227,7 @@
     <section class="section-card" aria-labelledby="original-drawing">
       <h2 id="original-drawing">Original Drawing</h2>
       <div class="originals-grid">
-        <figure class="gallery-item">
-          <a href="../../images/Sketches/grins/Jake%20Grin%20ORIGINAL%20COLOR.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="../../images/Sketches/grins/Jake%20Grin%20ORIGINAL%20COLOR.jpg" alt="Jake Grin ORIGINAL COLOR by Ron English" loading="lazy" />
-          </a>
-        </figure>        <figure class="gallery-item">
-          <a href="../../images/Sketches/grins/Jake%20the%20Dog%20Grin%20ORIGINAL%20COLOR.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="../../images/Sketches/grins/Jake%20the%20Dog%20Grin%20ORIGINAL%20COLOR.jpg" alt="Jake the Dog Grin ORIGINAL COLOR by Ron English" loading="lazy" />
-          </a>
-        </figure>
+                
         <figure class="gallery-item">
           <a href="../../images/Sketches/grins/Jake%20the%20Dog%20Grin%20ORIGINAL.jpg" target="_blank" rel="noopener noreferrer">
             <img src="../../images/Sketches/grins/Jake%20the%20Dog%20Grin%20ORIGINAL.jpg" alt="Jake the Dog Grin ORIGINAL by Ron English" loading="lazy" />
@@ -242,11 +252,38 @@
         </figure>
       </div>
     </section>
+<section class="section-card" aria-labelledby="collector-cards">
+      <h2 id="collector-cards">Collector Cards</h2>
+      <div class="card-grid">
+        <figure class="gallery-item">
+          <a href="../../images/Sketches/grins/Jake%20Grin%20ORIGINAL%20COLOR.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../images/Sketches/grins/Jake%20Grin%20ORIGINAL%20COLOR.jpg" alt="Jake Grin collector card by Ron English" loading="lazy" />
+          </a>
+        </figure>
+      </div>
+    </section>
+
+
+
+
+
+
+
     <div class="back-link">
       <a href="index.html">&larr; Back to Grins</a>
     </div>
   </main>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
 
 

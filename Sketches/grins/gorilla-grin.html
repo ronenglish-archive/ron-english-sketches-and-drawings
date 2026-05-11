@@ -40,6 +40,24 @@
     @media (max-width:820px){.index-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
     @media (max-width:560px){.wrap{padding:22px 14px 50px;}.index-grid,.gallery-grid,.card-grid,.originals-grid{grid-template-columns:1fr;}.index-grid .gallery-item img,.gallery-grid .gallery-item img{height:260px;}.originals-grid .gallery-item img{height:340px;}.card-grid .gallery-item img{height:420px;}}
   </style>
+  <style id="grins-cleanup-centering-fix">
+    .gallery-item,
+    .gallery-item .entry-body,
+    .gallery-item .work-title,
+    .gallery-item figcaption,
+    .section-card h2,
+    .page-header,
+    .page-title {
+      text-align: center !important;
+    }
+
+    .gallery-item img {
+      object-fit: contain !important;
+      object-position: center center !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  </style>
 </head>
 <body>
   <main class="wrap page-narrow">
@@ -51,30 +69,7 @@
     <header class="page-header"><h1 class="page-title">Gorilla grin</h1></header>
     <section class="section-card" aria-labelledby="original-drawing">
       <h2 id="original-drawing">Original Drawing</h2>
-      <div class="originals-grid">
-        <figure class="gallery-item">
-          <a href="../../images/Sketches/grins/Gorilla%20Grin%20ORIGINAL%20COLOR%201.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="../../images/Sketches/grins/Gorilla%20Grin%20ORIGINAL%20COLOR%201.jpg" alt="Gorilla Grin ORIGINAL COLOR 1 by Ron English" loading="lazy" />
-          </a>
-        </figure>        <figure class="gallery-item">
-          <a href="../../images/Sketches/grins/Gorilla%20grin%20ORIGINAL%20COLOR%202.png" target="_blank" rel="noopener noreferrer">
-            <img src="../../images/Sketches/grins/Gorilla%20grin%20ORIGINAL%20COLOR%202.png" alt="Gorilla grin ORIGINAL COLOR 2 by Ron English" loading="lazy" />
-          </a>
-        </figure>
-
-
-      </div>
-    </section>
-    <section class="section-card" aria-labelledby="collector-cards">
-      <h2 id="collector-cards">Collector Cards</h2>
-      <div class="card-grid">
-        <figure class="gallery-item">
-          <a href="../../images/Sketches/grins/Gorilla%20grin%20card.png" target="_blank" rel="noopener noreferrer">
-            <img src="../../images/Sketches/grins/Gorilla%20grin%20card.png" alt="Gorilla grin card by Ron English" loading="lazy" />
-          </a>
-        </figure>
-
-      </div>
+      <p class="section-intro">No original drawing is currently documented on this page. If one is located, it will be added here.</p>
     </section>
         <section class="section-card" aria-labelledby="digitized-versions">
       <h2 id="digitized-versions">Digitized Versions</h2>
@@ -86,10 +81,44 @@
         </figure>
       </div>
     </section>
+<section class="section-card" aria-labelledby="collector-cards">
+      <h2 id="collector-cards">Collector Cards</h2>
+      <div class="card-grid">
+        <figure class="gallery-item">
+          <a href="../../images/Sketches/grins/Gorilla%20grin%20card.png" target="_blank" rel="noopener noreferrer">
+            <img src="../../images/Sketches/grins/Gorilla%20grin%20card.png" alt="Gorilla grin card by Ron English" loading="lazy" />
+          </a>
+        </figure>
+
+      
+        <figure class="gallery-item">
+          <a href="../../images/Sketches/grins/Gorilla%20Grin%20ORIGINAL%20COLOR%201.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../images/Sketches/grins/Gorilla%20Grin%20ORIGINAL%20COLOR%201.jpg" alt="Gorilla Grin collector card by Ron English" loading="lazy" />
+          </a>
+        </figure>
+      </div>
+    </section>
+
+
+
+
+
+
 
     <div class="back-link"><a href="index.html">&larr; Back to Grins</a></div>
   </main>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
 
 

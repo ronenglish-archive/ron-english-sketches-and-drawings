@@ -184,6 +184,24 @@
       .card-grid .gallery-item img{ height:420px; }
     }
   </style>
+  <style id="grins-cleanup-centering-fix">
+    .gallery-item,
+    .gallery-item .entry-body,
+    .gallery-item .work-title,
+    .gallery-item figcaption,
+    .section-card h2,
+    .page-header,
+    .page-title {
+      text-align: center !important;
+    }
+
+    .gallery-item img {
+      object-fit: contain !important;
+      object-position: center center !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  </style>
 </head>
 <body>
   <main class="wrap page-narrow">
@@ -200,16 +218,8 @@
     <section class="section-card" aria-labelledby="original-drawing">
       <h2 id="original-drawing">Original Drawing</h2>
           <div class="originals-grid">
-        <figure class="gallery-item">
-          <a href="../../images/Sketches/grins/MC%20Grin%20ORIGINAL%20COLOR%202.png" target="_blank" rel="noopener noreferrer">
-            <img src="../../images/Sketches/grins/MC%20Grin%20ORIGINAL%20COLOR%202.png" alt="MC Grin ORIGINAL COLOR 2 by Ron English" loading="lazy" />
-          </a>
-        </figure>
-        <figure class="gallery-item">
-          <a href="../../images/Sketches/grins/MC%20Grin%20ORIGINAL%20COLOR.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="../../images/Sketches/grins/MC%20Grin%20ORIGINAL%20COLOR.jpg" alt="MC Grin ORIGINAL COLOR by Ron English" loading="lazy" />
-          </a>
-        </figure>        <figure class="gallery-item">
+        
+                <figure class="gallery-item">
           <a href="../../images/Sketches/grins/MC%20Supersize%20Grin%20Flying%20ORIGINAL.jpg" target="_blank" rel="noopener noreferrer">
             <img src="../../images/Sketches/grins/MC%20Supersize%20Grin%20Flying%20ORIGINAL.jpg" alt="MC Supersize Grin Flying ORIGINAL by Ron English" loading="lazy" />
           </a>
@@ -229,23 +239,6 @@
             <img src="../../images/Sketches/grins/MC%20Supersized%20Grin%20side%20ORIGINAL.jpg" alt="MC Supersized Grin side ORIGINAL by Ron English" loading="lazy" />
           </a>
         </figure>
-
-      </div>
-    </section>
-
-    <section class="section-card" aria-labelledby="collector-cards">
-      <h2 id="collector-cards">Collector Cards</h2>
-      <div class="card-grid">
-        <figure class="gallery-item">
-          <a href="../../images/Sketches/grins/MC%20Grin%20card.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="../../images/Sketches/grins/MC%20Grin%20card.jpg" alt="MC Grin card by Ron English" loading="lazy" />
-          </a>
-        </figure>        <figure class="gallery-item">
-          <a href="../../images/Sketches/grins/MC%20Grin%202%20card.png" target="_blank" rel="noopener noreferrer">
-            <img src="../../images/Sketches/grins/MC%20Grin%202%20card.png" alt="MC Grin 2 card by Ron English" loading="lazy" />
-          </a>
-        </figure>
-
 
       </div>
     </section>
@@ -272,11 +265,7 @@
             <img src="../../images/Sketches/grins/MC%20Supersize%20Grin%20Flying%20COLOR.1.jpg" alt="MC Supersize Grin Flying COLOR.1 by Ron English" loading="lazy" />
           </a>
         </figure>
-        <figure class="gallery-item">
-          <a href="../../images/Sketches/grins/MC%20Supersize%20Grin%20Flying%20COLOR.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="../../images/Sketches/grins/MC%20Supersize%20Grin%20Flying%20COLOR.jpg" alt="MC Supersize Grin Flying COLOR by Ron English" loading="lazy" />
-          </a>
-        </figure>
+        
         <figure class="gallery-item">
           <a href="../../images/Sketches/grins/MC%20Supersized%20Grin%202%20B%26W.jpg" target="_blank" rel="noopener noreferrer">
             <img src="../../images/Sketches/grins/MC%20Supersized%20Grin%202%20B%26W.jpg" alt="MC Supersized Grin 2 B&amp;W by Ron English" loading="lazy" />
@@ -310,6 +299,28 @@
 
       </div>
     </section>
+<section class="section-card" aria-labelledby="collector-cards">
+      <h2 id="collector-cards">Collector Cards</h2>
+      <div class="card-grid">
+        <figure class="gallery-item">
+          <a href="../../images/Sketches/grins/MC%20Grin%20card.jpg" target="_blank" rel="noopener noreferrer">
+            <img src="../../images/Sketches/grins/MC%20Grin%20card.jpg" alt="MC Grin card by Ron English" loading="lazy" />
+          </a>
+        </figure>        <figure class="gallery-item">
+          <a href="../../images/Sketches/grins/MC%20Grin%202%20card.png" target="_blank" rel="noopener noreferrer">
+            <img src="../../images/Sketches/grins/MC%20Grin%202%20card.png" alt="MC Grin 2 card by Ron English" loading="lazy" />
+          </a>
+        </figure>
+
+
+      </div>
+    </section>
+
+
+
+
+
+
 
     <div class="back-link">
       <a href="index.html">&larr; Back to Grins</a>
@@ -317,6 +328,17 @@
   </main>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
