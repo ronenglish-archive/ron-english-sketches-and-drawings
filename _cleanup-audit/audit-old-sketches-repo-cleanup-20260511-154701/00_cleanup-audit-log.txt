@@ -1,0 +1,6 @@
+[2026-05-11 15:47:01] Starting read-only cleanup audit for old sketches-and-drawings repo.
+[2026-05-11 15:47:01] Repo root: D:\github\ron-english-sketches-and-drawings
+[2026-05-11 15:47:01] Bridge index: D:\github\ron-english-sketches-and-drawings\Sketches\index.html
+[2026-05-11 15:47:01] Audit folder: D:\github\ron-english-sketches-and-drawings\_cleanup-audit\audit-old-sketches-repo-cleanup-20260511-154701
+[2026-05-11 15:47:08] Audit complete.
+[2026-05-11 15:47:08] Summary: D:\github\ron-english-sketches-and-drawings\_cleanup-audit\audit-old-sketches-repo-cleanup-20260511-154701\00_cleanup-audit-summary.txt

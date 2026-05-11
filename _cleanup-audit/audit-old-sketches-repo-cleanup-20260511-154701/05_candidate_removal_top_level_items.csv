@@ -1,0 +1,6 @@
+﻿"Name","Type","RelativePath","FullPath","IsProtectedByBridgeAudit","FileCount","FolderCount","SizeBytes","SizeReadable","Recommendation","Reason"
+"images","Folder","images","D:\github\ron-english-sketches-and-drawings\images","False","7952","126","1562954213","1.46 GB","REVIEW carefully","May contain assets used by bridge page. See required files report before removing subfolders."
+"Sketches","Folder","Sketches","D:\github\ron-english-sketches-and-drawings\Sketches","True","2531","1809","22674017","21.62 MB","KEEP for bridge or repository support","This item is the bridge page, contains the bridge page, or is directly referenced by it."
+"audit-old-sketches-repo-cleanup.ps1","File","audit-old-sketches-repo-cleanup.ps1","D:\github\ron-english-sketches-and-drawings\audit-old-sketches-repo-cleanup.ps1","False","","","27773","27.12 KB","Optional remove later","Script file; not needed for public site once you have saved backups."
+"css","Folder","css","D:\github\ron-english-sketches-and-drawings\css","False","1","0","7655","7.48 KB","Candidate for removal later","Not detected as required by the bridge page."
+"_cleanup-audit","Folder","_cleanup-audit","D:\github\ron-english-sketches-and-drawings\_cleanup-audit","False","1","1","415","415 bytes","Optional remove later","Audit/report folder; not needed for public site unless you want the records online."
