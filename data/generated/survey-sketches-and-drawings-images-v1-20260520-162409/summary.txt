@@ -1,0 +1,24 @@
+﻿Ron English sketches-and-drawings survey
+Generated: 2026-05-20 16:24:45
+
+Repo root: D:\github\ron-english-sketches-and-drawings
+Image root: D:\github\ron-english-sketches-and-drawings\images\Sketches
+Public base URL: https://ronenglish-archive.github.io/ron-english-sketches-and-drawings
+Report folder: D:\github\ron-english-sketches-and-drawings\data\generated\survey-sketches-and-drawings-images-v1-20260520-162409
+
+Image files found: 68
+Draft work/group rows: 61
+Image folders found: 3
+HTML files found: 2530
+HTML references found: 33049
+Read dimensions: False
+
+Reports created:
+sketches-image-inventory.csv
+sketches-work-grouping-draft.csv
+sketches-folder-summary.csv
+sketches-html-inventory.csv
+sketches-html-link-inventory.csv
+summary.txt
+
+Changes made: none. Survey/report only.

@@ -1,0 +1,25 @@
+﻿Ron English active sketches repositories Google Sheets survey v4
+Generated: 2026-05-20 16:53:03
+
+GitHub root: D:\github
+Report folder: D:\github\ron-english-sketches-and-drawings\data\generated\survey-all-sketches-repos-google-sheets-v4-20260520-165116
+Old bridge included as detail source: False
+Archived merged pages included: False
+
+Repos configured: 8
+Repos missing or skipped because of missing Sketches folder: 1
+Detail/work rows created: 2367
+Image references found: 8007
+Rows needing review: 54
+Max preview images per type: 6
+Preview formula size: 120 x 120
+
+Files created:
+all-sketches-google-sheets-master-v4.csv
+all-sketches-image-references-long-v4.csv
+all-sketches-repo-summary-v4.csv
+all-sketches-audit-v4.csv
+all-sketches-skipped-pages-v4.csv
+summary.txt
+
+Changes made: none. Survey/export only.
