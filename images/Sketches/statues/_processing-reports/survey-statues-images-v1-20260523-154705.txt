@@ -1,0 +1,63 @@
+﻿Statues image survey
+Run time: 05/23/2026 15:47:05
+Image folder: D:\github\ron-english-sketches-and-drawings\images\Sketches\statues
+
+Rule used:
+  Filename contains ORIGINAL -> Original Drawing
+  Filename does not contain ORIGINAL -> Digital Version
+
+Images found: 24
+Proposed page/group count: 7
+
+Groups without an ORIGINAL file: 1
+Groups without a digital file: 1
+
+Proposed groups
+---------------
+
+Title: Bigfoot of Liberty
+Slug: bigfoot-of-liberty
+Images: 3 | Originals: 1 | Digital: 2
+Suggested hero: Bigfoot Statue of Liberty COLOR.jpg
+Files: Bigfoot Statue of Liberty COLOR.jpg | Bigfoot Statue of Liberty B&W.jpg | Bigfoot Statue of Liberty ORIGINAL.jpg
+
+Title: Eagle Liberty
+Slug: eagle-liberty
+Images: 2 | Originals: 2 | Digital: 0
+Suggested hero: Eagle Liberty back ORIGINAL.jpg
+Files: Eagle Liberty back ORIGINAL.jpg | Eagle Liberty left ORIGINAL.jpg
+
+Title: Family Icon
+Slug: family-icon
+Images: 1 | Originals: 0 | Digital: 1
+Suggested hero: Statues Family Icon COLOR.jpg
+Files: Statues Family Icon COLOR.jpg
+
+Title: Fat of Liberty
+Slug: fat-of-liberty
+Images: 3 | Originals: 1 | Digital: 2
+Suggested hero: Fat Statue of Liberty COLOR.jpg
+Files: Fat Statue of Liberty COLOR.jpg | Fat Statue of Liberty B&W.jpg | Fat Statue of Liberty ORIGINAL.jpg
+
+Title: Liberty Eagle
+Slug: liberty-eagle
+Images: 6 | Originals: 2 | Digital: 4
+Suggested hero: Liberty Eagle front COLOR.jpg
+Files: Liberty Eagle front COLOR.jpg | Liberty eagle side COLOR.jpg | Liberty Eagle front B&W.jpg | Liberty eagle side B&W.jpg | Liberty Eagle front ORIGINAL.jpg | Liberty eagle side ORIGINAL.jpg
+
+Title: Liberty Indian Eagle
+Slug: liberty-indian-eagle
+Images: 6 | Originals: 2 | Digital: 4
+Suggested hero: Liberty Indian Eagle Front COLOR.jpg
+Files: Liberty Indian Eagle Front COLOR.jpg | Liberty Indian Eagle Front ORIGINAL COLOR.jpg | Liberty Indian Eagle right side COLOR.jpg | Liberty Indian Eagle Front B&W.jpg | Liberty Indian Eagle right side B&W.jpg | Liberty Indian Eagle right side ORIGINAL.jpg
+
+Title: Liberty Seeds
+Slug: liberty-seeds
+Images: 3 | Originals: 1 | Digital: 2
+Suggested hero: Liberty Seeds COLOR.jpg
+Files: Liberty Seeds COLOR.jpg | Liberty Seeds B&W.jpg | Liberty Seeds ORIGINAL.jpg
+
+Reports
+-------
+Images CSV: D:\github\ron-english-sketches-and-drawings\images\Sketches\statues\_processing-reports\survey-statues-images-v1-20260523-154705-images.csv
+Groups CSV: D:\github\ron-english-sketches-and-drawings\images\Sketches\statues\_processing-reports\survey-statues-images-v1-20260523-154705-groups.csv

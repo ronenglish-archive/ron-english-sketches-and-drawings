@@ -37,7 +37,51 @@
     footer{ margin-top:34px; padding-top:16px; border-top:1px solid var(--border); color:var(--muted); font-size:14px; text-align:center; }
     @media (max-width:560px){ .wrap{ padding:22px 14px 50px; } .index-grid,.gallery-grid{ grid-template-columns:1fr; } .index-grid .gallery-item img{ height:260px; } .gallery-grid .gallery-item img{ height:300px; } }
   </style>
+  <style id="recent-sketches-caption-centering-v1">
+    /* Keeps captions and card titles centered in recent sketch category pages. */
+    .gallery-item,
+    .gallery-item a,
+    figure,
+    figcaption,
+    .entry-body,
+    .work-title,
+    .entry-title,
+    .card-title,
+    .gallery-title,
+    .item-title,
+    .caption,
+    .thumb-caption,
+    .image-caption,
+    .work-caption,
+    .caveat-text {
+      text-align: center !important;
+    }
 
+    .entry-body,
+    .work-title,
+    .entry-title,
+    .card-title,
+    .gallery-title,
+    .item-title,
+    figcaption,
+    .caption,
+    .thumb-caption,
+    .image-caption,
+    .work-caption,
+    .caveat-text {
+      width: 100% !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
+    .caveat-text {
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.6;
+      margin: 0 auto;
+      max-width: 720px;
+    }
+  </style>
   <link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
 </head>
 <body>
@@ -52,7 +96,12 @@
       <h1 class="page-title">Skunk and Unicorn</h1>
     </header>
 
-    <section class="section-card" aria-labelledby="digital-version">
+    
+    <section class="section-card original-caveat" aria-labelledby="original-drawing">
+      <h2 id="original-drawing">Original Drawing</h2>
+      <p class="caveat-text">No original drawing is currently documented on this page. If one is located, it will be added here.</p>
+    </section>
+<section class="section-card" aria-labelledby="digital-version">
       <h2 id="digital-version">Digital Version</h2>
       <div class="gallery-grid">
         <figure class="gallery-item">
@@ -72,3 +121,4 @@
   </main>
 </body>
 </html>
+
