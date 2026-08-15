@@ -414,3 +414,87 @@ main,
   height: 42px;
   border-radius: 999px;
 }
+
+/* START GLOBAL CENTERED WORK SEQUENCE PILL STANDARD */
+/*
+  Catalogue-wide previous/next navigation standard:
+  - centered on the page
+  - true pill styling at both top and bottom
+  - works whether individual pages use a sequence-nav-inner wrapper or not
+*/
+.work-sequence-nav {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 12px !important;
+  width: 100% !important;
+  max-width: 1100px !important;
+  margin: 1.05rem auto !important;
+  padding: 0 1rem !important;
+  text-align: center !important;
+  box-sizing: border-box !important;
+}
+
+.work-sequence-nav .sequence-nav-inner {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 12px !important;
+  width: 100% !important;
+  max-width: 960px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+.work-sequence-nav a,
+.work-sequence-nav .sequence-pill,
+.work-sequence-nav .sequence-disabled {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: auto !important;
+  max-width: 100% !important;
+  min-height: 28px !important;
+  margin: 0 !important;
+  padding: 6px 14px !important;
+  border: 1px solid #ccc !important;
+  border-radius: 999px !important;
+  background: #fff !important;
+  color: #222 !important;
+  font-size: 0.95rem !important;
+  line-height: 1 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  box-sizing: border-box !important;
+}
+
+.work-sequence-nav a:hover,
+.work-sequence-nav a:focus-visible {
+  background: #111 !important;
+  color: #fff !important;
+  border-color: #111 !important;
+  text-decoration: none !important;
+}
+
+.work-sequence-nav .sequence-disabled {
+  opacity: 0.42 !important;
+  cursor: default !important;
+}
+
+@media (max-width: 640px) {
+  .work-sequence-nav,
+  .work-sequence-nav .sequence-nav-inner {
+    justify-content: center !important;
+  }
+
+  .work-sequence-nav a,
+  .work-sequence-nav .sequence-pill,
+  .work-sequence-nav .sequence-disabled {
+    width: auto !important;
+    white-space: normal !important;
+  }
+}
+/* END GLOBAL CENTERED WORK SEQUENCE PILL STANDARD */
