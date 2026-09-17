@@ -21,7 +21,42 @@
 .text-block{max-width:900px;margin:0 auto;line-height:1.65;text-align:center}.notes-block{max-width:900px;margin:0 auto;line-height:1.65;text-align:center}
 footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:14px}
 @media(max-width:620px){.wrap{padding:22px 14px 48px}.index-card,.gallery-item{flex-basis:min(100%,330px);max-width:330px}.original-grid .gallery-item img{height:340px}}
-</style></head><body><div class="wrap"><nav class="nav-pills" aria-label="Site navigation">
+
+/* ron-four-across-v3 */
+.index-grid{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  justify-content:center!important;
+  align-items:stretch!important;
+}
+.index-grid > .index-card{
+  box-sizing:border-box!important;
+  min-width:0!important;
+  flex:0 1 calc(25% - 28px)!important;
+  width:calc(25% - 28px)!important;
+  max-width:calc(25% - 28px)!important;
+}
+@media(max-width:900px){
+  .index-grid > .index-card{
+    flex-basis:calc(33.333% - 24px)!important;
+    width:calc(33.333% - 24px)!important;
+    max-width:calc(33.333% - 24px)!important;
+  }
+}
+@media(max-width:680px){
+  .index-grid > .index-card{
+    flex-basis:calc(50% - 18px)!important;
+    width:calc(50% - 18px)!important;
+    max-width:calc(50% - 18px)!important;
+  }
+}
+@media(max-width:440px){
+  .index-grid > .index-card{
+    flex-basis:100%!important;
+    width:100%!important;
+    max-width:100%!important;
+  }
+}</style></head><body><div class="wrap"><nav class="nav-pills" aria-label="Site navigation">
 <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
 <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a>
 <a class="nav-pill" href="../index.html">&larr; Early Works</a></nav>
