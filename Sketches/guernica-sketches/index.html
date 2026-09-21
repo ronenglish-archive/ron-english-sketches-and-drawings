@@ -22,7 +22,45 @@ body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Aria
 .relationship-note a,.category-note a{color:inherit}
 .sequence-nav{margin:28px 0 18px}
 footer{margin-top:30px;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:14px;text-align:center}
-@media(max-width:700px){.index-card{flex-basis:320px;max-width:320px}.index-card img{height:280px}.gallery-item img{height:360px}}</style></head><body><main class="wrap">
+@media(max-width:700px){.index-card{flex-basis:320px;max-width:320px}.index-card img{height:280px}.gallery-item img{height:360px}}</style><style id="ron-guernica-index-grid-v1">
+/* Ron catalogue: deterministic Guernica Sketches index rows. */
+.index-grid[aria-label="Guernica Sketches catalogue pages"]{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:18px;
+  align-items:stretch;
+}
+.index-grid[aria-label="Guernica Sketches catalogue pages"] .index-card{
+  display:block;
+  width:100%;
+  max-width:none;
+  min-width:0;
+}
+.index-grid[aria-label="Additional Guernica Sketches sets"]{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:stretch;
+  gap:18px;
+  margin-top:18px;
+}
+@media(max-width:950px){
+  .index-grid[aria-label="Guernica Sketches catalogue pages"]{
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
+}
+@media(max-width:700px){
+  .index-grid[aria-label="Guernica Sketches catalogue pages"]{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+@media(max-width:440px){
+  .index-grid[aria-label="Guernica Sketches catalogue pages"]{
+    grid-template-columns:1fr;
+  }
+}
+</style>
+</head><body><main class="wrap">
 <nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue Home</a><a class="nav-pill" href="../index.html">&larr; Sketches &amp; Drawings</a></nav>
 <header class="page-header"><h1 class="page-title">Guernica Sketches</h1></header>
 <div class="category-note">Some studies related to Guernica compositions are catalogued in other subject categories when they primarily focus on an individual character, figure, or related study. This category brings together ensemble studies, grouped compositions, and sketches for complete Guernica works.</div>
@@ -32,25 +70,25 @@ footer{margin-top:30px;padding-top:16px;border-top:1px solid var(--border);color
 <a class="index-card" href="sets/delusionville-manifesto-sketch/index.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/lf2.jpg?v=20260701a" alt="Delusionville Manifesto Sketch" loading="lazy"><div class="index-title">Delusionville Manifesto Sketch<span class="set-label">Set</span></div></a>
 <a class="index-card" href="entries/re-015553.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/IMG_20260709_113940.jpg?v=20260710q" alt="Disney and Warner Brothers Guernica" loading="lazy"><div class="index-title">Disney and Warner Brothers Guernica</div></a>
 <a class="index-card" href="sets/grade-school-guernica-sketches/index.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/lf7.jpg?v=20260701a" alt="Grade School Guernica Sketches" loading="lazy"><div class="index-title">Grade School Guernica Sketches<span class="set-label">Set</span></div></a>
-<a class="index-card" href="entries/re-014086.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260616%20%2823%29.jpg?v=20260616c" alt="Guernica" loading="lazy"><div class="index-title">Guernica</div></a>
+<a class="index-card" href="entries/re-014086.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260616%20%2823%29.jpg?v=20260616c" alt="Guernica Aftermath Sketch" loading="lazy"><div class="index-title">Guernica Aftermath Sketch</div></a>
 <a class="index-card" href="entries/re-014777.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/Scan_20260614%20%2827%29.jpg?v=20260614d" alt="Guernica Averted Sketch 1" loading="lazy"><div class="index-title">Guernica Averted Sketch 1</div></a>
 <a class="index-card" href="entries/re-016308.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/images/Sketches/character-groups-and-ensembles/Guernica%20Characters%20New%20ORIGINAL.jpg" alt="Guernica Characters Sketch" loading="lazy"><div class="index-title">Guernica Characters Sketch</div></a>
 <a class="index-card" href="entries/re-013862.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/Scan_20260614%20%2823%29.jpg?v=20260614c" alt="Guernica Delusion Sketch" loading="lazy"><div class="index-title">Guernica Delusion Sketch</div></a>
 <a class="index-card" href="entries/re-013763.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/Scan_20260613%20%2817%29.jpg?v=20260613a" alt="Guernica Delusionville Gang Sketch" loading="lazy"><div class="index-title">Guernica Delusionville Gang Sketch</div></a>
-<a class="index-card" href="entries/re-015001.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260701%20%2829%29.jpg?v=20260701c" alt="Guernica Rough Sketch" loading="lazy"><div class="index-title">Guernica Rough Sketch</div></a>
-<a class="index-card" href="entries/re-015002.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260701%20%2830%29.jpg?v=20260701c" alt="Guernica Pyramid Sketch" loading="lazy"><div class="index-title">Guernica Pyramid Sketch</div></a>
 <a class="index-card" href="entries/re-013919.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260614%20%2888%29.jpg?v=20260614e" alt="Guernica Piggie" loading="lazy"><div class="index-title">Guernica Piggie</div></a>
+<a class="index-card" href="entries/re-015002.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260701%20%2830%29.jpg?v=20260701c" alt="Guernica Pyramid Sketch" loading="lazy"><div class="index-title">Guernica Pyramid Sketch</div></a>
 <a class="index-card" href="entries/re-016310.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/images/Sketches/character-groups-and-ensembles/Guernica%20Reversed%20ORIGINAL.jpg" alt="Guernica Reversed 1" loading="lazy"><div class="index-title">Guernica Reversed 1</div></a>
 <a class="index-card" href="entries/re-016311.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/images/Sketches/character-groups-and-ensembles/Guernica%20sketch%201%20ORIGINAL.jpg" alt="Guernica Reversed 2" loading="lazy"><div class="index-title">Guernica Reversed 2</div></a>
 <a class="index-card" href="entries/re-012998.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/images/Sketches/character-groups-and-ensembles/Rock%20Star%20Guernica%20ORIGINAL.jpg" alt="Guernica Rock &amp; Roll" loading="lazy"><div class="index-title">Guernica Rock &amp; Roll</div></a>
-<a class="index-card" href="entries/re-014778.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260617%20%28133%29.jpg?v=20260617c" alt="Guernica Sketch Idea" loading="lazy"><div class="index-title">Guernica Sketch Idea</div></a>
+<a class="index-card" href="entries/re-015001.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260701%20%2829%29.jpg?v=20260701c" alt="Guernica Rough Sketch" loading="lazy"><div class="index-title">Guernica Rough Sketch</div></a>
 <a class="index-card" href="entries/re-013929.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260614%20%2877%29.jpg?v=20260614e" alt="Guernica Sketch 2" loading="lazy"><div class="index-title">Guernica Sketch 2</div></a>
+<a class="index-card" href="entries/re-014778.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260617%20%28133%29.jpg?v=20260617c" alt="Guernica Sketch Idea" loading="lazy"><div class="index-title">Guernica Sketch Idea</div></a>
 <a class="index-card" href="entries/re-013165.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/Scan_20260610%20%2817%29.jpg?v=20260610g" alt="Guernica Unicorns" loading="lazy"><div class="index-title">Guernica Unicorns</div></a>
 <a class="index-card" href="entries/re-014776.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/square%20guern.jpg?v=20260614c" alt="Mousemask x Guernica Squared Sketch" loading="lazy"><div class="index-title">Mousemask x Guernica Squared Sketch</div></a>
 <a class="index-card" href="entries/re-016303.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/images/Sketches/character-groups-and-ensembles/Art%20Basil%20Guernica%20ORIGINAL.jpg" alt="Primary Flight Sketch" loading="lazy"><div class="index-title">Primary Flight Sketch</div></a>
 <a class="index-card" href="sets/richmond-guernica-sketches/index.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/images/Sketches/character-groups-and-ensembles/Richmond%20Guernica%201%20ORIGINAL.jpg" alt="Richmond Guernica Sketches" loading="lazy"><div class="index-title">Richmond Guernica Sketches<span class="set-label">Set</span></div></a>
-<a class="index-card" href="sets/selfie-guernica-sketches/index.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/images/Sketches/character-groups-and-ensembles/Selfie%20Guernica%204%20ORIGINAL.jpg" alt="Selfie Guernica Sketches" loading="lazy"><div class="index-title">Selfie Guernica Sketches<span class="set-label">Set</span></div></a>
 <a class="index-card" href="entries/re-013134.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/images/Sketches/character-groups-and-ensembles/Saturday%20Morning%20Cartoon%20Guernica%20sketch%201%20ORIGINAL.jpg" alt="Saturday Morning Cartoon Guernica Sketch 2" loading="lazy"><div class="index-title">Saturday Morning Cartoon Guernica Sketch 2</div></a>
+<a class="index-card" href="sets/selfie-guernica-sketches/index.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/images/Sketches/character-groups-and-ensembles/Selfie%20Guernica%204%20ORIGINAL.jpg" alt="Selfie Guernica Sketches" loading="lazy"><div class="index-title">Selfie Guernica Sketches<span class="set-label">Set</span></div></a>
 <a class="index-card" href="sets/soccer-guernica-sketches/index.html"><img src="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/images/Sketches/character-groups-and-ensembles/Guernica%20side%202.jpg" alt="Soccer Guernica Sketches" loading="lazy"><div class="index-title">Soccer Guernica Sketches<span class="set-label">Set</span></div></a>
 <a class="index-card" href="sets/x-ray-division-sketches/index.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/guern1.jpg?v=20260614d" alt="X-Ray Division Sketches" loading="lazy"><div class="index-title">X-Ray Division Sketches<span class="set-label">Set</span></div></a>
 </section>
