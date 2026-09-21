@@ -48,7 +48,21 @@ footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid #
     width:100%!important;
     max-width:100%!important;
   }
-}</style><style id="ron-bottom-prev-next-center-v1">
+}/* RON STATUES CARD SIZING NORMALIZATION START */
+.group-grid > .group-card{
+  flex:0 1 300px!important;
+  width:100%!important;
+  max-width:320px!important;
+  min-width:0!important;
+}
+.group-grid > .group-card > img{
+  width:100%!important;
+  height:240px!important;
+  max-height:240px!important;
+  aspect-ratio:auto!important;
+  object-fit:contain!important;
+}
+/* RON STATUES CARD SIZING NORMALIZATION END */</style><style id="ron-bottom-prev-next-center-v1">
 /* Ron catalogue: center bottom Previous / Next navigation as a group. */
 nav.ron-bottom-prev-next-center{
   display:flex!important;
