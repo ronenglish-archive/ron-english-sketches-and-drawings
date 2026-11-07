@@ -244,6 +244,231 @@ section.section-card[data-role="original-drawing"] > .gallery-grid.original-grid
 }
 </style>
 <link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
+
+<style id="ron-drawing-detail-compact-approved-v7">
+/* Ron English Drawing Detail: owner-approved compact V7, two-gallery pilot. */
+html { scroll-behavior:smooth; }
+body { background:#f7f6f3; color:#222; font-size:14px; line-height:1.6; }
+.wrap, main.wrap { box-sizing:border-box; max-width:620px; margin:0 auto; padding:16px 14px 22px; }
+.page-header { margin:10px auto 14px; }
+.page-title { font-family:Georgia,serif; font-weight:400; font-size:28px; line-height:1.17; letter-spacing:0; }
+.nav-pills { margin:7px auto 12px; gap:7px; }
+.nav-pill { font-size:12px; padding:6px 11px; }
+.sequence-nav { margin:20px auto 8px; gap:9px; }
+.sequence-pill { font-size:12px; padding:7px 11px; }
+section.section-card, section.primary-artwork, section.primary-artwork[data-role="original"],
+main.wrap > section.section-card[data-role="notes"], section.ron-unified-notes-wip-panel {
+  box-sizing:border-box !important; width:100% !important; max-width:560px !important;
+  margin:12px auto !important; padding:19px 16px !important; border-radius:12px !important;
+  background:#fff !important;
+}
+.section-card h2, .original-drawing-heading, .primary-artwork > h2 { font-family:Georgia,serif; font-size:19px; font-weight:400; margin:0 0 12px; }
+section.primary-artwork[data-role="original"] .primary-artwork-link,
+.primary-artwork .primary-artwork-link,
+section[data-role="original-drawing"] .gallery-grid.original-grid > .gallery-item,
+.original-grid > .gallery-item {
+  box-sizing:border-box !important; flex:0 1 auto !important; width:auto !important;
+  max-width:min(100%,410px) !important; margin:0 auto !important;
+}
+section.primary-artwork[data-role="original"] .primary-artwork-link img,
+.primary-artwork .primary-artwork-link img,
+section[data-role="original-drawing"] .gallery-grid.original-grid > .gallery-item img,
+.original-grid > .gallery-item img {
+  box-sizing:border-box !important; display:block !important; width:auto !important;
+  max-width:100% !important; height:auto !important; max-height:380px !important;
+  object-fit:contain !important; margin:0 auto !important;
+}
+.gallery-grid, .original-grid { justify-content:center !important; gap:12px !important; }
+.catalogue-meta-block { max-width:540px; margin:8px auto 14px; }
+.work-meta { max-width:100%; font-size:14px; line-height:1.65; }
+.work-meta li { margin:2px auto; }
+.relationship-note { box-sizing:border-box; max-width:560px; margin:10px auto 14px; padding:10px 12px; font-size:13px; }
+section[data-role="digital"] .gallery-grid > .gallery-item,
+section[data-role="literature"] .gallery-grid > .gallery-item,
+section[data-role="ancillary-documentation"] .gallery-grid > .gallery-item,
+section[data-role="cards"] .gallery-grid > .gallery-item,
+section[data-role*="trading-card"] .gallery-grid > .gallery-item {
+  box-sizing:border-box !important; flex:0 1 205px !important; width:205px !important;
+  max-width:100% !important; margin:0 !important;
+}
+section[data-role="digital"] .gallery-item img,
+section[data-role="literature"] .gallery-item img,
+section[data-role="ancillary-documentation"] .gallery-item img,
+section[data-role="cards"] .gallery-item img,
+section[data-role*="trading-card"] .gallery-item img {
+  max-width:100% !important; height:155px !important; object-fit:contain !important;
+}
+.literature-entry, .text-block { max-width:520px; font-size:14px; }
+footer { margin-top:12px; padding-top:12px; font-size:12px; }
+@media(max-width:600px) {
+  .wrap,main.wrap { padding:12px 10px 20px; }
+  section.section-card,section.primary-artwork,section.primary-artwork[data-role="original"],
+  main.wrap > section.section-card[data-role="notes"],section.ron-unified-notes-wip-panel {
+    padding:15px 11px !important;
+  }
+  section.primary-artwork[data-role="original"] .primary-artwork-link img,
+  .primary-artwork .primary-artwork-link img,
+  section[data-role="original-drawing"] .gallery-grid.original-grid > .gallery-item img,
+  .original-grid > .gallery-item img { max-height:320px !important; }
+}
+
+/* V7: single canonical gallery layout rule. No markup/inline-style patches.
+   Both sections must be rows even when present on the same page. */
+section.section-card[data-role="digital"] > div.gallery-grid,
+section.section-card.ron-delusionville-section-holder > div.gallery-grid {
+  display:flex !important;
+  flex-direction:row !important;
+  flex-wrap:wrap !important;
+  justify-content:center !important;
+  align-items:flex-start !important;
+  align-content:start !important;
+  column-gap:10px !important;
+  row-gap:12px !important;
+  grid-template-columns:none !important;
+  box-sizing:border-box !important;
+  width:100% !important;
+  max-width:100% !important;
+}
+section.section-card[data-role="digital"] > div.gallery-grid > a.gallery-item,
+section.section-card.ron-delusionville-section-holder > div.gallery-grid > a.gallery-item {
+  display:block !important;
+  float:none !important;
+  position:static !important;
+  box-sizing:border-box !important;
+  flex:0 0 155px !important;
+  flex-basis:155px !important;
+  flex-grow:0 !important;
+  flex-shrink:0 !important;
+  width:155px !important;
+  max-width:155px !important;
+  min-width:0 !important;
+  margin:0 !important;
+  padding:0 !important;
+  justify-self:auto !important;
+}
+section.section-card[data-role="digital"] > div.gallery-grid > a.gallery-item > img,
+section.section-card.ron-delusionville-section-holder > div.gallery-grid > a.gallery-item > img {
+  display:block !important;
+  width:100% !important;
+  max-width:100% !important;
+  height:auto !important;
+  max-height:165px !important;
+  object-fit:contain !important;
+  margin:0 auto !important;
+}
+@media(max-width:390px) {
+  section.section-card[data-role="digital"] > div.gallery-grid > a.gallery-item,
+  section.section-card.ron-delusionville-section-holder > div.gallery-grid > a.gallery-item {
+    flex-basis:130px !important; width:130px !important; max-width:130px !important;
+  }
+}
+
+/* Approved V5: book-by-book literature. Never put separate publication entries side by side. */
+section.section-card[data-role="literature"] {
+  display:block !important;
+  flex-direction:column !important;
+  flex-wrap:nowrap !important;
+}
+section.section-card[data-role="literature"] > h2 {
+  display:block !important;
+  width:auto !important;
+  margin:0 0 12px !important;
+}
+section.section-card[data-role="literature"] > .literature-entry {
+  display:block !important;
+  box-sizing:border-box !important;
+  width:100% !important;
+  max-width:100% !important;
+  margin:0 0 20px !important;
+  padding:0 !important;
+  flex:none !important;
+  float:none !important;
+}
+/* In each book entry: citation occupies its own full line above image(s). */
+section.section-card[data-role="literature"] > .literature-entry > .gallery-grid {
+  display:flex !important;
+  flex-direction:row !important;
+  flex-wrap:wrap !important;
+  justify-content:center !important;
+  align-items:flex-start !important;
+  align-content:flex-start !important;
+  gap:10px !important;
+  box-sizing:border-box !important;
+  width:100% !important;
+  max-width:100% !important;
+  grid-template-columns:none !important;
+}
+section.section-card[data-role="literature"] > .literature-entry > .gallery-grid > p {
+  box-sizing:border-box !important;
+  display:block !important;
+  flex:0 0 100% !important;
+  width:100% !important;
+  max-width:100% !important;
+  margin:0 0 5px !important;
+  text-align:center !important;
+  float:none !important;
+}
+section.section-card[data-role="literature"] > .literature-entry > .gallery-grid > a.gallery-item {
+  display:block !important;
+  box-sizing:border-box !important;
+  flex:0 1 155px !important;
+  width:155px !important;
+  max-width:155px !important;
+  min-width:0 !important;
+  margin:0 !important;
+  float:none !important;
+}
+section.section-card[data-role="literature"] > .literature-entry > .gallery-grid > a.gallery-item > img {
+  display:block !important;
+  box-sizing:border-box !important;
+  width:auto !important;
+  max-width:100% !important;
+  height:auto !important;
+  max-height:155px !important;
+  object-fit:contain !important;
+  margin:0 auto !important;
+}
+@media (max-width:420px) {
+  section.section-card[data-role="literature"] > .literature-entry > .gallery-grid > a.gallery-item {
+    flex:0 1 130px !important;
+    width:130px !important;
+    max-width:130px !important;
+  }
+}
+
+/* ron-drawing-single-card-compact-v1: only standalone Card tile; preserve outer section/panel. */
+section.section-card[data-role="cards"]:not(.ron-delusionville-section-holder) > h2 + div.gallery-grid {
+  display:flex !important;
+  flex-direction:row !important;
+  flex-wrap:wrap !important;
+  justify-content:center !important;
+  align-items:flex-start !important;
+  gap:10px !important;
+  width:100% !important;
+  max-width:100% !important;
+  grid-template-columns:none !important;
+}
+section.section-card[data-role="cards"]:not(.ron-delusionville-section-holder) > h2 + div.gallery-grid > a.gallery-item {
+  display:block !important;
+  box-sizing:border-box !important;
+  flex:0 0 155px !important;
+  width:155px !important;
+  max-width:155px !important;
+  min-width:0 !important;
+  margin:0 !important;
+  float:none !important;
+}
+section.section-card[data-role="cards"]:not(.ron-delusionville-section-holder) > h2 + div.gallery-grid > a.gallery-item > img {
+  display:block !important;
+  box-sizing:border-box !important;
+  width:auto !important;
+  max-width:100% !important;
+  height:auto !important;
+  max-height:155px !important;
+  object-fit:contain !important;
+  margin:0 auto !important;
+}
+</style>
 </head><body><div class="wrap"><nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../../index.html">Early Works</a><a class="nav-pill" href="../index.html">&larr; Late 1960s &amp; Early 1970s</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav><header class="page-header"><h1 class="page-title">Double Diploma&#x27;d</h1></header><h2 class="original-drawing-heading">Original Drawing</h2><section class="section-card" data-role="original-drawing"><div class="gallery-grid original-grid"><a class="gallery-item" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015441-detail.jpg" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015441-detail.jpg" alt="Double Diploma&#x27;d"></a></div></section>
 <div class="catalogue-meta-block"><ul class="work-meta"><li><strong>Title:</strong> Double Diploma&#x27;d</li><li><strong>Date:</strong> November 1, 1973</li><li><strong>Medium:</strong> Ink on paper</li><li><strong>Dimensions:</strong> 8.5 × 11 inches</li><li><strong>Work ID:</strong> RE-015441</li><li><strong>Signature:</strong> Signed &ldquo;Ron English&rdquo; and dated &ldquo;Nov 1 1973&rdquo;, lower right</li><li><strong>Provenance:</strong> Artist's Personal Collection</li></ul></div><nav class="sequence-nav ron-bottom-prev-next-center" aria-label="Catalogue sequence"><a class="nav-pill sequence-pill" href="../sets/dog-world-magazine.html">&larr; Previous: Dog World Magazine</a><a class="nav-pill sequence-pill" href="re-015373.html">Next: Every Dog Has Its Doodle &rarr;</a></nav>
