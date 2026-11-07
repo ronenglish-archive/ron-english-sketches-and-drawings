@@ -1,45 +1,186 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Early Works | Ron English Catalogue Raisonné</title>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Early Works | Ron English Catalogue Raisonn&eacute;
+  </title>
+  <style>
+   /* Early Works — unified self-contained category index */
+:root {
+  --border: #e5e7eb;
+  --muted: #6b7280;
+  --image-panel: #f8fafc;
+}
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #fff;
+  color: #111;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+.wrap { width: calc(100% - 36px); max-width: 1100px; margin: 0 auto; padding: 26px 0 48px; }
+.nav-pills, .sequence-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px auto;
+  text-align: center;
+}
+.nav-pill {
+  display: inline-block;
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: #fff;
+  color: #111;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.nav-pill:hover, .nav-pill:focus-visible { background: #f9fafb; }
+.page-header { margin: 0 auto 24px; text-align: center; }
+.page-title { margin: 0; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; }
+.intro { text-align: center; }
+.intro p { margin: 0 0 24px; }
+.index-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  gap: 16px;
+  margin: 0 auto;
+}
+.index-card {
+  display: flex;
+  flex: 0 0 200px;
+  flex-direction: column;
+  width: 200px;
+  max-width: 200px;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 3px 12px #0000000b;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+}
+.index-card:hover { border-color: #c9ced5; box-shadow: 0 5px 16px #00000014; }
+.index-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 158px;
+  padding: 8px;
+  border-bottom: 1px solid var(--border);
+  background: var(--image-panel);
+}
+.index-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.index-title {
+  display: block;
+  margin: 0;
+  padding: 10px 8px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+  text-align: center;
+}
+footer {
+  margin: 30px auto 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
+}
+@media (max-width: 480px) {
+  .wrap { width: calc(100% - 24px); }
+  .index-grid { gap: 12px; }
+  .index-card { flex: 0 1 145px; width: 145px; max-width: 145px; }
+  .index-image { height: 140px; }
+  .index-title { font-size: 13px; }
+}
+  </style>
+  <link href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png" rel="icon" type="image/png"/>
+ </head>
+ <body>
+  <div class="wrap">
+   <nav aria-label="Site navigation" class="nav-pills">
+    <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">
+     Catalogue home
+    </a>
+    <a class="nav-pill" href="../index.html">
+     &larr; Sketches &amp; Drawings
+    </a>
+    <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">
+     Search Catalogue
+    </a>
+   </nav>
+   <header class="page-header">
+    <h1 class="page-title">
+     Early Works
+    </h1>
+   </header>
+   <div class="intro">
+    <p>
+     Drawings from the artist&rsquo;s childhood, adolescence, and formative years.
+    </p>
+   </div>
+   <div class="index-grid">
+    <a class="index-card" href="late-1960s-early-1970s/index.html">
+     <div class="index-image">
+      <img alt="Late 1960s &amp; Early 1970s" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-paintings-1970s/main/images/Paintings/1970s/Scan_20260706%20%2868%29.jpg?v=20260803a"/>
+     </div>
+     <div class="index-title">
+      Late 1960s &amp; Early 1970s
+     </div>
+    </a>
+    <a class="index-card" href="late-1970s-early-1980s/index.html">
+     <div class="index-image">
+      <img alt="Late 1970s &amp; Early 1980s" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260707%20%2830%29.jpg?v=20260707d"/>
+     </div>
+     <div class="index-title">
+      Late 1970s &amp; Early 1980s
+     </div>
+    </a>
+    <a class="index-card" href="late-1980s/index.html">
+     <div class="index-image">
+      <img alt="Late 1980s" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Let%20Them%20Eat%20Art.jpg"/>
+     </div>
+     <div class="index-title">
+      Late 1980s
+     </div>
+    </a>
+   </div>
+   <nav aria-label="Catalogue sequence" class="sequence-nav ron-bottom-prev-next-center">
+    <a class="nav-pill sequence-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/Sketches/eagles/index.html">
+     &larr; Previous: Eagles
+    </a>
+    <a class="nav-pill sequence-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/Sketches/elephants/index.html">
+     Next: Elephants &rarr;
+    </a>
+   </nav>
+   <footer>
+    Published via GitHub Pages
+    <br/>
+    for long-term public access.
+   </footer>
+  </div>
+ </body>
+</html>
 
-<style>
-/* Approved compact drawing index and set-member grid: single clean stylesheet. */
-:root{--border:#e5e7eb;--muted:#6b7280;--panel:#f8fafc}
-*{box-sizing:border-box}
-body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.5}
-.wrap{width:calc(100% - 36px);max-width:1100px;margin:0 auto;padding:26px 0 48px}
-.page-narrow{max-width:1100px}
-.nav-pills,.sequence-nav{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px;margin:20px auto;text-align:center}
-.nav-pill,.sequence-pill{display:inline-block;padding:8px 14px;border:1px solid var(--border);border-radius:999px;background:#fff;color:#111;text-decoration:none;font-size:14px;line-height:1.4}
-.nav-pill:hover,.sequence-pill:hover{background:#f9fafb}
-.sequence-nav .sequence-spacer{display:none}
-.page-header{text-align:center;margin:0 auto 24px}
-.page-title{margin:0;font-size:clamp(2rem,4vw,3rem);line-height:1.1}
-.section-card{width:100%;margin:0 auto 24px;padding:22px;border:1px solid var(--border);border-radius:18px;background:#fff;box-shadow:0 8px 26px #0000000f}
-.section-card h2{text-align:center;margin:0 0 16px;font-size:1.35rem}
-.catalogue-meta-block,.relationship-note{max-width:900px;margin:0 auto 24px;text-align:center}
-.work-meta{list-style:none;padding:0;margin:0 auto;line-height:1.7}
-.relationship-note{padding:12px 16px;border:1px solid var(--border);border-radius:14px;background:#f9fafb}
-.index-grid,.group-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:16px;margin:0 auto}
-.index-grid>.index-card,.group-grid>.group-card{display:flex;flex:0 0 200px;width:200px;max-width:200px;min-width:0;flex-direction:column;align-items:stretch;overflow:hidden;background:#fff;color:inherit;text-decoration:none;text-align:center;border:1px solid var(--border);border-radius:12px;box-shadow:0 3px 12px #0000000b}
-.index-grid>.index-card:hover,.group-grid>.group-card:hover{border-color:#c9ced5;box-shadow:0 5px 16px #00000014}
-.index-grid>.index-card>img,.group-grid>.group-card>img{display:block;width:100%;height:158px;max-width:100%;object-fit:contain;padding:8px;background:var(--panel);border-bottom:1px solid var(--border)}
-.index-grid .index-image{display:flex;align-items:center;justify-content:center;width:100%;height:158px;padding:8px;background:var(--panel);border-bottom:1px solid var(--border)}
-.index-grid .index-image img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}
-.index-grid .card-title,.index-grid .index-title,.group-grid .label,.group-grid .card-title{display:block;margin:0;padding:10px 8px 12px;text-align:center;font-size:14px;font-weight:600;line-height:1.35;overflow-wrap:anywhere}
-.card-subtitle,.set-label{display:block;font-size:12px;font-weight:400;line-height:1.35;color:var(--muted);margin-top:4px}
-footer{text-align:center;margin:30px auto 0;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:14px}
-footer a{color:inherit}
-@media(max-width:480px){.wrap{width:calc(100% - 24px)}.section-card{padding:14px}.index-grid,.group-grid{gap:12px}.index-grid>.index-card,.group-grid>.group-card{flex:0 1 145px;max-width:145px;width:145px}.index-grid>.index-card>img,.group-grid>.group-card>img,.index-grid .index-image{height:140px}.index-grid .card-title,.index-grid .index-title,.group-grid .label,.group-grid .card-title{font-size:13px}}
-</style>
-<link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
-</head><body><div class="wrap"><nav class="nav-pills" aria-label="Site navigation">
-<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
-<a class="nav-pill" href="../index.html">&larr; Sketches &amp; Drawings</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
-</nav>
-<header class="page-header"><h1 class="page-title">Early Works</h1></header>
-<div class="intro"><p>Drawings from the artist’s childhood, adolescence, and formative years.</p></div>
-<div class="index-grid">
-<a class="index-card" href="late-1960s-early-1970s/index.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-paintings-1970s/main/images/Paintings/1970s/Scan_20260706%20%2868%29.jpg?v=20260803a" alt="Late 1960s &amp; Early 1970s" loading="lazy"><div class="card-title">Late 1960s &amp; Early 1970s</div></a>
-<a class="index-card" href="late-1970s-early-1980s/index.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260707%20%2830%29.jpg?v=20260707d" alt="Late 1970s &amp; Early 1980s" loading="lazy"><div class="card-title">Late 1970s &amp; Early 1980s</div></a><a class="index-card" href="late-1980s/index.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Let%20Them%20Eat%20Art.jpg" alt="Late 1980s" loading="lazy"><div class="card-title">Late 1980s</div></a></div>
-<nav class="sequence-nav ron-bottom-prev-next-center" aria-label="Catalogue sequence"><a class="nav-pill sequence-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/Sketches/eagles/index.html">&larr; Previous: Eagles</a><a class="nav-pill sequence-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-animals/Sketches/elephants/index.html">Next: Elephants &rarr;</a></nav><footer>Published via GitHub Pages<br>for long-term public access.</footer></div></body></html>
