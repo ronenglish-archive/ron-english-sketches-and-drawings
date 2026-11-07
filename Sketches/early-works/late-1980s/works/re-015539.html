@@ -79,5 +79,414 @@ section.ron-unified-notes-wip-panel > h2 {text-align:center!important;}
 }
 </style>
 <link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
+
+<style id="ron-v7-media-review-pilot-v2">
+/* DOCUMENTARY MEDIA PILOT V2 — PREVIEW ONLY. Overrides competing legacy !important rules. */
+/* Do not target original drawing roles or main artwork frames. */
+html body section.section-card[data-role="digital"] > div.gallery-grid,
+html body section.section-card[data-role="digitized-versions"] > div.gallery-grid,
+html body section.section-card[data-role="literature"] div.gallery-grid,
+html body section.section-card[data-role="area54-cards"] > div.gallery-grid,
+html body section.section-card[data-role="cards"] > div.gallery-grid,
+html body section.section-card[data-role="delusionville-trading-cards"] > div.gallery-grid,
+html body section.section-card[data-role="photo-gallery"] > div.gallery-grid,
+html body section.section-card[data-role="artist-with-drawing"] div.ron-approved-ancillary-grid,
+html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items,
+html body section.section-card[data-role="ancillary-documentation"] div.gallery-grid,
+html body section.ron-drawing-documentation-category[data-category="photo-gallery"] div.ron-doc-category-items {
+  display:grid!important; width:100%!important; max-width:100%!important;
+  grid-template-columns:repeat(auto-fill, 206px)!important; justify-content:center!important;
+  justify-items:center!important; align-items:start!important; gap:12px!important;
+}
+/* Gallery-items must outrank earlier .gallery-item !important width and flex declarations. */
+html body section.section-card[data-role="digital"] > div.gallery-grid > a.gallery-item,
+html body section.section-card[data-role="digitized-versions"] > div.gallery-grid > a.gallery-item {
+  display:block!important; box-sizing:border-box!important;
+  flex:none!important; width:206px!important; max-width:206px!important;
+  min-width:0!important; margin:0!important; align-self:start!important;
+}
+html body section.section-card[data-role="digital"] > div.gallery-grid > a.gallery-item img,
+html body section.section-card[data-role="digitized-versions"] > div.gallery-grid > a.gallery-item img {
+  display:block!important; box-sizing:border-box!important; width:100%!important; max-width:100%!important;
+  height:190px!important; max-height:190px!important; object-fit:contain!important;
+}
+/* Literature: each entry stays an independent full-width citation group. */
+html body section.section-card[data-role="literature"] div.literature-entry {
+  display:block!important; box-sizing:border-box!important; width:100%!important;
+  max-width:100%!important; min-width:0!important; margin-left:auto!important; margin-right:auto!important;
+}
+html body section.section-card[data-role="literature"] div.gallery-grid {
+  grid-template-columns:repeat(auto-fill, 148px)!important;
+}
+html body section.section-card[data-role="literature"] div.gallery-grid > p,
+html body section.section-card[data-role="literature"] div.gallery-grid > div.note-text {
+  display:block!important; grid-column:1/-1!important; width:100%!important; max-width:100%!important;
+  text-align:center!important; margin:0 0 10px!important; flex:none!important;
+}
+html body section.section-card[data-role="literature"] div.gallery-grid > a.gallery-item,
+html body section.section-card[data-role="literature"] div.gallery-grid > figure {
+  display:block!important; box-sizing:border-box!important; flex:none!important;
+  width:148px!important; max-width:148px!important; min-width:0!important; margin:0!important;
+}
+html body section.section-card[data-role="literature"] div.gallery-grid img,
+html body section.section-card[data-role="literature"] div.literature-entry > a.gallery-item img {
+  display:block!important; box-sizing:border-box!important; max-width:100%!important;
+  width:100%!important; height:170px!important; max-height:170px!important; object-fit:contain!important;
+}
+/* Literature legacy three-across has higher-specificity !important on direct entry grids. */
+html body section.section-card[data-role="literature"] div.literature-entry > div.gallery-grid {display:grid!important;grid-template-columns:repeat(auto-fill,148px)!important;justify-content:center!important;gap:12px!important;}
+html body section.section-card[data-role="literature"] div.literature-entry > div.gallery-grid > a.gallery-item {display:block!important;flex:none!important;width:148px!important;max-width:148px!important;min-width:0!important;}
+/* Preserve named coloring-book galleries, but override their old flex-only three-across rules. */
+html body section.section-card[data-role="literature"] div.gallery-grid.ron-coloring-book-three-across {display:grid!important;grid-template-columns:repeat(auto-fill,148px)!important;}
+html body section.section-card[data-role="literature"] div.gallery-grid.ron-coloring-book-three-across > a.gallery-item {flex:none!important;width:148px!important;max-width:148px!important;}
+/* Card families — don't change citations or unrelated image classes. */
+html body section.section-card[data-role="area54-cards"] > div.gallery-grid,
+html body section.section-card[data-role="cards"] > div.gallery-grid,
+html body section.section-card[data-role="delusionville-trading-cards"] > div.gallery-grid {
+  grid-template-columns:repeat(auto-fill, 130px)!important;
+}
+html body section.section-card[data-role="area54-cards"] > div.gallery-grid > a.gallery-item,
+html body section.section-card[data-role="cards"] > div.gallery-grid > a.gallery-item,
+html body section.section-card[data-role="delusionville-trading-cards"] > div.gallery-grid > a.gallery-item {
+  display:block!important; flex:none!important; box-sizing:border-box!important;
+  width:130px!important; max-width:130px!important; min-width:0!important; margin:0!important;
+}
+html body section.section-card[data-role="area54-cards"] > div.gallery-grid > a.gallery-item img,
+html body section.section-card[data-role="cards"] > div.gallery-grid > a.gallery-item img,
+html body section.section-card[data-role="delusionville-trading-cards"] > div.gallery-grid > a.gallery-item img {
+  display:block!important; box-sizing:border-box!important;
+  width:100%!important; max-width:100%!important; height:170px!important; max-height:170px!important;
+  object-fit:contain!important;
+}
+/* Photos & documentation: compact, non-cropped, responsive. */
+html body section.section-card[data-role="photo-gallery"] > div.gallery-grid,
+html body section.section-card[data-role="artist-with-drawing"] div.ron-approved-ancillary-grid,
+html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items,
+html body section.section-card[data-role="ancillary-documentation"] div.gallery-grid,
+html body section.ron-drawing-documentation-category[data-category="photo-gallery"] div.ron-doc-category-items {
+  grid-template-columns:repeat(auto-fill, 158px)!important;
+}
+html body section.section-card[data-role="photo-gallery"] > div.gallery-grid > a.gallery-item,
+html body section.section-card[data-role="artist-with-drawing"] div.ron-approved-ancillary-grid > *,
+html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items > *,
+html body section.section-card[data-role="ancillary-documentation"] div.gallery-grid > *,
+html body section.ron-drawing-documentation-category[data-category="photo-gallery"] div.ron-doc-category-items > * {
+  flex:none!important; box-sizing:border-box!important; width:158px!important;
+  max-width:158px!important; min-width:0!important; margin:0!important;
+}
+html body section.section-card[data-role="photo-gallery"] > div.gallery-grid img,
+html body section.section-card[data-role="artist-with-drawing"] div.ron-approved-ancillary-grid img,
+html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items img,
+html body section.section-card[data-role="ancillary-documentation"] div.gallery-grid img,
+html body section.ron-drawing-documentation-category[data-category="photo-gallery"] div.ron-doc-category-items img {
+  display:block!important; box-sizing:border-box!important; width:100%!important;
+  max-width:100%!important; height:155px!important; max-height:155px!important; object-fit:contain!important;
+}
+/* On narrow phones, allow grids to shrink without horizontal clipping. */
+@media (max-width:500px){
+ html body section.section-card[data-role="digital"] > div.gallery-grid,
+ html body section.section-card[data-role="digitized-versions"] > div.gallery-grid {grid-template-columns:repeat(auto-fill,minmax(145px,1fr))!important;}
+ html body section.section-card[data-role="digital"] > div.gallery-grid > a.gallery-item,
+ html body section.section-card[data-role="digitized-versions"] > div.gallery-grid > a.gallery-item {width:100%!important;max-width:206px!important;}
+}
+
+/* V4 batch fix: flex wrapping centers EVERY ROW, including incomplete final rows.
+   This replaces V3 auto-fill grids. Source HTML and metadata remain untouched. */
+html body section.section-card[data-role="digital"] > div.gallery-grid,
+html body section.section-card[data-role="digitized-versions"] > div.gallery-grid,
+html body section.section-card[data-role="literature"] div.gallery-grid,
+html body section.section-card[data-role="area54-cards"] > div.gallery-grid,
+html body section.section-card[data-role="cards"] > div.gallery-grid,
+html body section.section-card[data-role="delusionville-trading-cards"] > div.gallery-grid,
+html body section.section-card[data-role="photo-gallery"] > div.gallery-grid,
+html body section.section-card[data-role="artist-with-drawing"] div.ron-approved-ancillary-grid,
+html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items,
+html body section.section-card[data-role="ancillary-documentation"] div.gallery-grid,
+html body section.ron-drawing-documentation-category div.ron-doc-category-items,
+html body section.section-card[data-role="graphic-designs"] div.ron-doc-category-items,
+html body section.section-card[data-role="graphic-designs"] div.gallery-grid,
+html body section.section-card[data-role="graphic-design"] div.ron-doc-category-items,
+html body section.section-card[data-role="graphic-design"] div.gallery-grid {
+  display:flex!important;
+  flex-direction:row!important;
+  flex-wrap:wrap!important;
+  justify-content:center!important;
+  align-items:flex-start!important;
+  align-content:flex-start!important;
+  gap:12px!important;
+  width:100%!important;
+  max-width:100%!important;
+}
+/* Prevent inherited grid and flex sizing from inflating individual documentary wrappers. */
+html body section.section-card[data-role="digital"] > div.gallery-grid > *,
+html body section.section-card[data-role="digitized-versions"] > div.gallery-grid > * {
+  flex:0 0 206px!important; width:206px!important; max-width:206px!important;
+  min-width:0!important; margin:0!important; box-sizing:border-box!important;
+}
+html body section.section-card[data-role="literature"] div.gallery-grid > a.gallery-item,
+html body section.section-card[data-role="literature"] div.gallery-grid > figure,
+html body section.section-card[data-role="literature"] div.literature-entry > a.gallery-item {
+  flex:0 0 148px!important; width:148px!important; max-width:148px!important;
+  min-width:0!important; margin:0!important; box-sizing:border-box!important;
+}
+/* The citation itself is a full-width row, not an image thumbnail. */
+html body section.section-card[data-role="literature"] div.gallery-grid > p,
+html body section.section-card[data-role="literature"] div.gallery-grid > div.note-text {
+  flex:0 0 100%!important; width:100%!important; max-width:100%!important;
+  text-align:center!important;
+}
+html body section.section-card[data-role="area54-cards"] > div.gallery-grid > *,
+html body section.section-card[data-role="cards"] > div.gallery-grid > *,
+html body section.section-card[data-role="delusionville-trading-cards"] > div.gallery-grid > * {
+  flex:0 0 130px!important; width:130px!important; max-width:130px!important;
+  min-width:0!important; margin:0!important; box-sizing:border-box!important;
+}
+html body section.section-card[data-role="photo-gallery"] > div.gallery-grid > *,
+html body section.section-card[data-role="artist-with-drawing"] div.ron-approved-ancillary-grid > *,
+html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items > *,
+html body section.section-card[data-role="ancillary-documentation"] div.gallery-grid > *,
+html body section.ron-drawing-documentation-category div.ron-doc-category-items > *,
+html body section.section-card[data-role="graphic-designs"] div.ron-doc-category-items > *,
+html body section.section-card[data-role="graphic-design"] div.ron-doc-category-items > * {
+  flex:0 0 158px!important; width:158px!important; max-width:158px!important;
+  min-width:0!important; margin:0!important; box-sizing:border-box!important;
+}
+/* Graphics/photo images stay within the compact wrapper without distortion. */
+html body section.ron-drawing-documentation-category div.ron-doc-category-items img,
+html body section.section-card[data-role="graphic-designs"] div.ron-doc-category-items img,
+html body section.section-card[data-role="graphic-design"] div.ron-doc-category-items img {
+  display:block!important; width:100%!important; max-width:100%!important;
+  height:155px!important; max-height:155px!important; object-fit:contain!important;
+  box-sizing:border-box!important;
+}
+/* Mobile: no forced card overflow; cards remain centered, including one-card rows. */
+@media(max-width:440px) {
+ html body section.section-card[data-role="digital"] > div.gallery-grid > *,
+ html body section.section-card[data-role="digitized-versions"] > div.gallery-grid > * {
+   flex:0 1 206px!important; width:min(100%,206px)!important; max-width:206px!important;
+ }
+}
+</style>
+
+<style id="ron-v7-v5-compact-documentary-preview-only">
+/* V5: normalize tall documentation figures, not artwork, literature, digitized panels or whole sections. */
+html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items,
+html body section.ron-drawing-documentation-category div.ron-doc-category-items {
+  display:flex!important; flex-flow:row wrap!important; justify-content:center!important;
+  align-items:flex-start!important; align-content:flex-start!important; gap:12px!important;
+  height:auto!important; min-height:0!important;
+}
+html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items > figure,
+html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items > a,
+html body section.ron-drawing-documentation-category div.ron-doc-category-items > figure,
+html body section.ron-drawing-documentation-category div.ron-doc-category-items > a,
+html body section.ron-drawing-documentation-category div.ron-doc-category-items > div.ron-doc-category-item {
+  flex:0 0 158px!important; width:158px!important; max-width:158px!important;
+  min-width:0!important; height:auto!important; min-height:0!important; max-height:none!important;
+  box-sizing:border-box!important; align-self:flex-start!important; margin:0!important;
+  padding:8px!important;
+}
+html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items > figure img,
+html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items > a img,
+html body section.ron-drawing-documentation-category div.ron-doc-category-items > figure img,
+html body section.ron-drawing-documentation-category div.ron-doc-category-items > a img,
+html body section.ron-drawing-documentation-category div.ron-doc-category-items > div.ron-doc-category-item img {
+  display:block!important; width:100%!important; max-width:100%!important;
+  height:135px!important; max-height:135px!important; min-height:0!important;
+  object-fit:contain!important; box-sizing:border-box!important;
+}
+/* Natural caption height: no fixed height, clipping, line clamp or hidden overflow. */
+html body section.ron-drawing-documentation-category div.ron-doc-category-items figcaption,
+html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items figcaption {
+  height:auto!important; min-height:0!important; max-height:none!important;
+  overflow:visible!important; margin:6px 0 0!important;
+}
+</style>
+
+<style id="ron-v7-v6-documentary-inner-frame-preview-only">
+/* Compact secondary documentation cards, including nested frame layers. */
+html body section.ron-drawing-documentation-category div.ron-doc-category-items,
+html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items,
+html body section.section-card[data-role="ancillary-documentation"] div.gallery-grid,
+html body section.section-card[data-role="graphic-design"] div.ron-doc-category-items,
+html body section.section-card[data-role="graphic-designs"] div.ron-doc-category-items {
+ display:flex!important; flex-wrap:wrap!important; flex-direction:row!important;
+ justify-content:center!important; align-items:flex-start!important; align-content:flex-start!important;
+ gap:12px!important; height:auto!important; min-height:0!important;
+}
+html body section.ron-drawing-documentation-category div.ron-doc-category-items > *,
+html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items > *,
+html body section.section-card[data-role="ancillary-documentation"] div.gallery-grid > *,
+html body section.section-card[data-role="graphic-design"] div.ron-doc-category-items > *,
+html body section.section-card[data-role="graphic-designs"] div.ron-doc-category-items > * {
+ flex:0 0 158px!important; width:158px!important; max-width:158px!important;
+ min-width:0!important; height:auto!important; min-height:0!important;
+ max-height:none!important; align-self:flex-start!important; align-items:center!important;
+ box-sizing:border-box!important; padding:7px!important; margin:0!important;
+}
+/* Inner image beds: collapse oversized fixed-height gray placeholders. */
+html body section.ron-drawing-documentation-category div.ron-doc-category-items > * :is(.image-frame,.image-wrap,.image-wrapper,.image-container,.img-wrap,.media-frame,.media-wrap,.thumb-frame,.thumb-wrap,.artwork-frame,.artwork-wrap,.artwork-image,.card-image,.card-image-wrap,.card-media,.gallery-image,.visual,.preview-frame,.ron-doc-category-image),
+html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items > * :is(.image-frame,.image-wrap,.image-wrapper,.image-container,.img-wrap,.media-frame,.media-wrap,.thumb-frame,.thumb-wrap,.artwork-frame,.artwork-wrap,.artwork-image,.card-image,.card-image-wrap,.card-media,.gallery-image,.visual,.preview-frame,.ron-doc-category-image),
+html body section.ron-drawing-documentation-category div.ron-doc-category-items > * > :is(a,div,picture,figure),
+html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items > * > :is(a,div,picture,figure) {
+ height:auto!important; min-height:0!important; max-height:none!important;
+ aspect-ratio:auto!important; display:flex!important; flex-direction:column!important;
+ justify-content:center!important; align-items:center!important; align-content:center!important;
+ box-sizing:border-box!important; padding:6px!important;
+}
+/* Actual images retain proportions; no tall fixed-height 155px empty frame. */
+html body section.ron-drawing-documentation-category div.ron-doc-category-items img,
+html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items img,
+html body section.section-card[data-role="ancillary-documentation"] div.gallery-grid img,
+html body section.section-card[data-role="graphic-design"] div.ron-doc-category-items img,
+html body section.section-card[data-role="graphic-designs"] div.ron-doc-category-items img {
+ display:block!important; width:auto!important; max-width:100%!important;
+ height:auto!important; max-height:155px!important; min-height:0!important;
+ object-fit:contain!important; box-sizing:border-box!important; margin:0 auto!important;
+}
+/* Keep prose and captions legible and complete. */
+html body section.ron-drawing-documentation-category div.ron-doc-category-items :is(figcaption,.caption,.caption-text,.card-caption),
+html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items :is(figcaption,.caption,.caption-text,.card-caption) {
+ height:auto!important; min-height:0!important; max-height:none!important;
+ overflow:visible!important;
+}
+</style>
+
+<style id="ron-v7-v7-documentary-fit-to-content-preview-only">
+/* The outer gallery wrappers and their gray image beds must shrink to their content. */
+html body section.section-card[data-role="ancillary-documentation"] :is(.gallery-grid,.ron-doc-category-items,.ron-doc-category-item,.gallery-item,.image-frame,.image-wrap,.image-wrapper,.image-container,.img-wrap,.media-frame,.media-wrap,.thumb-frame,.thumb-wrap,.artwork-frame,.artwork-wrap,.artwork-image,.card-image,.card-image-wrap,.card-media,.gallery-image,.visual,.preview-frame,.ron-doc-category-image),
+html body section.ron-drawing-documentation-category :is(.gallery-grid,.ron-doc-category-items,.ron-doc-category-item,.gallery-item,.image-frame,.image-wrap,.image-wrapper,.image-container,.img-wrap,.media-frame,.media-wrap,.thumb-frame,.thumb-wrap,.artwork-frame,.artwork-wrap,.artwork-image,.card-image,.card-image-wrap,.card-media,.gallery-image,.visual,.preview-frame,.ron-doc-category-image) {
+ height:auto!important; min-height:0!important; max-height:none!important;
+ aspect-ratio:auto!important; align-content:center!important;
+ box-sizing:border-box!important;
+}
+/* The innermost nested link/figure/div/picture that contains the actual image. */
+html body section.section-card[data-role="ancillary-documentation"] :is(.ron-doc-category-items,.gallery-grid) > :is(a,figure,div) :is(.image-frame,.image-wrap,.image-wrapper,.image-container,.gallery-image,.gallery-item,.ron-doc-category-image),
+html body section.ron-drawing-documentation-category :is(.ron-doc-category-items,.gallery-grid) > :is(a,figure,div) :is(.image-frame,.image-wrap,.image-wrapper,.image-container,.gallery-image,.gallery-item,.ron-doc-category-image) {
+ display:flex!important; flex-flow:column nowrap!important; justify-content:center!important;
+ align-items:center!important; height:auto!important; min-height:0!important;
+ max-height:none!important; aspect-ratio:auto!important;
+ padding:4px!important; margin:0!important;
+}
+/* V5's height:135px was deliberately fixed and can itself create excess gray space. */
+html body section.section-card[data-role="ancillary-documentation"] :is(.ron-doc-category-items,.gallery-grid) img,
+html body section.ron-drawing-documentation-category :is(.ron-doc-category-items,.gallery-grid) img {
+ display:block!important; width:auto!important; max-width:100%!important;
+ height:auto!important; max-height:155px!important; min-height:0!important;
+ object-fit:contain!important; margin:0 auto!important;
+}
+/* Even if an intermediate wrapper has no recognized class, don't keep it tall. */
+html body section.section-card[data-role="ancillary-documentation"] :is(.ron-doc-category-items,.gallery-grid) > :is(figure,div,a) > :is(a,div,figure,picture),
+html body section.ron-drawing-documentation-category :is(.ron-doc-category-items,.gallery-grid) > :is(figure,div,a) > :is(a,div,figure,picture) {
+ height:auto!important; min-height:0!important; max-height:none!important;
+ aspect-ratio:auto!important; padding:4px!important;
+}
+/* Keep each outer card compact, but never clip captions. */
+html body section.section-card[data-role="ancillary-documentation"] :is(.ron-doc-category-items,.gallery-grid) > :is(figure,a,div),
+html body section.ron-drawing-documentation-category :is(.ron-doc-category-items,.gallery-grid) > :is(figure,a,div) {
+ flex:0 0 158px!important; width:158px!important; max-width:158px!important;
+ height:auto!important; min-height:0!important; max-height:none!important;
+ aspect-ratio:auto!important; align-self:flex-start!important;
+ padding:5px!important; margin:0!important;
+}
+html body section.section-card[data-role="ancillary-documentation"] :is(figcaption,.caption,.caption-text),
+html body section.ron-drawing-documentation-category :is(figcaption,.caption,.caption-text) {
+ height:auto!important; min-height:0!important; max-height:none!important;
+ overflow:visible!important;
+}
+</style>
+
+<style id="ron-v7-v8-exact-documentary-frame-flex-basis-preview-only">
+/* Only illustration links inside supporting documentation figure cards. */
+html body section.ron-drawing-documentation-category[data-role="ancillary-documentation"] figure.ron-doc-category-item > a.gallery-item,
+html body section.section-card[data-role="ancillary-documentation"] figure.ancillary-figure > a.gallery-item {
+  flex:0 0 auto!important;
+  flex-basis:auto!important;
+  align-self:center!important;
+  display:flex!important;
+  flex-direction:row!important;
+  align-items:center!important;
+  justify-content:center!important;
+  box-sizing:border-box!important;
+  width:100%!important;
+  height:auto!important;
+  min-height:0!important;
+  max-height:none!important;
+  aspect-ratio:auto!important;
+  margin:0!important;
+  padding:8px!important;
+  background:#f7f8fa!important;
+}
+html body section.ron-drawing-documentation-category[data-role="ancillary-documentation"] figure.ron-doc-category-item > a.gallery-item > img,
+html body section.section-card[data-role="ancillary-documentation"] figure.ancillary-figure > a.gallery-item > img {
+  flex:0 0 auto!important;
+  width:auto!important;
+  height:auto!important;
+  max-width:100%!important;
+  max-height:155px!important;
+  min-height:0!important;
+  object-fit:contain!important;
+  margin:0 auto!important;
+  padding:0!important;
+  background:transparent!important;
+}
+html body section.ron-drawing-documentation-category[data-role="ancillary-documentation"] figure.ron-doc-category-item,
+html body section.section-card[data-role="ancillary-documentation"] figure.ancillary-figure {
+  height:auto!important;
+  min-height:0!important;
+  max-height:none!important;
+  align-self:flex-start!important;
+  justify-content:flex-start!important;
+}
+</style>
+
+<style id="ron-v7-v9-larger-documentary-cards-preview-only">
+/* Bigger DOCUMENTARY cards on the 45 whitelisted early-works pages ONLY.
+   Card wrappers do not stretch vertically; final row stays centered. */
+html body section.ron-drawing-documentation-category[data-role="ancillary-documentation"] div.ron-doc-category-items,
+html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items {
+  display:flex!important; flex-flow:row wrap!important;
+  justify-content:center!important; align-items:flex-start!important;
+  align-content:flex-start!important; gap:14px!important;
+  height:auto!important; min-height:0!important;
+}
+html body section.ron-drawing-documentation-category[data-role="ancillary-documentation"] div.ron-doc-category-items > figure,
+html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items > figure {
+  flex:0 0 245px!important; width:245px!important;
+  max-width:245px!important; min-width:0!important;
+  box-sizing:border-box!important; align-self:flex-start!important;
+  height:auto!important; min-height:0!important; max-height:none!important;
+  padding:10px!important; margin:0!important;
+}
+/* THIS IS THE GRAY FRAME: flex-basis MUST be auto, not inherited 280px. */
+html body section.ron-drawing-documentation-category[data-role="ancillary-documentation"] figure.ron-doc-category-item > a.gallery-item,
+html body section.section-card[data-role="ancillary-documentation"] figure.ancillary-figure > a.gallery-item {
+  display:flex!important; flex-flow:row nowrap!important; flex:0 0 auto!important;
+  flex-basis:auto!important; width:100%!important;
+  height:auto!important; min-height:0!important; max-height:none!important;
+  aspect-ratio:auto!important; box-sizing:border-box!important;
+  justify-content:center!important; align-items:center!important;
+  align-self:center!important; padding:8px!important; margin:0!important;
+}
+html body section.ron-drawing-documentation-category[data-role="ancillary-documentation"] figure.ron-doc-category-item > a.gallery-item > img,
+html body section.section-card[data-role="ancillary-documentation"] figure.ancillary-figure > a.gallery-item > img {
+  display:block!important; flex:0 1 auto!important;
+  width:auto!important; max-width:100%!important;
+  height:auto!important; max-height:235px!important;
+  min-height:0!important; object-fit:contain!important;
+  padding:0!important; margin:0 auto!important;
+}
+html body section.ron-drawing-documentation-category[data-role="ancillary-documentation"] div.ron-doc-category-items figcaption,
+html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items figcaption {
+  height:auto!important; min-height:0!important; max-height:none!important;
+  overflow:visible!important; white-space:normal!important;
+}
+@media(max-width:520px){
+ html body section.ron-drawing-documentation-category[data-role="ancillary-documentation"] div.ron-doc-category-items > figure,
+ html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items > figure {
+   max-width:calc(100vw - 58px)!important;
+ }
+}
+</style>
 </head><body><div class="wrap"><nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../../index.html">Early Works</a><a class="nav-pill" href="../index.html">&larr; Late 1980s</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav><header class="page-header"><h1 class="page-title">Salem Spirit</h1></header><h2 class="original-drawing-heading" style="text-align:center;margin:0 0 14px;font-size:1.4rem">Original Drawing</h2><section class="section-card" data-role="original-drawing" style="box-sizing:border-box;width:100%;max-width:960px;margin-left:auto;margin-right:auto"><div class="text-block"><p>The original has not been located. This entry will be updated if further information becomes available.</p></div></section><div class="catalogue-meta-block"><ul class="work-meta"><li><strong>Title:</strong> Salem Spirit</li><li><strong>Medium:</strong> Unknown</li><li><strong>Dimensions:</strong> Original dimensions unknown</li><li><strong>Work ID:</strong> RE-015539</li><li><strong>Provenance:</strong> Artist's Personal Collection</li></ul></div><section class="section-card ron-drawing-documentation-category" data-role="ancillary-documentation" data-category="archival-documentation" data-revision="ron-drawing-documentary-rebuilt-v1" style="box-sizing:border-box;width:100%;max-width:960px;margin-left:auto;margin-right:auto"><h2>Archival Documentation</h2><div class="gallery-grid original-grid"><a class="gallery-item" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260709%20%2882%29.jpg?v=20260709a" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260709%20%2882%29.jpg?v=20260709a" alt="Salem Spirit"></a></div></section><section class="section-card ron-notes-center ron-unified-notes-wip-panel" data-role="notes" style="box-sizing:border-box;width:100%;max-width:960px;margin-left:auto;margin-right:auto"><h2>Notes</h2><div class="notes-block"><p>This work is catalogued from a surviving photocopy. The original drawing has not been located, and the photocopy should be understood as documentary evidence rather than the primary artwork. The surviving photocopy measures 8.5 &times; 11 in.</p></div></section><nav class="sequence-nav ron-bottom-prev-next-center" aria-label="Catalogue sequence"><a class="nav-pill sequence-pill" href="../sets/rootmonster.html">&larr; Previous: Rootmonster</a><a class="nav-pill sequence-pill" href="re-015538.html">Next: Sex Lives of the Superheros &rarr;</a></nav><footer>Published via GitHub Pages<br>for long-term public access.</footer></div></body></html>
