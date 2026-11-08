@@ -1,62 +1,344 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Late 1980s | Ron English Catalogue Raisonné</title>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Late 1980s | Ron English Catalogue Raisonn&eacute;
+  </title>
+  <style>
+   /* Foundation */
+:root {
+  --border: #e5e7eb;
+  --muted: #6b7280;
+  --image-bg: #f8fafc;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #fff;
+  color: #111;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+.wrap {
+  width: calc(100% - 36px);
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 26px 0 48px;
+}
 
-<style>
-/* Approved compact drawing index and set-member grid: single clean stylesheet. */
-:root{--border:#e5e7eb;--muted:#6b7280;--panel:#f8fafc}
-*{box-sizing:border-box}
-body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.5}
-.wrap{width:calc(100% - 36px);max-width:1100px;margin:0 auto;padding:26px 0 48px}
-.page-narrow{max-width:1100px}
-.nav-pills,.sequence-nav{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px;margin:20px auto;text-align:center}
-.nav-pill,.sequence-pill{display:inline-block;padding:8px 14px;border:1px solid var(--border);border-radius:999px;background:#fff;color:#111;text-decoration:none;font-size:14px;line-height:1.4}
-.nav-pill:hover,.sequence-pill:hover{background:#f9fafb}
-.sequence-nav .sequence-spacer{display:none}
-.page-header{text-align:center;margin:0 auto 24px}
-.page-title{margin:0;font-size:clamp(2rem,4vw,3rem);line-height:1.1}
-.section-card{width:100%;margin:0 auto 24px;padding:22px;border:1px solid var(--border);border-radius:18px;background:#fff;box-shadow:0 8px 26px #0000000f}
-.section-card h2{text-align:center;margin:0 0 16px;font-size:1.35rem}
-.catalogue-meta-block,.relationship-note{max-width:900px;margin:0 auto 24px;text-align:center}
-.work-meta{list-style:none;padding:0;margin:0 auto;line-height:1.7}
-.relationship-note{padding:12px 16px;border:1px solid var(--border);border-radius:14px;background:#f9fafb}
-.index-grid,.group-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:16px;margin:0 auto}
-.index-grid>.index-card,.group-grid>.group-card{display:flex;flex:0 0 200px;width:200px;max-width:200px;min-width:0;flex-direction:column;align-items:stretch;overflow:hidden;background:#fff;color:inherit;text-decoration:none;text-align:center;border:1px solid var(--border);border-radius:12px;box-shadow:0 3px 12px #0000000b}
-.index-grid>.index-card:hover,.group-grid>.group-card:hover{border-color:#c9ced5;box-shadow:0 5px 16px #00000014}
-.index-grid>.index-card>img,.group-grid>.group-card>img{display:block;width:100%;height:158px;max-width:100%;object-fit:contain;padding:8px;background:var(--panel);border-bottom:1px solid var(--border)}
-.index-grid .index-image{display:flex;align-items:center;justify-content:center;width:100%;height:158px;padding:8px;background:var(--panel);border-bottom:1px solid var(--border)}
-.index-grid .index-image img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}
-.index-grid .card-title,.index-grid .index-title,.group-grid .label,.group-grid .card-title{display:block;margin:0;padding:10px 8px 12px;text-align:center;font-size:14px;font-weight:600;line-height:1.35;overflow-wrap:anywhere}
-.card-subtitle,.set-label{display:block;font-size:12px;font-weight:400;line-height:1.35;color:var(--muted);margin-top:4px}
-footer{text-align:center;margin:30px auto 0;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:14px}
-footer a{color:inherit}
-@media(max-width:480px){.wrap{width:calc(100% - 24px)}.section-card{padding:14px}.index-grid,.group-grid{gap:12px}.index-grid>.index-card,.group-grid>.group-card{flex:0 1 145px;max-width:145px;width:145px}.index-grid>.index-card>img,.group-grid>.group-card>img,.index-grid .index-image{height:140px}.index-grid .card-title,.index-grid .index-title,.group-grid .label,.group-grid .card-title{font-size:13px}}
-</style>
+/* Navigation */
+.nav-pills, .sequence-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px auto;
+  text-align: center;
+}
+.nav-pill {
+  display: inline-block;
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: #fff;
+  color: #111;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.nav-pill:hover, .nav-pill:focus-visible { background: #f9fafb; }
 
+/* Heading */
+.page-header { text-align: center; margin: 0 auto 24px; }
+.page-title { margin: 0; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; }
 
-<link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
-</head><body><div class="wrap"><nav class="nav-pills" aria-label="Site navigation">
-<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
-<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a>
-<a class="nav-pill" href="../index.html">&larr; Early Works</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
-</nav>
-<header class="page-header"><h1 class="page-title">Late 1980s</h1></header>
-<div class="index-grid"><a class="index-card" href="works/re-015535.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260709%20%2879%29yp.jpg?v=20260709j" alt="All OJ Channel" loading="lazy"><div class="card-title">All OJ Channel</div></a>
-<a class="index-card" href="sets/art-is-a-horrible-waste-of-the-imagination.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Let%20Them%20Eat%20Art.jpg" alt="Art Is a Horrible Waste of the Imagination" loading="lazy"><div class="card-title">Art Is a Horrible Waste of the Imagination<div class="set-label">Set</div></div></a>
-<a class="index-card" href="sets/too-real-to-be-true.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260617%20%28126%29.jpg?v=20260617c" alt="Big Top Popaganda" loading="lazy"><div class="card-title">Big Top Popaganda<div class="set-label">Set</div></div></a>
-<a class="index-card" href="works/re-015530.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260709%20%2878%29.jpg?v=20260709f" alt="Bitch &amp; Bastard" loading="lazy"><div class="card-title">Bitch &amp; Bastard</div></a>
-<a class="index-card" href="sets/brain-wave-surfers.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260709%20%2852%29.jpg?v=20260709c" alt="Brain Wave Surfers" loading="lazy"><div class="card-title">Brain Wave Surfers<div class="set-label">Set</div></div></a>
-<a class="index-card" href="works/re-015536.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260709%20%2879%29gk.jpg?v=20260709j" alt="Cancer Kids" loading="lazy"><div class="card-title">Cancer Kids</div></a>
-<a class="index-card" href="works/re-015541.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260709%20%2883%29.jpg?v=20260709a" alt="Censorship Is Good Because" loading="lazy"><div class="card-title">Censorship Is Good Because</div></a>
-<a class="index-card" href="works/re-015533.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260709%20%2879%29g.jpg?v=20260709j" alt="Eternally Cool" loading="lazy"><div class="card-title">Eternally Cool</div></a>
-<a class="index-card" href="works/re-015534.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260709%20%2879%29y.jpg?v=20260709j" alt="I Am a Vegetarian" loading="lazy"><div class="card-title">I Am a Vegetarian</div></a>
-<a class="index-card" href="works/re-015512.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260707%20%2840%29.jpg?v=20260707d" alt="I Didn&#x27;t Make the Rules" loading="lazy"><div class="card-title">I Didn&#x27;t Make the Rules</div></a>
-<a class="index-card" href="works/re-015531.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260709%20%2878%29l.jpg?v=20260709f" alt="In the Future" loading="lazy"><div class="card-title">In the Future</div></a>
-<a class="index-card" href="works/re-015540.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260709%20%2882%29kj.jpg?v=20260709a" alt="Look Before You Speak" loading="lazy"><div class="card-title">Look Before You Speak</div></a>
-<a class="index-card" href="works/re-015537.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260709%20%2879%29gko.jpg?v=20260709j" alt="Masterbation Is Murder" loading="lazy"><div class="card-title">Masterbation Is Murder</div></a>
-<a class="index-card" href="works/re-015542.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260709%20%2884%29.jpg?v=20260709a" alt="Ron English T-Shirt Ad" loading="lazy"><div class="card-title">Ron English T-Shirt Ad</div></a>
-<a class="index-card" href="sets/rootmonster.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260623%20%284%29.jpg?v=20260623e" alt="Rootmonster" loading="lazy"><div class="card-title">Rootmonster<div class="set-label">Set</div></div></a>
-<a class="index-card" href="works/re-015539.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260709%20%2882%29.jpg?v=20260709a" alt="Salem Spirit" loading="lazy"><div class="card-title">Salem Spirit</div></a>
-<a class="index-card" href="works/re-015538.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260709%20%2881%29.jpg?v=20260709k" alt="Sex Lives of the Superheros" loading="lazy"><div class="card-title">Sex Lives of the Superheros</div></a>
-<a class="index-card" href="works/re-015532.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260709%20%2879%29.jpg?v=20260709j" alt="Some People Play Hard to Get, I Play Hard to Want" loading="lazy"><div class="card-title">Some People Play Hard to Get, I Play Hard to Want</div></a>
-<a class="index-card" href="works/re-014399.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260618%20%2853%29.jpg?v=20260618a" alt="The Emperor Needs No Clothes" loading="lazy"><div class="card-title">The Emperor Needs No Clothes</div></a></div><nav class="sequence-nav ron-bottom-prev-next-center" aria-label="Catalogue sequence"><a class="nav-pill" href="../late-1970s-early-1980s/index.html">&larr; Previous: Late 1970s &amp; Early 1980s</a></nav><footer>Published via GitHub Pages<br>for long-term public access.</footer></div></body></html>
+/* Unified compact artwork cards */
+.index-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 16px;
+  margin: 0 auto;
+}
+.index-card {
+  display: flex;
+  flex: 0 0 200px;
+  flex-direction: column;
+  width: 200px;
+  max-width: 200px;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 3px 12px #0000000b;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+}
+.index-card:hover {
+  border-color: #c9ced5;
+  box-shadow: 0 5px 16px #00000014;
+}
+.index-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 158px;
+  padding: 8px;
+  background: var(--image-bg);
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+}
+.index-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.index-title {
+  display: block;
+  margin: 0;
+  padding: 10px 8px 12px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+.set-label {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+/* Footer and mobile dimensions */
+footer {
+  margin: 30px auto 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
+}
+@media (max-width: 480px) {
+  .wrap { width: calc(100% - 24px); }
+  .index-grid { gap: 12px; }
+  .index-card { flex: 0 1 145px; width: 145px; max-width: 145px; }
+  .index-image { height: 140px; }
+  .index-title { font-size: 13px; }
+}
+  </style>
+  <link href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png" rel="icon" type="image/png"/>
+ </head>
+ <body>
+  <div class="wrap">
+   <nav aria-label="Site navigation" class="nav-pills">
+    <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">
+     Catalogue home
+    </a>
+    <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">
+     Sketches &amp; Drawings
+    </a>
+    <a class="nav-pill" href="../index.html">
+     &larr; Early Works
+    </a>
+    <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">
+     Search Catalogue
+    </a>
+   </nav>
+   <header class="page-header">
+    <h1 class="page-title">
+     Late 1980s
+    </h1>
+   </header>
+   <div class="index-grid">
+    <a class="index-card" href="works/re-015535.html">
+     <div class="index-image">
+      <img alt="All OJ Channel" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260709%20%2879%29yp.jpg?v=20260709j"/>
+     </div>
+     <div class="index-title">
+      All OJ Channel
+     </div>
+    </a>
+    <a class="index-card" href="sets/art-is-a-horrible-waste-of-the-imagination.html">
+     <div class="index-image">
+      <img alt="Art Is a Horrible Waste of the Imagination" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Let%20Them%20Eat%20Art.jpg"/>
+     </div>
+     <div class="index-title">
+      Art Is a Horrible Waste of the Imagination
+      <div class="set-label">
+       Set
+      </div>
+     </div>
+    </a>
+    <a class="index-card" href="sets/too-real-to-be-true.html">
+     <div class="index-image">
+      <img alt="Big Top Popaganda" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260617%20%28126%29.jpg?v=20260617c"/>
+     </div>
+     <div class="index-title">
+      Big Top Popaganda
+      <div class="set-label">
+       Set
+      </div>
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015530.html">
+     <div class="index-image">
+      <img alt="Bitch &amp; Bastard" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260709%20%2878%29.jpg?v=20260709f"/>
+     </div>
+     <div class="index-title">
+      Bitch &amp; Bastard
+     </div>
+    </a>
+    <a class="index-card" href="sets/brain-wave-surfers.html">
+     <div class="index-image">
+      <img alt="Brain Wave Surfers" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260709%20%2852%29.jpg?v=20260709c"/>
+     </div>
+     <div class="index-title">
+      Brain Wave Surfers
+      <div class="set-label">
+       Set
+      </div>
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015536.html">
+     <div class="index-image">
+      <img alt="Cancer Kids" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260709%20%2879%29gk.jpg?v=20260709j"/>
+     </div>
+     <div class="index-title">
+      Cancer Kids
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015541.html">
+     <div class="index-image">
+      <img alt="Censorship Is Good Because" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260709%20%2883%29.jpg?v=20260709a"/>
+     </div>
+     <div class="index-title">
+      Censorship Is Good Because
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015533.html">
+     <div class="index-image">
+      <img alt="Eternally Cool" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260709%20%2879%29g.jpg?v=20260709j"/>
+     </div>
+     <div class="index-title">
+      Eternally Cool
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015534.html">
+     <div class="index-image">
+      <img alt="I Am a Vegetarian" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260709%20%2879%29y.jpg?v=20260709j"/>
+     </div>
+     <div class="index-title">
+      I Am a Vegetarian
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015512.html">
+     <div class="index-image">
+      <img alt="I Didn't Make the Rules" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260707%20%2840%29.jpg?v=20260707d"/>
+     </div>
+     <div class="index-title">
+      I Didn't Make the Rules
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015531.html">
+     <div class="index-image">
+      <img alt="In the Future" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260709%20%2878%29l.jpg?v=20260709f"/>
+     </div>
+     <div class="index-title">
+      In the Future
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015540.html">
+     <div class="index-image">
+      <img alt="Look Before You Speak" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260709%20%2882%29kj.jpg?v=20260709a"/>
+     </div>
+     <div class="index-title">
+      Look Before You Speak
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015537.html">
+     <div class="index-image">
+      <img alt="Masterbation Is Murder" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260709%20%2879%29gko.jpg?v=20260709j"/>
+     </div>
+     <div class="index-title">
+      Masterbation Is Murder
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015542.html">
+     <div class="index-image">
+      <img alt="Ron English T-Shirt Ad" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260709%20%2884%29.jpg?v=20260709a"/>
+     </div>
+     <div class="index-title">
+      Ron English T-Shirt Ad
+     </div>
+    </a>
+    <a class="index-card" href="sets/rootmonster.html">
+     <div class="index-image">
+      <img alt="Rootmonster" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260623%20%284%29.jpg?v=20260623e"/>
+     </div>
+     <div class="index-title">
+      Rootmonster
+      <div class="set-label">
+       Set
+      </div>
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015539.html">
+     <div class="index-image">
+      <img alt="Salem Spirit" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260709%20%2882%29.jpg?v=20260709a"/>
+     </div>
+     <div class="index-title">
+      Salem Spirit
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015538.html">
+     <div class="index-image">
+      <img alt="Sex Lives of the Superheros" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260709%20%2881%29.jpg?v=20260709k"/>
+     </div>
+     <div class="index-title">
+      Sex Lives of the Superheros
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015532.html">
+     <div class="index-image">
+      <img alt="Some People Play Hard to Get, I Play Hard to Want" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260709%20%2879%29.jpg?v=20260709j"/>
+     </div>
+     <div class="index-title">
+      Some People Play Hard to Get, I Play Hard to Want
+     </div>
+    </a>
+    <a class="index-card" href="works/re-014399.html">
+     <div class="index-image">
+      <img alt="The Emperor Needs No Clothes" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-2/main/Images/Scan_20260618%20%2853%29.jpg?v=20260618a"/>
+     </div>
+     <div class="index-title">
+      The Emperor Needs No Clothes
+     </div>
+    </a>
+   </div>
+   <nav aria-label="Catalogue sequence" class="sequence-nav ron-bottom-prev-next-center">
+    <a class="nav-pill" href="../late-1970s-early-1980s/index.html">
+     &larr; Previous: Late 1970s &amp; Early 1980s
+    </a>
+   </nav>
+   <footer>
+    Published via GitHub Pages
+    <br/>
+    for long-term public access.
+   </footer>
+  </div>
+ </body>
+</html>
+
