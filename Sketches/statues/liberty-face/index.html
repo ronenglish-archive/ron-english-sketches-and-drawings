@@ -1,668 +1,108 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Liberty Face | Ron English Catalogue Raisonn&eacute;</title><style>*{box-sizing:border-box}
-body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-.wrap{max-width:1120px;margin:0 auto;padding:28px 18px 56px}
-.nav-pills,.sequence-nav{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px;margin:20px 0;text-align:center}
-.nav-pill{display:inline-block;padding:8px 14px;border:1px solid #e5e7eb;border-radius:999px;background:#fff;color:#111;text-decoration:none;font-size:14px}
-.nav-pill:hover{background:#f9fafb}.page-header{text-align:center;margin:0 auto 24px}.page-title{margin:0;font-size:clamp(2rem,4vw,3rem);line-height:1.05}
-.catalogue-meta-block{width:100%;max-width:900px;margin:0 auto 24px;text-align:center}.work-meta{list-style:none;padding:0;margin:0 auto;line-height:1.7;text-align:center}.work-meta li{display:block;margin:2px auto}
-.relationship-note{max-width:900px;margin:0 auto 24px;padding:12px 16px;border:1px solid #e5e7eb;border-radius:14px;background:#f9fafb;line-height:1.6;text-align:center}
-.section-card{background:#fff;border:1px solid #e5e7eb;border-radius:18px;box-shadow:0 8px 26px rgba(0,0,0,.06);padding:22px;margin:0 0 24px}.section-card h2{text-align:center;margin:0 0 16px;font-size:1.4rem}
-.media-section{width:fit-content;max-width:100%;margin:0 auto 24px}.gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:18px;width:fit-content;max-width:100%;margin:0 auto}
-.gallery-item{display:inline-block;flex:0 1 auto;width:auto;max-width:420px;border:1px solid #e5e7eb;border-radius:16px;overflow:hidden;background:#fff;text-decoration:none;color:inherit}.gallery-item img{display:block;width:auto;height:auto;max-width:100%;max-height:900px;object-fit:contain;background:#f3f4f6;padding:8px;margin:0 auto}.original-gallery .gallery-item{max-width:900px}
-.lit-entry,.notes-text,.missing-text{max-width:900px;margin:0 auto 14px;line-height:1.65;text-align:center}
-.index-grid{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:flex-start!important;gap:18px}.index-grid>.index-card{display:block;flex:0 1 260px!important;width:100%!important;border:1px solid #e5e7eb;border-radius:18px;overflow:hidden;background:#fff;text-decoration:none;color:inherit;box-shadow:0 10px 30px rgba(0,0,0,.08)}
-.index-image{width:100%;aspect-ratio:4/3;background:#f8fafc;border-bottom:1px solid #e5e7eb;display:flex;align-items:center;justify-content:center}.index-image img{width:100%;height:100%;object-fit:contain;display:block;padding:8px}.card-title{padding:14px 16px 16px;text-align:center;font-weight:650;line-height:1.35}
-.group-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:34px;max-width:1050px;margin:0 auto 32px}.group-card{display:block;flex:0 1 300px;max-width:315px;width:100%;border:1px solid #e5e7eb;border-radius:16px;overflow:hidden;background:#fff;text-decoration:none;color:inherit}.group-card img{display:block;width:100%;height:315px;object-fit:contain;background:#f3f4f6;padding:6px}.group-card .label{padding:12px;text-align:center;font-weight:600}
-footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:14px}@media(max-width:620px){.wrap{padding:22px 14px 48px}.group-card{flex-basis:min(100%,330px);max-width:330px}}
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Liberty Face | Ron English Catalogue Raisonn&eacute;</title>
 
-</style><style id="ron-bottom-prev-next-center-v1">
-/* Ron catalogue: center bottom Previous / Next navigation as a group. */
-nav.ron-bottom-prev-next-center{
-  display:flex!important;
-  flex-wrap:wrap!important;
-  justify-content:center!important;
-  align-items:center!important;
-  gap:12px!important;
-  text-align:center!important;
-}
-nav.ron-bottom-prev-next-center .sequence-spacer{
-  display:none!important;
-}
-nav.ron-bottom-prev-next-center > a{
-  flex:0 1 auto!important;
-}
-</style><style id="ron-aqua-apes-card-standard-v1">
-/* Detail-card sizing matched to the Aqua Apes standard. */
-.gallery-item{
-  display:block!important;
-  flex:0 1 290px!important;
-  max-width:300px!important;
-  width:100%!important;
-}
-.gallery-item img{
-  display:block!important;
-  width:100%!important;
-  height:310px!important;
-  max-height:none!important;
-  object-fit:contain!important;
-  background:#f3f4f6!important;
-  padding:6px!important;
-  margin:0 auto!important;
-}
-.original-gallery .gallery-item,
-[data-role="original"] .gallery-item{
-  flex:0 1 900px!important;
-  max-width:900px!important;
-  width:100%!important;
-}
-.original-gallery .gallery-item img,
-[data-role="original"] .gallery-item img{
-  width:100%!important;
-  height:440px!important;
-  max-height:none!important;
-}
-@media(max-width:700px){
-  .gallery-item{
-    flex-basis:320px!important;
-    max-width:320px!important;
-  }
-  .gallery-item img{
-    height:280px!important;
-  }
-  .original-gallery .gallery-item,
-  [data-role="original"] .gallery-item{
-    flex-basis:320px!important;
-    max-width:320px!important;
-  }
-  .original-gallery .gallery-item img,
-  [data-role="original"] .gallery-item img{
-    height:300px!important;
-  }
-}
-</style><style id="ron-aqua-apes-section-layout-v1">
-/* Match Aqua Apes section/card layout: full-width section cards and gallery grids. */
-.section-card{
-  width:100%!important;
-  max-width:none!important;
-}
-.gallery-grid,
-.originals-grid{
-  display:flex!important;
-  flex-wrap:wrap!important;
-  justify-content:center!important;
-  align-items:stretch!important;
-  gap:18px!important;
-  width:100%!important;
-  max-width:none!important;
-  margin:0!important;
-}
-</style><style id="ron-original-drawing-heading-standard-v1">.original-drawing-heading{text-align:center;margin:0 0 14px;font-size:1.4rem}</style><style id="ron-sketches-detail-media-sections-v2">
-/* Adam Alien reference: uniform WHITE SECTION holders, not equal-size images. */
-section.section-card[data-role="original-drawing"],
-section.section-card[data-role="original"],
-section.section-card[data-role="digital"],
-section.section-card[data-role="literature"],
-section.section-card[data-role="ancillary-documentation"],
-section.section-card[data-role="ancillary"],
-section.section-card[data-role="cards"],
-section.section-card[data-role="card"],
-section.section-card[data-role*="trading-card"],
-section.primary-artwork[data-role="original"] {
-  box-sizing:border-box!important;
-  display:block;
-  width:100%!important;max-width:960px!important;
-  margin-left:auto!important;margin-right:auto!important;
-  padding:22px!important;
-  border:1px solid #e5e7eb!important;
-  border-radius:18px!important;
-  background:#fff!important;
-  box-shadow:0 8px 26px rgba(0,0,0,.06)!important;
-}
-/* Original images remain prominent, with legacy original-view ordering retained. */
-section.section-card[data-role="original-drawing"] .gallery-item img,
-section.primary-artwork[data-role="original"] .primary-artwork-link img {
-  object-fit:contain!important;
-}
-/* Secondary media images remain compact, not stretched to fill the holder. */
-section.section-card[data-role="digital"] .gallery-grid,
-section.section-card[data-role="literature"] .gallery-grid,
-section.section-card[data-role="ancillary-documentation"] .gallery-grid,
-section.section-card[data-role="ancillary"] .gallery-grid,
-section.section-card[data-role="cards"] .gallery-grid,
-section.section-card[data-role*="trading-card"] .gallery-grid {
-  display:flex!important;flex-wrap:wrap!important;
-  justify-content:center!important;gap:18px!important;
-}
-section.section-card[data-role="digital"] .gallery-grid > .gallery-item,
-section.section-card[data-role="literature"] .gallery-grid > .gallery-item,
-section.section-card[data-role="ancillary-documentation"] .gallery-grid > .gallery-item,
-section.section-card[data-role="ancillary"] .gallery-grid > .gallery-item,
-section.section-card[data-role="cards"] .gallery-grid > .gallery-item,
-section.section-card[data-role*="trading-card"] .gallery-grid > .gallery-item {
-  box-sizing:border-box!important;
-  flex:0 1 300px!important;width:min(300px,100%)!important;
-  max-width:300px!important;min-width:0!important;
-  margin-left:0!important;margin-right:0!important;
-}
-/* Each captioned ancillary item is its own compact image-over-text card. */
-section.section-card[data-role="ancillary-documentation"] .ancillary-gallery,
-section.section-card[data-role="ancillary-documentation"] .documentation-grid {
-  display:flex!important;flex-wrap:wrap!important;
-  justify-content:center!important;align-items:stretch!important;
-  gap:18px!important;width:100%!important;
-  max-width:100%!important;margin-left:auto!important;margin-right:auto!important;
-}
-section.section-card[data-role="ancillary-documentation"] .ancillary-figure {
-  box-sizing:border-box!important;
-  display:flex!important;flex-direction:column!important;
-  flex:0 1 320px!important;width:min(320px,100%)!important;
-  max-width:320px!important;min-width:0!important;
-  margin:0!important;overflow:hidden!important;
-  border:1px solid #e5e7eb!important;border-radius:16px!important;
-  background:#fff!important;
-}
-section.section-card[data-role="ancillary-documentation"] .ancillary-figure > a:has(> img) {
-  display:flex!important;align-items:center!important;justify-content:center!important;
-  width:100%!important;min-height:0!important;padding:10px!important;
-  border-right:0!important;border-bottom:1px solid #e5e7eb!important;
-  background:#f3f4f6!important;
-}
-section.section-card[data-role="ancillary-documentation"] .ancillary-figure > a > img {
-  display:block!important;width:100%!important;max-width:100%!important;
-  height:220px!important;max-height:220px!important;
-  object-fit:contain!important;
-}
-section.section-card[data-role="ancillary-documentation"] .ancillary-figure > figcaption {
-  display:block!important;padding:12px 14px!important;
-  text-align:center!important;background:#fff!important;
-  overflow-wrap:anywhere!important;
-}
-section.section-card[data-role="ancillary-documentation"] .ancillary-figure figcaption a {
-  display:inline!important;padding:0!important;border:0!important;
-  background:transparent!important;text-decoration:underline!important;
-}
-@media(max-width:600px) {
-  section.section-card[data-role="original-drawing"],
-  section.section-card[data-role="digital"],
-  section.section-card[data-role="literature"],
-  section.section-card[data-role="ancillary-documentation"],
-  section.primary-artwork[data-role="original"] {padding:14px!important;}
-  section.section-card[data-role="ancillary-documentation"] .ancillary-figure {
-    width:min(320px,100%)!important;max-width:100%!important;
-  }
-}
-</style>
-<style id="ron-owner-ancillary-batch6">
-section[data-role="ancillary-documentation"],section[data-role="videos"],section[data-role="digital"] {max-width:960px!important;width:100%!important;box-sizing:border-box!important;margin-left:auto!important;margin-right:auto!important}
-section[data-role="ancillary-documentation"] .ron-approved-ancillary-grid {display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:stretch!important;gap:18px!important;margin:0 auto!important;max-width:940px!important}
-section[data-role="ancillary-documentation"] .ron-approved-ancillary-tile {box-sizing:border-box!important;flex:0 1 290px!important;max-width:300px!important;width:100%!important;margin:0!important;text-align:center!important}
-section[data-role="ancillary-documentation"] .ron-approved-ancillary-tile>a {display:flex!important;align-items:center!important;justify-content:center!important;width:100%!important;height:300px!important;max-width:100%!important;border:1px solid #e5e7eb!important;border-radius:14px!important;overflow:hidden!important}
-section[data-role="ancillary-documentation"] .ron-approved-ancillary-tile>a>img {display:block!important;width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;padding:8px!important}
-section[data-role="ancillary-documentation"] .ron-approved-ancillary-tile figcaption {display:block!important;margin:10px auto 0!important;line-height:1.5!important;text-align:center!important}
-section[data-role="ancillary-documentation"] .ron-approved-ancillary-tile figcaption a {display:inline!important;width:auto!important;height:auto!important;margin:0!important;padding:0!important;border:0!important;text-decoration:underline!important}
-section[data-role="videos"] .catalogue-video-grid {display:flex!important;flex-wrap:wrap!important;justify-content:center!important;align-items:center!important;gap:18px!important}
-section[data-role="videos"] .catalogue-video-grid>.video-embed {flex:0 1 300px!important;width:100%!important;max-width:320px!important;margin:0!important}
-section[data-role="videos"] iframe {display:block!important;max-width:100%!important}
-section[data-role="videos"] video {display:block!important;width:100%!important;max-width:320px!important;height:auto!important;margin:0 auto!important}
-</style>
-<style id="ron-owner-grey-ancillary-tiles-v1">
-/* Trump Duck reference: grey individual tiles inside white section panels. */
-section[data-role="ancillary-documentation"] figure.ron-approved-ancillary-tile,
-section[data-role="ancillary-documentation"] figure.ron-trump-duck-tile {
-  background:#f3f4f6!important;
-  border:1px solid #e5e7eb!important;
-  border-radius:16px!important;
-  padding:10px!important;
-  box-sizing:border-box!important;
-  overflow:hidden!important;
-}
-section[data-role="ancillary-documentation"] figure.ron-approved-ancillary-tile > a,
-section[data-role="ancillary-documentation"] figure.ron-trump-duck-tile > a {
-  background:transparent!important;
-  border:0!important;
-  border-radius:0!important;
-  max-width:100%!important;
-}
-section[data-role="ancillary-documentation"] figure.ron-approved-ancillary-tile > a > img,
-section[data-role="ancillary-documentation"] figure.ron-trump-duck-tile > a > img {
-  object-fit:contain!important;
-  background:transparent!important;
-}
-</style>
-<style id="ron-drawings-documentary-category-panels-v1">
-/* Category panels are distinct; each supporting item has its own compact card. */
-section.ron-drawing-documentation-category { box-sizing:border-box!important;display:block!important;width:100%!important;max-width:960px!important;margin:0 auto 24px!important;padding:22px!important;background:#fff!important;border:1px solid #e5e7eb!important;border-radius:18px!important;box-shadow:0 8px 26px rgba(0,0,0,.06)!important; }
-section.ron-drawing-documentation-category > h2 { text-align:center!important;margin:0 0 18px!important; }
-section.ron-drawing-documentation-category .ron-doc-category-items { display:flex!important;flex-wrap:wrap!important;align-items:stretch!important;justify-content:center!important;gap:18px!important;max-width:920px!important;margin:0 auto!important; }
-section.ron-drawing-documentation-category figure.ron-doc-category-item { box-sizing:border-box!important;display:flex!important;flex-direction:column!important;flex:0 1 220px!important;width:220px!important;max-width:100%!important;min-width:0!important;margin:0!important;border:1px solid #e5e7eb!important;border-radius:13px!important;overflow:hidden!important;background:#fff!important;box-shadow:none!important; }
-section.ron-drawing-documentation-category figure.ron-doc-category-item > a { box-sizing:border-box!important;display:flex!important;justify-content:center!important;align-items:center!important;min-height:230px!important;width:100%!important;padding:10px!important;margin:0!important;background:#f7f8fa!important;border:0!important;text-decoration:none!important; }
-section.ron-drawing-documentation-category figure.ron-doc-category-item > a img { display:block!important;max-width:100%!important;width:auto!important;height:auto!important;max-height:220px!important;object-fit:contain!important;margin:auto!important; }
-section.ron-drawing-documentation-category figure.ron-doc-category-item > figcaption { box-sizing:border-box!important;padding:11px 12px!important;text-align:center!important;font-size:.88rem!important;line-height:1.45!important;overflow-wrap:anywhere!important; }
-section.ron-drawing-documentation-category figure.ron-doc-category-item > figcaption a { display:inline!important;padding:0!important;border:0!important;background:none!important;text-decoration:underline!important; }
-section.ron-drawing-documentation-category .ron-doc-category-note {text-align:center!important;margin:12px auto 0!important;max-width:780px!important;}
-@media(max-width:580px) {section.ron-drawing-documentation-category{padding:14px!important}section.ron-drawing-documentation-category figure.ron-doc-category-item{flex-basis:min(220px,100%)!important}}
-</style><style id="ron-original-single-exception-batch06-v1">
-/* Reference: RE-014003. Only this page's recognized Original Drawing section. */
-section.section-card[data-role="original-drawing"]{box-sizing:border-box!important;display:block!important;width:100%!important;max-width:960px!important;margin-left:auto!important;margin-right:auto!important;padding:22px!important;border:1px solid #e5e7eb!important;border-radius:18px!important;background:#fff!important;box-shadow:0 8px 26px rgba(0,0,0,.06)!important;}
-section.section-card[data-role="original-drawing"] .original-grid,section.section-card[data-role="original-drawing"] .original-gallery,section.section-card[data-role="original-drawing"] .originals-grid{display:flex!important;flex-direction:column!important;flex-wrap:nowrap!important;justify-content:center!important;align-items:center!important;gap:18px!important;}
-section.section-card[data-role="original-drawing"] .gallery-item{box-sizing:border-box!important;flex:0 0 auto!important;width:100%!important;max-width:900px!important;margin:0 auto!important;}
-section.section-card[data-role="original-drawing"] .gallery-item img{display:block!important;width:100%!important;max-width:none!important;height:440px!important;object-fit:contain!important;object-position:center center!important;}
-@media(max-width:700px){section.section-card[data-role="original-drawing"]{padding:14px!important;}section.section-card[data-role="original-drawing"] .gallery-item img{height:300px!important;}}
-</style>
+
+
 <link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
 
-<style id="ron-v7-media-review-pilot-v2">
-/* DOCUMENTARY MEDIA PILOT V2 — PREVIEW ONLY. Overrides competing legacy !important rules. */
-/* Do not target original drawing roles or main artwork frames. */
-html body section.section-card[data-role="digital"] > div.gallery-grid,
-html body section.section-card[data-role="digitized-versions"] > div.gallery-grid,
-html body section.section-card[data-role="literature"] div.gallery-grid,
-html body section.section-card[data-role="area54-cards"] > div.gallery-grid,
-html body section.section-card[data-role="cards"] > div.gallery-grid,
-html body section.section-card[data-role="delusionville-trading-cards"] > div.gallery-grid,
-html body section.section-card[data-role="photo-gallery"] > div.gallery-grid,
-html body section.section-card[data-role="artist-with-drawing"] div.ron-approved-ancillary-grid,
-html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items,
-html body section.section-card[data-role="ancillary-documentation"] div.gallery-grid,
-html body section.ron-drawing-documentation-category[data-category="photo-gallery"] div.ron-doc-category-items {
-  display:grid!important; width:100%!important; max-width:100%!important;
-  grid-template-columns:repeat(auto-fill, 206px)!important; justify-content:center!important;
-  justify-items:center!important; align-items:start!important; gap:12px!important;
-}
-/* Gallery-items must outrank earlier .gallery-item !important width and flex declarations. */
-html body section.section-card[data-role="digital"] > div.gallery-grid > a.gallery-item,
-html body section.section-card[data-role="digitized-versions"] > div.gallery-grid > a.gallery-item {
-  display:block!important; box-sizing:border-box!important;
-  flex:none!important; width:206px!important; max-width:206px!important;
-  min-width:0!important; margin:0!important; align-self:start!important;
-}
-html body section.section-card[data-role="digital"] > div.gallery-grid > a.gallery-item img,
-html body section.section-card[data-role="digitized-versions"] > div.gallery-grid > a.gallery-item img {
-  display:block!important; box-sizing:border-box!important; width:100%!important; max-width:100%!important;
-  height:190px!important; max-height:190px!important; object-fit:contain!important;
-}
-/* Literature: each entry stays an independent full-width citation group. */
-html body section.section-card[data-role="literature"] div.literature-entry {
-  display:block!important; box-sizing:border-box!important; width:100%!important;
-  max-width:100%!important; min-width:0!important; margin-left:auto!important; margin-right:auto!important;
-}
-html body section.section-card[data-role="literature"] div.gallery-grid {
-  grid-template-columns:repeat(auto-fill, 148px)!important;
-}
-html body section.section-card[data-role="literature"] div.gallery-grid > p,
-html body section.section-card[data-role="literature"] div.gallery-grid > div.note-text {
-  display:block!important; grid-column:1/-1!important; width:100%!important; max-width:100%!important;
-  text-align:center!important; margin:0 0 10px!important; flex:none!important;
-}
-html body section.section-card[data-role="literature"] div.gallery-grid > a.gallery-item,
-html body section.section-card[data-role="literature"] div.gallery-grid > figure {
-  display:block!important; box-sizing:border-box!important; flex:none!important;
-  width:148px!important; max-width:148px!important; min-width:0!important; margin:0!important;
-}
-html body section.section-card[data-role="literature"] div.gallery-grid img,
-html body section.section-card[data-role="literature"] div.literature-entry > a.gallery-item img {
-  display:block!important; box-sizing:border-box!important; max-width:100%!important;
-  width:100%!important; height:170px!important; max-height:170px!important; object-fit:contain!important;
-}
-/* Literature legacy three-across has higher-specificity !important on direct entry grids. */
-html body section.section-card[data-role="literature"] div.literature-entry > div.gallery-grid {display:grid!important;grid-template-columns:repeat(auto-fill,148px)!important;justify-content:center!important;gap:12px!important;}
-html body section.section-card[data-role="literature"] div.literature-entry > div.gallery-grid > a.gallery-item {display:block!important;flex:none!important;width:148px!important;max-width:148px!important;min-width:0!important;}
-/* Preserve named coloring-book galleries, but override their old flex-only three-across rules. */
-html body section.section-card[data-role="literature"] div.gallery-grid.ron-coloring-book-three-across {display:grid!important;grid-template-columns:repeat(auto-fill,148px)!important;}
-html body section.section-card[data-role="literature"] div.gallery-grid.ron-coloring-book-three-across > a.gallery-item {flex:none!important;width:148px!important;max-width:148px!important;}
-/* Card families — don't change citations or unrelated image classes. */
-html body section.section-card[data-role="area54-cards"] > div.gallery-grid,
-html body section.section-card[data-role="cards"] > div.gallery-grid,
-html body section.section-card[data-role="delusionville-trading-cards"] > div.gallery-grid {
-  grid-template-columns:repeat(auto-fill, 130px)!important;
-}
-html body section.section-card[data-role="area54-cards"] > div.gallery-grid > a.gallery-item,
-html body section.section-card[data-role="cards"] > div.gallery-grid > a.gallery-item,
-html body section.section-card[data-role="delusionville-trading-cards"] > div.gallery-grid > a.gallery-item {
-  display:block!important; flex:none!important; box-sizing:border-box!important;
-  width:130px!important; max-width:130px!important; min-width:0!important; margin:0!important;
-}
-html body section.section-card[data-role="area54-cards"] > div.gallery-grid > a.gallery-item img,
-html body section.section-card[data-role="cards"] > div.gallery-grid > a.gallery-item img,
-html body section.section-card[data-role="delusionville-trading-cards"] > div.gallery-grid > a.gallery-item img {
-  display:block!important; box-sizing:border-box!important;
-  width:100%!important; max-width:100%!important; height:170px!important; max-height:170px!important;
-  object-fit:contain!important;
-}
-/* Photos & documentation: compact, non-cropped, responsive. */
-html body section.section-card[data-role="photo-gallery"] > div.gallery-grid,
-html body section.section-card[data-role="artist-with-drawing"] div.ron-approved-ancillary-grid,
-html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items,
-html body section.section-card[data-role="ancillary-documentation"] div.gallery-grid,
-html body section.ron-drawing-documentation-category[data-category="photo-gallery"] div.ron-doc-category-items {
-  grid-template-columns:repeat(auto-fill, 158px)!important;
-}
-html body section.section-card[data-role="photo-gallery"] > div.gallery-grid > a.gallery-item,
-html body section.section-card[data-role="artist-with-drawing"] div.ron-approved-ancillary-grid > *,
-html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items > *,
-html body section.section-card[data-role="ancillary-documentation"] div.gallery-grid > *,
-html body section.ron-drawing-documentation-category[data-category="photo-gallery"] div.ron-doc-category-items > * {
-  flex:none!important; box-sizing:border-box!important; width:158px!important;
-  max-width:158px!important; min-width:0!important; margin:0!important;
-}
-html body section.section-card[data-role="photo-gallery"] > div.gallery-grid img,
-html body section.section-card[data-role="artist-with-drawing"] div.ron-approved-ancillary-grid img,
-html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items img,
-html body section.section-card[data-role="ancillary-documentation"] div.gallery-grid img,
-html body section.ron-drawing-documentation-category[data-category="photo-gallery"] div.ron-doc-category-items img {
-  display:block!important; box-sizing:border-box!important; width:100%!important;
-  max-width:100%!important; height:155px!important; max-height:155px!important; object-fit:contain!important;
-}
-/* On narrow phones, allow grids to shrink without horizontal clipping. */
-@media (max-width:500px){
- html body section.section-card[data-role="digital"] > div.gallery-grid,
- html body section.section-card[data-role="digitized-versions"] > div.gallery-grid {grid-template-columns:repeat(auto-fill,minmax(145px,1fr))!important;}
- html body section.section-card[data-role="digital"] > div.gallery-grid > a.gallery-item,
- html body section.section-card[data-role="digitized-versions"] > div.gallery-grid > a.gallery-item {width:100%!important;max-width:206px!important;}
-}
 
-/* V4 batch fix: flex wrapping centers EVERY ROW, including incomplete final rows.
-   This replaces V3 auto-fill grids. Source HTML and metadata remain untouched. */
-html body section.section-card[data-role="digital"] > div.gallery-grid,
-html body section.section-card[data-role="digitized-versions"] > div.gallery-grid,
-html body section.section-card[data-role="literature"] div.gallery-grid,
-html body section.section-card[data-role="area54-cards"] > div.gallery-grid,
-html body section.section-card[data-role="cards"] > div.gallery-grid,
-html body section.section-card[data-role="delusionville-trading-cards"] > div.gallery-grid,
-html body section.section-card[data-role="photo-gallery"] > div.gallery-grid,
-html body section.section-card[data-role="artist-with-drawing"] div.ron-approved-ancillary-grid,
-html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items,
-html body section.section-card[data-role="ancillary-documentation"] div.gallery-grid,
-html body section.ron-drawing-documentation-category div.ron-doc-category-items,
-html body section.section-card[data-role="graphic-designs"] div.ron-doc-category-items,
-html body section.section-card[data-role="graphic-designs"] div.gallery-grid,
-html body section.section-card[data-role="graphic-design"] div.ron-doc-category-items,
-html body section.section-card[data-role="graphic-design"] div.gallery-grid {
-  display:flex!important;
-  flex-direction:row!important;
-  flex-wrap:wrap!important;
-  justify-content:center!important;
-  align-items:flex-start!important;
-  align-content:flex-start!important;
-  gap:12px!important;
-  width:100%!important;
-  max-width:100%!important;
-}
-/* Prevent inherited grid and flex sizing from inflating individual documentary wrappers. */
-html body section.section-card[data-role="digital"] > div.gallery-grid > *,
-html body section.section-card[data-role="digitized-versions"] > div.gallery-grid > * {
-  flex:0 0 206px!important; width:206px!important; max-width:206px!important;
-  min-width:0!important; margin:0!important; box-sizing:border-box!important;
-}
-html body section.section-card[data-role="literature"] div.gallery-grid > a.gallery-item,
-html body section.section-card[data-role="literature"] div.gallery-grid > figure,
-html body section.section-card[data-role="literature"] div.literature-entry > a.gallery-item {
-  flex:0 0 148px!important; width:148px!important; max-width:148px!important;
-  min-width:0!important; margin:0!important; box-sizing:border-box!important;
-}
-/* The citation itself is a full-width row, not an image thumbnail. */
-html body section.section-card[data-role="literature"] div.gallery-grid > p,
-html body section.section-card[data-role="literature"] div.gallery-grid > div.note-text {
-  flex:0 0 100%!important; width:100%!important; max-width:100%!important;
-  text-align:center!important;
-}
-html body section.section-card[data-role="area54-cards"] > div.gallery-grid > *,
-html body section.section-card[data-role="cards"] > div.gallery-grid > *,
-html body section.section-card[data-role="delusionville-trading-cards"] > div.gallery-grid > * {
-  flex:0 0 130px!important; width:130px!important; max-width:130px!important;
-  min-width:0!important; margin:0!important; box-sizing:border-box!important;
-}
-html body section.section-card[data-role="photo-gallery"] > div.gallery-grid > *,
-html body section.section-card[data-role="artist-with-drawing"] div.ron-approved-ancillary-grid > *,
-html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items > *,
-html body section.section-card[data-role="ancillary-documentation"] div.gallery-grid > *,
-html body section.ron-drawing-documentation-category div.ron-doc-category-items > *,
-html body section.section-card[data-role="graphic-designs"] div.ron-doc-category-items > *,
-html body section.section-card[data-role="graphic-design"] div.ron-doc-category-items > * {
-  flex:0 0 158px!important; width:158px!important; max-width:158px!important;
-  min-width:0!important; margin:0!important; box-sizing:border-box!important;
-}
-/* Graphics/photo images stay within the compact wrapper without distortion. */
-html body section.ron-drawing-documentation-category div.ron-doc-category-items img,
-html body section.section-card[data-role="graphic-designs"] div.ron-doc-category-items img,
-html body section.section-card[data-role="graphic-design"] div.ron-doc-category-items img {
-  display:block!important; width:100%!important; max-width:100%!important;
-  height:155px!important; max-height:155px!important; object-fit:contain!important;
-  box-sizing:border-box!important;
-}
-/* Mobile: no forced card overflow; cards remain centered, including one-card rows. */
-@media(max-width:440px) {
- html body section.section-card[data-role="digital"] > div.gallery-grid > *,
- html body section.section-card[data-role="digitized-versions"] > div.gallery-grid > * {
-   flex:0 1 206px!important; width:min(100%,206px)!important; max-width:206px!important;
- }
-}
-</style>
 
-<style id="ron-v7-v5-compact-documentary-preview-only">
-/* V5: normalize tall documentation figures, not artwork, literature, digitized panels or whole sections. */
-html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items,
-html body section.ron-drawing-documentation-category div.ron-doc-category-items {
-  display:flex!important; flex-flow:row wrap!important; justify-content:center!important;
-  align-items:flex-start!important; align-content:flex-start!important; gap:12px!important;
-  height:auto!important; min-height:0!important;
-}
-html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items > figure,
-html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items > a,
-html body section.ron-drawing-documentation-category div.ron-doc-category-items > figure,
-html body section.ron-drawing-documentation-category div.ron-doc-category-items > a,
-html body section.ron-drawing-documentation-category div.ron-doc-category-items > div.ron-doc-category-item {
-  flex:0 0 158px!important; width:158px!important; max-width:158px!important;
-  min-width:0!important; height:auto!important; min-height:0!important; max-height:none!important;
-  box-sizing:border-box!important; align-self:flex-start!important; margin:0!important;
-  padding:8px!important;
-}
-html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items > figure img,
-html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items > a img,
-html body section.ron-drawing-documentation-category div.ron-doc-category-items > figure img,
-html body section.ron-drawing-documentation-category div.ron-doc-category-items > a img,
-html body section.ron-drawing-documentation-category div.ron-doc-category-items > div.ron-doc-category-item img {
-  display:block!important; width:100%!important; max-width:100%!important;
-  height:135px!important; max-height:135px!important; min-height:0!important;
-  object-fit:contain!important; box-sizing:border-box!important;
-}
-/* Natural caption height: no fixed height, clipping, line clamp or hidden overflow. */
-html body section.ron-drawing-documentation-category div.ron-doc-category-items figcaption,
-html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items figcaption {
-  height:auto!important; min-height:0!important; max-height:none!important;
-  overflow:visible!important; margin:6px 0 0!important;
-}
-</style>
 
-<style id="ron-v7-v6-documentary-inner-frame-preview-only">
-/* Compact secondary documentation cards, including nested frame layers. */
-html body section.ron-drawing-documentation-category div.ron-doc-category-items,
-html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items,
-html body section.section-card[data-role="ancillary-documentation"] div.gallery-grid,
-html body section.section-card[data-role="graphic-design"] div.ron-doc-category-items,
-html body section.section-card[data-role="graphic-designs"] div.ron-doc-category-items {
- display:flex!important; flex-wrap:wrap!important; flex-direction:row!important;
- justify-content:center!important; align-items:flex-start!important; align-content:flex-start!important;
- gap:12px!important; height:auto!important; min-height:0!important;
-}
-html body section.ron-drawing-documentation-category div.ron-doc-category-items > *,
-html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items > *,
-html body section.section-card[data-role="ancillary-documentation"] div.gallery-grid > *,
-html body section.section-card[data-role="graphic-design"] div.ron-doc-category-items > *,
-html body section.section-card[data-role="graphic-designs"] div.ron-doc-category-items > * {
- flex:0 0 158px!important; width:158px!important; max-width:158px!important;
- min-width:0!important; height:auto!important; min-height:0!important;
- max-height:none!important; align-self:flex-start!important; align-items:center!important;
- box-sizing:border-box!important; padding:7px!important; margin:0!important;
-}
-/* Inner image beds: collapse oversized fixed-height gray placeholders. */
-html body section.ron-drawing-documentation-category div.ron-doc-category-items > * :is(.image-frame,.image-wrap,.image-wrapper,.image-container,.img-wrap,.media-frame,.media-wrap,.thumb-frame,.thumb-wrap,.artwork-frame,.artwork-wrap,.artwork-image,.card-image,.card-image-wrap,.card-media,.gallery-image,.visual,.preview-frame,.ron-doc-category-image),
-html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items > * :is(.image-frame,.image-wrap,.image-wrapper,.image-container,.img-wrap,.media-frame,.media-wrap,.thumb-frame,.thumb-wrap,.artwork-frame,.artwork-wrap,.artwork-image,.card-image,.card-image-wrap,.card-media,.gallery-image,.visual,.preview-frame,.ron-doc-category-image),
-html body section.ron-drawing-documentation-category div.ron-doc-category-items > * > :is(a,div,picture,figure),
-html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items > * > :is(a,div,picture,figure) {
- height:auto!important; min-height:0!important; max-height:none!important;
- aspect-ratio:auto!important; display:flex!important; flex-direction:column!important;
- justify-content:center!important; align-items:center!important; align-content:center!important;
- box-sizing:border-box!important; padding:6px!important;
-}
-/* Actual images retain proportions; no tall fixed-height 155px empty frame. */
-html body section.ron-drawing-documentation-category div.ron-doc-category-items img,
-html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items img,
-html body section.section-card[data-role="ancillary-documentation"] div.gallery-grid img,
-html body section.section-card[data-role="graphic-design"] div.ron-doc-category-items img,
-html body section.section-card[data-role="graphic-designs"] div.ron-doc-category-items img {
- display:block!important; width:auto!important; max-width:100%!important;
- height:auto!important; max-height:155px!important; min-height:0!important;
- object-fit:contain!important; box-sizing:border-box!important; margin:0 auto!important;
-}
-/* Keep prose and captions legible and complete. */
-html body section.ron-drawing-documentation-category div.ron-doc-category-items :is(figcaption,.caption,.caption-text,.card-caption),
-html body section.section-card[data-role="ancillary-documentation"] div.ron-doc-category-items :is(figcaption,.caption,.caption-text,.card-caption) {
- height:auto!important; min-height:0!important; max-height:none!important;
- overflow:visible!important;
-}
-</style>
 
-<style id="ron-v7-v7-documentary-fit-to-content-preview-only">
-/* The outer gallery wrappers and their gray image beds must shrink to their content. */
-html body section.section-card[data-role="ancillary-documentation"] :is(.gallery-grid,.ron-doc-category-items,.ron-doc-category-item,.gallery-item,.image-frame,.image-wrap,.image-wrapper,.image-container,.img-wrap,.media-frame,.media-wrap,.thumb-frame,.thumb-wrap,.artwork-frame,.artwork-wrap,.artwork-image,.card-image,.card-image-wrap,.card-media,.gallery-image,.visual,.preview-frame,.ron-doc-category-image),
-html body section.ron-drawing-documentation-category :is(.gallery-grid,.ron-doc-category-items,.ron-doc-category-item,.gallery-item,.image-frame,.image-wrap,.image-wrapper,.image-container,.img-wrap,.media-frame,.media-wrap,.thumb-frame,.thumb-wrap,.artwork-frame,.artwork-wrap,.artwork-image,.card-image,.card-image-wrap,.card-media,.gallery-image,.visual,.preview-frame,.ron-doc-category-image) {
- height:auto!important; min-height:0!important; max-height:none!important;
- aspect-ratio:auto!important; align-content:center!important;
- box-sizing:border-box!important;
-}
-/* The innermost nested link/figure/div/picture that contains the actual image. */
-html body section.section-card[data-role="ancillary-documentation"] :is(.ron-doc-category-items,.gallery-grid) > :is(a,figure,div) :is(.image-frame,.image-wrap,.image-wrapper,.image-container,.gallery-image,.gallery-item,.ron-doc-category-image),
-html body section.ron-drawing-documentation-category :is(.ron-doc-category-items,.gallery-grid) > :is(a,figure,div) :is(.image-frame,.image-wrap,.image-wrapper,.image-container,.gallery-image,.gallery-item,.ron-doc-category-image) {
- display:flex!important; flex-flow:column nowrap!important; justify-content:center!important;
- align-items:center!important; height:auto!important; min-height:0!important;
- max-height:none!important; aspect-ratio:auto!important;
- padding:4px!important; margin:0!important;
-}
-/* V5's height:135px was deliberately fixed and can itself create excess gray space. */
-html body section.section-card[data-role="ancillary-documentation"] :is(.ron-doc-category-items,.gallery-grid) img,
-html body section.ron-drawing-documentation-category :is(.ron-doc-category-items,.gallery-grid) img {
- display:block!important; width:auto!important; max-width:100%!important;
- height:auto!important; max-height:155px!important; min-height:0!important;
- object-fit:contain!important; margin:0 auto!important;
-}
-/* Even if an intermediate wrapper has no recognized class, don't keep it tall. */
-html body section.section-card[data-role="ancillary-documentation"] :is(.ron-doc-category-items,.gallery-grid) > :is(figure,div,a) > :is(a,div,figure,picture),
-html body section.ron-drawing-documentation-category :is(.ron-doc-category-items,.gallery-grid) > :is(figure,div,a) > :is(a,div,figure,picture) {
- height:auto!important; min-height:0!important; max-height:none!important;
- aspect-ratio:auto!important; padding:4px!important;
-}
-/* Keep each outer card compact, but never clip captions. */
-html body section.section-card[data-role="ancillary-documentation"] :is(.ron-doc-category-items,.gallery-grid) > :is(figure,a,div),
-html body section.ron-drawing-documentation-category :is(.ron-doc-category-items,.gallery-grid) > :is(figure,a,div) {
- flex:0 0 158px!important; width:158px!important; max-width:158px!important;
- height:auto!important; min-height:0!important; max-height:none!important;
- aspect-ratio:auto!important; align-self:flex-start!important;
- padding:5px!important; margin:0!important;
-}
-html body section.section-card[data-role="ancillary-documentation"] :is(figcaption,.caption,.caption-text),
-html body section.ron-drawing-documentation-category :is(figcaption,.caption,.caption-text) {
- height:auto!important; min-height:0!important; max-height:none!important;
- overflow:visible!important;
-}
-</style>
 
-<style id="ron-v7-v8-exact-documentary-frame-flex-basis-preview-only">
-/* Only illustration links inside supporting documentation figure cards. */
-html body section.ron-drawing-documentation-category[data-role="ancillary-documentation"] figure.ron-doc-category-item > a.gallery-item,
-html body section.section-card[data-role="ancillary-documentation"] figure.ancillary-figure > a.gallery-item {
-  flex:0 0 auto!important;
-  flex-basis:auto!important;
-  align-self:center!important;
-  display:flex!important;
-  flex-direction:row!important;
-  align-items:center!important;
-  justify-content:center!important;
-  box-sizing:border-box!important;
-  width:100%!important;
-  height:auto!important;
-  min-height:0!important;
-  max-height:none!important;
-  aspect-ratio:auto!important;
-  margin:0!important;
-  padding:8px!important;
-  background:#f7f8fa!important;
-}
-html body section.ron-drawing-documentation-category[data-role="ancillary-documentation"] figure.ron-doc-category-item > a.gallery-item > img,
-html body section.section-card[data-role="ancillary-documentation"] figure.ancillary-figure > a.gallery-item > img {
-  flex:0 0 auto!important;
-  width:auto!important;
-  height:auto!important;
-  max-width:100%!important;
-  max-height:155px!important;
-  min-height:0!important;
-  object-fit:contain!important;
-  margin:0 auto!important;
-  padding:0!important;
-  background:transparent!important;
-}
-html body section.ron-drawing-documentation-category[data-role="ancillary-documentation"] figure.ron-doc-category-item,
-html body section.section-card[data-role="ancillary-documentation"] figure.ancillary-figure {
-  height:auto!important;
-  min-height:0!important;
-  max-height:none!important;
-  align-self:flex-start!important;
-  justify-content:flex-start!important;
-}
-</style>
 
-<style id="ron-v7-v11-abe-waters-compact-page-panels-preview-only">
-/* Abe Waters reference: a centered compact detail-page shell with narrower panels.
-   This targets BOTH main.wrap and div.wrap as used in the 392 source pages.
-   V9 documentary image and card treatments remain unchanged. */
-html body main.wrap,
-html body div.wrap,
-html body main.container,
-html body .drawing-detail-page,
-html body .detail-page-container {
-  box-sizing:border-box!important;
-  width:100%!important;
-  max-width:620px!important;
-  margin-left:auto!important;
-  margin-right:auto!important;
-}
-/* Section width is measured including padding/borders; does not change media layout. */
-html body main.wrap > section.section-card,
-html body div.wrap > section.section-card,
-html body main.wrap > section.ron-drawing-documentation-category,
-html body div.wrap > section.ron-drawing-documentation-category,
-html body main.wrap > .catalogue-meta-block,
-html body div.wrap > .catalogue-meta-block,
-html body main.wrap > .relationship-note,
-html body div.wrap > .relationship-note,
-html body main.wrap > .notes-block,
-html body div.wrap > .notes-block,
-html body main.wrap > .text-block,
-html body div.wrap > .text-block,
-html body main.wrap > .missing-original,
-html body div.wrap > .missing-original,
-html body main.wrap > .primary-artwork,
-html body div.wrap > .primary-artwork {
-  box-sizing:border-box!important;
-  width:100%!important;
-  max-width:560px!important;
-  margin-left:auto!important;
-  margin-right:auto!important;
-}
-/* No fixed pixel heights on section wrappers or artwork images. Preserve the
-   approved V9 per-section styles, flex centering and original aspect ratios. */
-@media(max-width:640px){
- html body main.wrap,html body div.wrap,html body main.container,
- html body .drawing-detail-page,html body .detail-page-container {
-   width:100%!important; max-width:100%!important;
- }
- html body main.wrap > section.section-card,
- html body div.wrap > section.section-card,
- html body main.wrap > section.ron-drawing-documentation-category,
- html body div.wrap > section.ron-drawing-documentation-category {
-   max-width:100%!important;
- }
-}
+
+
+
+
+
+<style>
+/* FIVE COLLECTIONS — approved November 8 drawing-detail media + V3 typography. */
+*{box-sizing:border-box}
+:root{--border:#e5e7eb;--muted:#6b7280}
+html,body{margin:0;background:#fff;color:#111}
+body{font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;font-size:14px;line-height:1.6}
+.wrap{width:100%;max-width:620px;margin:0 auto;padding:22px 15px 48px}
+.nav-pills,.sequence-nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;margin:18px auto;text-align:center}
+.nav-pill{display:inline-block;padding:8px 13px;background:#fff;color:#111;text-decoration:none;font-size:13px;border:1px solid var(--border);border-radius:999px}
+.nav-pill:hover{background:#f8fafc}
+.page-header,.page-header h1,.wrap>header h1,.wrap>h1,.page-title{text-align:center}
+.page-header{margin:12px auto 20px}
+.page-title,.page-header h1,.wrap>header h1,.wrap>h1{margin:0;font-family:Georgia,serif;font-size:28px;line-height:1.2}
+.section-card{width:100%;max-width:560px;margin:0 auto 18px;padding:19px 16px;background:#fff;border:1px solid var(--border);border-radius:12px;box-shadow:none}
+.section-card h2,.original-drawing-heading{font-family:Georgia,serif;font-size:20px;text-align:center;line-height:1.3;margin:0 auto 14px}
+.original-drawing-heading{margin:0 auto 11px}
+.gallery-grid,.index-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:12px}
+.gallery-item,.index-card{display:block;min-width:0;color:inherit;text-decoration:none;border:1px solid var(--border);background:#fff;border-radius:12px;overflow:hidden}
+.gallery-item img,.index-card img{display:block;width:100%;object-fit:contain;object-position:center;background:#fff}
+[data-role="original-drawing"] .gallery-grid>a{display:block;min-width:0;width:100%;max-width:410px;flex:0 1 410px;margin-left:auto;margin-right:auto}
+[data-role="original-drawing"] .gallery-grid>a img{display:block;width:100%;height:auto;max-height:380px;object-fit:contain;object-position:center}
+.catalogue-meta-block,.relationship-note,.notes-block,.text-block{max-width:520px;margin-left:auto;margin-right:auto;text-align:center;line-height:1.6}
+.catalogue-meta-block{margin-bottom:18px}
+.relationship-note{width:100%;max-width:520px;margin:14px auto 18px;padding:14px 16px;background:#f3f4f6;border:1px solid #d1d5db;border-radius:10px;text-align:center}
+.work-meta{margin:0 auto;padding:0;list-style:none;line-height:1.65;text-align:center}
+.work-meta li{list-style:none;display:block;margin:2px auto;padding:0}
+.work-meta li::marker{content:""}
+.section-card .text-block p{margin:.4rem auto}
+/* Digitized Versions: exact outer 155x165px bordered frames. */
+[data-role="digital"] .gallery-grid,[data-role="digitized-versions"] .gallery-grid{gap:12px;justify-content:center;align-items:flex-start}
+[data-role="digital"] .gallery-grid>a,[data-role="digitized-versions"] .gallery-grid>a{box-sizing:border-box;display:block;flex:0 0 155px;width:155px;max-width:155px;height:165px;min-height:165px;max-height:165px;padding:0;border:1px solid var(--border);border-radius:12px;box-shadow:none;overflow:hidden;background:#fff}
+[data-role="digital"] .gallery-grid>a img,[data-role="digitized-versions"] .gallery-grid>a img{display:block;width:100%;height:100%;max-height:none;object-fit:contain;object-position:center;background:#fff;padding:0}
+/* Independent documentary/card categories (not interchangeable). */
+[data-role="area54-cards"] .gallery-grid,[data-role="delusionville-trading-cards"] .gallery-grid,[data-role="delusionville-cards"] .gallery-grid,[data-role="cards"] .gallery-grid,[data-role="graphic-designs"] .gallery-grid,[data-role="graphic-design"] .gallery-grid,[data-role="work-in-progress"] .gallery-grid,[data-role="photo-gallery"] .gallery-grid{justify-content:center;gap:12px}
+[data-role="area54-cards"] .gallery-grid>a,[data-role="delusionville-trading-cards"] .gallery-grid>a,[data-role="delusionville-cards"] .gallery-grid>a,[data-role="cards"] .gallery-grid>a,[data-role="graphic-designs"] .gallery-grid>a,[data-role="graphic-design"] .gallery-grid>a,[data-role="work-in-progress"] .gallery-grid>a,[data-role="photo-gallery"] .gallery-grid>a{display:block;width:130px;max-width:130px;flex:0 0 130px}
+[data-role="area54-cards"] .gallery-grid>a img,[data-role="delusionville-trading-cards"] .gallery-grid>a img,[data-role="delusionville-cards"] .gallery-grid>a img,[data-role="cards"] .gallery-grid>a img,[data-role="graphic-designs"] .gallery-grid>a img,[data-role="graphic-design"] .gallery-grid>a img,[data-role="work-in-progress"] .gallery-grid>a img,[data-role="photo-gallery"] .gallery-grid>a img{display:block;width:100%;height:170px;max-height:170px;object-fit:contain;object-position:center;background:#fff}
+[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-items{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;gap:12px}
+[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-item{display:block;flex:0 0 130px;width:130px;max-width:130px;margin:0;text-align:center}
+[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-item .gallery-item{display:block;width:130px;max-width:130px}
+[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-item .gallery-item img{display:block!important;width:100%!important;height:170px!important;max-height:170px!important;object-fit:contain!important;object-position:center!important;background:#fff!important;margin:0!important}
+.section-card.ron-unified-notes-wip-panel .gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+.section-card.ron-unified-notes-wip-panel .gallery-grid>a{display:block;width:130px;max-width:130px;flex:0 0 130px}
+.section-card.ron-unified-notes-wip-panel .gallery-grid>a img{display:block;width:100%;height:170px;object-fit:contain;object-position:center;background:#fff}
+[data-role="literature"] .gallery-grid{gap:12px;justify-content:center}
+[data-role="literature"] .literature-entry{max-width:520px;margin:0 auto 16px;text-align:center;line-height:1.65}
+[data-role="literature"] .gallery-grid>a{width:155px;max-width:155px;flex:0 0 155px;padding:6px}
+[data-role="literature"] .gallery-grid>a img{width:100%;height:auto;max-height:155px;object-fit:contain;background:#fff}
+/* Verified YouTube poster cards only; native video elements remain native. */
+[data-role="videos"] .ron-yt-clean-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:12px}
+[data-role="videos"] .ron-yt-clean-tile{display:block;position:relative;flex:0 0 200px;width:200px;max-width:200px;margin:0;text-align:center}
+[data-role="videos"] .ron-video-poster{position:relative!important;display:flex!important;align-items:center!important;justify-content:center!important;width:100%!important;height:125px!important;min-height:125px!important;max-height:125px!important;overflow:hidden!important;background:#fff!important;border:1px solid var(--border);border-radius:10px!important}
+[data-role="videos"] .ron-video-poster img{display:block!important;width:100%!important;max-width:100%!important;height:100%!important;object-fit:contain!important;background:#fff!important}
+[data-role="videos"] .ron-video-poster span[aria-hidden="true"]{position:absolute!important;top:50%!important;left:50%!important;transform:translate(-50%,-50%)!important;display:flex!important;align-items:center!important;justify-content:center!important;width:44px!important;height:44px!important;padding:0!important;border-radius:50%!important;font-size:22px!important;line-height:1!important;background:rgba(0,0,0,.8)!important;color:white!important}
+[data-role="videos"] .ron-yt-clean-tile figcaption{margin-top:7px;font-size:12px;line-height:1.4}
+[data-role="videos"] .ron-yt-clean-tile figcaption a{color:#111}
+[data-role="videos"] video,[data-role="videos"] iframe{max-width:100%;height:auto}
+.section-card.ron-notes-center,.section-card.ron-notes-center p,.section-card.ron-notes-center .text-block,[data-role="notes"],[data-role="notes"] p,.notes-text{text-align:center}
+.gallery-caption,.image-caption,.media-caption,figcaption{font-size:12px}
+footer{text-align:center;margin:28px auto 0;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:13px}
+@media(max-width:380px){.wrap{padding:18px 10px 42px}.section-card{padding:14px 10px}[data-role="digital"] .gallery-grid>a,[data-role="digitized-versions"] .gallery-grid>a{width:130px;max-width:130px;flex-basis:130px}}
+
+/* FIVE COLLECTIONS: source markup for body-parts and characters. Preserve the owner-approved visible hero frames. */
+.primary-artwork[data-role="original"]{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;gap:12px;width:100%;max-width:560px;margin:0 auto 18px;padding:19px 16px;background:#fff;border:1px solid var(--border);border-radius:12px}
+.primary-artwork[data-role="original"]>a.primary-artwork-link{display:block;flex:0 1 410px;width:100%;max-width:410px;margin:0 auto;text-align:center;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:#fff}
+.primary-artwork[data-role="original"]>a.primary-artwork-link img{display:block;width:100%;height:auto;max-height:380px;object-fit:contain;object-position:center;background:#fff;margin:auto}
+.image-grid{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;gap:12px}
+[data-role="original-drawing"] .image-grid>a{display:block;flex:0 1 410px;width:100%;max-width:410px;border:1px solid var(--border);border-radius:12px;overflow:hidden}
+[data-role="original-drawing"] .image-grid>a img{display:block;width:100%;height:auto;max-height:380px;object-fit:contain}
+[data-role="digital"] .image-grid>a{display:block;box-sizing:border-box;flex:0 0 155px;width:155px;max-width:155px;height:165px;min-height:165px;max-height:165px;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:#fff}
+[data-role="digital"] .image-grid>a img{display:block;width:100%;height:100%;max-height:none;object-fit:contain;object-position:center;background:#fff}
+.section-card h2,.section-title{font-family:Georgia,serif;font-size:20px;line-height:1.3;text-align:center;margin:0 auto 14px}
+.metadata,.missing-original{max-width:520px;margin:12px auto 20px;text-align:center;line-height:1.65}
+.section-card[data-role="original-drawing"]{text-align:center}
+@media(max-width:380px){[data-role="digital"] .image-grid>a{flex-basis:130px;width:130px;max-width:130px}}
+
+/* Match source page role variations without changing markup. */
+[data-role="digitized-versions"] .image-grid>a{display:block;flex:0 0 155px;width:155px;max-width:155px;height:165px;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:#fff}
+[data-role="digitized-versions"] .image-grid>a img{display:block;width:100%;height:100%;object-fit:contain;background:#fff}
+[data-role="original-drawing"] .primary-artwork-link{display:block;max-width:410px;width:100%;margin:0 auto;border:1px solid var(--border);border-radius:12px;overflow:hidden}
+[data-role="original-drawing"] .primary-artwork-link img{display:block;width:100%;height:auto;max-height:380px;object-fit:contain}
+[data-role="cards"] .image-grid>a,[data-role="graphic-designs"] .image-grid>a,[data-role="graphic-design"] .image-grid>a,[data-role="work-in-progress"] .image-grid>a,[data-role="photo-gallery"] .image-grid>a,[data-role="area54-cards"] .image-grid>a,[data-role="delusionville-cards"] .image-grid>a,[data-role="delusionville-trading-cards"] .image-grid>a{display:block;flex:0 0 130px;width:130px;max-width:130px;border:1px solid var(--border);border-radius:12px;overflow:hidden}
+[data-role="cards"] .image-grid>a img,[data-role="graphic-designs"] .image-grid>a img,[data-role="graphic-design"] .image-grid>a img,[data-role="work-in-progress"] .image-grid>a img,[data-role="photo-gallery"] .image-grid>a img,[data-role="area54-cards"] .image-grid>a img,[data-role="delusionville-cards"] .image-grid>a img,[data-role="delusionville-trading-cards"] .image-grid>a img{display:block;width:100%;height:170px;max-height:170px;object-fit:contain}
+[data-role="ancillary-documentation"][data-category="work-in-progress"] .ron-doc-category-items,[data-role="ancillary-documentation"][data-category="photo-gallery"] .ron-doc-category-items{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+[data-role="ancillary-documentation"][data-category="work-in-progress"] .ron-doc-category-item,[data-role="ancillary-documentation"][data-category="photo-gallery"] .ron-doc-category-item{display:block;flex:0 0 130px;width:130px;max-width:130px;margin:0}
+[data-role="ancillary-documentation"][data-category="work-in-progress"] .ron-doc-category-item img,[data-role="ancillary-documentation"][data-category="photo-gallery"] .ron-doc-category-item img{display:block!important;width:100%!important;height:170px!important;object-fit:contain!important}
+[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-item img{height:170px!important;width:100%!important;max-height:170px!important;object-fit:contain!important}
+@media(max-width:380px){[data-role="digitized-versions"] .image-grid>a{flex-basis:130px;width:130px;max-width:130px}}
+
 </style>
 </head><body><main class="wrap"><nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../index.html">&larr; Statues</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav><header class="page-header"><h1 class="page-title">Liberty Face</h1></header><h2 class="original-drawing-heading">Original Drawing</h2><section class="section-card" data-role="original-drawing"><div class="gallery-grid original-gallery"><a class="gallery-item" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/Liberty%20Seeds%20ORIGINAL.jpg?v=20260612c" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/Liberty%20Seeds%20ORIGINAL.jpg?v=20260612c" alt="Liberty Face — image 1" loading="lazy"></a></div></section><div class="catalogue-meta-block"><ul class="work-meta"><li><strong>Title:</strong> Liberty Face</li><li><strong>Medium:</strong> Ink on paper</li><li><strong>Dimensions:</strong> Sheet 14 × 17 in.; Drawing 13 × 8.5 in.</li><li><strong>Work ID:</strong> RE-013452</li><li><strong>Provenance:</strong> Artist's Personal Collection</li></ul></div><section class="section-card" data-role="digital"><h2>Digitized Versions</h2><div class="gallery-grid"><a class="gallery-item" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/Liberty%20Seeds%20B%26W.png?v=20260609h" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/Liberty%20Seeds%20B%26W.png?v=20260609h" alt="Liberty Face — image 1" loading="lazy"></a><a class="gallery-item" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/Liberty%20Seeds%20COLOR.png?v=20260609h" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/Liberty%20Seeds%20COLOR.png?v=20260609h" alt="Liberty Face — image 2" loading="lazy"></a></div></section><section class="section-card ron-drawing-documentation-category" data-role="ancillary-documentation" data-category="artist-created-graphic-designs" data-revision="ron-drawing-documentary-rebuilt-v1"><h2>Artist-Created Graphic Designs</h2><div class="ron-doc-category-items"><figure class="ron-doc-category-item"><a class="gallery-item ancillary-image-only" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/libertyseeds.jpg" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-4/main/sketches/libertyseeds.jpg" alt="Liberty Face ancillary documentation" loading="lazy"></a></figure></div></section><nav class="sequence-nav ron-bottom-prev-next-center" aria-label="Catalogue sequence"><a class="nav-pill" href="../statue-of-liberty/index.html">Next: Liberty Statue &rarr;</a></nav><footer>Published via GitHub Pages<br>for long-term public access.</footer></main></body></html>
