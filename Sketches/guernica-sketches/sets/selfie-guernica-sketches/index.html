@@ -48,7 +48,7 @@ footer{text-align:center;margin-top:35px;padding-top:18px;border-top:1px solid #
 .section-card[data-role="notes"] {
   box-sizing:border-box; width:calc(100% - 24px); max-width:650px;
   margin:24px auto; padding:18px 22px;
-  background:#f3f4f6; border:1px solid #dfe3e8;
+  background:#fff; border:1px solid #dfe3e8;
   border-radius:12px; text-align:center;
 }
 .section-card[data-role="notes"] h2 { margin:0 0 10px; text-align:center; font-size:20px; }
@@ -58,6 +58,33 @@ footer{text-align:center;margin-top:35px;padding-top:18px;border-top:1px solid #
  .section-card[data-role="notes"]{width:100%;padding:14px 12px}
  .sequence-nav.ron-bottom-prev-next-center{gap:8px}
 }
+
+/* SELFIE GUERNICA SET - targeted presentation corrections */
+.section-card[data-role="set-index"] .index-grid > .index-card {
+  width:155px; max-width:155px; flex:0 0 155px;
+  aspect-ratio:1 / 1;
+}
+.section-card[data-role="set-index"] .index-grid > .index-card > img {
+  height:auto; min-height:0; flex:1 1 auto; max-height:calc(100% - 54px);
+  object-fit:contain;
+}
+.section-card[data-role="set-index"] .index-grid > .index-card > .index-title {
+  flex:0 0 auto; padding:6px 6px 8px; font-size:12px; line-height:1.2;
+}
+.section-card[data-role="digital"] {
+  max-width:650px; margin:24px auto; padding:18px 22px;
+  border:1px solid #e5e7eb; border-radius:12px; background:#fff; text-align:center;
+}
+.section-card[data-role="digital"] h2 {margin:0 0 12px; text-align:center}
+.section-card[data-role="digital"] .gallery-grid {display:flex; justify-content:center}
+.section-card[data-role="digital"] .gallery-item,
+.section-card[data-role="digital"] .gallery-item a {
+  display:flex; justify-content:center; align-items:center; max-width:200px; max-height:200px; margin:auto;
+}
+.section-card[data-role="digital"] .gallery-item img {
+  display:block; width:auto; height:auto; max-width:200px; max-height:200px; object-fit:contain;
+}
+.section-card[data-role="notes"] {background:#fff}
 </style>
 
 
