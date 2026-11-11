@@ -1,124 +1,877 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Late 1960s &amp; Early 1970s | Ron English Catalogue Raisonné</title>
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Late 1960s &amp; Early 1970s | Ron English Catalogue Raisonné
+  </title>
+  <style>
+   /* Page foundation */
+:root {
+  --border: #e5e7eb;
+  --muted: #6b7280;
+  --panel: #f8fafc;
+}
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #fff;
+  color: #111;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+.wrap {
+  width: calc(100% - 36px);
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 26px 0 48px;
+}
 
-<style>
-/* Approved compact drawing index and set-member grid: single clean stylesheet. */
-:root{--border:#e5e7eb;--muted:#6b7280;--panel:#f8fafc}
-*{box-sizing:border-box}
-body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.5}
-.wrap{width:calc(100% - 36px);max-width:1100px;margin:0 auto;padding:26px 0 48px}
-.page-narrow{max-width:1100px}
-.nav-pills,.sequence-nav{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px;margin:20px auto;text-align:center}
-.nav-pill,.sequence-pill{display:inline-block;padding:8px 14px;border:1px solid var(--border);border-radius:999px;background:#fff;color:#111;text-decoration:none;font-size:14px;line-height:1.4}
-.nav-pill:hover,.sequence-pill:hover{background:#f9fafb}
-.sequence-nav .sequence-spacer{display:none}
-.page-header{text-align:center;margin:0 auto 24px}
-.page-title{margin:0;font-size:clamp(2rem,4vw,3rem);line-height:1.1}
-.section-card{width:100%;margin:0 auto 24px;padding:22px;border:1px solid var(--border);border-radius:18px;background:#fff;box-shadow:0 8px 26px #0000000f}
-.section-card h2{text-align:center;margin:0 0 16px;font-size:1.35rem}
-.catalogue-meta-block,.relationship-note{max-width:900px;margin:0 auto 24px;text-align:center}
-.work-meta{list-style:none;padding:0;margin:0 auto;line-height:1.7}
-.relationship-note{padding:12px 16px;border:1px solid var(--border);border-radius:14px;background:#f9fafb}
-.index-grid,.group-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:16px;margin:0 auto}
-.index-grid>.index-card,.group-grid>.group-card{display:flex;flex:0 0 200px;width:200px;max-width:200px;min-width:0;flex-direction:column;align-items:stretch;overflow:hidden;background:#fff;color:inherit;text-decoration:none;text-align:center;border:1px solid var(--border);border-radius:12px;box-shadow:0 3px 12px #0000000b}
-.index-grid>.index-card:hover,.group-grid>.group-card:hover{border-color:#c9ced5;box-shadow:0 5px 16px #00000014}
-.index-grid>.index-card>img,.group-grid>.group-card>img{display:block;width:100%;height:158px;max-width:100%;object-fit:contain;padding:8px;background:var(--panel);border-bottom:1px solid var(--border)}
-.index-grid .index-image{display:flex;align-items:center;justify-content:center;width:100%;height:158px;padding:8px;background:var(--panel);border-bottom:1px solid var(--border)}
-.index-grid .index-image img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}
-.index-grid .card-title,.index-grid .index-title,.group-grid .label,.group-grid .card-title{display:block;margin:0;padding:10px 8px 12px;text-align:center;font-size:14px;font-weight:600;line-height:1.35;overflow-wrap:anywhere}
-.card-subtitle,.set-label{display:block;font-size:12px;font-weight:400;line-height:1.35;color:var(--muted);margin-top:4px}
-footer{text-align:center;margin:30px auto 0;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:14px}
-footer a{color:inherit}
-@media(max-width:480px){.wrap{width:calc(100% - 24px)}.section-card{padding:14px}.index-grid,.group-grid{gap:12px}.index-grid>.index-card,.group-grid>.group-card{flex:0 1 145px;max-width:145px;width:145px}.index-grid>.index-card>img,.group-grid>.group-card>img,.index-grid .index-image{height:140px}.index-grid .card-title,.index-grid .index-title,.group-grid .label,.group-grid .card-title{font-size:13px}}
-</style>
+/* Site and sequence navigation */
+.nav-pills, .sequence-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px auto;
+  text-align: center;
+}
+.nav-pill {
+  display: inline-block;
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: #fff;
+  color: #111;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.nav-pill:hover, .nav-pill:focus { background: #f9fafb; }
 
+/* Heading */
+.page-header { margin: 0 auto 24px; text-align: center; }
+.page-title { margin: 0; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; }
 
-<link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
-</head><body><div class="wrap"><nav class="nav-pills" aria-label="Site navigation">
-<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
-<a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a>
-<a class="nav-pill" href="../index.html">&larr; Early Works</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
-</nav><header class="page-header"><h1 class="page-title">Late 1960s &amp; Early 1970s</h1></header><div class="intro"><p>Drawings from the artist’s childhood, adolescence, and formative years. Exact dates are given on individual entries when documented.</p></div><div class="index-grid">
-<a class="index-card" href="sets/1972-sketchpad.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/sketchpad72-8.jpg?v=20260706h" alt="1972 Sketchpad" loading="lazy"><div class="card-title">1972 Sketchpad<div class="set-label">Set</div></div></a>
-<a class="index-card" href="sets/notebook-1973.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-paintings-1970s/main/images/Paintings/1970s/Scan_20260706%20%2813%29-github.jpg?v=20260803a" alt="1973 Notebook" loading="lazy"><div class="card-title">1973 Notebook<div class="set-label">Set</div></div></a>
-<a class="index-card" href="works/re-015478.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015478-thumb.jpg" alt="A Cast of Bad Characters" loading="lazy"><div class="card-title">A Cast of Bad Characters</div></a>
-<a class="index-card" href="works/re-015326.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015326-thumb.jpg" alt="A Dark and Stormy Mind" loading="lazy"><div class="card-title">A Dark and Stormy Mind</div></a>
-<a class="index-card" href="works/re-015330.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015330-thumb.jpg" alt="A Little Over His Head" loading="lazy"><div class="card-title">A Little Over His Head</div></a>
-<a class="index-card" href="works/re-015275.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015275-thumb.jpg" alt="Animal Department" loading="lazy"><div class="card-title">Animal Department</div></a>
-<a class="index-card" href="works/re-015337.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015337-thumb.jpg" alt="Ballpoint Lust" loading="lazy"><div class="card-title">Ballpoint Lust</div></a>
-<a class="index-card" href="works/re-015332.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015332-thumb.jpg" alt="Battle Fatigue" loading="lazy"><div class="card-title">Battle Fatigue</div></a>
-<a class="index-card" href="works/re-015286.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015286-thumb.jpg" alt="Beauregard" loading="lazy"><div class="card-title">Beauregard</div></a>
-<a class="index-card" href="works/re-015247.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015247-thumb.jpg" alt="Beware of Dog" loading="lazy"><div class="card-title">Beware of Dog</div></a>
-<a class="index-card" href="works/re-015425.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015425-thumb.jpg" alt="Branch Manager" loading="lazy"><div class="card-title">Branch Manager</div></a>
-<a class="index-card" href="works/re-015363.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015363-thumb.jpg" alt="Carrying the Torch" loading="lazy"><div class="card-title">Carrying the Torch</div></a>
-<a class="index-card" href="sets/cars-magazine.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/carsmag1.jpg?v=20260706j" alt="Cars Magazine" loading="lazy"><div class="card-title">Cars Magazine<div class="set-label">Set</div></div></a>
-<a class="index-card" href="sets/national-energy-acts.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260706%20%2837%29.jpg?v=20260706h" alt="Classroom Doodles" loading="lazy"><div class="card-title">Classroom Doodles<div class="set-label">Set</div></div></a>
-<a class="index-card" href="works/re-015266.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015266-thumb.jpg" alt="Clod and Owlbert" loading="lazy"><div class="card-title">Clod and Owlbert</div></a>
-<a class="index-card" href="works/re-015513.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015513-thumb.jpg" alt="Cosmic Feedback" loading="lazy"><div class="card-title">Cosmic Feedback</div></a>
-<a class="index-card" href="sets/creature-black-lagoon-comic.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260706%20%2869%29g.jpg?v=20260706j" alt="Creature from the Black Lagoon Comic Book" loading="lazy"><div class="card-title">Creature from the Black Lagoon Comic Book<div class="set-label">Set</div></div></a>
-<a class="index-card" href="works/re-015267.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015267-thumb.jpg" alt="Delta Dawn" loading="lazy"><div class="card-title">Delta Dawn</div></a>
-<a class="index-card" href="works/re-015291.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015291-thumb.jpg" alt="Dinosaurs" loading="lazy"><div class="card-title">Dinosaurs</div></a>
-<a class="index-card" href="sets/dog-world-magazine.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-paintings-1970s/main/images/Paintings/1970s/dogmag1.jpg?v=20260803a" alt="Dog World Magazine" loading="lazy"><div class="card-title">Dog World Magazine<div class="set-label">Set</div></div></a>
-<a class="index-card" href="works/re-015441.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015441-thumb.jpg" alt="Double Diploma&#x27;d" loading="lazy"><div class="card-title">Double Diploma&#x27;d</div></a>
-<a class="index-card" href="works/re-015373.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015373-thumb.jpg" alt="Every Dog Has Its Doodle" loading="lazy"><div class="card-title">Every Dog Has Its Doodle</div></a>
-<a class="index-card" href="works/re-015276.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015276-thumb.jpg" alt="Filmed" loading="lazy"><div class="card-title">Filmed</div></a>
-<a class="index-card" href="works/re-015305-v.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015305-V-thumb.jpg" alt="Flowers" loading="lazy"><div class="card-title">Flowers</div></a>
-<a class="index-card" href="works/re-015334.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015334-thumb.jpg" alt="Framed" loading="lazy"><div class="card-title">Framed</div></a>
-<a class="index-card" href="works/re-015301.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015301-thumb.jpg" alt="How to Make a Leftover a Monster" loading="lazy"><div class="card-title">How to Make a Leftover a Monster</div></a>
-<a class="index-card" href="works/re-015320.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015320-thumb.jpg" alt="I Love Susan" loading="lazy"><div class="card-title">I Love Susan</div></a>
-<a class="index-card" href="works/re-015432.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015432-thumb.jpg" alt="If a Man Answers Lakeview High School" loading="lazy"><div class="card-title">If a Man Answers Lakeview High School</div></a>
-<a class="index-card" href="works/re-015305-r.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015305-R-thumb.jpg" alt="In Bed with Dad" loading="lazy"><div class="card-title">In Bed with Dad</div></a>
-<a class="index-card" href="works/re-015400.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015400-thumb.jpg" alt="In Service Day" loading="lazy"><div class="card-title">In Service Day</div></a>
-<a class="index-card" href="works/re-015459.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015459-thumb.jpg" alt="Jurassic Beef" loading="lazy"><div class="card-title">Jurassic Beef</div></a>
-<a class="index-card" href="works/re-015367.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015367-thumb.jpg" alt="Knock, Knock, Doom" loading="lazy"><div class="card-title">Knock, Knock, Doom</div></a>
-<a class="index-card" href="works/re-015517.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015517-thumb.jpg" alt="Krogg" loading="lazy"><div class="card-title">Krogg</div></a>
-<a class="index-card" href="sets/kung-fu-tv-series-figures.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260707%20%2842%29.jpg?v=20260707d" alt="Kung Fu" loading="lazy"><div class="card-title">Kung Fu<div class="set-label">Set</div></div></a>
-<a class="index-card" href="works/re-015253.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015253-thumb.jpg" alt="Letter to Mom and Dad" loading="lazy"><div class="card-title">Letter to Mom and Dad</div></a>
-<a class="index-card" href="works/re-015401.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015401-thumb.jpg" alt="Lounging" loading="lazy"><div class="card-title">Lounging</div></a>
-<a class="index-card" href="works/re-015498.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015498-thumb.jpg" alt="Lycanthope" loading="lazy"><div class="card-title">Lycanthope</div></a>
-<a class="index-card" href="sets/mccalls-covers.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-paintings-1970s/main/images/Paintings/1970s/Scan_20260706%20%2815%29t.jpg?v=20260803a" alt="McCall&#x27;s Cover" loading="lazy"><div class="card-title">McCall&#x27;s Cover<div class="set-label">Set</div></div></a>
-<a class="index-card" href="works/re-015290.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015290-thumb.jpg" alt="Monagar Kill Hulk" loading="lazy"><div class="card-title">Monagar Kill Hulk</div></a>
-<a class="index-card" href="works/re-015516.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015516-thumb.jpg" alt="Monster Confrontation" loading="lazy"><div class="card-title">Monster Confrontation</div></a>
-<a class="index-card" href="works/re-015416.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015416-thumb.jpg" alt="Monster on the Prowl" loading="lazy"><div class="card-title">Monster on the Prowl</div></a>
-<a class="index-card" href="works/re-015444.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015444-thumb.jpg" alt="Monsters" loading="lazy"><div class="card-title">Monsters</div></a>
-<a class="index-card" href="works/re-015443.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015443-thumb.jpg" alt="Monsters Sketch" loading="lazy"><div class="card-title">Monsters Sketch</div></a>
-<a class="index-card" href="works/re-015300.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015300-thumb.jpg" alt="Monsters Studies Sketches" loading="lazy"><div class="card-title">Monsters Studies Sketches</div></a>
-<a class="index-card" href="works/re-015426.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015426-thumb.jpg" alt="Moonlighting" loading="lazy"><div class="card-title">Moonlighting</div></a>
-<a class="index-card" href="works/re-015282.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015282-thumb.jpg" alt="No Parking" loading="lazy"><div class="card-title">No Parking</div></a>
-<a class="index-card" href="works/re-015251.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015251-thumb.jpg" alt="On the Bus" loading="lazy"><div class="card-title">On the Bus</div></a>
-<a class="index-card" href="works/re-015262.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015262-thumb.jpg" alt="Owlbert and Clod" loading="lazy"><div class="card-title">Owlbert and Clod</div></a>
-<a class="index-card" href="works/re-015250.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015250-thumb.jpg" alt="Planet of the Apes" loading="lazy"><div class="card-title">Planet of the Apes</div></a>
-<a class="index-card" href="works/re-015410.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015410-thumb.jpg" alt="Portrait of Girl" loading="lazy"><div class="card-title">Portrait of Girl</div></a>
-<a class="index-card" href="works/re-015327.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015327-thumb.jpg" alt="Portrait Sketch" loading="lazy"><div class="card-title">Portrait Sketch</div></a>
-<a class="index-card" href="works/re-015292.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015292-thumb.jpg" alt="Profile in Fur" loading="lazy"><div class="card-title">Profile in Fur</div></a>
-<a class="index-card" href="sets/raising-a-monster.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260704%20%2820%29.jpg?v=20260705b" alt="Raising a Monster" loading="lazy"><div class="card-title">Raising a Monster<div class="set-label">Set</div></div></a>
-<a class="index-card" href="works/re-015481.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015481-thumb.jpg" alt="Red Cross Poster" loading="lazy"><div class="card-title">Red Cross Poster</div></a>
-<a class="index-card" href="sets/rip.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260706%20%2847%29.jpg?v=20260706h" alt="RIP" loading="lazy"><div class="card-title">RIP<div class="set-label">Set</div></div></a>
-<a class="index-card" href="works/re-015445.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015445-thumb.jpg" alt="Robot" loading="lazy"><div class="card-title">Robot</div></a>
-<a class="index-card" href="works/re-015347.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015347-thumb.jpg" alt="Side Effects" loading="lazy"><div class="card-title">Side Effects</div></a>
-<a class="index-card" href="works/re-015252.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015252-thumb.jpg" alt="Sorry" loading="lazy"><div class="card-title">Sorry</div></a>
-<a class="index-card" href="sets/stanley.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260704%20%2815%29f.jpg?v=20260705e" alt="Stanley" loading="lazy"><div class="card-title">Stanley<div class="set-label">Set</div></div></a>
-<a class="index-card" href="works/re-015518.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015518-thumb.jpg" alt="Starring" loading="lazy"><div class="card-title">Starring</div></a>
-<a class="index-card" href="works/re-015306.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015306-thumb.jpg" alt="Super Guy" loading="lazy"><div class="card-title">Super Guy</div></a>
-<a class="index-card" href="works/re-015456.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015456-thumb.jpg" alt="The Big E" loading="lazy"><div class="card-title">The Big E</div></a>
-<a class="index-card" href="works/re-015430.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015430-thumb.jpg" alt="The Deep End" loading="lazy"><div class="card-title">The Deep End</div></a>
-<a class="index-card" href="works/re-015279.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015279-thumb.jpg" alt="The Long Paws" loading="lazy"><div class="card-title">The Long Paws</div></a>
-<a class="index-card" href="works/re-015285.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015285-thumb.jpg" alt="The Man of More Steel" loading="lazy"><div class="card-title">The Man of More Steel</div></a>
-<a class="index-card" href="works/re-015295.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015295-thumb.jpg" alt="The Missing Link-Up" loading="lazy"><div class="card-title">The Missing Link-Up</div></a>
-<a class="index-card" href="works/re-015302.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015302-thumb.jpg" alt="The Monster of Frankenstein" loading="lazy"><div class="card-title">The Monster of Frankenstein</div></a>
-<a class="index-card" href="works/re-015289.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015289-thumb.jpg" alt="The Shadow of a Smile" loading="lazy"><div class="card-title">The Shadow of a Smile</div></a>
-<a class="index-card" href="works/re-015297.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015297-thumb.jpg" alt="The Usual Characters" loading="lazy"><div class="card-title">The Usual Characters</div></a>
-<a class="index-card" href="works/re-015427.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015427-thumb.jpg" alt="Too Alive to Burn" loading="lazy"><div class="card-title">Too Alive to Burn</div></a>
-<a class="index-card" href="works/re-015296.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015296-thumb.jpg" alt="Un-American Gothic" loading="lazy"><div class="card-title">Un-American Gothic</div></a>
-<a class="index-card" href="works/re-015413.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015413-thumb.jpg" alt="Watching TV" loading="lazy"><div class="card-title">Watching TV</div></a>
-<a class="index-card" href="sets/werelion.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-paintings-1970s/main/images/Paintings/1970s/Scan_20260704%20%2821%29.jpg?v=20260803a" alt="Werelion" loading="lazy"><div class="card-title">Werelion<div class="set-label">Set</div></div></a>
-<a class="index-card" href="sets/werewolf-comic.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260706%20%2859%29k.jpg?v=20260706j" alt="Werewolf Comic" loading="lazy"><div class="card-title">Werewolf Comic<div class="set-label">Set</div></div></a>
-<a class="index-card" href="works/re-015280.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015280-thumb.jpg" alt="Werewolves" loading="lazy"><div class="card-title">Werewolves</div></a>
-<a class="index-card" href="works/re-015294.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015294-thumb.jpg" alt="Where Monsters Lurk" loading="lazy"><div class="card-title">Where Monsters Lurk</div></a>
-<a class="index-card" href="works/re-015356.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015356-thumb.jpg" alt="Wish You Were Here" loading="lazy"><div class="card-title">Wish You Were Here</div></a>
-<a class="index-card" href="works/re-015274.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015274-thumb.jpg" alt="Womp" loading="lazy"><div class="card-title">Womp</div></a>
-<a class="index-card" href="works/re-015293.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015293-thumb.jpg" alt="Woodstock" loading="lazy"><div class="card-title">Woodstock</div></a>
-<a class="index-card" href="works/re-015452.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015452-thumb.jpg" alt="Worried Much?" loading="lazy"><div class="card-title">Worried Much?</div></a>
-</div>
-<nav class="sequence-nav ron-bottom-prev-next-center" aria-label="Catalogue sequence"><a class="nav-pill" href="../late-1970s-early-1980s/index.html">Next: Late 1970s &amp; Early 1980s &rarr;</a></nav><footer>Published via GitHub Pages<br>for long-term public access.</footer></div></body></html>
+/* Introductory text panel */
+.intro {
+  max-width: 900px;
+  margin: 0 auto 28px;
+  padding: 14px 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #f3f4f6;
+  text-align: center;
+}
+.intro p { margin: 0; }
+
+/* Unified compact index cards */
+.index-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 16px;
+  margin: 0 auto;
+}
+.index-card {
+  display: flex;
+  flex: 0 0 200px;
+  width: 200px;
+  max-width: 200px;
+  min-width: 0;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 3px 12px #0000000b;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+}
+.index-card:hover {
+  border-color: #c9ced5;
+  box-shadow: 0 5px 16px #00000014;
+}
+.index-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 158px;
+  padding: 8px;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+  background: var(--panel);
+}
+.index-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.index-title {
+  display: block;
+  margin: 0;
+  padding: 10px 8px 12px;
+  overflow-wrap: anywhere;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.35;
+  text-align: center;
+}
+.set-label {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+/* Footer */
+footer {
+  margin: 30px auto 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+  .wrap { width: calc(100% - 24px); }
+  .index-grid { gap: 12px; }
+  .index-card { flex: 0 1 145px; width: 145px; max-width: 145px; }
+  .index-image { height: 140px; }
+  .index-title { font-size: 13px; }
+}
+  </style>
+  <link href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png" rel="icon" type="image/png"/>
+ </head>
+ <body>
+  <div class="wrap">
+   <nav aria-label="Site navigation" class="nav-pills">
+    <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">
+     Catalogue home
+    </a>
+    <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">
+     Sketches &amp; Drawings
+    </a>
+    <a class="nav-pill" href="../index.html">
+     ← Early Works
+    </a>
+    <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">
+     Search Catalogue
+    </a>
+   </nav>
+   <header class="page-header">
+    <h1 class="page-title">
+     Late 1960s &amp; Early 1970s
+    </h1>
+   </header>
+   <div class="intro">
+    <p>
+     Drawings from the artist’s childhood, adolescence, and formative years. Exact dates are given on individual entries when documented.
+    </p>
+   </div>
+   <div class="index-grid">
+    <a class="index-card" href="sets/1972-sketchpad.html">
+     <div class="index-image">
+      <img alt="1972 Sketchpad" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/sketchpad72-8.jpg?v=20260706h"/>
+     </div>
+     <div class="index-title">
+      1972 Sketchpad
+      <div class="set-label">
+       Set
+      </div>
+     </div>
+    </a>
+    <a class="index-card" href="sets/notebook-1973.html">
+     <div class="index-image">
+      <img alt="1973 Notebook" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-paintings-1970s/main/images/Paintings/1970s/Scan_20260706%20%2813%29-github.jpg?v=20260803a"/>
+     </div>
+     <div class="index-title">
+      1973 Notebook
+      <div class="set-label">
+       Set
+      </div>
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015478.html">
+     <div class="index-image">
+      <img alt="A Cast of Bad Characters" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015478-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      A Cast of Bad Characters
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015326.html">
+     <div class="index-image">
+      <img alt="A Dark and Stormy Mind" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015326-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      A Dark and Stormy Mind
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015330.html">
+     <div class="index-image">
+      <img alt="A Little Over His Head" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015330-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      A Little Over His Head
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015275.html">
+     <div class="index-image">
+      <img alt="Animal Department" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015275-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Animal Department
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015337.html">
+     <div class="index-image">
+      <img alt="Ballpoint Lust" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015337-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Ballpoint Lust
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015332.html">
+     <div class="index-image">
+      <img alt="Battle Fatigue" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015332-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Battle Fatigue
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015286.html">
+     <div class="index-image">
+      <img alt="Beauregard" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015286-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Beauregard
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015247.html">
+     <div class="index-image">
+      <img alt="Beware of Dog" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015247-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Beware of Dog
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015425.html">
+     <div class="index-image">
+      <img alt="Branch Manager" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015425-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Branch Manager
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015363.html">
+     <div class="index-image">
+      <img alt="Carrying the Torch" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015363-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Carrying the Torch
+     </div>
+    </a>
+    <a class="index-card" href="sets/cars-magazine.html">
+     <div class="index-image">
+      <img alt="Cars Magazine" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/carsmag1.jpg?v=20260706j"/>
+     </div>
+     <div class="index-title">
+      Cars Magazine
+      <div class="set-label">
+       Set
+      </div>
+     </div>
+    </a>
+    <a class="index-card" href="sets/national-energy-acts.html">
+     <div class="index-image">
+      <img alt="Classroom Doodles" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260706%20%2837%29.jpg?v=20260706h"/>
+     </div>
+     <div class="index-title">
+      Classroom Doodles
+      <div class="set-label">
+       Set
+      </div>
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015266.html">
+     <div class="index-image">
+      <img alt="Clod and Owlbert" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015266-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Clod and Owlbert
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015513.html">
+     <div class="index-image">
+      <img alt="Cosmic Feedback" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015513-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Cosmic Feedback
+     </div>
+    </a>
+    <a class="index-card" href="sets/creature-black-lagoon-comic.html">
+     <div class="index-image">
+      <img alt="Creature from the Black Lagoon Comic Book" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260706%20%2869%29g.jpg?v=20260706j"/>
+     </div>
+     <div class="index-title">
+      Creature from the Black Lagoon Comic Book
+      <div class="set-label">
+       Set
+      </div>
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015267.html">
+     <div class="index-image">
+      <img alt="Delta Dawn" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015267-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Delta Dawn
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015291.html">
+     <div class="index-image">
+      <img alt="Dinosaurs" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015291-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Dinosaurs
+     </div>
+    </a>
+    <a class="index-card" href="sets/dog-world-magazine.html">
+     <div class="index-image">
+      <img alt="Dog World Magazine" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-paintings-1970s/main/images/Paintings/1970s/dogmag1.jpg?v=20260803a"/>
+     </div>
+     <div class="index-title">
+      Dog World Magazine
+      <div class="set-label">
+       Set
+      </div>
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015441.html">
+     <div class="index-image">
+      <img alt="Double Diploma'd" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015441-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Double Diploma'd
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015373.html">
+     <div class="index-image">
+      <img alt="Every Dog Has Its Doodle" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015373-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Every Dog Has Its Doodle
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015276.html">
+     <div class="index-image">
+      <img alt="Filmed" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015276-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Filmed
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015305-v.html">
+     <div class="index-image">
+      <img alt="Flowers" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015305-V-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Flowers
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015334.html">
+     <div class="index-image">
+      <img alt="Framed" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015334-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Framed
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015301.html">
+     <div class="index-image">
+      <img alt="How to Make a Leftover a Monster" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015301-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      How to Make a Leftover a Monster
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015320.html">
+     <div class="index-image">
+      <img alt="I Love Susan" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015320-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      I Love Susan
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015432.html">
+     <div class="index-image">
+      <img alt="If a Man Answers Lakeview High School" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015432-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      If a Man Answers Lakeview High School
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015305-r.html">
+     <div class="index-image">
+      <img alt="In Bed with Dad" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015305-R-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      In Bed with Dad
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015400.html">
+     <div class="index-image">
+      <img alt="In Service Day" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015400-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      In Service Day
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015459.html">
+     <div class="index-image">
+      <img alt="Jurassic Beef" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015459-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Jurassic Beef
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015367.html">
+     <div class="index-image">
+      <img alt="Knock, Knock, Doom" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015367-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Knock, Knock, Doom
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015517.html">
+     <div class="index-image">
+      <img alt="Krogg" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015517-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Krogg
+     </div>
+    </a>
+    <a class="index-card" href="sets/kung-fu-tv-series-figures.html">
+     <div class="index-image">
+      <img alt="Kung Fu" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260707%20%2842%29.jpg?v=20260707d"/>
+     </div>
+     <div class="index-title">
+      Kung Fu
+      <div class="set-label">
+       Set
+      </div>
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015253.html">
+     <div class="index-image">
+      <img alt="Letter to Mom and Dad" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015253-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Letter to Mom and Dad
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015401.html">
+     <div class="index-image">
+      <img alt="Lounging" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015401-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Lounging
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015498.html">
+     <div class="index-image">
+      <img alt="Lycanthope" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015498-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Lycanthope
+     </div>
+    </a>
+    <a class="index-card" href="sets/mccalls-covers.html">
+     <div class="index-image">
+      <img alt="McCall's Cover" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-paintings-1970s/main/images/Paintings/1970s/Scan_20260706%20%2815%29t.jpg?v=20260803a"/>
+     </div>
+     <div class="index-title">
+      McCall's Cover
+      <div class="set-label">
+       Set
+      </div>
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015290.html">
+     <div class="index-image">
+      <img alt="Monagar Kill Hulk" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015290-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Monagar Kill Hulk
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015516.html">
+     <div class="index-image">
+      <img alt="Monster Confrontation" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015516-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Monster Confrontation
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015416.html">
+     <div class="index-image">
+      <img alt="Monster on the Prowl" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015416-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Monster on the Prowl
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015444.html">
+     <div class="index-image">
+      <img alt="Monsters" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015444-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Monsters
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015443.html">
+     <div class="index-image">
+      <img alt="Monsters Sketch" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015443-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Monsters Sketch
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015300.html">
+     <div class="index-image">
+      <img alt="Monsters Studies Sketches" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015300-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Monsters Studies Sketches
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015426.html">
+     <div class="index-image">
+      <img alt="Moonlighting" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015426-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Moonlighting
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015282.html">
+     <div class="index-image">
+      <img alt="No Parking" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015282-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      No Parking
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015251.html">
+     <div class="index-image">
+      <img alt="On the Bus" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015251-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      On the Bus
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015262.html">
+     <div class="index-image">
+      <img alt="Owlbert and Clod" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015262-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Owlbert and Clod
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015250.html">
+     <div class="index-image">
+      <img alt="Planet of the Apes" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015250-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Planet of the Apes
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015410.html">
+     <div class="index-image">
+      <img alt="Portrait of Girl" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015410-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Portrait of Girl
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015327.html">
+     <div class="index-image">
+      <img alt="Portrait Sketch" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015327-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Portrait Sketch
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015292.html">
+     <div class="index-image">
+      <img alt="Profile in Fur" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015292-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Profile in Fur
+     </div>
+    </a>
+    <a class="index-card" href="sets/raising-a-monster.html">
+     <div class="index-image">
+      <img alt="Raising a Monster" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260704%20%2820%29.jpg?v=20260705b"/>
+     </div>
+     <div class="index-title">
+      Raising a Monster
+      <div class="set-label">
+       Set
+      </div>
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015481.html">
+     <div class="index-image">
+      <img alt="Red Cross Poster" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015481-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Red Cross Poster
+     </div>
+    </a>
+    <a class="index-card" href="sets/rip.html">
+     <div class="index-image">
+      <img alt="RIP" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260706%20%2847%29.jpg?v=20260706h"/>
+     </div>
+     <div class="index-title">
+      RIP
+      <div class="set-label">
+       Set
+      </div>
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015445.html">
+     <div class="index-image">
+      <img alt="Robot" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015445-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Robot
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015347.html">
+     <div class="index-image">
+      <img alt="Side Effects" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015347-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Side Effects
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015252.html">
+     <div class="index-image">
+      <img alt="Sorry" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015252-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Sorry
+     </div>
+    </a>
+    <a class="index-card" href="sets/stanley.html">
+     <div class="index-image">
+      <img alt="Stanley" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260704%20%2815%29f.jpg?v=20260705e"/>
+     </div>
+     <div class="index-title">
+      Stanley
+      <div class="set-label">
+       Set
+      </div>
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015518.html">
+     <div class="index-image">
+      <img alt="Starring" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015518-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Starring
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015306.html">
+     <div class="index-image">
+      <img alt="Super Guy" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015306-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Super Guy
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015456.html">
+     <div class="index-image">
+      <img alt="The Big E" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015456-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      The Big E
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015430.html">
+     <div class="index-image">
+      <img alt="The Deep End" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015430-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      The Deep End
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015279.html">
+     <div class="index-image">
+      <img alt="The Long Paws" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015279-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      The Long Paws
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015285.html">
+     <div class="index-image">
+      <img alt="The Man of More Steel" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015285-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      The Man of More Steel
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015295.html">
+     <div class="index-image">
+      <img alt="The Missing Link-Up" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015295-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      The Missing Link-Up
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015302.html">
+     <div class="index-image">
+      <img alt="The Monster of Frankenstein" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015302-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      The Monster of Frankenstein
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015289.html">
+     <div class="index-image">
+      <img alt="The Shadow of a Smile" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015289-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      The Shadow of a Smile
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015297.html">
+     <div class="index-image">
+      <img alt="The Usual Characters" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015297-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      The Usual Characters
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015427.html">
+     <div class="index-image">
+      <img alt="Too Alive to Burn" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015427-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Too Alive to Burn
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015296.html">
+     <div class="index-image">
+      <img alt="Un-American Gothic" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015296-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Un-American Gothic
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015413.html">
+     <div class="index-image">
+      <img alt="Watching TV" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015413-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Watching TV
+     </div>
+    </a>
+    <a class="index-card" href="sets/werelion.html">
+     <div class="index-image">
+      <img alt="Werelion" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-paintings-1970s/main/images/Paintings/1970s/Scan_20260704%20%2821%29.jpg?v=20260803a"/>
+     </div>
+     <div class="index-title">
+      Werelion
+      <div class="set-label">
+       Set
+      </div>
+     </div>
+    </a>
+    <a class="index-card" href="sets/werewolf-comic.html">
+     <div class="index-image">
+      <img alt="Werewolf Comic" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260706%20%2859%29k.jpg?v=20260706j"/>
+     </div>
+     <div class="index-title">
+      Werewolf Comic
+      <div class="set-label">
+       Set
+      </div>
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015280.html">
+     <div class="index-image">
+      <img alt="Werewolves" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015280-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Werewolves
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015294.html">
+     <div class="index-image">
+      <img alt="Where Monsters Lurk" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015294-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Where Monsters Lurk
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015356.html">
+     <div class="index-image">
+      <img alt="Wish You Were Here" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015356-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Wish You Were Here
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015274.html">
+     <div class="index-image">
+      <img alt="Womp" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015274-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Womp
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015293.html">
+     <div class="index-image">
+      <img alt="Woodstock" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015293-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Woodstock
+     </div>
+    </a>
+    <a class="index-card" href="works/re-015452.html">
+     <div class="index-image">
+      <img alt="Worried Much?" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-5/main/RE-015452-thumb.jpg"/>
+     </div>
+     <div class="index-title">
+      Worried Much?
+     </div>
+    </a>
+   </div>
+   <nav aria-label="Catalogue sequence" class="sequence-nav ron-bottom-prev-next-center">
+    <a class="nav-pill" href="../late-1970s-early-1980s/index.html">
+     Next: Late 1970s &amp; Early 1980s →
+    </a>
+   </nav>
+   <footer>
+    Published via GitHub Pages
+    <br/>
+    for long-term public access.
+   </footer>
+  </div>
+ </body>
+</html>

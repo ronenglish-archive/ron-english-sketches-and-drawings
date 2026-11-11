@@ -130,7 +130,44 @@ footer {
   .index-image { height: 140px; }
   .index-title { font-size: 13px; }
 }
-  </style>
+  
+/* GUERNICA INDEX PRESENTATION GUARDED V2 */
+/* Preserve the existing HTML, images, cards, labels, and destinations. */
+.sequence-nav.ron-bottom-prev-next-center {
+  display:flex; flex-wrap:wrap; justify-content:center; align-items:center;
+  gap:10px; margin:30px auto 18px; text-align:center;
+}
+.sequence-nav.ron-bottom-prev-next-center > .nav-pill {
+  display:inline-flex; align-items:center; justify-content:center;
+  max-width:100%; padding:8px 14px; border:1px solid #e5e7eb;
+  border-radius:999px; background:#fff; color:#111;
+  text-align:center; text-decoration:none;
+  font:14px/1.35 system-ui,-apple-system,"Segoe UI",sans-serif;
+  white-space:normal; overflow-wrap:anywhere;
+}
+.sequence-nav.ron-bottom-prev-next-center > .nav-pill:hover,
+.sequence-nav.ron-bottom-prev-next-center > .nav-pill:focus-visible { background:#f3f4f6; }
+.section-card[data-role="notes"] {
+  box-sizing:border-box; width:calc(100% - 24px); max-width:650px;
+  margin:24px auto; padding:18px 22px;
+  background:#f3f4f6; border:1px solid #dfe3e8;
+  border-radius:12px; text-align:center;
+}
+.section-card[data-role="notes"] h2 { margin:0 0 10px; text-align:center; font-size:20px; }
+.section-card[data-role="notes"] .text-block,
+.section-card[data-role="notes"] p { max-width:100%; margin:0 auto; text-align:center; line-height:1.6; }
+@media(max-width:480px){
+ .section-card[data-role="notes"]{width:100%;padding:14px 12px}
+ .sequence-nav.ron-bottom-prev-next-center{gap:8px}
+}/* GUERNICA MAIN CATEGORY NOTE: compact, centered, muted panel. */
+.category-note {
+  box-sizing:border-box; width:calc(100% - 24px); max-width:650px;
+  margin:0 auto 24px; padding:16px 20px;
+  border:1px solid #dfe3e8; border-radius:12px;
+  background:#f3f4f6; text-align:center; line-height:1.6;
+}
+@media(max-width:480px){.category-note{width:100%;padding:14px 12px}}
+</style>
   <link href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png" rel="icon" type="image/png"/>
  </head>
  <body>
