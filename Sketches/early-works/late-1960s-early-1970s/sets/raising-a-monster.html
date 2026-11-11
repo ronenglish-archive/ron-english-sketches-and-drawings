@@ -31,6 +31,47 @@ body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,"Se
 footer{text-align:center;margin:30px auto 0;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:14px}
 footer a{color:inherit}
 @media(max-width:480px){.wrap{width:calc(100% - 24px)}.section-card{padding:14px}.index-grid,.group-grid{gap:12px}.index-grid>.index-card,.group-grid>.group-card{flex:0 1 145px;max-width:145px;width:145px}.index-grid>.index-card>img,.group-grid>.group-card>img,.index-grid .index-image{height:140px}.index-grid .card-title,.index-grid .index-title,.group-grid .label,.group-grid .card-title{font-size:13px}}
+
+/* Approved group-page artwork-card geometry: 200 x 200 on desktop and mobile. */
+.index-grid > .index-card, .group-grid > .group-card {
+  flex: 0 0 200px;
+  width: 200px;
+  min-width: 200px;
+  max-width: 200px;
+  height: 200px;
+  min-height: 200px;
+  max-height: 200px;
+}
+.index-grid > .index-card > img, .group-grid > .group-card > img,
+.index-grid .index-image {
+  flex: 1 1 0;
+  height: 0;
+  min-height: 0;
+  max-height: none;
+  object-fit: contain;
+}
+.index-grid .card-title, .index-grid .index-title,
+.group-grid .label, .group-grid .card-title {
+  flex: 0 0 auto;
+}
+@media (max-width:480px) {
+  .index-grid > .index-card, .group-grid > .group-card {
+    flex: 0 0 200px;
+    width: 200px;
+    min-width: 200px;
+    max-width: 200px;
+    height: 200px;
+    min-height: 200px;
+    max-height: 200px;
+  }
+  .index-grid > .index-card > img, .group-grid > .group-card > img,
+  .index-grid .index-image {
+    flex: 1 1 0;
+    height: 0;
+    min-height: 0;
+    max-height: none;
+  }
+}
 </style>
 <link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
 </head><body><div class="wrap"><nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../../index.html">Early Works</a><a class="nav-pill" href="../index.html">&larr; Late 1960s &amp; Early 1970s</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
