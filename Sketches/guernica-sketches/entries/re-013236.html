@@ -53,6 +53,23 @@ section[data-role="ancillary-documentation"]:not([data-category="artist-created-
 .video-tile figcaption{border-top:1px solid #e5e7eb;padding:10px 8px 12px;text-align:center;font-size:13px;line-height:1.4}
 video,iframe{max-width:100%}
 @media(max-width:390px){.wrap{padding:12px 10px 20px}section[data-role="digital"] .gallery-item{flex-basis:130px;width:130px;max-width:130px;height:165px}}
+
+/* Catalogue local-only correction: inner Original Drawing frames only. Outer panels remain unchanged. */
+section[data-role="original-drawing"] a.gallery-item,
+section[data-role="original-drawing"] .original-grid > a,
+section[data-role="original"] a.gallery-item,
+.primary-artwork[data-role="original"] > a.primary-artwork-link {
+  border:0 !important; border-radius:0 !important; box-shadow:none !important;
+  outline:0 !important; background:transparent !important; padding:0 !important;
+  overflow:visible !important;
+}
+section[data-role="original-drawing"] a.gallery-item > img,
+section[data-role="original-drawing"] .original-grid > a > img,
+section[data-role="original"] a.gallery-item > img,
+.primary-artwork[data-role="original"] > a.primary-artwork-link > img {
+  border:0 !important; border-radius:0 !important; box-shadow:none !important;
+  outline:0 !important; background:transparent !important; padding:0 !important;
+}
 </style></head><body><main class="wrap">
 <nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../sets/richmond-guernica-sketches/index.html">&larr; Richmond Guernica Sketches</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav>
