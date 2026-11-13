@@ -1,29 +1,39 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>Art Is a Horrible Waste of the Imagination | Ron English Catalogue Raisonné</title>
-
 <style>
-*{box-sizing:border-box}body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
-.wrap{max-width:1180px;margin:0 auto;padding:28px 18px 56px}.nav-pills,.sequence-nav{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px;margin:20px 0;text-align:center}
-.nav-pill{display:inline-block;padding:8px 14px;border:1px solid #e5e7eb;border-radius:999px;background:#fff;color:#111;text-decoration:none;font-size:14px}
-.page-header{text-align:center;margin:0 auto 24px}.page-title{margin:0;font-size:clamp(2rem,4vw,3rem);line-height:1.05;font-family:Georgia,"Times New Roman",serif;font-weight:500}
-.intro{max-width:900px;margin:0 auto 26px;text-align:center;color:#4b5563;line-height:1.6}
-.catalogue-meta-block{width:100%;max-width:900px;margin:0 auto 28px;text-align:center}.work-meta{list-style:none;padding:0;margin:0 auto;line-height:1.7;text-align:center}
-.relationship-note{max-width:900px;margin:0 auto 24px;padding:12px 16px;border:1px solid #e5e7eb;border-radius:14px;background:#f9fafb;line-height:1.6;text-align:center}
-.section-card{background:#fff;border:1px solid #e5e7eb;border-radius:18px;box-shadow:0 8px 26px rgba(0,0,0,.06);padding:22px;margin:0 0 24px}
-.section-card h2{text-align:center;margin:0 0 16px;font-size:1.4rem}
-.index-grid,.gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:18px}
-.index-card,.gallery-item{display:block;flex:0 1 280px;max-width:300px;width:100%;border:1px solid #e5e7eb;border-radius:16px;overflow:hidden;background:#fff;text-decoration:none;color:inherit}
-.index-card img,.gallery-item img{display:block;width:100%;height:250px;object-fit:contain;background:#f3f4f6;padding:8px}
-.original-grid .gallery-item{flex:0 1 900px;max-width:900px}.original-grid .gallery-item img{height:460px}
-.category-hero{max-width:900px;margin:0 auto 28px}.category-hero a{display:block;border:1px solid #e5e7eb;border-radius:18px;overflow:hidden;background:#f3f4f6}.category-hero img{display:block;width:100%;max-height:560px;object-fit:contain;background:#f3f4f6}
-.card-title{padding:13px 14px 14px;text-align:center;font-family:Georgia,"Times New Roman",serif;font-size:14px;font-weight:500;line-height:1.35}
-.text-block{max-width:900px;margin:0 auto;line-height:1.65;text-align:center}.notes-block{max-width:900px;margin:0 auto;line-height:1.65;text-align:center}
-footer{text-align:center;margin-top:30px;padding-top:16px;border-top:1px solid #e5e7eb;color:#6b7280;font-size:14px}
-@media(max-width:620px){.wrap{padding:22px 14px 48px}.index-card,.gallery-item{flex-basis:min(100%,330px);max-width:330px}.original-grid .gallery-item img{height:340px}.category-hero img{max-height:420px}}
+/* Ron English Sets & Groups approved consolidated layout — consolidated V3 */
 
-@media(max-width:480px){.index-grid .card-title,.index-grid .index-title,.group-grid .label,.group-grid .card-title{font-size:13px}}
-</style><style id="ron-bottom-prev-next-center-v1">
+:root{--border:#e5e7eb;--muted:#6b7280;--panel:#f8fafc}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.5}
+.wrap,.page-narrow{width:calc(100% - 28px);max-width:700px;margin:0 auto;padding:26px 0 48px}
+.nav-pills,.sequence-nav{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px;margin:20px auto;text-align:center}
+.nav-pill,.sequence-pill{display:inline-block;padding:8px 14px;border:1px solid var(--border);border-radius:999px;background:#fff;color:#111;text-decoration:none;font-size:14px;line-height:1.4}
+.nav-pill:hover,.sequence-pill:hover{background:#f9fafb}.sequence-nav .sequence-spacer{display:none}
+.page-header{text-align:center;margin:0 auto 24px}.page-title,h1{font-family:Georgia,"Times New Roman",serif;font-size:28px;font-weight:500;line-height:1.2;text-align:center}
+.page-title{margin:0}.section-card{width:100%;max-width:680px;margin:0 auto 24px;padding:18px;border:1px solid var(--border);border-radius:12px;background:#fff;box-shadow:none}
+.section-card h2{text-align:center;margin:0 0 16px;font-size:1.35rem}
+.catalogue-meta-block,.relationship-note{max-width:680px;margin:0 auto 24px;text-align:center}
+.work-meta{list-style:none;padding:0;margin:0 auto;line-height:1.7}
+.relationship-note{padding:12px 16px;border:1px solid var(--border);border-radius:12px;background:#f9fafb}
+.index-grid,.group-grid,.gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:12px;margin:0 auto}
+.index-grid>.index-card,.group-grid>.group-card,.gallery-grid>.gallery-item{display:flex;flex:0 0 200px;width:200px;max-width:200px;min-width:0;height:204px;flex-direction:column;align-items:stretch;overflow:hidden;background:#fff;color:inherit;text-decoration:none;text-align:center;border:1px solid var(--border);border-radius:12px;box-shadow:0 3px 12px #0000000b}
+.index-grid>.index-card:hover,.group-grid>.group-card:hover,.gallery-grid>.gallery-item:hover{border-color:#c9ced5;box-shadow:0 5px 16px #00000014}
+.index-grid>.index-card>img,.group-grid>.group-card>img,.gallery-grid>.gallery-item>img{display:block;width:100%;height:158px;flex:0 0 158px;max-width:100%;object-fit:contain;padding:8px;background:var(--panel);border-bottom:1px solid var(--border)}
+.index-grid .index-image,.group-grid .index-image{display:flex;align-items:center;justify-content:center;width:100%;height:158px;flex:0 0 158px;padding:8px;background:var(--panel);border-bottom:1px solid var(--border)}
+.index-grid .index-image img,.group-grid .index-image img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}
+.index-grid .card-title,.index-grid .index-title,.group-grid .label,.group-grid .card-title,.gallery-grid .entry-body{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:44px;max-height:44px;flex:0 0 44px;margin:0;padding:2px 6px;text-align:center;font-family:Georgia,"Times New Roman",serif;font-size:14px;font-weight:500;line-height:1.2;overflow-wrap:anywhere;overflow:hidden}
+.gallery-grid .work-title{margin:0;font:inherit}.card-subtitle,.set-label{display:block;font-size:12px;font-weight:400;line-height:1.2;color:var(--muted);margin-top:2px}
+footer{text-align:center;margin:30px auto 0;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:14px}footer a{color:inherit}
+@media(max-width:480px){.wrap,.page-narrow{width:calc(100% - 24px)}.section-card{padding:12px}}
+
+/* Retained page-specific presentation */
+.relationship-note{max-width:900px;margin:0 auto 24px;padding:12px 16px;border:1px solid #e5e7eb;border-radius:14px;background:#f9fafb;line-height:1.6;text-align:center}
+.notes-block{max-width:900px;margin:0 auto;line-height:1.65;text-align:center}
+
+/* Page-specific documentary and navigation presentation */
 /* Ron catalogue: center bottom Previous / Next navigation as a group. */
 nav.ron-bottom-prev-next-center{
   display:flex!important;
@@ -39,154 +49,53 @@ nav.ron-bottom-prev-next-center .sequence-spacer{
 nav.ron-bottom-prev-next-center > a{
   flex:0 1 auto!important;
 }
-</style><style id="ron-catalogue-four-across-standard-v1">
-.index-grid,
-.gallery-grid,
-.category-grid,
-.subcategories-grid,
-.cards-grid{
-  display:flex!important;
-  flex-wrap:wrap!important;
-  justify-content:center!important;
-  align-items:stretch!important;
-  gap:18px!important;
-}
-.index-grid > .index-card,
-.index-grid > .gallery-item,
-.index-grid > .group-card,
-.gallery-grid > .index-card,
-.gallery-grid > .gallery-item,
-.gallery-grid > .group-card,
-.category-grid > .index-card,
-.category-grid > .gallery-item,
-.category-grid > .group-card,
-.subcategories-grid > .index-card,
-.subcategories-grid > .gallery-item,
-.subcategories-grid > .group-card,
-.cards-grid > .index-card,
-.cards-grid > .gallery-item,
-.cards-grid > .group-card{
-  box-sizing:border-box!important;
-  min-width:0!important;
-  flex:0 1 calc((100% - 54px) / 4)!important;
-  width:calc((100% - 54px) / 4)!important;
-  max-width:calc((100% - 54px) / 4)!important;
-}
-@media(max-width:900px){
-  .index-grid > .index-card,.index-grid > .gallery-item,.index-grid > .group-card,
-  .gallery-grid > .index-card,.gallery-grid > .gallery-item,.gallery-grid > .group-card,
-  .category-grid > .index-card,.category-grid > .gallery-item,.category-grid > .group-card,
-  .subcategories-grid > .index-card,.subcategories-grid > .gallery-item,.subcategories-grid > .group-card,
-  .cards-grid > .index-card,.cards-grid > .gallery-item,.cards-grid > .group-card{
-    flex-basis:calc((100% - 36px) / 3)!important;
-    width:calc((100% - 36px) / 3)!important;
-    max-width:calc((100% - 36px) / 3)!important;
-  }
-}
-@media(max-width:680px){
-  .index-grid > .index-card,.index-grid > .gallery-item,.index-grid > .group-card,
-  .gallery-grid > .index-card,.gallery-grid > .gallery-item,.gallery-grid > .group-card,
-  .category-grid > .index-card,.category-grid > .gallery-item,.category-grid > .group-card,
-  .subcategories-grid > .index-card,.subcategories-grid > .gallery-item,.subcategories-grid > .group-card,
-  .cards-grid > .index-card,.cards-grid > .gallery-item,.cards-grid > .group-card{
-    flex-basis:calc((100% - 18px) / 2)!important;
-    width:calc((100% - 18px) / 2)!important;
-    max-width:calc((100% - 18px) / 2)!important;
-  }
-}
-@media(max-width:440px){
-  .index-grid > .index-card,.index-grid > .gallery-item,.index-grid > .group-card,
-  .gallery-grid > .index-card,.gallery-grid > .gallery-item,.gallery-grid > .group-card,
-  .category-grid > .index-card,.category-grid > .gallery-item,.category-grid > .group-card,
-  .subcategories-grid > .index-card,.subcategories-grid > .gallery-item,.subcategories-grid > .group-card,
-  .cards-grid > .index-card,.cards-grid > .gallery-item,.cards-grid > .group-card{
-    flex-basis:100%!important;
-    width:100%!important;
-    max-width:100%!important;
-  }
-}
-</style>
-<style id="ron-literature-citations-centered-global-20261012">section[data-role="literature"] .literature-entry,section[data-role="literature"] .literature-entry p,section[data-role="literature"] > p,section[data-role="literature"] .gallery-grid > p{ text-align:center!important; margin-left:auto!important; margin-right:auto!important; }section[data-role="literature"] .literature-entry{max-width:100%;}section[data-role="literature"] .gallery-grid{justify-content:center!important;}</style><link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
-<style id="ron-owner-200x200-set-cards-v1">
-/* Owner-approved 200 x 200 set artwork cards (2026-11-11).
-   Only index/group artwork cards: not Original Drawing, video or documentary galleries. */
-.index-grid, .group-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch}
-.index-grid > .index-card, .group-grid > .group-card{
- box-sizing:border-box;display:flex;flex:0 0 200px;width:200px;max-width:200px;
- height:200px;min-width:0;min-height:0;flex-direction:column;overflow:hidden;
- aspect-ratio:1 / 1;
-}
-.index-grid > .index-card > img, .group-grid > .group-card > img,
-.index-grid > .index-card > .index-image, .group-grid > .group-card > .index-image{
- box-sizing:border-box;display:block;flex:1 1 0;min-height:0;height:0;width:100%;
- max-width:100%;max-height:none;object-fit:contain;object-position:center;
-}
-.index-grid > .index-card > .index-image, .group-grid > .group-card > .index-image{
- display:flex;align-items:center;justify-content:center;
-}
-.index-grid > .index-card > .index-image img, .group-grid > .group-card > .index-image img{
- display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;
-}
-.index-grid > .index-card > .card-title, .index-grid > .index-card > .index-title,
-.group-grid > .group-card > .label, .group-grid > .group-card > .card-title{
- box-sizing:border-box;flex:0 0 auto;
-}
-@media(max-width:240px){
- .index-grid > .index-card, .group-grid > .group-card{
-  flex:0 1 100%;width:100%;max-width:200px;height:auto;aspect-ratio:1 / 1;
- }
-}
-/* Legacy large-gallery pages: size only the artwork index section holder.
-   Leave .gallery-grid, .gallery-item, original-grid and unrelated sections intact. */
-.section-card:has(.index-grid){box-sizing:border-box;width:100%;max-width:560px;margin-left:auto;margin-right:auto}
-.index-grid > .index-card > img{height:0;object-fit:contain}
 
-/* Higher specificity wins over the older four-across !important rules. */
-.index-grid > .index-card{flex:0 0 200px!important;width:200px!important;max-width:200px!important;height:200px!important;}
-@media(max-width:240px){.index-grid > .index-card{flex:0 1 100%!important;width:100%!important;max-width:200px!important;height:auto!important;}}
-</style></head><body><div class="wrap"><nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../../index.html">Early Works</a><a class="nav-pill" href="../index.html">&larr; Late 1980s</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
-</nav><header class="page-header"><h1 class="page-title">Art Is a Horrible Waste of the Imagination</h1></header><section class="section-card"><div class="index-grid"><a class="index-card" href="../works/re-001752.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/As%20Far%20as%20the%20Mind%20can%20Wander.jpg" alt="As Far as the Mind Can Wander" loading="lazy"><div class="card-title">As Far as the Mind Can Wander</div></a>
-<a class="index-card" href="../works/re-001753.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Bottoms%20Up.jpg" alt="Bottoms Up" loading="lazy"><div class="card-title">Bottoms Up</div></a>
-<a class="index-card" href="../works/re-001754.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Bozo%20Breath.jpg" alt="Bozo Breath" loading="lazy"><div class="card-title">Bozo Breath</div></a>
-<a class="index-card" href="../works/re-001755.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Brain%20Wave%20Surfers.jpg" alt="Brain Wave Surfers" loading="lazy"><div class="card-title">Brain Wave Surfers</div></a>
-<a class="index-card" href="../works/re-001756.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Brains%20for%20Breakfast.jpg" alt="Brains for Breakfast" loading="lazy"><div class="card-title">Brains for Breakfast</div></a>
-<a class="index-card" href="../works/re-001757.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Carnivorous%20Cow.jpg" alt="Carnivorous Cow" loading="lazy"><div class="card-title">Carnivorous Cow</div></a>
-<a class="index-card" href="../works/re-001758.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Deadheads%20don&#x27;t%20wear%20plaid.jpg" alt="Deadheads Don&#x27;t Wear Plaid" loading="lazy"><div class="card-title">Deadheads Don&#x27;t Wear Plaid</div></a>
-<a class="index-card" href="../works/re-001760.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Evolve!.jpg" alt="Evolve!" loading="lazy"><div class="card-title">Evolve!</div></a>
-<a class="index-card" href="../works/re-001761.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Eye-Hand%20Coordination.jpg" alt="Eye-Hand Coordination" loading="lazy"><div class="card-title">Eye-Hand Coordination</div></a>
-<a class="index-card" href="../works/re-001762.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Future%20Former%20Child.jpg" alt="Future Former Child" loading="lazy"><div class="card-title">Future Former Child</div></a>
-<a class="index-card" href="../works/re-001765.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Goo.jpg" alt="Goo" loading="lazy"><div class="card-title">Goo</div></a>
-<a class="index-card" href="../works/re-001769.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Happiness%20Sticks%20To%20Your%20Face.jpg" alt="Happiness Sticks to Your Face" loading="lazy"><div class="card-title">Happiness Sticks to Your Face</div></a>
-<a class="index-card" href="../works/re-001770.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Harvesting%20Ideas.jpg" alt="Harvesting Ideas" loading="lazy"><div class="card-title">Harvesting Ideas</div></a>
-<a class="index-card" href="../works/re-001771.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Heart%20Attack.jpg" alt="Heart Attack" loading="lazy"><div class="card-title">Heart Attack</div></a>
-<a class="index-card" href="../works/re-001772.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/In%20the%20Future%20Everyone%20Will%20Be%20Dead%20For%20Fifteen%20Minutes.jpg" alt="In the Future Everyone Will Be Dead for Fifteen Minutes" loading="lazy"><div class="card-title">In the Future Everyone Will Be Dead for Fifteen Minutes</div></a>
-<a class="index-card" href="../works/re-001773.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/In%20Your%20Minds%20Eye%20Babies.jpg" alt="In Your Minds Eye Babies" loading="lazy"><div class="card-title">In Your Minds Eye Babies</div></a>
-<a class="index-card" href="../works/re-001774.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Invading%20Aliens%20From%20The%20Beach.jpg" alt="Invading Aliens from the Beach" loading="lazy"><div class="card-title">Invading Aliens from the Beach</div></a>
-<a class="index-card" href="../works/re-001776.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Left%20Brain%2C%20Right%20Brain%2C%20Wrong%20Brain.jpg" alt="Left Brain, Right Brain, Wrong Brain" loading="lazy"><div class="card-title">Left Brain, Right Brain, Wrong Brain</div></a>
-<a class="index-card" href="../works/re-001777.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Let%20Them%20Eat%20Art.jpg" alt="Let Them Eat Art" loading="lazy"><div class="card-title">Let Them Eat Art</div></a>
-<a class="index-card" href="../works/re-001778.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Look%20Before%20You%20Speak.jpg" alt="Look Before You Speak" loading="lazy"><div class="card-title">Look Before You Speak</div></a>
-<a class="index-card" href="../works/re-001779.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Love%20Puppy.jpg" alt="Love Puppy" loading="lazy"><div class="card-title">Love Puppy</div></a>
-<a class="index-card" href="../works/re-001781.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Low%20Clearance%20Caption.jpg" alt="Low Clearance Caption" loading="lazy"><div class="card-title">Low Clearance Caption</div></a>
-<a class="index-card" href="../works/re-001782.html"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/yintv.jpg?v=20260623e" alt="Modern Love" loading="lazy"><div class="card-title">Modern Love</div></a>
-<a class="index-card" href="../works/re-001784.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Narcissusaurus.jpg" alt="Narcissusaurus" loading="lazy"><div class="card-title">Narcissusaurus</div></a>
-<a class="index-card" href="../works/re-001785.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Nearer%20Than%20Here.jpg" alt="Nearer Than Here" loading="lazy"><div class="card-title">Nearer Than Here</div></a>
-<a class="index-card" href="../works/re-001787.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Never%20Swallow%20Your%20Face.jpg" alt="Never Swallow Your Face" loading="lazy"><div class="card-title">Never Swallow Your Face</div></a>
-<a class="index-card" href="../works/re-001788.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/New%20Aids%20Transmitted%20Through%20Eye-Contact.jpg" alt="New Aids Transmitted Through Eye-Contact" loading="lazy"><div class="card-title">New Aids Transmitted Through Eye-Contact</div></a>
-<a class="index-card" href="../works/re-001789.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/On%20The%20Road%20Again.jpg" alt="On the Road Again" loading="lazy"><div class="card-title">On the Road Again</div></a>
-<a class="index-card" href="../works/re-001790.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Prontosaurus.jpg" alt="Prontosaurus" loading="lazy"><div class="card-title">Prontosaurus</div></a>
-<a class="index-card" href="../works/re-001791.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Psychedelic%20Dogs%20From%20Due%20North%20of%20Nowhere.jpg" alt="Psychedelic Dogs from Due North of Nowhere" loading="lazy"><div class="card-title">Psychedelic Dogs from Due North of Nowhere</div></a>
-<a class="index-card" href="../works/re-001792.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Psychic%20predicts%20Manhattan%20will%20slip%20into%20the%20ocean%20in%201990!.jpg" alt="Psychic Predicts Manhattan Will Slip into the Ocean in 1990!" loading="lazy"><div class="card-title">Psychic Predicts Manhattan Will Slip into the Ocean in 1990!</div></a>
-<a class="index-card" href="../works/re-016805.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/ribcage.jpg" alt="Ribcage" loading="lazy"><div class="card-title">Ribcage</div></a>
-<a class="index-card" href="../works/re-001795.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Slip%20of%20the%20Imagination.jpg" alt="Slip of the Imagination" loading="lazy"><div class="card-title">Slip of the Imagination</div></a>
-<a class="index-card" href="../works/re-001796.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Squirrel%20Squirt%20Beer.jpg" alt="Squirrel Squirt Beer" loading="lazy"><div class="card-title">Squirrel Squirt Beer</div></a>
-<a class="index-card" href="../works/re-001797.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Suitable%20For%20Framing.jpg" alt="Suitable for Framing" loading="lazy"><div class="card-title">Suitable for Framing</div></a>
-<a class="index-card" href="../works/re-001798.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Thank%20God%20it&#x27;s%20Monday.jpg" alt="Thank God It&#x27;s Monday" loading="lazy"><div class="card-title">Thank God It&#x27;s Monday</div></a>
-<a class="index-card" href="../works/re-001799.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/That&#x27;s%20a%20Mighty%20Big%20If!.jpg" alt="That&#x27;s a Mighty Big If!" loading="lazy"><div class="card-title">That&#x27;s a Mighty Big If!</div></a>
-<a class="index-card" href="../works/re-001800.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/The%20Creation%20of%20Omlette.jpg" alt="The Creation of Omlette" loading="lazy"><div class="card-title">The Creation of Omlette</div></a>
-<a class="index-card" href="../works/re-001801.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/The%20Past%20is%20Mearly%20a%20Reflection%20of%20the%20Future.jpg" alt="The Past Is Mearly a Reflection of the Future" loading="lazy"><div class="card-title">The Past Is Mearly a Reflection of the Future</div></a>
-<a class="index-card" href="../works/re-001803.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Thesaurus.jpg" alt="Thesaurus" loading="lazy"><div class="card-title">Thesaurus</div></a>
-<a class="index-card" href="../works/re-001804.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Ugh%20The%20Urban%20Caveman.jpg" alt="Ugh the Urban Caveman" loading="lazy"><div class="card-title">Ugh the Urban Caveman</div></a>
-<a class="index-card" href="../works/re-001806.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Unipig.jpg" alt="Unipig" loading="lazy"><div class="card-title">Unipig</div></a>
-<a class="index-card" href="../works/re-001808.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Where%27s%20the%20Beef.jpg" alt="Where&#x27;s the Beef" loading="lazy"><div class="card-title">Where&#x27;s the Beef</div></a>
-<a class="index-card" href="../works/re-001809.html"><img src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Yang%20%26%20Yang.jpg" alt="Yang &amp; Yang" loading="lazy"><div class="card-title">Yang &amp; Yang</div></a></div></section><section class="section-card" data-role="literature"><h2>Literature</h2><div class="literature-entry"><p>Ron English, Ron English: Art Is a Horrible Waste of the Imagination, ed. Cheryl Guttman, introduction by Mark Kostabi, 1988.</p></div></section>
-<nav class="sequence-nav ron-bottom-prev-next-center" aria-label="Catalogue sequence"><a class="nav-pill" href="../works/re-015535.html">&larr; Previous: All OJ Channel</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/early-works/late-1980s/sets/too-real-to-be-true.html">Next: Big Top Popaganda &rarr;</a></nav><footer>Published via GitHub Pages<br>for long-term public access.</footer></div></body></html>
+section[data-role="literature"] .literature-entry,section[data-role="literature"] .literature-entry p,section[data-role="literature"] > p,section[data-role="literature"] .gallery-grid > p{ text-align:center!important; margin-left:auto!important; margin-right:auto!important; }section[data-role="literature"] .literature-entry{max-width:100%;}section[data-role="literature"] .gallery-grid{justify-content:center!important;}
+</style>
+<link href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png" rel="icon" type="image/png"/>
+</head><body><div class="wrap"><nav aria-label="Site navigation" class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../../index.html">Early Works</a><a class="nav-pill" href="../index.html">← Late 1980s</a> <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
+</nav><header class="page-header"><h1 class="page-title">Art Is a Horrible Waste of the Imagination</h1></header><section class="section-card"><div class="index-grid"><a class="index-card" href="../works/re-001752.html"><img alt="As Far as the Mind Can Wander" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/As%20Far%20as%20the%20Mind%20can%20Wander.jpg"/><div class="card-title">As Far as the Mind Can Wander</div></a>
+<a class="index-card" href="../works/re-001753.html"><img alt="Bottoms Up" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Bottoms%20Up.jpg"/><div class="card-title">Bottoms Up</div></a>
+<a class="index-card" href="../works/re-001754.html"><img alt="Bozo Breath" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Bozo%20Breath.jpg"/><div class="card-title">Bozo Breath</div></a>
+<a class="index-card" href="../works/re-001755.html"><img alt="Brain Wave Surfers" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Brain%20Wave%20Surfers.jpg"/><div class="card-title">Brain Wave Surfers</div></a>
+<a class="index-card" href="../works/re-001756.html"><img alt="Brains for Breakfast" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Brains%20for%20Breakfast.jpg"/><div class="card-title">Brains for Breakfast</div></a>
+<a class="index-card" href="../works/re-001757.html"><img alt="Carnivorous Cow" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Carnivorous%20Cow.jpg"/><div class="card-title">Carnivorous Cow</div></a>
+<a class="index-card" href="../works/re-001758.html"><img alt="Deadheads Don't Wear Plaid" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Deadheads%20don't%20wear%20plaid.jpg"/><div class="card-title">Deadheads Don't Wear Plaid</div></a>
+<a class="index-card" href="../works/re-001760.html"><img alt="Evolve!" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Evolve!.jpg"/><div class="card-title">Evolve!</div></a>
+<a class="index-card" href="../works/re-001761.html"><img alt="Eye-Hand Coordination" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Eye-Hand%20Coordination.jpg"/><div class="card-title">Eye-Hand Coordination</div></a>
+<a class="index-card" href="../works/re-001762.html"><img alt="Future Former Child" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Future%20Former%20Child.jpg"/><div class="card-title">Future Former Child</div></a>
+<a class="index-card" href="../works/re-001765.html"><img alt="Goo" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Goo.jpg"/><div class="card-title">Goo</div></a>
+<a class="index-card" href="../works/re-001769.html"><img alt="Happiness Sticks to Your Face" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Happiness%20Sticks%20To%20Your%20Face.jpg"/><div class="card-title">Happiness Sticks to Your Face</div></a>
+<a class="index-card" href="../works/re-001770.html"><img alt="Harvesting Ideas" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Harvesting%20Ideas.jpg"/><div class="card-title">Harvesting Ideas</div></a>
+<a class="index-card" href="../works/re-001771.html"><img alt="Heart Attack" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Heart%20Attack.jpg"/><div class="card-title">Heart Attack</div></a>
+<a class="index-card" href="../works/re-001772.html"><img alt="In the Future Everyone Will Be Dead for Fifteen Minutes" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/In%20the%20Future%20Everyone%20Will%20Be%20Dead%20For%20Fifteen%20Minutes.jpg"/><div class="card-title">In the Future Everyone Will Be Dead for Fifteen Minutes</div></a>
+<a class="index-card" href="../works/re-001773.html"><img alt="In Your Minds Eye Babies" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/In%20Your%20Minds%20Eye%20Babies.jpg"/><div class="card-title">In Your Minds Eye Babies</div></a>
+<a class="index-card" href="../works/re-001774.html"><img alt="Invading Aliens from the Beach" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Invading%20Aliens%20From%20The%20Beach.jpg"/><div class="card-title">Invading Aliens from the Beach</div></a>
+<a class="index-card" href="../works/re-001776.html"><img alt="Left Brain, Right Brain, Wrong Brain" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Left%20Brain%2C%20Right%20Brain%2C%20Wrong%20Brain.jpg"/><div class="card-title">Left Brain, Right Brain, Wrong Brain</div></a>
+<a class="index-card" href="../works/re-001777.html"><img alt="Let Them Eat Art" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Let%20Them%20Eat%20Art.jpg"/><div class="card-title">Let Them Eat Art</div></a>
+<a class="index-card" href="../works/re-001778.html"><img alt="Look Before You Speak" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Look%20Before%20You%20Speak.jpg"/><div class="card-title">Look Before You Speak</div></a>
+<a class="index-card" href="../works/re-001779.html"><img alt="Love Puppy" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Love%20Puppy.jpg"/><div class="card-title">Love Puppy</div></a>
+<a class="index-card" href="../works/re-001781.html"><img alt="Low Clearance Caption" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Low%20Clearance%20Caption.jpg"/><div class="card-title">Low Clearance Caption</div></a>
+<a class="index-card" href="../works/re-001782.html"><img alt="Modern Love" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/yintv.jpg?v=20260623e"/><div class="card-title">Modern Love</div></a>
+<a class="index-card" href="../works/re-001784.html"><img alt="Narcissusaurus" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Narcissusaurus.jpg"/><div class="card-title">Narcissusaurus</div></a>
+<a class="index-card" href="../works/re-001785.html"><img alt="Nearer Than Here" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Nearer%20Than%20Here.jpg"/><div class="card-title">Nearer Than Here</div></a>
+<a class="index-card" href="../works/re-001787.html"><img alt="Never Swallow Your Face" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Never%20Swallow%20Your%20Face.jpg"/><div class="card-title">Never Swallow Your Face</div></a>
+<a class="index-card" href="../works/re-001788.html"><img alt="New Aids Transmitted Through Eye-Contact" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/New%20Aids%20Transmitted%20Through%20Eye-Contact.jpg"/><div class="card-title">New Aids Transmitted Through Eye-Contact</div></a>
+<a class="index-card" href="../works/re-001789.html"><img alt="On the Road Again" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/On%20The%20Road%20Again.jpg"/><div class="card-title">On the Road Again</div></a>
+<a class="index-card" href="../works/re-001790.html"><img alt="Prontosaurus" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Prontosaurus.jpg"/><div class="card-title">Prontosaurus</div></a>
+<a class="index-card" href="../works/re-001791.html"><img alt="Psychedelic Dogs from Due North of Nowhere" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Psychedelic%20Dogs%20From%20Due%20North%20of%20Nowhere.jpg"/><div class="card-title">Psychedelic Dogs from Due North of Nowhere</div></a>
+<a class="index-card" href="../works/re-001792.html"><img alt="Psychic Predicts Manhattan Will Slip into the Ocean in 1990!" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Psychic%20predicts%20Manhattan%20will%20slip%20into%20the%20ocean%20in%201990!.jpg"/><div class="card-title">Psychic Predicts Manhattan Will Slip into the Ocean in 1990!</div></a>
+<a class="index-card" href="../works/re-016805.html"><img alt="Ribcage" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/ribcage.jpg"/><div class="card-title">Ribcage</div></a>
+<a class="index-card" href="../works/re-001795.html"><img alt="Slip of the Imagination" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Slip%20of%20the%20Imagination.jpg"/><div class="card-title">Slip of the Imagination</div></a>
+<a class="index-card" href="../works/re-001796.html"><img alt="Squirrel Squirt Beer" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Squirrel%20Squirt%20Beer.jpg"/><div class="card-title">Squirrel Squirt Beer</div></a>
+<a class="index-card" href="../works/re-001797.html"><img alt="Suitable for Framing" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Suitable%20For%20Framing.jpg"/><div class="card-title">Suitable for Framing</div></a>
+<a class="index-card" href="../works/re-001798.html"><img alt="Thank God It's Monday" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Thank%20God%20it's%20Monday.jpg"/><div class="card-title">Thank God It's Monday</div></a>
+<a class="index-card" href="../works/re-001799.html"><img alt="That's a Mighty Big If!" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/That's%20a%20Mighty%20Big%20If!.jpg"/><div class="card-title">That's a Mighty Big If!</div></a>
+<a class="index-card" href="../works/re-001800.html"><img alt="The Creation of Omlette" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/The%20Creation%20of%20Omlette.jpg"/><div class="card-title">The Creation of Omlette</div></a>
+<a class="index-card" href="../works/re-001801.html"><img alt="The Past Is Mearly a Reflection of the Future" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/The%20Past%20is%20Mearly%20a%20Reflection%20of%20the%20Future.jpg"/><div class="card-title">The Past Is Mearly a Reflection of the Future</div></a>
+<a class="index-card" href="../works/re-001803.html"><img alt="Thesaurus" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Thesaurus.jpg"/><div class="card-title">Thesaurus</div></a>
+<a class="index-card" href="../works/re-001804.html"><img alt="Ugh the Urban Caveman" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Ugh%20The%20Urban%20Caveman.jpg"/><div class="card-title">Ugh the Urban Caveman</div></a>
+<a class="index-card" href="../works/re-001806.html"><img alt="Unipig" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Unipig.jpg"/><div class="card-title">Unipig</div></a>
+<a class="index-card" href="../works/re-001808.html"><img alt="Where's the Beef" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Where%27s%20the%20Beef.jpg"/><div class="card-title">Where's the Beef</div></a>
+<a class="index-card" href="../works/re-001809.html"><img alt="Yang &amp; Yang" loading="lazy" src="https://ronenglish-archive.github.io/ron-english-paintings-1980s/images/Paintings/1980s/1988/Yang%20%26%20Yang.jpg"/><div class="card-title">Yang &amp; Yang</div></a></div></section><section class="section-card" data-role="literature"><h2>Literature</h2><div class="literature-entry"><p>Ron English, Ron English: Art Is a Horrible Waste of the Imagination, ed. Cheryl Guttman, introduction by Mark Kostabi, 1988.</p></div></section>
+<nav aria-label="Catalogue sequence" class="sequence-nav ron-bottom-prev-next-center"><a class="nav-pill" href="../works/re-015535.html">← Previous: All OJ Channel</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/early-works/late-1980s/sets/too-real-to-be-true.html">Next: Big Top Popaganda →</a></nav><footer>Published via GitHub Pages<br/>for long-term public access.</footer></div></body></html>
