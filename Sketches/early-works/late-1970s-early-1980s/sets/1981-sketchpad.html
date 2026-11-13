@@ -2,69 +2,38 @@
 
 <html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>1981 Sketchpad | Ron English Catalogue Raisonné</title>
-
 <style>
-/* Approved compact drawing index and set-member grid: single clean stylesheet. */
+/* Ron English Sets & Groups approved consolidated layout — consolidated V3 */
+
 :root{--border:#e5e7eb;--muted:#6b7280;--panel:#f8fafc}
 *{box-sizing:border-box}
 body{margin:0;background:#fff;color:#111;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.5}
-.wrap{width:calc(100% - 36px);max-width:1100px;margin:0 auto;padding:26px 0 48px}
-.page-narrow{max-width:1100px}
+.wrap,.page-narrow{width:calc(100% - 28px);max-width:700px;margin:0 auto;padding:26px 0 48px}
 .nav-pills,.sequence-nav{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px;margin:20px auto;text-align:center}
 .nav-pill,.sequence-pill{display:inline-block;padding:8px 14px;border:1px solid var(--border);border-radius:999px;background:#fff;color:#111;text-decoration:none;font-size:14px;line-height:1.4}
-.nav-pill:hover,.sequence-pill:hover{background:#f9fafb}
-.sequence-nav .sequence-spacer{display:none}
-.page-header{text-align:center;margin:0 auto 24px}
-.page-title{margin:0;font-size:clamp(2rem,4vw,3rem);line-height:1.1;font-family:Georgia,"Times New Roman",serif;font-weight:500}
-.section-card{width:100%;max-width:560px;margin:0 auto 24px;padding:22px;border:1px solid var(--border);border-radius:18px;background:#fff;box-shadow:0 8px 26px #0000000f}
+.nav-pill:hover,.sequence-pill:hover{background:#f9fafb}.sequence-nav .sequence-spacer{display:none}
+.page-header{text-align:center;margin:0 auto 24px}.page-title,h1{font-family:Georgia,"Times New Roman",serif;font-size:28px;font-weight:500;line-height:1.2;text-align:center}
+.page-title{margin:0}.section-card{width:100%;max-width:680px;margin:0 auto 24px;padding:18px;border:1px solid var(--border);border-radius:12px;background:#fff;box-shadow:none}
 .section-card h2{text-align:center;margin:0 0 16px;font-size:1.35rem}
-.catalogue-meta-block,.relationship-note{max-width:900px;margin:0 auto 24px;text-align:center}
+.catalogue-meta-block,.relationship-note{max-width:680px;margin:0 auto 24px;text-align:center}
 .work-meta{list-style:none;padding:0;margin:0 auto;line-height:1.7}
-.relationship-note{padding:12px 16px;border:1px solid var(--border);border-radius:14px;background:#f9fafb}
-.index-grid,.group-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:16px;margin:0 auto}
-.index-grid>.index-card,.group-grid>.group-card{display:flex;flex:0 0 155px;width:155px;max-width:155px;min-width:0;flex-direction:column;align-items:stretch;overflow:hidden;background:#fff;color:inherit;text-decoration:none;text-align:center;border:1px solid var(--border);border-radius:12px;box-shadow:0 3px 12px #0000000b}
-.index-grid>.index-card:hover,.group-grid>.group-card:hover{border-color:#c9ced5;box-shadow:0 5px 16px #00000014}
-.index-grid>.index-card>img,.group-grid>.group-card>img{display:block;width:100%;height:180px;max-width:100%;object-fit:contain;padding:8px;background:var(--panel);border-bottom:1px solid var(--border)}
-.index-grid .index-image{display:flex;align-items:center;justify-content:center;width:100%;height:180px;padding:8px;background:var(--panel);border-bottom:1px solid var(--border)}
-.index-grid .index-image img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}
-.index-grid .card-title,.index-grid .index-title,.group-grid .label,.group-grid .card-title{display:block;margin:0;padding:10px 8px 12px;text-align:center;font-family:Georgia,"Times New Roman",serif;font-size:14px;font-weight:500;line-height:1.35;overflow-wrap:anywhere}
-.card-subtitle,.set-label{display:block;font-size:12px;font-weight:400;line-height:1.35;color:var(--muted);margin-top:4px}
-footer{text-align:center;margin:30px auto 0;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:14px}
-footer a{color:inherit}
-@media(max-width:480px){.wrap{width:calc(100% - 24px)}.section-card{padding:14px}.index-grid,.group-grid{gap:12px}.index-grid>.index-card,.group-grid>.group-card{flex:0 1 145px;max-width:145px;width:145px}.index-grid>.index-card>img,.group-grid>.group-card>img,.index-grid .index-image{height:140px}.index-grid .card-title,.index-grid .index-title,.group-grid .label,.group-grid .card-title{font-size:13px}}
-</style>
+.relationship-note{padding:12px 16px;border:1px solid var(--border);border-radius:12px;background:#f9fafb}
+.index-grid,.group-grid,.gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;gap:12px;margin:0 auto}
+.index-grid>.index-card,.group-grid>.group-card,.gallery-grid>.gallery-item{display:flex;flex:0 0 200px;width:200px;max-width:200px;min-width:0;height:204px;flex-direction:column;align-items:stretch;overflow:hidden;background:#fff;color:inherit;text-decoration:none;text-align:center;border:1px solid var(--border);border-radius:12px;box-shadow:0 3px 12px #0000000b}
+.index-grid>.index-card:hover,.group-grid>.group-card:hover,.gallery-grid>.gallery-item:hover{border-color:#c9ced5;box-shadow:0 5px 16px #00000014}
+.index-grid>.index-card>img,.group-grid>.group-card>img,.gallery-grid>.gallery-item>img{display:block;width:100%;height:158px;flex:0 0 158px;max-width:100%;object-fit:contain;padding:8px;background:var(--panel);border-bottom:1px solid var(--border)}
+.index-grid .index-image,.group-grid .index-image{display:flex;align-items:center;justify-content:center;width:100%;height:158px;flex:0 0 158px;padding:8px;background:var(--panel);border-bottom:1px solid var(--border)}
+.index-grid .index-image img,.group-grid .index-image img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}
+.index-grid .card-title,.index-grid .index-title,.group-grid .label,.group-grid .card-title,.gallery-grid .entry-body{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:44px;max-height:44px;flex:0 0 44px;margin:0;padding:2px 6px;text-align:center;font-family:Georgia,"Times New Roman",serif;font-size:14px;font-weight:500;line-height:1.2;overflow-wrap:anywhere;overflow:hidden}
+.gallery-grid .work-title{margin:0;font:inherit}.card-subtitle,.set-label{display:block;font-size:12px;font-weight:400;line-height:1.2;color:var(--muted);margin-top:2px}
+footer{text-align:center;margin:30px auto 0;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:14px}footer a{color:inherit}
+@media(max-width:480px){.wrap,.page-narrow{width:calc(100% - 24px)}.section-card{padding:12px}}
 
-<link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
-<style id="ron-owner-200x200-set-cards-v1">
-/* Owner-approved 200 x 200 set artwork cards (2026-11-11).
-   Only index/group artwork cards: not Original Drawing, video or documentary galleries. */
-.index-grid, .group-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch}
-.index-grid > .index-card, .group-grid > .group-card{
- box-sizing:border-box;display:flex;flex:0 0 200px;width:200px;max-width:200px;
- height:200px;min-width:0;min-height:0;flex-direction:column;overflow:hidden;
- aspect-ratio:1 / 1;
-}
-.index-grid > .index-card > img, .group-grid > .group-card > img,
-.index-grid > .index-card > .index-image, .group-grid > .group-card > .index-image{
- box-sizing:border-box;display:block;flex:1 1 0;min-height:0;height:0;width:100%;
- max-width:100%;max-height:none;object-fit:contain;object-position:center;
-}
-.index-grid > .index-card > .index-image, .group-grid > .group-card > .index-image{
- display:flex;align-items:center;justify-content:center;
-}
-.index-grid > .index-card > .index-image img, .group-grid > .group-card > .index-image img{
- display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;
-}
-.index-grid > .index-card > .card-title, .index-grid > .index-card > .index-title,
-.group-grid > .group-card > .label, .group-grid > .group-card > .card-title{
- box-sizing:border-box;flex:0 0 auto;
-}
-@media(max-width:240px){
- .index-grid > .index-card, .group-grid > .group-card{
-  flex:0 1 100%;width:100%;max-width:200px;height:auto;aspect-ratio:1 / 1;
- }
-}
-</style><style id="ron-five-early-works-notes-center-v1">
+/* Retained page-specific presentation */
+.catalogue-meta-block,.relationship-note{max-width:900px;margin:0 auto 24px;text-align:center}
+.relationship-note{padding:12px 16px;border:1px solid var(--border);border-radius:14px;background:#f9fafb}
+
+/* Page-specific documentary and navigation presentation */
 /* Notes text only. Other panels, artwork and navigation are unchanged. */
 .section-card.ron-notes-center.ron-unified-notes-wip-panel,
 .section-card.ron-notes-center.ron-unified-notes-wip-panel h2,
@@ -77,9 +46,11 @@ footer a{color:inherit}
   margin-right:auto;
 }
 </style>
-</head><body><div class="wrap"><nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../../index.html">Early Works</a><a class="nav-pill" href="../index.html">&larr; Late 1970s &amp; Early 1980s</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
+<link href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png" rel="icon" type="image/png"/>
+
+</head><body><div class="wrap"><nav aria-label="Site navigation" class="nav-pills"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../../index.html">Early Works</a><a class="nav-pill" href="../index.html">← Late 1970s &amp; Early 1980s</a> <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav>
 <header class="page-header"><h1 class="page-title">1981 Sketchpad</h1></header><section class="section-card"><div class="index-grid"><a class="index-card" href="../works/re-015476.html"><img alt="Brontosaurus" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260708%20%282%29.jpg?v=20260708b"/><div class="card-title">Brontosaurus</div></a><a class="index-card" href="../works/re-015479.html"><img alt="End Begin" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260708%20%287%29.jpg?v=20260708e"/><div class="card-title">End Begin</div></a><a class="index-card" href="../works/re-015469.html"><img alt="Have a Bud" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260707%20%2849%29.jpg?v=20260707d"/><div class="card-title">Have a Bud</div></a><a class="index-card" href="../works/re-015477.html"><img alt="Hawking Pumpkins" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260708%20%284%29.jpg?v=20260708c"/><div class="card-title">Hawking Pumpkins</div></a><a class="index-card" href="../works/re-015474.html"><img alt="Ideas" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260708.jpg?v=20260708a"/><div class="card-title">Ideas</div></a><a class="index-card" href="../works/re-015475.html"><img alt="Lost in the Woods" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260708%20%283%29.jpg?v=20260708b"/><div class="card-title">Lost in the Woods</div></a><a class="index-card" href="../works/re-015480.html"><img alt="Nightmares" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260708%20%288%29.jpg?v=20260708f"/><div class="card-title">Nightmares</div></a><a class="index-card" href="../works/re-015471.html"><img alt="Party" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260707%20%2851%29.jpg?v=20260707d"/><div class="card-title">Party</div></a><a class="index-card" href="../works/re-015473.html"><img alt="Pegasus" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260707%20%2853%29.jpg?v=20260707d"/><div class="card-title">Pegasus</div></a><a class="index-card" href="../works/re-015472.html"><img alt="Playing Dominoes" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260707%20%2852%29.jpg?v=20260707d"/><div class="card-title">Playing Dominoes</div></a><a class="index-card" href="../works/re-015467.html"><img alt="Profile" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260707%20%2847%29.jpg?v=20260707d"/><div class="card-title">Profile</div></a><a class="index-card" href="../works/re-015468.html"><img alt="Ready, Camera, Action" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260707%20%2848%29.jpg?v=20260707d"/><div class="card-title">Ready, Camera, Action</div></a><a class="index-card" href="../works/re-015470.html"><img alt="Trippin" loading="lazy" src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/Scan_20260707%20%2850%29.jpg?v=20260707d"/><div class="card-title">Trippin</div></a></div></section>
 <section class="section-card ron-notes-center ron-unified-notes-wip-panel"><h2>Notes</h2><div class="text-block"><p>Works from the same 1981 sketchpad.</p></div></section>
-<nav class="sequence-nav ron-bottom-prev-next-center" aria-label="Catalogue sequence"><a class="nav-pill" href="../works/re-015451.html">Next: A Stone&#39;s Throw Away &rarr;</a></nav>
+<nav aria-label="Catalogue sequence" class="sequence-nav ron-bottom-prev-next-center"><a class="nav-pill" href="../works/re-015451.html">Next: A Stone's Throw Away →</a></nav>
 <footer>Published via GitHub Pages<br/>for long-term public access.</footer></div></body></html>

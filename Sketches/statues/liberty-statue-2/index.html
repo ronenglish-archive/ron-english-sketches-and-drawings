@@ -13,108 +13,80 @@
 
 
 
-<style>
-/* FIVE COLLECTIONS — approved November 8 drawing-detail media + V3 typography. */
+
+<style id="ron-approved-drawing-detail">
+
 *{box-sizing:border-box}
-:root{--border:#e5e7eb;--muted:#6b7280}
-html,body{margin:0;background:#fff;color:#111}
-body{font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;font-size:14px;line-height:1.6}
-.wrap{width:100%;max-width:620px;margin:0 auto;padding:22px 15px 48px}
-.nav-pills,.sequence-nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;margin:18px auto;text-align:center}
-.nav-pill{display:inline-block;padding:8px 13px;background:#fff;color:#111;text-decoration:none;font-size:13px;border:1px solid var(--border);border-radius:999px}
-.nav-pill:hover{background:#f8fafc}
-.page-header,.page-header h1,.wrap>header h1,.wrap>h1,.page-title{text-align:center}
-.page-header{margin:12px auto 20px}
-.page-title,.page-header h1,.wrap>header h1,.wrap>h1{margin:0;font-family:Georgia,serif;font-size:28px;line-height:1.2}
-.section-card{width:100%;max-width:560px;margin:0 auto 18px;padding:19px 16px;background:#fff;border:1px solid var(--border);border-radius:12px;box-shadow:none}
-.section-card h2,.original-drawing-heading{font-family:Georgia,serif;font-size:20px;text-align:center;line-height:1.3;margin:0 auto 14px}
-.original-drawing-heading{margin:0 auto 11px}
-.gallery-grid,.index-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:12px}
-.gallery-item,.index-card{display:block;min-width:0;color:inherit;text-decoration:none;border:1px solid var(--border);background:#fff;border-radius:12px;overflow:hidden}
-.gallery-item img,.index-card img{display:block;width:100%;object-fit:contain;object-position:center;background:#fff}
-[data-role="original-drawing"] .gallery-grid>a{display:block;min-width:0;width:100%;max-width:410px;flex:0 1 410px;margin-left:auto;margin-right:auto}
-[data-role="original-drawing"] .gallery-grid>a img{display:block;width:100%;height:auto;max-height:380px;object-fit:contain;object-position:center}
-.catalogue-meta-block,.relationship-note,.notes-block,.text-block{max-width:520px;margin-left:auto;margin-right:auto;text-align:center;line-height:1.6}
-.catalogue-meta-block{margin-bottom:18px}
-.relationship-note{width:100%;max-width:520px;margin:14px auto 18px;padding:14px 16px;background:#f3f4f6;border:1px solid #d1d5db;border-radius:10px;text-align:center}
-.work-meta{margin:0 auto;padding:0;list-style:none;line-height:1.65;text-align:center}
-.work-meta li{list-style:none;display:block;margin:2px auto;padding:0}
-.work-meta li::marker{content:""}
-.section-card .text-block p{margin:.4rem auto}
-/* Digitized Versions: exact outer 155x165px bordered frames. */
-[data-role="digital"] .gallery-grid,[data-role="digitized-versions"] .gallery-grid{gap:12px;justify-content:center;align-items:flex-start}
-[data-role="digital"] .gallery-grid>a,[data-role="digitized-versions"] .gallery-grid>a{box-sizing:border-box;display:block;flex:0 0 155px;width:155px;max-width:155px;height:165px;min-height:165px;max-height:165px;padding:0;border:1px solid var(--border);border-radius:12px;box-shadow:none;overflow:hidden;background:#fff}
-[data-role="digital"] .gallery-grid>a img,[data-role="digitized-versions"] .gallery-grid>a img{display:block;width:100%;height:100%;max-height:none;object-fit:contain;object-position:center;background:#fff;padding:0}
-/* Independent documentary/card categories (not interchangeable). */
-[data-role="area54-cards"] .gallery-grid,[data-role="delusionville-trading-cards"] .gallery-grid,[data-role="delusionville-cards"] .gallery-grid,[data-role="cards"] .gallery-grid,[data-role="graphic-designs"] .gallery-grid,[data-role="graphic-design"] .gallery-grid,[data-role="work-in-progress"] .gallery-grid,[data-role="photo-gallery"] .gallery-grid{justify-content:center;gap:12px}
-[data-role="area54-cards"] .gallery-grid>a,[data-role="delusionville-trading-cards"] .gallery-grid>a,[data-role="delusionville-cards"] .gallery-grid>a,[data-role="cards"] .gallery-grid>a,[data-role="graphic-designs"] .gallery-grid>a,[data-role="graphic-design"] .gallery-grid>a,[data-role="work-in-progress"] .gallery-grid>a,[data-role="photo-gallery"] .gallery-grid>a{display:block;width:130px;max-width:130px;flex:0 0 130px}
-[data-role="area54-cards"] .gallery-grid>a img,[data-role="delusionville-trading-cards"] .gallery-grid>a img,[data-role="delusionville-cards"] .gallery-grid>a img,[data-role="cards"] .gallery-grid>a img,[data-role="graphic-designs"] .gallery-grid>a img,[data-role="graphic-design"] .gallery-grid>a img,[data-role="work-in-progress"] .gallery-grid>a img,[data-role="photo-gallery"] .gallery-grid>a img{display:block;width:100%;height:170px;max-height:170px;object-fit:contain;object-position:center;background:#fff}
-[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-items{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;gap:12px}
-[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-item{display:block;flex:0 0 130px;width:130px;max-width:130px;margin:0;text-align:center}
-[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-item .gallery-item{display:block;width:130px;max-width:130px}
-[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-item .gallery-item img{display:block!important;width:100%!important;height:170px!important;max-height:170px!important;object-fit:contain!important;object-position:center!important;background:#fff!important;margin:0!important}
-.section-card.ron-unified-notes-wip-panel .gallery-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
-.section-card.ron-unified-notes-wip-panel .gallery-grid>a{display:block;width:130px;max-width:130px;flex:0 0 130px}
-.section-card.ron-unified-notes-wip-panel .gallery-grid>a img{display:block;width:100%;height:170px;object-fit:contain;object-position:center;background:#fff}
-[data-role="literature"] .gallery-grid{gap:12px;justify-content:center}
-[data-role="literature"] .literature-entry{max-width:520px;margin:0 auto 16px;text-align:center;line-height:1.65}
-[data-role="literature"] .gallery-grid>a{width:155px;max-width:155px;flex:0 0 155px;padding:6px}
-[data-role="literature"] .gallery-grid>a img{width:100%;height:auto;max-height:155px;object-fit:contain;background:#fff}
-/* Verified YouTube poster cards only; native video elements remain native. */
-[data-role="videos"] .ron-yt-clean-grid{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:12px}
-[data-role="videos"] .ron-yt-clean-tile{display:block;position:relative;flex:0 0 200px;width:200px;max-width:200px;margin:0;text-align:center}
-[data-role="videos"] .ron-video-poster{position:relative!important;display:flex!important;align-items:center!important;justify-content:center!important;width:100%!important;height:125px!important;min-height:125px!important;max-height:125px!important;overflow:hidden!important;background:#fff!important;border:1px solid var(--border);border-radius:10px!important}
-[data-role="videos"] .ron-video-poster img{display:block!important;width:100%!important;max-width:100%!important;height:100%!important;object-fit:contain!important;background:#fff!important}
-[data-role="videos"] .ron-video-poster span[aria-hidden="true"]{position:absolute!important;top:50%!important;left:50%!important;transform:translate(-50%,-50%)!important;display:flex!important;align-items:center!important;justify-content:center!important;width:44px!important;height:44px!important;padding:0!important;border-radius:50%!important;font-size:22px!important;line-height:1!important;background:rgba(0,0,0,.8)!important;color:white!important}
-[data-role="videos"] .ron-yt-clean-tile figcaption{margin-top:7px;font-size:12px;line-height:1.4}
-[data-role="videos"] .ron-yt-clean-tile figcaption a{color:#111}
-[data-role="videos"] video,[data-role="videos"] iframe{max-width:100%;height:auto}
-.section-card.ron-notes-center,.section-card.ron-notes-center p,.section-card.ron-notes-center .text-block,[data-role="notes"],[data-role="notes"] p,.notes-text{text-align:center}
-.gallery-caption,.image-caption,.media-caption,figcaption{font-size:12px}
-footer{text-align:center;margin:28px auto 0;padding-top:16px;border-top:1px solid var(--border);color:var(--muted);font-size:13px}
-@media(max-width:380px){.wrap{padding:18px 10px 42px}.section-card{padding:14px 10px}[data-role="digital"] .gallery-grid>a,[data-role="digitized-versions"] .gallery-grid>a{width:130px;max-width:130px;flex-basis:130px}}
-
-/* FIVE COLLECTIONS: source markup for body-parts and characters. Preserve the owner-approved visible hero frames. */
-.primary-artwork[data-role="original"]{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;gap:12px;width:100%;max-width:560px;margin:0 auto 18px;padding:19px 16px;background:#fff;border:1px solid var(--border);border-radius:12px}
-.primary-artwork[data-role="original"]>a.primary-artwork-link{display:block;flex:0 1 410px;width:100%;max-width:410px;margin:0 auto;text-align:center;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:#fff}
-.primary-artwork[data-role="original"]>a.primary-artwork-link img{display:block;width:100%;height:auto;max-height:380px;object-fit:contain;object-position:center;background:#fff;margin:auto}
-.image-grid{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;gap:12px}
-[data-role="original-drawing"] .image-grid>a{display:block;flex:0 1 410px;width:100%;max-width:410px;border:1px solid var(--border);border-radius:12px;overflow:hidden}
-[data-role="original-drawing"] .image-grid>a img{display:block;width:100%;height:auto;max-height:380px;object-fit:contain}
-[data-role="digital"] .image-grid>a{display:block;box-sizing:border-box;flex:0 0 155px;width:155px;max-width:155px;height:165px;min-height:165px;max-height:165px;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:#fff}
-[data-role="digital"] .image-grid>a img{display:block;width:100%;height:100%;max-height:none;object-fit:contain;object-position:center;background:#fff}
-.section-card h2,.section-title{font-family:Georgia,serif;font-size:20px;line-height:1.3;text-align:center;margin:0 auto 14px}
-.metadata,.missing-original{max-width:520px;margin:12px auto 20px;text-align:center;line-height:1.65}
-.section-card[data-role="original-drawing"]{text-align:center}
-@media(max-width:380px){[data-role="digital"] .image-grid>a{flex-basis:130px;width:130px;max-width:130px}}
-
-/* Match source page role variations without changing markup. */
-[data-role="digitized-versions"] .image-grid>a{display:block;flex:0 0 155px;width:155px;max-width:155px;height:165px;border:1px solid var(--border);border-radius:12px;overflow:hidden;background:#fff}
-[data-role="digitized-versions"] .image-grid>a img{display:block;width:100%;height:100%;object-fit:contain;background:#fff}
-[data-role="original-drawing"] .primary-artwork-link{display:block;max-width:410px;width:100%;margin:0 auto;border:1px solid var(--border);border-radius:12px;overflow:hidden}
-[data-role="original-drawing"] .primary-artwork-link img{display:block;width:100%;height:auto;max-height:380px;object-fit:contain}
-[data-role="cards"] .image-grid>a,[data-role="graphic-designs"] .image-grid>a,[data-role="graphic-design"] .image-grid>a,[data-role="work-in-progress"] .image-grid>a,[data-role="photo-gallery"] .image-grid>a,[data-role="area54-cards"] .image-grid>a,[data-role="delusionville-cards"] .image-grid>a,[data-role="delusionville-trading-cards"] .image-grid>a{display:block;flex:0 0 130px;width:130px;max-width:130px;border:1px solid var(--border);border-radius:12px;overflow:hidden}
-[data-role="cards"] .image-grid>a img,[data-role="graphic-designs"] .image-grid>a img,[data-role="graphic-design"] .image-grid>a img,[data-role="work-in-progress"] .image-grid>a img,[data-role="photo-gallery"] .image-grid>a img,[data-role="area54-cards"] .image-grid>a img,[data-role="delusionville-cards"] .image-grid>a img,[data-role="delusionville-trading-cards"] .image-grid>a img{display:block;width:100%;height:170px;max-height:170px;object-fit:contain}
-[data-role="ancillary-documentation"][data-category="work-in-progress"] .ron-doc-category-items,[data-role="ancillary-documentation"][data-category="photo-gallery"] .ron-doc-category-items{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
-[data-role="ancillary-documentation"][data-category="work-in-progress"] .ron-doc-category-item,[data-role="ancillary-documentation"][data-category="photo-gallery"] .ron-doc-category-item{display:block;flex:0 0 130px;width:130px;max-width:130px;margin:0}
-[data-role="ancillary-documentation"][data-category="work-in-progress"] .ron-doc-category-item img,[data-role="ancillary-documentation"][data-category="photo-gallery"] .ron-doc-category-item img{display:block!important;width:100%!important;height:170px!important;object-fit:contain!important}
-[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-item img{height:170px!important;width:100%!important;max-height:170px!important;object-fit:contain!important}
-@media(max-width:380px){[data-role="digitized-versions"] .image-grid>a{flex-basis:130px;width:130px;max-width:130px}}
+html,body{margin:0;background:#fff;color:#222}
+body{font:14px/1.6 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;text-align:center}
+a{color:inherit}a:focus-visible{outline:2px solid #2563eb;outline-offset:3px}
+.wrap{width:100%;max-width:620px;padding:16px 14px 22px;margin:0 auto}
+.nav-pills,.sequence-nav,.ron-bottom-prev-next-center{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:9px;margin:8px auto 14px;text-align:center}
+.nav-pill,.sequence-pill,.sequence-nav>a{display:inline-block;padding:6px 11px;border:1px solid #e5e7eb;border-radius:999px;text-decoration:none;font-size:12px;background:#fff;color:#222}
+.sequence-spacer{display:none}
+.page-header{margin:12px auto 16px;text-align:center}
+h1,.page-title,.page-header h1{font:400 28px/1.17 Georgia,serif;text-align:center;margin:12px auto 16px}
+h2,h3,.original-drawing-heading,.section-card h2,.section-block h2{font:400 20px/1.3 Georgia,serif;text-align:center;margin:0 0 12px}
+.wrap>h2,.wrap>main>h2{margin:10px auto 12px}
+.catalogue-meta-block,.meta,.metadata{width:100%;max-width:540px;margin:10px auto 15px;text-align:center}
+.metadata p,.meta p{margin:4px auto;text-align:center}.work-meta{list-style:none;padding:0;margin:0 auto;line-height:1.65}.work-meta li{display:block;margin:2px auto;text-align:center}
+.relationship-note,.shared-sheet-note,.fused-original-note{width:100%;max-width:560px;margin:16px auto;padding:19px 16px;background:#f3f4f6;border:1px solid #e5e7eb;border-radius:12px;box-shadow:none;text-align:center}
+.section-card,.section-block,.primary-artwork{display:block;width:100%;max-width:560px;margin:18px auto;padding:19px 16px;background:#fff;border:1px solid #e5e7eb;border-radius:12px;box-shadow:none;text-align:center}
+.section-card h2,.section-block h2{margin:0 0 12px}
+.gallery-grid,.image-grid,.original-grid,.kaiju-gallery{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:12px;margin:0 auto}
+.gallery-grid>a,.image-grid>a,.original-grid>a,.kaiju-gallery>a,.gallery-item{display:flex;align-items:center;justify-content:center;max-width:100%;min-width:0;margin:0;text-decoration:none;border:1px solid #e5e7eb;border-radius:10px;background:#fff;overflow:hidden}
+.gallery-grid img,.image-grid img,.original-grid img,.kaiju-gallery img{display:block;max-width:100%;height:auto;object-fit:contain;object-position:center}
+/* Center original artwork within its existing white outer panel */
+.primary-artwork{display:flex;flex-direction:column;align-items:center;justify-content:center}
+.primary-artwork>a,.primary-artwork-link{display:flex;align-items:center;justify-content:center;margin-left:auto;margin-right:auto}
+/* Physical original: one large outer panel, no image-level frame */
+[data-role="original-drawing"] .image-grid,[data-role="original-drawings"] .image-grid,[data-role="original"] .image-grid{align-items:center}
+[data-role="original-drawing"] .image-grid>a,[data-role="original-drawing"] .original-grid>a,[data-role="original-drawings"] .image-grid>a,[data-role="original"] .gallery-grid>a,.primary-artwork>a,.primary-artwork-link{border:0;border-radius:0;padding:0;box-shadow:none;overflow:visible;max-width:410px;height:auto;background:transparent}
+[data-role="original-drawing"] img,[data-role="original-drawings"] img,[data-role="original"] img,.primary-artwork img{display:block;max-height:380px;max-width:100%;width:auto;height:auto;object-fit:contain}
+/* Digitized Versions are fixed square cards, including singular headings */
+[data-role="digitized"] .image-grid>a,[data-role="digitized"] .gallery-grid>a,[data-role="digital"] .image-grid>a,[data-role="digitized-versions"] .gallery-grid>a{flex:0 0 200px;width:200px;max-width:200px;height:200px;padding:0}
+[data-role="digitized"] .image-grid>a img,[data-role="digitized"] .gallery-grid>a img,[data-role="digital"] .image-grid>a img,[data-role="digitized-versions"] .gallery-grid>a img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}
+/* Photo gallery square media with no displayed photo captions */
+[data-role="photo-gallery"] .gallery-grid>a,[data-role="photo-gallery"] .image-grid>a{width:200px;height:200px;flex:0 0 200px;padding:0}
+[data-role="photo-gallery"] .gallery-grid img,[data-role="photo-gallery"] .image-grid img{width:100%;height:100%;object-fit:contain}
+[data-role="photo-gallery"] figcaption,.photo-gallery figcaption{display:none}
+/* Graphic designs: natural ratio, bounded, never cropped */
+[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-items{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:12px;margin:0 auto}
+[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-item{display:flex;flex-direction:column;align-items:center;flex:0 1 auto;width:auto;max-width:200px;margin:0;text-align:center}
+[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-item>a{display:flex;align-items:center;justify-content:center;width:auto;height:auto;max-width:200px;max-height:200px;min-width:0;padding:0;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden}
+[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] .ron-doc-category-item img{display:block;width:auto;height:auto;max-width:200px;max-height:200px;object-fit:contain}
+[data-role="ancillary-documentation"][data-category="artist-created-graphic-designs"] figcaption{font-size:12px;line-height:1.4;margin:5px auto 0;overflow-wrap:anywhere}
+/* Work in Progress and documentary cards retain distinct source proportions */
+[data-role="wip"] .image-grid>a,[data-role="work-in-progress"] .image-grid>a,[data-role="card"] .image-grid>a,[data-role="card"] .gallery-grid>a,[data-role="cards"] .gallery-grid>a,[data-role="delusionville-trading-cards"] .gallery-grid>a{flex:0 0 130px;width:130px;max-width:130px;height:170px;min-height:170px;padding:0}
+[data-role="wip"] .image-grid>a img,[data-role="work-in-progress"] .image-grid>a img,[data-role="card"] .image-grid>a img,[data-role="card"] .gallery-grid>a img,[data-role="cards"] .gallery-grid>a img,[data-role="delusionville-trading-cards"] .gallery-grid>a img{width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}
+/* Literature: citation and its associated media remain sequential */
+[data-role="literature"] .literature-entry,[data-role="literature"] .literature-entry p{max-width:520px;text-align:center;margin:8px auto 12px}
+[data-role="literature"] .gallery-grid,[data-role="literature"] .image-grid{margin:10px auto 18px;justify-content:center}
+[data-role="literature"] .gallery-grid>a,[data-role="literature"] .image-grid>a{flex:0 1 auto;width:auto;max-width:200px;height:auto;padding:6px}
+[data-role="literature"] .gallery-grid img,[data-role="literature"] .image-grid img{width:auto;height:auto;max-width:100%;max-height:190px;object-fit:contain}
+[data-role="notes"] p,.text-block p{margin:8px auto;text-align:center}
+[data-role="videos"] .gallery-grid>a,[data-role="videos"] .image-grid>a{max-width:200px;height:auto}
+[data-role="videos"] img,[data-role="videos"] video,[data-role="videos"] iframe{max-width:200px;height:auto;object-fit:contain}
+footer{font-size:12px;color:#6b7280;text-align:center;margin:15px auto 5px;padding:12px 0 0;border-top:1px solid #e5e7eb}
+@media(max-width:600px){.wrap{padding:12px 10px 20px}.section-card,.section-block,.primary-artwork{padding:15px 11px}}
+@media(max-width:440px){.gallery-grid,.image-grid,.original-grid{gap:9px}}
 
 
-/* Batch 11: remove image-level inner frames ONLY in Original Drawing sections; outer white panels retained. */
-.primary-artwork[data-role="original"] > a:has(img),
-.primary-artwork[data-role="original-drawing"] > a:has(img),
-.primary-artwork[data-role="original-drawings"] > a:has(img),
-[data-role="original-drawing"] .gallery-grid a:has(img),
-[data-role="original-drawing"] .original-grid a:has(img),
-[data-role="original"] .gallery-grid a:has(img),
-[data-role="original"] .original-grid a:has(img),
-section.primary-artwork[aria-label="Original Drawing"] > a:has(img),
-section.primary-artwork[aria-label="Original Drawings"] > a:has(img) {
-  border:0 !important; border-radius:0 !important; padding:0 !important;
-  box-shadow:none !important; overflow:visible !important;
-}
+/* Verified source variants: Sheep and Snails */
+[data-role="original-drawing"] .gallery-grid>a,[data-role="original-drawing"] .gallery-item,[data-role="original-drawings"] .gallery-grid>a{border:0;border-radius:0;box-shadow:none;padding:0;background:transparent;overflow:visible;max-width:410px;height:auto}
+[data-role="digital"] .gallery-grid>a,[data-role="digital"] .gallery-item,[data-role="digitized"] .gallery-grid>a{flex:0 0 200px;width:200px;max-width:200px;height:200px;padding:0}
+[data-role="digital"] .gallery-grid img,[data-role="digitized"] .gallery-grid img{width:100%;height:100%;max-height:100%;object-fit:contain}
+[data-role="literature"] .literature-entry .gallery-grid{margin:12px auto 18px}
+[data-role="literature"] .literature-entry p{margin:6px auto 10px;text-align:center}
+[data-role="literature"] .gallery-grid>a{max-height:220px}
+[data-role="graphic-designs"] .gallery-grid,[data-role="graphic-design"] .gallery-grid{justify-content:center}
+[data-role="graphic-designs"] .gallery-grid>a,[data-role="graphic-design"] .gallery-grid>a{width:auto;height:auto;max-width:200px;max-height:200px}
+[data-role="graphic-designs"] img,[data-role="graphic-design"] img{width:auto;height:auto;max-width:200px;max-height:200px;object-fit:contain}
+[data-role="work-in-progress"] .gallery-grid>a{flex:0 0 200px;width:200px;height:200px}
+[data-role="work-in-progress"] .gallery-grid img{width:100%;height:100%;object-fit:contain}
+[data-role="videos"] video,[data-role="videos"] iframe{max-width:200px}
+.relationship-note,.shared-sheet-note,.fused-original-note{display:block;max-width:560px;background:#f3f4f6;text-align:center}
+
 </style>
 </head><body><main class="wrap"><nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-sketches-and-drawings/Sketches/">Sketches &amp; Drawings</a><a class="nav-pill" href="../index.html">&larr; Statues</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav><header class="page-header"><h1 class="page-title">Liberty Statue 2</h1></header><h2 class="original-drawing-heading">Original Drawing</h2><section class="section-card" data-role="original-drawing"><div class="gallery-grid original-gallery"><a class="gallery-item" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/Fat%20Statue%20of%20Liberty%20ORIGINAL.jpg?v=20260609h" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/Fat%20Statue%20of%20Liberty%20ORIGINAL.jpg?v=20260609h" alt="Liberty Statue 2 — image 1" loading="lazy"></a></div></section><div class="catalogue-meta-block"><ul class="work-meta"><li><strong>Title:</strong> Liberty Statue 2</li><li><strong>Medium:</strong> Ink on paper</li><li><strong>Dimensions:</strong> Sheet 14 × 17 in.; Drawing 15 × 6.5 in.</li><li><strong>Work ID:</strong> RE-013727</li><li><strong>Provenance:</strong> Artist's Personal Collection</li></ul></div><section class="section-card" data-role="digital"><h2>Digitized Versions</h2><div class="gallery-grid"><a class="gallery-item" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/Fat%20Statue%20of%20Liberty%20B%26W.png?v=20260609h" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/Fat%20Statue%20of%20Liberty%20B%26W.png?v=20260609h" alt="Liberty Statue 2 — image 1" loading="lazy"></a><a class="gallery-item" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/Fat%20Statue%20of%20Liberty%20COLOR.png?v=20260609h" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings/main/images/Sketches/New/Fat%20Statue%20of%20Liberty%20COLOR.png?v=20260609h" alt="Liberty Statue 2 — image 2" loading="lazy"></a></div></section><nav class="sequence-nav ron-bottom-prev-next-center" aria-label="Catalogue sequence"><a class="nav-pill" href="../statue-of-liberty/index.html">&larr; Previous: Liberty Statue</a><a class="nav-pill" href="../liberty-statue-sketches/index.html">Next: Statue Sketches &rarr;</a></nav><footer>Published via GitHub Pages<br>for long-term public access.</footer></main></body></html>
