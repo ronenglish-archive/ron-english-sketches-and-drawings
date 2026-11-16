@@ -8,92 +8,54 @@
 <link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
 
 
-<style id="ron-clean-drawing-detail-v1">
-/* Ron English / Sketches & Drawings / approved compact detail presentation */
-*{box-sizing:border-box}html{background:#fff}body{margin:0;background:#fff;color:#222;font:14px/1.6 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}a{color:inherit}
-.wrap{width:100%;max-width:620px;margin:0 auto;padding:16px 14px 22px}
-.nav-pills,.sequence-nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:9px;margin:8px auto 14px;text-align:center}
-.nav-pill,.sequence-pill{display:inline-block;padding:6px 11px;border:1px solid #e5e7eb;border-radius:999px;background:#fff;text-decoration:none;color:#222;font-size:12px}
-.sequence-spacer{display:none}
-.page-header{text-align:center;margin:12px auto 16px}.page-title,h1{font:400 28px/1.17 Georgia,serif;text-align:center;margin:12px auto 16px}
-h2,h3,.original-drawing-heading{font:400 20px/1.3 Georgia,serif;text-align:center;margin:0 0 12px}
-.section-card,.primary-artwork{width:100%;max-width:560px;margin:12px auto;padding:19px 16px;background:#fff;border:1px solid #e5e7eb;border-radius:12px;box-shadow:none;text-align:center}
-.section-card[data-role="notes"],.ron-unified-notes-wip-panel{width:100%;max-width:560px}
-.section-card h2,.primary-artwork h2{font:400 20px/1.3 Georgia,serif;text-align:center;margin:0 0 12px}
-/* The Original Drawing heading is deliberately outside the image/status panel. */
-.original-drawing-heading,.ron-outside-original-heading{display:block;text-align:center;margin:15px auto 10px;font:400 20px/1.3 Georgia,serif}
-.gallery-grid,.index-grid,.original-grid,.originals-grid,.original-gallery,.ron-doc-category-items{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:12px;width:100%;max-width:100%;margin:0 auto}
-.gallery-item,.primary-artwork-link{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:0;margin:0;border:1px solid #e5e7eb;border-radius:6px;overflow:hidden;text-decoration:none;background:#fff;color:inherit;box-shadow:none}
-.gallery-item img,.primary-artwork-link img{display:block;width:100%;height:100%;min-width:0;object-fit:contain;object-position:center;background:#fff;padding:6px;margin:0;box-shadow:none}
-/* Original Drawing: distinct 410px maximum tile and 380px image height. */
-section[data-role="original-drawing"] .gallery-grid .gallery-item,section[data-role="original-drawing"] .original-grid .gallery-item,
-section[data-role="original"] .gallery-item,.primary-artwork .primary-artwork-link,.original-grid .gallery-item,.original-gallery .gallery-item,.originals-grid .gallery-item{flex:0 1 auto;width:auto;max-width:410px;height:auto;max-height:none}
-section[data-role="original-drawing"] .gallery-grid .gallery-item img,section[data-role="original"] .gallery-item img,.primary-artwork .primary-artwork-link img,.original-grid .gallery-item img,.original-gallery .gallery-item img,.originals-grid .gallery-item img{display:block;width:auto;max-width:100%;height:auto;max-height:380px;object-fit:contain}
-.primary-artwork{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0}
-/* Digitized Versions: actual outer border-box 155 by 165 pixels. */
-section[data-role="digital"] .gallery-item,section[data-role="digitized-versions"] .gallery-item{flex:0 0 155px;width:155px;max-width:155px;height:165px;max-height:165px;box-sizing:border-box;display:flex;align-items:center;justify-content:center}
-section[data-role="digital"] .gallery-item img,section[data-role="digitized-versions"] .gallery-item img{width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}
-/* Framed documentary cards: 130px wide, 170px image area; captions below. */
-section[data-role="cards"] .gallery-item,section[data-role="area54-cards"] .gallery-item,section[data-role="delusionville-trading-cards"] .gallery-item,section[data-role="delusionville-cards"] .gallery-item,section[data-role="graphic-designs"] .gallery-item,section[data-role="work-in-progress"] .gallery-item,section[data-role="photo-gallery"] .gallery-item,section[data-category="artist-created-graphic-designs"] .gallery-item{flex:0 0 130px;width:130px;max-width:130px;height:auto;display:flex;flex-direction:column;align-items:center;justify-content:flex-start}
-section[data-role="cards"] .gallery-item img,section[data-role="area54-cards"] .gallery-item img,section[data-role="delusionville-trading-cards"] .gallery-item img,section[data-role="delusionville-cards"] .gallery-item img,section[data-role="graphic-designs"] .gallery-item img,section[data-role="work-in-progress"] .gallery-item img,section[data-role="photo-gallery"] .gallery-item img,section[data-category="artist-created-graphic-designs"] .gallery-item img{height:170px;max-height:170px;flex-shrink:0;object-fit:contain}
-.ron-doc-category-item{margin:0;display:flex;flex-direction:column;align-items:center;width:130px;max-width:130px}.ron-doc-category-item figcaption,.gallery-item figcaption,.card-title{width:100%;font-size:12px;line-height:1.35;text-align:center;padding:5px;overflow-wrap:anywhere;background:#fff}
-/* Literature images follow citation groups rather than documentary-card sizing. */
-section[data-role="literature"] .gallery-item{width:155px;max-width:155px;flex:0 0 155px;height:auto;max-height:none;border-radius:12px}
-section[data-role="literature"] .gallery-item img{width:100%;height:auto;max-height:155px;object-fit:contain;padding:6px}
-.literature-entry{max-width:520px;margin:0 auto 16px;text-align:center;line-height:1.65}.literature-entry p{margin:8px auto}
-.catalogue-meta-block{width:100%;max-width:540px;margin:10px auto 15px;text-align:center}.work-meta{max-width:540px;list-style:none;margin:0 auto;padding:0;text-align:center;line-height:1.65}.work-meta li{margin:2px auto}
-.relationship-note{width:100%;max-width:440px;margin:12px auto;padding:12px 16px;border:1px solid #d5d9df;border-radius:10px;background:#f3f4f6;text-align:center;line-height:1.6}
-.text-block,.notes-text,section[data-role="notes"] p,section[data-role="notes"] div{max-width:520px;margin-left:auto;margin-right:auto;text-align:center;line-height:1.65}
-.text-block p,.notes-text p{margin:8px auto}
-section[data-role="original-status"] .text-block{max-width:100%}
-footer{margin:15px auto 5px;padding:12px 0 0;border-top:1px solid #e5e7eb;font-size:12px;color:#6b7280;text-align:center}
-/* Restrained formatting for unclassified archival images: no invented universal size. */
-section[data-role="ancillary-documentation"]:not([data-category="artist-created-graphic-designs"]) img{max-width:100%;height:auto;object-fit:contain}
-/* Compact verified video posters, when present. */
-.video-gallery{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
-.video-tile{width:200px;max-width:200px;margin:0;border:1px solid #e5e7eb;background:#fff;border-radius:8px;overflow:hidden}
-.video-poster{display:flex;position:relative;align-items:center;justify-content:center;width:100%;height:125px;background:#fff}
-.video-poster img{width:100%;height:100%;object-fit:contain}.video-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#222c;color:white}
-.video-tile figcaption{border-top:1px solid #e5e7eb;padding:10px 8px 12px;text-align:center;font-size:13px;line-height:1.4}
-video,iframe{max-width:100%}
-@media(max-width:390px){.wrap{padding:12px 10px 20px}section[data-role="digital"] .gallery-item{flex-basis:130px;width:130px;max-width:130px;height:165px}}
-
-/* Original hero anchors may be direct children of .primary-artwork (Words & Phrases). */
-.primary-artwork>a,.primary-artwork>.gallery-item{display:flex;align-items:center;justify-content:center;flex:0 1 auto;width:auto;max-width:410px;max-height:none;height:auto;margin:0 auto;border:1px solid #e5e7eb;border-radius:6px;background:#fff;box-shadow:none;overflow:hidden}
-.primary-artwork>a img,.primary-artwork>img{display:block;width:auto;max-width:100%;height:auto;max-height:380px;object-fit:contain;background:#fff;padding:6px}
-section[data-role="original-drawing"] .gallery-item,section[data-role="original"] .gallery-item{flex:0 1 auto;width:auto;max-width:410px;height:auto;max-height:none}
-section[data-role="original-drawing"] .gallery-item img,section[data-role="original"] .gallery-item img{width:auto;max-width:100%;height:auto;max-height:380px;object-fit:contain}
-section[data-role="digitized"] .gallery-item{flex:0 0 155px;width:155px;max-width:155px;height:165px;max-height:165px}
-section[data-role="digitized"] .gallery-item img{width:100%;height:100%;max-height:100%;object-fit:contain}
-/* Preserve the original heading outside every artwork/status panel. */
-h2[style]{font:400 20px/1.3 Georgia,serif;text-align:center}
-/* Distinct framed gallery categories keep captions below rather than to the side. */
-.gallery-item,.index-card,.ron-doc-category-item{box-shadow:none}
-.gallery-item>figcaption,.gallery-item>.card-title,.index-card>.card-title{display:block;width:100%;text-align:center}
-.index-grid{gap:12px}.index-card{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;width:130px;max-width:130px;flex:0 0 130px;margin:0;border:1px solid #e5e7eb;background:#fff;border-radius:7px;overflow:hidden}
-.index-card img{display:block;width:100%;height:170px;object-fit:contain;background:#fff;padding:6px}
-/* Source-specific category names and figure arrangements. */
-section[data-role="artist-created-graphic-designs"] .gallery-item,section[data-role="artist-with-drawing"] .gallery-item{width:130px;max-width:130px;flex:0 0 130px;display:flex;flex-direction:column}
-section[data-role="artist-created-graphic-designs"] .gallery-item img,section[data-role="artist-with-drawing"] .gallery-item img{height:170px;max-height:170px;object-fit:contain}
-.ron-doc-category-items{align-items:flex-start}
-.ron-doc-category-item img{display:block;max-width:100%;height:170px;object-fit:contain}
-.notes-block{width:100%;max-width:560px;margin:12px auto;padding:19px 16px;background:#fff;border:1px solid #e5e7eb;border-radius:12px;box-shadow:none;text-align:center}
-.notes-block h2{font:400 20px/1.3 Georgia,serif}
-.missing-original{width:100%;max-width:560px;margin:12px auto;padding:19px 16px;background:#fff;border:1px solid #e5e7eb;border-radius:12px;text-align:center}
-@media(max-width:390px){section[data-role="digitized"] .gallery-item{flex-basis:130px;width:130px;max-width:130px;height:165px}}
-
-/* Batch 11: remove image-level inner frames ONLY in Original Drawing sections; outer white panels retained. */
-.primary-artwork[data-role="original"] > a:has(img),
-.primary-artwork[data-role="original-drawing"] > a:has(img),
-.primary-artwork[data-role="original-drawings"] > a:has(img),
-[data-role="original-drawing"] .gallery-grid a:has(img),
-[data-role="original-drawing"] .original-grid a:has(img),
-[data-role="original"] .gallery-grid a:has(img),
-[data-role="original"] .original-grid a:has(img),
-section.primary-artwork[aria-label="Original Drawing"] > a:has(img),
-section.primary-artwork[aria-label="Original Drawings"] > a:has(img) {
-  border:0 !important; border-radius:0 !important; padding:0 !important;
-  box-shadow:none !important; overflow:visible !important;
-}
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;background:#fff;color:#222}
+body{font:14px/1.6 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+a{color:#164f9e}a:focus-visible{outline:3px solid #2463bc;outline-offset:3px}
+img{display:block;max-width:100%;height:auto;object-fit:contain}
+.wrap,main.wrap{width:100%;max-width:620px;margin:0 auto;padding:16px 14px 26px}
+.page-header{text-align:center;margin:12px auto 16px}
+.page-title,.page-header h1,.wrap>h1{font:700 28px/1.2 Georgia,"Times New Roman",serif;text-align:center;margin:12px auto 16px;overflow-wrap:anywhere}
+h2,h3,.original-drawing-heading,.section-card h2,.section-block h2{font:400 20px/1.3 Georgia,"Times New Roman",serif;text-align:center;margin:0 0 14px}
+.original-drawing-heading{margin:16px auto 14px}
+.nav-pills,.sequence-nav,.ron-bottom-prev-next-center{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:9px;margin:8px auto 14px;text-align:center}
+.nav-pill,.sequence-pill,.sequence-nav>a{display:inline-block;padding:6px 11px;border:1px solid #e5e7eb;border-radius:999px;text-decoration:none;font-size:12px;color:#333;background:#fff}
+.nav-pill:hover,.sequence-pill:hover{background:#f8fafc}
+.section-card,.section-block,.primary-artwork{width:100%;max-width:560px;margin:0 auto 18px;padding:19px 16px;background:#fff;border:1px solid #e1e3e6;border-radius:12px;box-shadow:none;text-align:center}
+.section-card:hover,.section-block:hover,.gallery-item:hover{box-shadow:none;transform:none}
+.gallery-grid,.original-grid,.kaiju-gallery,.ron-doc-category-items,.ron-yt-clean-grid,.delusionville-cards{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:12px;margin-left:auto;margin-right:auto}
+.gallery-item,.gallery-grid>a,.ron-doc-category-item>a,.primary-artwork>a,.primary-artwork-link{display:flex;align-items:center;justify-content:center;min-width:0;max-width:100%;border:1px solid #e1e3e6;border-radius:10px;padding:6px;background:#fff;box-shadow:none;overflow:hidden;text-decoration:none;margin:0}
+.gallery-item img,.gallery-grid>a img,.ron-doc-category-item img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+section[data-role="original"],section[data-role="original-drawing"],section[data-role="original-drawings"]{max-width:560px}
+section[data-role="original"] .gallery-item,section[data-role="original-drawing"] .gallery-item,section[data-role="original-drawings"] .gallery-item,section[data-role="original"] .gallery-grid>a,section[data-role="original-drawing"] .gallery-grid>a,section[data-role="original-drawings"] .gallery-grid>a,.primary-artwork>a,.primary-artwork-link{border:0;border-radius:0;padding:0;background:transparent;box-shadow:none;max-width:410px}
+.primary-artwork>a,.primary-artwork-link{margin-left:auto;margin-right:auto}
+section[data-role="original"]>a,section[data-role="original-drawing"]>a,section[data-role="original-drawings"]>a{display:flex;width:fit-content;max-width:100%;justify-content:center;margin-left:auto;margin-right:auto}
+section[data-role="original"] .gallery-grid,section[data-role="original-drawing"] .gallery-grid,section[data-role="original-drawings"] .gallery-grid{width:100%;justify-content:center}
+section[data-role="original"] img,section[data-role="original-drawing"] img,section[data-role="original-drawings"] img,.primary-artwork img{width:auto;height:auto;max-width:100%;max-height:380px;object-fit:contain}
+.catalogue-meta-block,.meta,.metadata{max-width:560px;margin:0 auto 18px;text-align:center}
+.work-meta,.catalogue-meta-block ul,.catalogue-meta-block ol{list-style:none;padding:0;margin:0;text-align:center}
+.work-meta li,.catalogue-meta-block li,.work-meta p{display:block;list-style:none;margin:3px auto;padding:0;text-align:center}
+section[data-role="digital"] .gallery-item,section[data-role="digitized"] .gallery-item,section[data-role="digitized-versions"] .gallery-item,section[data-role="digital"] .gallery-grid>a,section[data-role="digitized"] .gallery-grid>a,section[data-role="photo-gallery"] .gallery-item,section[data-role="photo-gallery"] .gallery-grid>a,section[data-role="work-in-progress"] .gallery-item,section[data-role="work-in-progress"] .gallery-grid>a,section[data-role="wip"] .gallery-item{flex:0 0 200px;width:200px;height:200px;max-width:100%}
+section[data-role="digital"] .gallery-item img,section[data-role="digitized"] .gallery-item img,section[data-role="photo-gallery"] img,section[data-role="work-in-progress"] img,section[data-role="wip"] img{max-width:100%;max-height:100%;object-fit:contain}
+section[data-role="digital"] figcaption,section[data-role="digitized"] figcaption,section[data-role="photo-gallery"] figcaption,section[data-role="digital"] .card-title,section[data-role="photo-gallery"] .card-title{display:none}
+section[data-role="cards"] .gallery-item,section[data-role="cards"] .gallery-grid>a,section[data-role="area54-cards"] .gallery-item,section[data-role="area54-cards"] .gallery-grid>a,section[data-role="delusionville-trading-cards"] .gallery-item,section[data-role="delusionville-trading-cards"] .gallery-grid>a{flex:0 0 130px;width:130px;height:170px;max-width:100%;padding:0}
+section[data-role="cards"] img,section[data-role="area54-cards"] img,section[data-role="delusionville-trading-cards"] img{max-width:100%;max-height:100%;object-fit:contain}
+section[data-role="literature"] .literature-entry,section[data-role="literature"] .literature-entry p,section[data-role="literature"] .text-block{text-align:center}
+section[data-role="literature"] .literature-entry{margin:0 auto 18px}
+section[data-role="literature"] .gallery-grid{margin:12px auto 18px;justify-content:center}
+section[data-role="literature"] .gallery-item,section[data-role="literature"] .gallery-grid>a{flex:0 1 auto;width:auto;height:auto;max-width:130px;max-height:170px;padding:0}
+section[data-role="literature"] .gallery-item img,section[data-role="literature"] .gallery-grid>a img{max-width:130px;max-height:170px;object-fit:contain}
+section[data-role="ancillary-documentation"] .ron-doc-category-items{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+section[data-role="ancillary-documentation"] .ron-doc-category-item{max-width:200px;margin:0}
+section[data-role="ancillary-documentation"] .ron-doc-category-item>a{width:auto;max-width:200px;height:auto;max-height:200px;padding:0}
+section[data-role="ancillary-documentation"] .ron-doc-category-item img{max-width:200px;max-height:200px;object-fit:contain}
+section[data-role="notes"] .text-block,section[data-role="notes"] p{text-align:center}
+.shared-original-sheet,.relationship-note.shared-original-sheet{max-width:560px;margin:0 auto 18px;padding:19px 16px;border:1px solid #d1d5db;border-radius:12px;background:#f3f4f5;text-align:center;box-shadow:none}
+.relationship-note{max-width:560px;margin:0 auto 18px;text-align:center}
+.ron-yt-clean-tile{width:200px;max-width:100%;margin:0 auto}.ron-video-poster{position:relative;display:block;width:100%;height:auto}.ron-video-poster img{max-height:200px}.ron-video-poster span[aria-hidden]{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:#0007;color:#fff;font-size:12px}
+.footer-divider{max-width:560px;border:0;border-top:1px solid #d8dadd;margin:18px auto 16px}footer{max-width:560px;border-top:1px solid #d8dadd;padding-top:16px;text-align:center;margin:18px auto 16px;color:#666}
+footer:has(+ *){margin-top:18px}
+@media(max-width:440px){.wrap,main.wrap{padding:12px 10px 22px}.section-card,.section-block,.primary-artwork{padding:19px 12px}}
 </style></head><body><main class="wrap"><nav class="nav-pills" aria-label="Site navigation"><a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a><a class="nav-pill" href="../../index.html">Sketches &amp; Drawings</a><a class="nav-pill" href="../index.html">&larr; Words &amp; Phrases</a>  <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
 </nav><header class="page-header"><h1 class="page-title">Sheep</h1></header><h2>Original Drawing</h2><section class="primary-artwork" aria-label="Original Drawing"><a href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/sheep%20logo%20%282%29.jpg?v=20260702d" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/sheep%20logo%20%282%29.jpg?v=20260702d" alt="Sheep" loading="eager"></a></section><div class="catalogue-meta-block"><ul class="work-meta"><li><strong>Title:</strong> Sheep</li><li><strong>Medium:</strong> Ink and colored pencil on paper</li><li><strong>Dimensions:</strong> Sheet: 14 &times; 17 in.; Drawing: 12.5 &times; 3 in.</li><li><strong>Work ID:</strong> RE-015172</li><li><strong>Provenance:</strong> Artist's Personal Collection</li></ul></div><section class="section-card" data-role="digital"><h2>Digitized Version</h2><div class="gallery-grid"><a class="gallery-item" href="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/sheep%20logo%20copy.jpg?v=20260702d" target="_blank" rel="noopener"><img src="https://raw.githubusercontent.com/ronenglish-archive/ron-english-sketches-and-drawings-3/main/sketches/sheep%20logo%20copy.jpg?v=20260702d" alt="Sheep" loading="lazy"></a></div></section><nav class="sequence-nav ron-bottom-prev-next-center" aria-label="Catalogue sequence"><a class="nav-pill sequence-pill" href="re-015219.html">&larr; Previous: Seamonkey</a><a class="nav-pill sequence-pill" href="re-015202.html">Next: Skeez &rarr;</a></nav><footer>Published via GitHub Pages<br>for long-term public access.</footer></main></body></html>
